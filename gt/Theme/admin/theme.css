@@ -1,0 +1,191 @@
+/* 
+    Document   : theme
+    Created on : 2013-6-8, 13:12:27
+    Author     : candice
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/*=================================
+Base
+==================================*/
+root { 
+    display: block;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #363636;
+    background-color: #fff;
+    font-size: 14px;
+    font-family:'宋体',Arial,Helvetica,sans-serif,STHeiti;
+    overflow-x: hidden;
+}
+body{
+    border-top: 6px solid #24282c;
+    background-color: #ececec;
+}
+/*=================================
+Public
+黑色：#363636
+蓝色：#5cacff
+红色：#ff5c5c
+绿色：#72bb5c
+深灰色：#686868
+浅灰色：#989898
+
+浅灰背景：#f2f2f2
+深灰背景：#dfdfdf
+左侧导航：#33393d
+导航选中背景：#24282c
+
+
+==================================*/
+.blue{
+    color: #5cacff;
+}
+.white{
+    color: #fff;
+}
+.red{
+    color: #ff5c5c;
+}
+.green{
+    color: #72bb5c;
+}
+.darkgray{
+    color: #686868;
+}
+.lightgray{
+    color: #989898;
+}
+/*=================================
+Footer
+==================================*/
+.footer p.copyright{
+    padding-left: 170px;
+    left: 0;
+    top: -50px;
+    position: absolute;
+    color: #9f9f9f;
+    font-size: 13px;
+    line-height:22px;
+}
+/*=================================
+Struct
+==================================*/
+div.struct{
+    min-height:900px;
+}
+div.struct,.footer{
+    width: 1202px;
+    margin: 0 auto;
+    text-align: left;
+    position: relative;
+}
+p.rightbg{
+    position: absolute;
+    top: 0;
+    left: 150px;
+    width: 200%;
+    height: 100%;
+    background-color: #fff;
+}
+div.struct .navs{
+    width: 150px;
+    height: 100%;
+}
+div.struct .navs p.title{
+    width: 138px;
+    height: 90px;
+    background: url('../images/develop/logo.png') no-repeat center 0;
+    margin-top: 25px;
+}
+div.struct .navs p.mtitle{
+    background: url('../images/admin/logo.png') no-repeat center 0;
+}
+div.struct .navs p.nav_line{
+    border-top: 1px solid #dfdfdf;
+    background-color: #efefef;
+    height: 1px;
+    line-height: 1px;
+    font-size: 0;
+    padding: 0;
+    margin-top: 20px;
+}
+div.struct .navs ul{
+    margin-top: 20px;
+    width: 260px;
+}
+div.struct .navs ul li{
+    width: 260px;
+    height: 40px;
+    line-height: 40px;
+}
+div.struct .navs ul li a{
+    text-align: center;
+    font-size: 14px;
+    display: block;
+    width: 140px;
+    height: 41px;
+    line-height: 40px;
+    color: #686868;
+    padding-left: 10px;
+}
+div.struct .navs ul li a:hover,
+div.struct .navs ul li a.cur{
+    background: url('../images/public/nav_bg.png') no-repeat center 0;
+    color: #5cacff;
+}
+div.struct .main{
+    width: 1050px;
+    overflow-x: hidden;
+    position: relative;
+    padding-bottom: 50px;
+    background-color: #fff;
+    height: 100%;
+}
+div.struct .main .header{
+    line-height: 40px;
+    position: relative;
+    height: 42px;
+    width: 1030px;
+    padding-left: 20px;
+    color: #989898;
+}
+div.struct .main .header div.options{
+    border-bottom: 1px solid #dadada;
+}
+div.struct .main .header .bot_bdr{
+    border-bottom: 1px solid #dadada;
+}
+div.struct .main .header div.options a{
+    margin-right: 20px;
+    padding: 0 15px;
+    line-height: 33px;
+    border-bottom: 4px solid #fff;
+    display: inline-block;
+    color: #989898;
+}
+div.struct .main .header div.options a:hover{
+    color: #5cacff;
+}
+div.struct .main .header div.options a.cur{
+    color: #5cacff;
+    border-bottom: 4px solid #5cacff;
+}
+div.struct .main .header span.blue{
+    margin: 0 15px;
+}
+div.struct .main .header span a{
+    color: #5cacff;
+}
+div.struct .main .header .top_right{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+p.mult_line{
+    line-height: 25px;
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>机构管理-机构详细-好老师后台管理系统</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{$FILE_ROOT}Theme/admin/base.css" type="text/css" />
+        <link rel="stylesheet" href="{$FILE_ROOT}Theme/admin/theme.css" type="text/css" />
+        <link rel="stylesheet" href="{$FILE_ROOT}Theme/admin/page.css" type="text/css" />
+<script type="text/javascript" src="{$FILE_ROOT}Theme/lib/jquery-1.8.3.min.js"></script>
+    </head>
+    <body>
+        <div class="struct clearfix">
+            <p class="rightbg" id="right_bg"></p>
+             <include file="./Tpl/Modules/navs.html"/>
+            <div class="lf main">
+                <!---------------------Start: 右侧顶部-------------------------->
+                <div class="header">
+                    <div class="bot_bdr"><a href="{$WEB_ROOT}agencys">机构管理</a>><span>{$agencyDetail['data']['name']}/详细</span></div>
+                    <div class="top_right">
+                        <span>超级管理员,</span>
+                        <a href="javascript:;" id="log_out">退出</a>
+                    </div>
+                </div>
+                <!---------------------Start: 右侧内容-------------------------->
+                <div class="article agencys agency_detail s_detail">
+                    <p class="atitle">基本信息</p>
+                    <div class="info_box clearfix">
+                        <div class="box_l">
+                            <p>机构编号：{$agencyDetail['data']['orgId']}</p>
+                            <p>机构名称：{$agencyDetail['data']['name']}</p>
+                            <p>机构简称：{$agencyDetail['data']['shortName']}</p>
+                            <p>电弧号码：{$agencyDetail['data']['phone']}</p>
+                            <div class="clearfix score">
+                                <span class="lf">评分：</span>
+                                <div class="star lf" id="star"></div>
+                                <span class="comt lf">
+                                    <if condition="$agencyDetail['data']['star'] eq 0 ||$agencyDetail['data']['star'] eq ''">
+                                        暂无评分
+                                        <else />{$agencyDetail['data']['star']} 分
+                                    </if>
+                                </span>
+                                <input type="hidden" id="score" name="fm-star" value="{$agencyDetail['data']['star']}" />
+                             </div>
+                            <p>价格：￥{$agencyDetail['data']['price']}元/小时</p>
+                            <p>分类：<foreach name="agencyDetail.data.categoryList" item="adc"><span class="mr10">{$adc.name}</span></foreach>
+                            </p>
+                            <p>地址：{$agencyDetail['data']['location']['info']}</p>
+                            <p>地理坐标：（{$agencyDetail['data']['location']['x']},{$agencyDetail['data']['location']['y']}）</p>
+                            <p>所在商区：<if condition="$agencyDetail['data']['userCities'] eq NULL">无
+                                            <else />
+                                            <foreach name="agencyDetail.data.userCities" item="userCities">
+                                                <span>
+                                                    <foreach name="userCities.parents.parentNames" item="pnames">
+                                                    <if condition="$key neq 0">-<else /></if>{$pnames}
+                                                    </foreach>
+                                                </span>
+                                            </foreach>
+                                          </if>
+                            </p>
+                        </div>
+                        <div class="aside_r">
+                            <img  src="{$API_FILE_ROOT}{$agencyDetail['data']['photo']}" class="img_agency">
+                            <p class="check_links">
+<!--                                <a href="{$WEB_ROOT}" class="btn btn_green">查看培训课程</a>
+                                <a href="{$WEB_ROOT}" class="btn btn_green">查看课程视频</a>
+                                <a href="{$WEB_ROOT}" class="btn btn_green">查看评论</a>-->
+                            </p>
+                        </div>
+                    </div>
+                    <p class="atitle">机构介绍</p>
+                    <div class="info_box clearfix">
+                        <if condition="$agencyDetail['data']['introduction']['video']['url'] neq ''">
+                            <div class="box_l">
+                                <input type="hidden" value="{$API_FILE_ROOT}{$agencyDetail['data']['introduction']['video']['url']}" id="video_url" />
+                                <input type="hidden" value="{$API_FILE_ROOT}{$agencyDetail['data']['introduction']['video']['image']}" id="video_image" />
+                                <div id="video"><div id="a1"></div></div>
+                                <script type="text/javascript" src="{$FILE_ROOT}/Theme/lib/ckplayer/ckplayer.js" charset="utf-8"></script>
+                                <script type="text/javascript">
+                                    var surl=$("#video_url").val();
+                                    var scover=$("#video_image").val();
+;                                    var flashvars={
+                                        f:surl,
+                                        s:'0',
+                                        c:'0',
+                                        i:scover,
+                                        e:'2'
+                                    };
+                                    var params={bgcolor:'#000',allowFullScreen:true,allowScriptAccess:'always'};
+                                    var attributes={id:'ckplayer_a1',name:'ckplayer_a1'};
+                                    swfobject.embedSWF('{$FILE_ROOT}/Theme/lib/ckplayer/ckplayer.swf', 'a1', '600', '400', '10.0.0','{$FILE_ROOT}/Theme/lib/ckplayer/expressInstall.swf', flashvars, params, attributes); 
+//                                    var temp='var video={"'+surl+'":"video/mp4"};';
+//                                    eval(temp);
+//                                    var support=['iPad','iPhone','ios','android+false','msie10+false'];
+//                                    CKobject.embedHTML5('video','ckplayer_a1',600,400,video,flashvars,support);
+                                </script>
+                            </div>
+                        </if>
+                        <if condition="$agencyDetail['data']['introduction']['description'] neq ''&& $agencyDetail['data']['introduction']['video']['url'] eq ''">
+                            <div class="aside_r" style="margin-left:0;width:100%;">
+                                {$agencyDetail['data']['introduction']['description']}
+                            </div>
+                            <elseif  condition="$agencyDetail['data']['introduction']['description'] neq ''&& $agencyDetail['data']['introduction']['video']['url'] neq ''" />
+                              <div class="aside_r">
+                                    {$agencyDetail['data']['introduction']['description']}
+                               </div>
+                        </if>
+                    </div>
+                    <if condition="$agencyDetail['data']['introduction']['image'] neq ''">
+                        <ul class="screen_shot clearfix">
+                            <foreach name="agencyDetail.data.introduction.image" item="img">
+                                <li>
+                                    <img class="mid_shot" src="{$API_FILE_ROOT}{$img.image}" />
+                                </li>
+                            </foreach>
+                        </ul>
+                    </if>
+                </div>
+                <!---------------------End: 右侧内容-------------------------->
+            </div>
+        </div>
+      <include file="./Tpl/Modules/footer.html"/>
+    <input type="hidden" id="pagename" value="agency_detail" />
+    <input type="hidden" id="pagetag" value="agencys" />
+</body>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/lib/jquery.raty.js"></script>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/admin/base.js"></script>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/admin/page.js"></script>
+</html>

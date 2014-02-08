@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>留言管理-留言列表-好老师后台管理系统</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{$FILE_ROOT}Theme/admin/base.css" type="text/css" />
+        <link rel="stylesheet" href="{$FILE_ROOT}Theme/admin/theme.css" type="text/css" />
+        <link rel="stylesheet" href="{$FILE_ROOT}Theme/admin/page.css" type="text/css" />
+        <link rel="stylesheet" href="{$FILE_ROOT}/Theme/lib/pagination.css" type="text/css" />
+    </head>
+    <body>
+        <div class="struct clearfix">
+            <p class="rightbg" id="right_bg"></p>
+             <include file="./Tpl/Modules/navs.html"/>
+            <div class="lf main">
+                <!---------------------Start: 右侧顶部-------------------------->
+                <div class="header">
+                    <div class="options">
+                        <a class="cur">留言管理</a>
+                    </div>
+                    <div class="top_right">
+                        <span>超级管理员,</span>
+                        <a href="javascript:;" id="log_out">退出</a>
+                    </div>
+                </div>
+                <!---------------------Start: 右侧内容-------------------------->
+                <div class="article messages comm">
+                    <table class="filter ml20">
+                        <tr>
+                            <td class="ltd">
+                                <div class="sbox">
+                                    <input type="text" class="search gray" value="输入搜索关键字" id="search_box"/>
+                                    <a href="javascript:;" class="btn btn_green" id="dosearch">搜索</a>                     
+                                </div>
+                            </td>
+                        </tr>
+                   </table>
+                        <table class="mul_table hgstemp" id="mesaage_list">
+                            <tr>
+                                <th class="th1">内容</th>
+                                <th class="th2">留言者</th>
+                                <th class="th3">留言时间</th>
+                                <th class="th4">被留言者</th>
+                                <th class="th5">操作</th>
+                            </tr>
+                        </table>
+                    <div class="clearfix mt20">
+                        <div class="pages pagination" id="pagination"></div>
+                    </div>
+                </div>
+                <!---------------------End: 右侧内容-------------------------->
+            </div>
+        </div>
+    <include file="./Tpl/Modules/footer.html"/>
+    <input type="hidden" id="pagename" value="messages" />
+    <input type="hidden" id="pagetag" value="messages" />
+</body>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/lib/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/lib/jquery.pagination.js"></script>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/admin/base.js"></script>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/admin/page.js"></script>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>分类管理-分类列表-好老师后台管理系统</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{$FILE_ROOT}Theme/admin/base.css" type="text/css" />
+        <link rel="stylesheet" href="{$FILE_ROOT}Theme/admin/theme.css" type="text/css" />
+        <link rel="stylesheet" href="{$FILE_ROOT}Theme/admin/page.css" type="text/css" />
+        <link href="{$FILE_ROOT}Theme/lib/swfupload/css/default.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class="struct clearfix">
+            <p class="rightbg" id="right_bg"></p>
+             <include file="./Tpl/Modules/navs.html"/>
+            <div class="lf main">
+                <!---------------------Start: 右侧顶部-------------------------->
+                <div class="header">
+                    <div class="bot_bdr">
+                        <a href="{$WEB_ROOT}categorys">一级分类</a>><a href="{$WEB_ROOT}sub_categorys?id={$param.parent_id}&&name={$param.parent_name}">{$param.parent_name}</a>><if condition="$category eq ''"><span>添加</span><else />{$category['data']['name']}/编辑</if>
+                    </div>
+                    <div class="top_right">
+                        <span>超级管理员,</span>
+                        <a href="javascript:;" id="log_out">退出</a>
+                    </div>
+                </div>
+                <!---------------------Start: 右侧内容-------------------------->
+                <div class="article categorys category_edit">
+                    <table class="lr_table formdata">
+                        <tr>
+                            <td class="ltd"><span class="red">*</span>分类名称 :</td>
+                            <td class="rtd">
+                                <if condition="$category['data']['id'] neq ''">
+                                     <input type="hidden" value="{$category['data']['id']}" name="fm-categoryId" />
+                                </if>
+                                <input type="text" name="fm-name" id="cate_name" org="{$category['data']['name']}" value="{$category['data']['name']}"/>
+                            </td>
+                        </tr>
+                        <if condition="$category neq ''">
+                            <tr>
+                                <td class="ltd"><span class="red">*</span>父分类 :</td>
+                                <td class="rtd">
+                                    <select id="par_cate" name="fm-parentId">
+                                        <foreach name="parentList.data" item="cd">
+                                            <if condition="$category['data']['parentId'] eq $cd['id']">
+                                                <option value="{$cd.id}" selected="selected">{$cd.name}</option>                                        
+                                                <else /> <option value="{$cd.id}">{$cd.name}</option>
+                                            </if>
+                                        </foreach>
+                                    </select>
+                                </td>
+                            </tr>
+                        </if>
+                        <tr>
+                            <td class="ltd ltop"><span class="red">*</span>分类图标 :</td>
+                            <td class="rtd sel">
+                                <div class="filebg thumbnail_120 thumbnails" id="thumbnails">
+                                    <img class="pic mb10" orig="{$API_FILE_ROOT}{$category['data']['icon']}" src="{$API_FILE_ROOT}{$category['data']['icon']}"/>
+                                </div>
+                                <if condition="$category['data']['id'] neq ''">
+                                    <input type="hidden" name="fm-icon" ref="unChange" value="unChange" id="icon_img"/>
+                                    <else /><input type="hidden" name="fm-icon" ref="" value="" id="icon_img"/>
+                                </if>
+                                <span id="spanButtonPlaceholder"></span>
+                               <div id="divFileProgressContainer"></div>
+                            </td>
+                        </tr>
+                        <tr class="lst_tr">
+                            <td class="ltd"></td>
+                            <td class="rtd">
+                                <if condition="$category eq ''">
+                                    <input type="hidden" id="parent_id" value="{$param.parent_id}" name="fm-parentId"/>
+                                    <a href="javascript:;" class="btn btn_blue submit" id="add_child_cate">提&nbsp;&nbsp;交</a>
+                                   <else /> 
+                                   <input type="hidden" id="parent_id" value="{$category['data']['parentId']}"/>
+                                   <a href="javascript:;" class="btn btn_blue submit" id="save_child_cate">提&nbsp;&nbsp;交</a>
+                                </if>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!---------------------End: 右侧内容-------------------------->
+            </div>
+        </div>
+            <include file="./Tpl/Modules/footer.html"/>
+    <input type="hidden" id="pagename" value="subcate_edit" />
+    <input type="hidden" id="pagetag" value="categorys" />
+    <input type="hidden" id="parent_name" value="{$param.parent_name}" />
+    <input type="hidden" id="post_params" value="<?php echo session_id(); ?>" />
+</body>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/lib/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/lib/swfupload/swfupload.js"></script>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/lib/swfupload/handlers.js"></script>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/admin/base.js"></script>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/admin/page.js"></script>
+</html>

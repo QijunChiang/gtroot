@@ -1,0 +1,125 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>老师管理-添加老师-好老师后台管理系统</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{$FILE_ROOT}Theme/admin/base.css" type="text/css" />
+        <link rel="stylesheet" href="{$FILE_ROOT}Theme/admin/theme.css" type="text/css" />
+        <link rel="stylesheet" href="{$FILE_ROOT}Theme/admin/page.css" type="text/css" />
+    </head>
+    <body>
+        <div class="struct clearfix">
+            <p class="rightbg" id="right_bg"></p>
+             <include file="./Tpl/Modules/navs.html"/>
+            <div class="lf main">
+                <!---------------------Start: 右侧顶部-------------------------->
+                <div class="header">
+                    <div class="bot_bdr"><a href="{$WEB_ROOT}students">用户管理</a><span>></span><a href="{$WEB_ROOT}teachers">老师管理</a>><span>添加老师</span></div>
+                    <div class="top_right">
+                        <span>超级管理员,</span>
+                        <a href="javascript:;" id="log_out">退出</a>
+                    </div>
+                </div>
+                <!---------------------Start: 右侧内容-------------------------->
+                <div class="article users mt20 add_teac comm" id="add_teac_page">
+                    <table class="lr_table formdata">
+                        <tr>
+                            <td class="ltd"><span class="red">*</span>姓名 :</td>
+                            <td class="rtd">
+                                <input type="text" name="fm-name" id="tname" org="" value=""/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ltd"><span class="red">*</span>性别 :</td>
+                            <td class="rtd">
+                                <label><input type="radio" name="fm-sex" value="1" class="mr5" checked="checked" />男</label>
+                                <label class="ml30"><input type="radio" name="fm-sex" value="0" class="mr5"/>女</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ltd"><span class="red">*</span>出生日期 :</td>
+                            <td class="rtd">
+                                <input type="text" name="fm-birthday" readonly="readonly" id="birth" org="" value=""onclick="WdatePicker()" class="date"/>
+                            </td>
+                        </tr>
+                         <tr>
+                            <td class="ltd"><span class="red">*</span>课时价格 :</td>
+                            <td class="rtd">
+                                <input type="text" name="fm-price" id="price" org="" value=""/> 元/小时
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ltd ltop"><span class="red">*</span>专长 :</td>
+                            <td class="rtd">
+                                <div class="operation" style="display: none;">
+                                    <p class="mb10">已选择：</p>
+                                    <div id="good_at" class="klist"></div>
+                                </div>
+                                <a href="javascript:;" class="chose" id="chose_cates">选择</a>
+                                <div class="agency_cates mt10 mb10" style="display: none;">
+                                    <foreach name="goodats.data" item="gd">
+                                         <a href="javascript:;" rel="{$gd.id}">{$gd.name}</a>
+                                    </foreach>
+                                </div>
+                                <div class="sub_cates" id="scates"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ltd"><span class="red">*</span>专业技能 :</td>
+                            <td class="rtd">
+                                <input type="text" name="fm-skill" id="skill" org="" value=""/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ltd"><span class="red">*</span>手机号 :</td>
+                            <td class="rtd">
+                                <input type="text" name="fm-phone" id="phone" org="" value=""/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ltd">所在学校 :</td>
+                            <td class="rtd">
+                                <input type="text" name="fm-college" id="school" org="" value=""/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ltd"><span class="red">*</span>密码 :</td>
+                            <td class="rtd">
+                                <input type="password" name="fm-password" id="pwd" org="" value=""/>
+                            </td>
+                        </tr> 
+                        <tr>
+                            <td class="ltd"><span class="red">*</span>地理位置 :</td>
+                            <td class="rtd">
+                                <input type="text" name="fm-usuallyLocationInfo" id="address" org="" value=""/>
+                                <p class="gray mt10">(提示：拖动小图标可标记位置)</p>
+                                <div id="map" style="width:700px;height:400px;border:1px solid #cdcdcd;margin-top:20px;"></div>
+                                <input type="hidden" id="latitude" value="" name="fm-usuallyLocationX"/>
+                                <input type="hidden" id="longitude" value="" name="fm-usuallyLocationY"/>
+                                <input type="hidden" value="," id="mapdata" />
+                                <input type="hidden" value="{$location.lng},{$location.lat}" id="location" />
+                            </td>
+                        </tr>
+                        <tr class="lst_tr">
+                            <td class="ltd"></td>
+                            <td class="rtd">
+                                <input type="hidden" id="ids" name="fm-categoryIds" />
+                                <a href="javascript:;" class="btn btn_blue submit" id="add_user_teacher">提&nbsp;&nbsp;交</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!---------------------End: 右侧内容-------------------------->
+            </div>
+        </div>
+     <include file="./Tpl/Modules/footer.html"/>
+    <input type="hidden" id="pagename" value="add_teacher" />
+    <input type="hidden" id="pagetag" value="users" />
+    <input type="hidden" id="is_editpage" value="" />
+</body>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/lib/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/lib/datepicker/WdatePicker.js"></script>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/admin/base.js"></script>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/admin/page.js"></script>
+</html>

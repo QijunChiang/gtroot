@@ -1,0 +1,140 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>用户管理-老师证件上传-好老师后台管理系统</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{$FILE_ROOT}Theme/admin/base.css" type="text/css" />
+        <link rel="stylesheet" href="{$FILE_ROOT}Theme/admin/theme.css" type="text/css" />
+        <link rel="stylesheet" href="{$FILE_ROOT}Theme/admin/page.css" type="text/css" />
+        <script type="text/javascript" src="{$FILE_ROOT}Theme/lib/jquery-1.8.3.min.js"></script>
+        <link href="{$FILE_ROOT}Theme/lib/swfupload/css/default.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class="struct clearfix">
+            <p class="rightbg" id="right_bg"></p>
+            <include file="./Tpl/Modules/navs.html"/>
+            <div class="lf main">
+                <!---------------------Start: 右侧顶部-------------------------->
+                <div class="header">
+                    <div class="bot_bdr"><a href="{$WEB_ROOT}students">用户管理</a><span>></span><a href="{$WEB_ROOT}teachers">老师管理</a>> <span>{$param['name']} / 证件上传</span></div>
+                    <div class="top_right">
+                        <span>超级管理员,</span>
+                        <a href="javascript:;" id="log_out">退出</a>
+                    </div>
+                </div>
+                <!---------------------Start: 右侧内容-------------------------->
+                <div class="article  s_detail users teacher_file stu_edit">
+                    <table class="lr_table formdata">
+                        <tr>
+                            <td class="ltd  ltop"><span>身份证正面：</span></td>
+                            <td class="rtd sel">
+                                <div class="filebg thumbnail_card thumbnails">
+                                    <img class="pic mb10" orig="{$API_FILE_ROOT}{$auth['data']['citizenid']['frontSide']}" src="{$API_FILE_ROOT}{$auth['data']['citizenid']['frontSide']}"/>
+                                </div>
+                                <if condition="$auth['data']['citizenid']['frontSide'] neq ''">
+                                    <input type="hidden" name="fm-citizenidFrontSide" id="front" value="unChange" ref="unChange" />
+                                    <else /><input type="hidden" name="fm-citizenidFrontSide" id="front" value="" ref="" />
+                                </if>
+                                <span id="spanButtonPlaceholder6"></span>
+                                <div id="divFileProgressContainer6"></div>
+                        </td>
+                        <td class="ltd  ltop"><span>身份证反面：</span></td>
+                        <td class="rtd sel">
+                            <div class="filebg thumbnail_card thumbnails">
+                                <img class="pic mb10" orig="{$API_FILE_ROOT}{$auth['data']['citizenid']['backSide']}" src="{$API_FILE_ROOT}{$auth['data']['citizenid']['backSide']}"/>
+                            </div>
+                            <if condition="$auth['data']['citizenid']['backSide'] neq ''">
+                                <input type="hidden" name="fm-citizenidBackSide" id="back" value="unChange" ref="unChange" />
+                                <else /><input type="hidden" name="fm-citizenidBackSide" id="back" value="" ref="" />
+                            </if>
+                            <span id="spanButtonPlaceholder7"></span>
+                            <div id="divFileProgressContainer7"></div>
+                        </td>
+                        </tr>
+                        <tr>
+                            <td class="ltd  ltop"><span>毕业证书：</span></td>
+                            <td class="rtd sel">
+                                <div class="filebg thumbnail_card thumbnails">
+                                    <img class="pic mb10" orig="{$API_FILE_ROOT}{$auth['data']['diploma']['image']}" src="{$API_FILE_ROOT}{$auth['data']['diploma']['image']}"/>
+                                </div>
+                                <if condition="$auth['data']['diploma']['image'] neq ''">
+                                    <input type="hidden" name="fm-diploma" id="grad_certifi" value="unChange" ref="unChange" />
+                                    <else /><input type="hidden" name="fm-diploma" id="grad_certifi" value="" ref="" />
+                                </if>
+                                <span id="spanButtonPlaceholder8"></span>
+                                <div id="divFileProgressContainer8"></div>
+                        </td>
+                        </tr>
+                        <tr>
+                            <td class="ltd ltop "><span>考级证书：</span></td>
+                            <td class="rtd" colspan="4">
+                                <div>
+                                    <ul class="clearfix certy screen_shot">
+                                        <foreach name="auth.data.certificates" item="self_img">
+                                            <li>
+                                                <div class="sel">
+                                                    <div class="filebg thumbnails">
+                                                        <img class="mid_shot mb10" src="{$API_FILE_ROOT}{$self_img.image}"/>
+                                                    </div>
+                                                    <input type="hidden" class="ifile" value="unChange" ref="" />
+                                                    <input type="hidden" class="img_id" value="{$self_img.id}" ref="" />
+                                                    <span id="spanButtonPlaceholder{$key+1}"></span>
+                                                    <div id="divFileProgressContainer{$key+1}">
+                                                        <div class="progressWrapper">
+                                                            <div class="progressContainer blue">
+                                                                <a class="progressCancel" href="javascript:;"></a>
+                                                                <div class="progressName">介绍图片{$key+1}</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </foreach>
+                                        <?php 
+                                        $imageCount = count($auth['data']['certificates']);
+                                        ?>
+                                        <?php for($i = $imageCount;$i < 5;$i++){?>
+                                        <li>
+                                            <div class="sel">
+                                                <div class="filebg thumbnails">
+                                                    <img class="mid_shot mb10" src=""/>
+                                                </div>
+                                                <input type="hidden" class="ifile" ref=""/>
+                                                <input type="hidden" class="img_id" ref="" />
+                                                <span id="spanButtonPlaceholder<?php echo $i+1;?>"></span>
+                                                <div id="divFileProgressContainer<?php echo $i+1;?>"></div>
+                                            </div>
+                                        </li>
+                                        <?php }?>
+                                    </ul> 
+                                </div>
+                            </td>
+                        </tr> 
+                        <tr class="lst_tr">
+                            <td class="ltd"></td>
+                            <td class="rtd">
+                                <input type="hidden" name="fm-imageIds" id="imageIds" value="">
+                                <input type="hidden" name="fm-userId" value="{$param['userId']}" />
+                                <input type="hidden" name="fm-images" id="images" value="">
+                                <if condition="$auth['data']['userId'] neq ''">
+                                    <a href="javascript:;" class="btn btn_blue submit" id="update_teacher_certifi">提&nbsp;&nbsp;交</a>
+                                    <else /><a href="javascript:;" class="btn btn_blue submit" id="add_teacher_certifi">提&nbsp;&nbsp;交</a>
+                                </if>
+                        </td>
+                        </tr>
+                    </table>
+                </div>
+                <!---------------------End: 右侧内容-------------------------->
+            </div>
+        </div>
+    <include file="./Tpl/Modules/footer.html"/>
+    <input type="hidden" id="pagename" value="teacher_file" />
+    <input type="hidden" id="pagetag" value="users" />
+    <input type="hidden" id="post_params" value="<?php echo session_id(); ?>" />
+</body>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/lib/swfupload/swfupload.js"></script>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/lib/swfupload/handlers.js"></script>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/admin/base.js"></script>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/admin/page.js"></script>
+</html>

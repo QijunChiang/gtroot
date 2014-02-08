@@ -1,0 +1,199 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>课程管理-课程详细-好老师后台管理系统</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{$FILE_ROOT}Theme/admin/base.css" type="text/css" />
+        <link rel="stylesheet" href="{$FILE_ROOT}Theme/admin/theme.css" type="text/css" />
+        <link rel="stylesheet" href="{$FILE_ROOT}Theme/admin/page.css" type="text/css" />
+    </head>
+    <body>
+        <div class="struct clearfix">
+            <p class="rightbg" id="right_bg"></p>
+            <include file="./Tpl/Modules/navs.html"/>
+            <div class="lf main">
+                <!---------------------Start: 右侧顶部-------------------------->
+                <div class="header">
+                    <div class="bot_bdr"><a href="{$WEB_ROOT}courses">课程管理</a>>
+                         <if condition="$course['data']['courseId'] eq ''">
+                            <span>添加课程</span>
+                            <else /><span>{$course['data']['name']}</span>/编辑
+                        </if>
+                     </div>
+                    <div class="top_right">
+                        <span>超级管理员,</span>
+                        <a href="javascript:;" id="log_out">退出</a>
+                    </div>
+                </div>
+                <!---------------------Start: 右侧内容-------------------------->
+                <div class="article courses course_edit mt20 video_edit">
+                    <table class="lr_table formdata">
+                        <tr>
+                            <td class="ltd"><span class="red">*</span>课程名称 :</td>
+                            <td class="rtd">
+                                <input type="text" name="fm-name" id="course_name" org="{$course['data']['name']}" value="{$course['data']['name']}"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ltd ltop"><span class="red">*</span>上课时间 :</td>
+                            <td class="rtd">
+                                <ul class="class_time clearfix" id="c_date">
+                                    <li data_value="0">星期一</li>
+                                    <li data_value="1">星期二</li>
+                                    <li  data_value="2">星期三</li>
+                                    <li data_value="3">星期四</li>
+                                    <li data_value="4">星期五</li>
+                                    <li data_value="5">星期六</li>
+                                    <li data_value="6">星期日</li>
+                                </ul>
+                                <input type="hidden" id="teachTime" name="fm-teachTime" value="{$course['data']['teachTime']}"  />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ltd"><span class="red">*</span>关联者 :</td>
+                            <td class="rtd">
+                                <div class="remote_data">
+                                    <input type="text"  value="{$course['data']['user']['name']}" readonly  id="rname"/>
+                                    <input type="hidden" value="{$course['data']['user']['id']}" name="fm-userId" id="rid" />
+                                    <a href="javascript:;" id="chose_conter" class="ml10 fold">选择</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ltd"><span class="red">*</span>报名开始日期：</td>
+                            <td class="rtd">
+                                <div>
+                                    <if condition="$course['data']['signUpStartDate'] eq '0000-00-00'" >
+                                         <input type="text"  readonly="readonly" onclick="WdatePicker()" class="date" org="" value="" name="fm-signUpStartDate" id="signUpStartDate" />
+                                        <else /> <input type="text"  readonly="readonly" onclick="WdatePicker()" class="date" org="{$course['data']['signUpStartDate']}" value="{$course['data']['signUpStartDate']}" name="fm-signUpStartDate" id="signUpStartDate" />
+                                    </if>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ltd"><span class="red">*</span>报名结束日期：</td>
+                            <td class="rtd">
+                                <div>
+                                    <if condition="$course['data']['signUpEndDate'] eq '0000-00-00'" >
+                                        <input type="text" readonly="readonly" onclick="WdatePicker()" class="date" org="" value="" name="fm-signUpEndDate" id="signUpEndDate"/>
+                                        <else /><input type="text" readonly="readonly" onclick="WdatePicker()" class="date" org="{$course['data']['signUpEndDate']}" value="{$course['data']['signUpEndDate']}" name="fm-signUpEndDate" id="signUpEndDate"/>
+                                    </if>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ltd"><span class="red">*</span>开课开始日期：</td>
+                            <td class="rtd">
+                                <div>
+                                    <if condition="$course['data']['teachStartDate'] eq '0000-00-00'" >
+                                        <input type="text" readonly="readonly" onclick="WdatePicker()" class="date" org="" value="" name="fm-teachStartDate" id="teachStartDate"/>
+                                        <else /><input type="text" readonly="readonly" onclick="WdatePicker()" class="date" org="{$course['data']['teachStartDate']}" value="{$course['data']['teachStartDate']}" name="fm-teachStartDate" id="teachStartDate"/>
+                                    </if>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ltd"><span class="red">*</span>开课结束日期：</td>
+                            <td class="rtd">
+                                <div>
+                                    <if condition="$course['data']['teachEndDate'] eq '0000-00-00'" >
+                                        <input type="text" readonly="readonly" onclick="WdatePicker()" class="date" org="" value="" name="fm-teachEndDate" id="teachEndDate"/>
+                                        <else /><input type="text" readonly="readonly" onclick="WdatePicker()" class="date" org="{$course['data']['teachEndDate']}" value="{$course['data']['teachEndDate']}" name="fm-teachEndDate" id="teachEndDate"/>
+                                    </if>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ltd"><span class="red">*</span>上课开始时间：</td>
+                            <td class="rtd">
+                                <div>
+                                    <if condition="$course['data']['teachStartTime'] eq '00:00:00'" >
+                                        <input type="text" readonly="readonly" onclick="WdatePicker({dateFmt:'HH:mm'})" class="date" org="" value="" name="fm-teachStartTime" id="teachStartTime"/>
+                                        <else /><input type="text" readonly="readonly" onclick="WdatePicker({dateFmt:'HH:mm'})" class="date" org="{$course['data']['teachStartTime']}" value="{$course['data']['teachStartTime']}" name="fm-teachStartTime" id="teachStartTime"/>
+                                    </if>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ltd"><span class="red">*</span>上课结束时间：</td>
+                            <td class="rtd">
+                                <div>
+                                    <if condition="$course['data']['teachEndTime'] eq '00:00:00'" >
+                                        <input type="text" readonly="readonly" onclick="WdatePicker({dateFmt:'HH:mm'})" class="date" org="" value="" name="fm-teachEndTime" id="teachEndTime"/>
+                                        <else /><input type="text" readonly="readonly" onclick="WdatePicker({dateFmt:'HH:mm'})" class="date" org="{$course['data']['teachEndTime']}" value="{$course['data']['teachEndTime']}" name="fm-teachEndTime" id="teachEndTime"/>
+                                    </if>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ltd"><span class="red">*</span>价格 :</td>
+                            <td class="rtd">
+                                <input type="text" name="fm-price" id="price" org="{$course['data']['price']}" value="{$course['data']['price']}"/> 元/
+                                    <select name="fm-unit">
+                                        <if condition="$course['data']['unit'] eq 0">
+                                            <option value="0" selected="selected">小时</option>
+                                             <option value="1">课</option>
+                                            <else /><option value="0">小时</option>
+                                             <option value="1" selected="selected">课</option>
+                                        </if>
+                                    </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ltd"><span class="red">*</span>上课地点 :</td>
+                            <td class="rtd">
+                                <input type="text" name="fm-address" id="address" org="{$course['data']['address']}" value="{$course['data']['address']}"/>
+                                <p class="gray mt10">(提示：拖动小图标可标记位置)</p>
+                                <div id="map" style="width:600px;height:400px;border:1px solid #cdcdcd;margin-top:20px;"></div>
+                                <input type="hidden" id="latitude" value="{$course['location']['data']['x']}" name="fm-usuallyLocationX"/>
+                                <input type="hidden" id="longitude" value="{$course['location']['data']['y']}" name="fm-usuallyLocationY"/>
+                                <input type="hidden" value="{$course['data']['location']['y']},{$course['data']['location']['x']}" id="mapdata" />
+                                <input type="hidden" value="{$location.lng},{$location.lat}" id="location" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ltd ltop"><span class="red">*</span>备注 :</td>
+                            <td class="rtd">
+                                <textarea class="bake" id="bake" org="{$course['data']['remark']}" name="fm-remark">{$course['data']['remark']}</textarea>
+                            </td>
+                        </tr>
+                        <tr class="lst_tr">
+                            <td class="ltd"></td>
+                            <td class="rtd">
+                        <if condition="$course['data']['courseId'] eq ''">
+                            <a href="javascript:;" class="btn btn_blue submit" id="add_course">提&nbsp;&nbsp;交</a>
+                            <else /> 
+                            <input type="hidden" value="{$course['data']['courseId']}" name="fm-courseId" />
+                            <a href="javascript:;" class="btn btn_blue submit" id="update_course_info">提&nbsp;&nbsp;交</a>
+                        </if>
+                        </td>
+                        </tr>
+                    </table>
+                    <div class="relative" id="userselect" style="display: none;">
+                        <p class="title">关联者列表</p>
+                        <div class="search">
+                            <p>
+                                <select id="stype">
+                                    <option value="3">老师</option>
+                                    <option value="1">机构</option>
+                                </select>
+                            </p>
+                            <input type="text"id="cid" class="gray" value="请输入搜索关键词"><a href="javascript:;" class="btn btn_green" id="searchUser">搜索</a>
+                        </div>
+                        <ul class="hgstemp" id="userlist"></ul>
+                    </div>
+                </div>
+            </div>
+            <!---------------------End: 右侧内容-------------------------->
+        </div>
+    </div>
+<include file="./Tpl/Modules/footer.html"/>
+<input type="hidden" id="pagename" value="course_edit" />
+<input type="hidden" id="pagetag" value="courses" />
+</body>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/lib/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="{$FILE_ROOT}Theme/lib/datepicker/WdatePicker.js"></script>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/admin/base.js"></script>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/admin/page.js"></script>
+</html>

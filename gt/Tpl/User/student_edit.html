@@ -1,0 +1,244 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>用户管理-学生编辑-好老师后台管理系统</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{$FILE_ROOT}Theme/admin/base.css" type="text/css" />
+        <link rel="stylesheet" href="{$FILE_ROOT}Theme/admin/theme.css" type="text/css" />
+        <link rel="stylesheet" href="{$FILE_ROOT}Theme/admin/page.css" type="text/css" />
+        <script type="text/javascript" src="{$FILE_ROOT}Theme/lib/jquery-1.8.3.min.js"></script>
+        <link href="{$FILE_ROOT}Theme/lib/swfupload/css/default.css" rel="stylesheet" type="text/css" />
+        <link href="{$FILE_ROOT}Theme/lib/imgCrop/imgareaselect.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class="struct clearfix">
+            <p class="rightbg" id="right_bg"></p>
+            <include file="./Tpl/Modules/navs.html"/>
+            <div class="lf main">
+                <!---------------------Start: 右侧顶部-------------------------->
+                <div class="header">
+                    <div class="bot_bdr"><a href="{$WEB_ROOT}students">用户管理</a><span>></span><a href="{$WEB_ROOT}students">学生管理</a>><span>{$stuDetail['data']['name']}/编辑</span></div>
+                    <div class="top_right">
+                        <span>超级管理员,</span>
+                        <a href="javascript:;" id="log_out">退出</a>
+                    </div>
+                </div>
+                <!---------------------Start: 右侧内容-------------------------->
+                <div class="article users stu_edit s_detail formdata comm">
+                    <p class="atitle">基本信息</p>
+                    <div class="info_box clearfix">
+                        <div class="box_l box_l_all">
+                            <table class="lr_table">
+                                <tr>
+                                    <td class="ltd"><span><em class="red">*</em>姓名：</span></td>
+                                    <td class="rtd"><div><input type="text" id="sname" name="fm-name" value="{$stuDetail['data']['name']}" org="{$stuDetail['data']['name']}" /></div></td>
+                                    <td class="ltd "><span><em class="red">*</em>电话号码：</span></td>
+                                    <td class="rtd"><div>{$stuDetail['data']['phone']}</div></td>
+                                </tr>
+                                <tr>
+                                    <td class="ltd"><span><em class="red">*</em>性别：</span></td>
+                                    <td class="rtd">
+                                        <div>
+                                            <if condition="$stuDetail['data']['sex'] eq 1">
+                                                <label for="stu">
+                                                    <input type="radio" value="1" id="stu" name="fm-sex" checked/> 男
+                                                </label>
+                                                <label for="teacher" class="ml30">
+                                                    <input type="radio" value="0" id="teacher" name="fm-sex" /> 女
+                                                </label>
+                                                <else />
+                                                 <label for="stu">
+                                                    <input type="radio" value="1" id="stu" name="fm-sex"/> 男
+                                                </label>
+                                                <label for="teacher" class="ml30">
+                                                    <input type="radio" value="0" id="teacher" name="fm-sex" checked /> 女
+                                                </label>
+                                            </if>
+                                        </div>
+                                    </td>
+                                    <td class="ltd"><span><em class="red">*</em>出生年月：</span></td>
+                                    <td class="rtd"><div>
+                                            <if condition="$stuDetail['data']['birthday'] eq '0000-00-00'">
+                                                <input type="text" class="date" id="s_age" readonly="readonly" onclick="WdatePicker()" name="fm-birthday" value="" org="" />
+                                                <else /><input type="text" class="date" id="s_age" readonly="readonly" onclick="WdatePicker()" name="fm-birthday" value="{$stuDetail['data']['birthday']}" org="{$stuDetail['data']['birthday']}" />
+                                            </if>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="ltd "><span><em class="red">*</em>所在学校：</span></td>
+                                    <td class="rtd"><div><input type="text"  id="s_college" name="fm-college" value="{$stuDetail['data']['college']}" org="{$stuDetail['data']['college']}" /></div></td>
+                                </tr>
+                                <tr>
+                                    <td class="ltd  ltop"><span>头像：</span></td>
+                                    <td class="rtd sel">
+                                        <div class="filebg thumbnail_120 thumbnails">
+                                            <img class="pic mb10"orig="{$API_FILE_ROOT}{$stuDetail['data']['photo']}" src="{$API_FILE_ROOT}{$stuDetail['data']['photo']}"/>
+                                        </div>
+                                        <if condition="$stuDetail['data']['photo'] neq ''">
+                                            <input type="hidden" name="fm-photo" id="u_photo" value="unChange" ref="unChange" />
+                                            <else /><input type="hidden" name="fm-photo" id="u_photo" value="" ref="" />
+                                        </if>
+                                        <span id="spanButtonPlaceholder"></span>
+                                        <div id="divFileProgressContainer"></div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="aside_r">
+                        </div>
+                    </div>
+                    <p class="atitle">自我介绍</p>
+                    <div class="mt20 box_l_all">
+                        <table class="lr_table">
+                             <tr>
+                                <td class="ltd ltop ">封面图片：</span></td>
+                                <td class="rtd">
+                                    <div class="pos">
+                                        <div class="sel">
+                                            <div class="cover thumbnails">
+                                                <img id="my_avatar" class="mcover" orig="{$API_FILE_ROOT}{$stuDetail['data']['introduction']['video']['image']}" src="{$API_FILE_ROOT}{$stuDetail['data']['introduction']['video']['image']}"/>
+                                            </div>
+                                            <if condition="$stuDetail['data']['introduction']['video']['image'] neq ''">
+                                                <input type="hidden" name="fm-videoImage" id="v_cover" value="unChange"  ref="unChange"/>
+                                                <else /><input type="hidden" name="fm-videoImage" id="v_cover" value="" ref="" />
+                                            </if>
+                                            <span id="spanButtonPlaceholder6"></span>
+                                            <div id="divFileProgressContainer6"></div>
+                                        </div>
+                                        <div class="preview">
+                                            <div class="avatar_b_box">
+                                                <div id="b_avatar_div" class="avatar_b_pic">
+                                                    <img class="b_avatar" orig="{$API_FILE_ROOT}{$stuDetail['data']['introduction']['video']['image']}" src="{$API_FILE_ROOT}{$stuDetail['data']['introduction']['video']['image']}">
+                                                </div>
+                                                <p class="mt20">预览图片： 300 *215 px</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        <input type="hidden" value="0" name="fm-x" id="x">
+                                        <input type="hidden" value="0" name="fm-y" id="y">
+                                        <input type="hidden" value="" name="fm-width" id="w">
+                                        <input type="hidden" value="" name="fm-height" id="h">
+                                        <input type="hidden" value="" name="fm-percent" id="percent" />
+                                    </p>
+                                    <div class="select_area" style="position: absolute;"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ltd ltop "><span>介绍视频：</span></td>
+                                <td class="rtd">
+                                    <div class="vp">
+                                        <input type="hidden" value="{$API_FILE_ROOT}{$stuDetail['data']['introduction']['video']['url']}" id="video_url" />
+                                        <input type="hidden" value="{$API_FILE_ROOT}{$stuDetail['data']['introduction']['video']['image']}" id="video_image" />
+                                        <div id="video"><div id="a1"></div></div>
+                                         <div class="sel mt20">
+                                            <div class="filebg thumbnails video_type">
+                                                <img class="mid_shot mb10" src=""/>
+                                            </div>
+                                             <if condition="$stuDetail['data']['introduction']['video']['url'] neq ''">
+                                                  <input type="hidden" name="fm-video" id="video_path" value="unChange" ref="unChange" />
+                                                  <else /> <input type="hidden" name="fm-video" id="video_path" value="" ref="" />
+                                             </if>
+                                            <span id="spanButtonPlaceholder7"></span>
+                                            <div id="divFileProgressContainer7"></div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ltd ltop "><span>自我介绍：</span></td>
+                                <td class="rtd">
+                                    <div><textarea class="intro" name="fm-description">{$stuDetail['data']['introduction']['description']}</textarea></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ltd ltop "><span>介绍图片：</span></td>
+                                <td class="rtd">
+                                    <div>
+                                        <ul class="screen_shot lf">
+                                            <foreach name="stuDetail.data.introduction.image" item="self_img">
+                                                <li>
+                                                    <div class="sel">
+                                                        <div class="filebg thumbnails">
+                                                            <img class="mid_shot mb10" src="{$API_FILE_ROOT}{$self_img.image}"/>
+                                                        </div>
+                                                        <input type="hidden" class="ifile" value="unChange" ref=""/>
+                                                        <input type="hidden" class="img_id" value="{$self_img.id}"  ref=""/>
+                                                        <span id="spanButtonPlaceholder{$key+1}"></span>
+                                                        <div id="divFileProgressContainer{$key+1}">
+                                                            <div class="progressWrapper">
+                                                                <div class="progressContainer blue">
+                                                                    <a class="progressCancel" href="javascript:;"></a>
+                                                                    <div class="progressName">介绍图片{$key+1}</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </foreach>
+                                            <?php 
+                                                $imageCount = count($stuDetail['data']['introduction']['image']);
+                                            ?>
+                                            <?php for($i = $imageCount;$i < 5;$i++){?>
+                                                <li>
+                                                    <div class="sel">
+                                                        <div class="filebg thumbnails">
+                                                            <img class="mid_shot mb10" src=""/>
+                                                        </div>
+                                                        <input type="hidden" class="ifile" value=""  ref=""/>
+                                                        <input type="hidden" class="img_id" value="" ref="" />
+                                                        <span id="spanButtonPlaceholder<?php echo $i+1;?>"></span>
+                                                        <div id="divFileProgressContainer<?php echo $i+1;?>"></div>
+                                                    </div>
+                                                </li>
+                                            <?php }?>
+                                        </ul> 
+                                    </div>
+                                </td>
+                            </tr>
+                            </tr>
+                        </table>
+                    </div>
+                    <p class="atitle"></p>
+                    <div class="info_box clearfix">
+                        <input type="hidden" name="fm-imageIds" id="imageIds" value="" />
+                        <input type="hidden" name="fm-images" id="images" value="" />
+                        <input type="hidden"  name="fm-stuId" value="{$stuDetail['data']['stuId']}"  />
+                        <a href="javascript:;" class="submit btn btn_blue" id="update_stuInfo">保 存</a>
+                    </div>
+                </div>
+                <!---------------------End: 右侧内容-------------------------->
+            </div>
+        </div>
+    <include file="./Tpl/Modules/footer.html"/>
+    <input type="hidden" id="pagename" value="student_edit" />
+    <input type="hidden" id="pagetag" value="users" />
+    <input type="hidden" id="post_params" value="<?php echo session_id(); ?>" />
+</body>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/lib/swfupload/swfupload.js"></script>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/lib/imgCrop/jquery.imgareaselect.min.js"></script>
+    <script type="text/javascript" src="{$FILE_ROOT}Theme/lib/datepicker/WdatePicker.js"></script>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/lib/swfupload/handlers.js"></script>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/admin/base.js"></script>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/admin/page.js"></script>
+<script type="text/javascript" src="{$FILE_ROOT}/Theme/lib/ckplayer/ckplayer.js" charset="utf-8"></script>
+<script type="text/javascript">
+    var surl=$("#video_url").val();
+    var scover=$("#video_image").val();
+    var flashvars={
+        f:surl,
+        s:'0',
+        c:'0',
+        i:scover,
+        e:'2'
+    };
+    var params={bgcolor:'#000',allowFullScreen:true,allowScriptAccess:'always'};
+    var attributes={id:'ckplayer_a1',name:'ckplayer_a1'};
+    swfobject.embedSWF('{$FILE_ROOT}/Theme/lib/ckplayer/ckplayer.swf', 'a1', '600', '400', '10.0.0','{$FILE_ROOT}/Theme/lib/ckplayer/expressInstall.swf', flashvars, params, attributes); 
+    var video={surl:'video/mp4'};
+    var support=['iPad','iPhone','ios','android+false','msie10+false'];
+    CKobject.embedHTML5('video','ckplayer_a1',600,400,video,flashvars,support);
+</script>
+</html>

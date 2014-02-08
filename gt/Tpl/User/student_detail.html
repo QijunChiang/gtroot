@@ -1,0 +1,121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>用户管理-学生编辑-好老师后台管理系统</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{$FILE_ROOT}Theme/admin/base.css" type="text/css" />
+        <link rel="stylesheet" href="{$FILE_ROOT}Theme/admin/theme.css" type="text/css" />
+        <link rel="stylesheet" href="{$FILE_ROOT}Theme/admin/page.css" type="text/css" />
+        <script type="text/javascript" src="{$FILE_ROOT}Theme/lib/jquery-1.8.3.min.js"></script>
+    </head>
+    <body>
+        <div class="struct clearfix">
+            <p class="rightbg" id="right_bg"></p>
+             <include file="./Tpl/Modules/navs.html"/>
+            <div class="lf main">
+                <!---------------------Start: 右侧顶部-------------------------->
+                <div class="header">
+                    <div class="bot_bdr"><a href="{$WEB_ROOT}students">用户管理</a><span>></span><a href="{$WEB_ROOT}students">学生管理</a>><span>{$stuDetail['data']['name']}/详细</span></div>
+                    <div class="top_right">
+                        <span>超级管理员,</span>
+                        <a href="javascript:;" id="log_out">退出</a>
+                    </div>
+                </div>
+                <!---------------------Start: 右侧内容-------------------------->
+                <div class="article  s_detail">
+                    <p class="atitle">基本信息</p>
+                    <div class="info_box clearfix">
+                        <div class="box_l">
+                            <table class="lr_table">
+                                <tr>
+                                    <td class="ltd"><span>姓名：</span></td>
+                                    <td class="rtd">{$stuDetail['data']['name']}</td>
+                                    <td class="ltd"><span>电话号码：</span></td>
+                                    <td class="rtd">{$stuDetail['data']['phone']}</td>
+                                </tr>
+                                <tr>
+                                    <td class="ltd"><span>性别：</span></td>
+                                    <td class="rtd">
+                                        <if condition="$stuDetail['data']['sex'] eq 0">女
+                                            <else />男
+                                        </if>
+                                    </td>
+                                    <td class="ltd"><span>年龄：</span></td>
+                                    <td class="rtd">
+                                        <if condition="$stuDetail['data']['age'] eq 0 || $stuDetail['data']['age'] lt 0">0 岁
+                                            <else />{$stuDetail['data']['age']}岁
+                                        </if>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="ltd"><span>所在学校：</span></td>
+                                    <td class="rtd" colspan="3">{$stuDetail['data']['college']}</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="aside_r">
+                             <img  src="{$API_FILE_ROOT}{$stuDetail['data']['photo']}" class="img_agency">
+<!--                            <p class="check_links">
+                                <a href="{$WEB_ROOT}" class="btn btn_green">查看留言</a>
+                                <a href="{$WEB_ROOT}" class="btn btn_green">报名课程</a>
+                            </p>-->
+                        </div>
+                    </div>
+                    <p class="atitle">自我介绍</p>
+                    <div class="info_box clearfix">
+                        <div class="box_l video_cont">
+                            <if condition="$stuDetail['data']['introduction']['video']['url'] neq ''">
+                            <input type="hidden" value="{$API_FILE_ROOT}{$stuDetail['data']['introduction']['video']['url']}" id="video_url" />
+                            <input type="hidden" value="{$API_FILE_ROOT}{$stuDetail['data']['introduction']['video']['image']}" id="video_image" />
+                            <div id="video"><div id="a1"></div></div>
+                            <script type="text/javascript" src="{$FILE_ROOT}/Theme/lib/ckplayer/ckplayer.js" charset="utf-8"></script>
+                            <script type="text/javascript">
+                                var surl=$("#video_url").val();
+                                var scover=$("#video_image").val();
+;                                    var flashvars={
+                                        f:surl,
+                                        s:'0',
+                                        c:'0',
+                                        i:scover,
+                                        e:'2'
+                                    };
+                                var params={bgcolor:'#000',allowFullScreen:true,allowScriptAccess:'always'};
+                                var attributes={id:'ckplayer_a1',name:'ckplayer_a1'};
+                                swfobject.embedSWF('{$FILE_ROOT}/Theme/lib/ckplayer/ckplayer.swf', 'a1', '600', '400', '10.0.0','{$FILE_ROOT}/Theme/lib/ckplayer/expressInstall.swf', flashvars, params, attributes); 
+//                                 var temp='var mm={"'+surl+'":"video/mp4"};';
+//                                eval(temp);
+//                                var support=['iPad','iPhone','ios','android+false','msie10+false'];
+//                                CKobject.embedHTML5('video','ckplayer_a1',600,400,mm,flashvars,support);
+                            </script>
+                            <else />暂无视频
+                            </if>
+                        </div>
+                        <if condition="$stuDetail['data']['introduction']['description'] neq '' && $stuDetail['data']['introduction']['video']['url'] eq ''">
+                            <div class="aside_r desc" style="width:100%;margin-left:0;">
+                               {$stuDetail['data']['introduction']['description']}
+                            </div>
+                            <elseif  condition="$stuDetail['data']['introduction']['description'] neq '' && $stuDetail['data']['introduction']['video']['url'] neq ''"/>
+                             <div class="aside_r desc">
+                               {$stuDetail['data']['introduction']['description']}
+                             </div>
+                        </if>
+                    </div>
+                    <ul class="screen_shot clearfix">
+                        <foreach name="stuDetail.data.introduction.image" item="sdm">
+                            <li>
+                                <img  src="{$API_FILE_ROOT}{$sdm.image}" class="mid_shot" />
+                            </li>
+                        </foreach>
+                    </ul>
+                </div>
+                <!---------------------End: 右侧内容-------------------------->
+            </div>
+        </div>
+      <include file="./Tpl/Modules/footer.html"/>
+    <input type="hidden" id="pagename" value="student_detail" />
+    <input type="hidden" id="pagetag" value="users" />
+</body>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/admin/base.js"></script>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/admin/page.js"></script>
+</html>

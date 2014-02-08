@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>分类管理-热门分类-好老师后台管理系统</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{$FILE_ROOT}Theme/admin/base.css" type="text/css" />
+        <link rel="stylesheet" href="{$FILE_ROOT}Theme/admin/theme.css" type="text/css" />
+        <link rel="stylesheet" href="{$FILE_ROOT}Theme/admin/page.css" type="text/css" />
+        <link rel="stylesheet" href="{$FILE_ROOT}/Theme/lib/pagination.css" type="text/css" />
+    </head>
+    <body>
+        <div class="struct clearfix">
+            <p class="rightbg" id="right_bg"></p>
+            <include file="./Tpl/Modules/navs.html"/>
+            <div class="lf main">
+                <!---------------------Start: 右侧顶部-------------------------->
+                <div class="header">
+                    <div class="options">
+                        <a href="{$WEB_ROOT}categorys">父分类管理</a>
+                        <a class="cur">热门分类管理</a>
+                    </div>
+                    <div class="top_right">
+                        <span>超级管理员,</span>
+                        <a href="javascript:;" id="log_out">退出</a>
+                    </div>
+                </div>
+                <!---------------------Start: 右侧内容-------------------------->
+                <div class="article categorys comm">
+                    <table class="mul_table hgstemp" id="hot_clist">
+                        <tr>
+                            <th class="th3">分类名称</th>
+                            <th class="th2">图标</th>
+                            <th class="th2">排序</th>
+                            <th class="th6">操作</th>
+                        </tr>
+                    </table>
+                    <div  class="clearfix">
+                        <div class="pages pagination" id="pagination"></div>
+                    </div>
+                </div>
+                <!---------------------End: 右侧内容-------------------------->
+            </div>
+        </div>
+    <include file="./Tpl/Modules/footer.html"/>
+    <input type="hidden" id="pagename" value="hcategorys" />
+    <input type="hidden" id="pagetag" value="categorys" />
+</body>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/lib/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/lib/jquery.pagination.js"></script>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/admin/base.js"></script>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/admin/page.js"></script>
+</html>

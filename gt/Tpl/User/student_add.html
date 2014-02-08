@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>学生管理-添加学生-好老师后台管理系统</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{$FILE_ROOT}Theme/admin/base.css" type="text/css" />
+        <link rel="stylesheet" href="{$FILE_ROOT}Theme/admin/theme.css" type="text/css" />
+        <link rel="stylesheet" href="{$FILE_ROOT}Theme/admin/page.css" type="text/css" />
+    </head>
+    <body>
+        <div class="struct clearfix">
+            <p class="rightbg" id="right_bg"></p>
+             <include file="./Tpl/Modules/navs.html"/>
+            <div class="lf main">
+                <!---------------------Start: 右侧顶部-------------------------->
+                <div class="header">
+                    <div class="bot_bdr"><a href="{$WEB_ROOT}students">用户管理</a><span>></span><a href="{$WEB_ROOT}students">学生管理</a>><span>添加学生</span></div>
+                    <div class="top_right">
+                        <span>超级管理员,</span>
+                        <a href="javascript:;" id="log_out">退出</a>
+                    </div>
+                </div>
+                <!---------------------Start: 右侧内容-------------------------->
+                <div class="article users mt20 add_stu" id="add_stu_page">
+                    <table class="lr_table formdata">
+                        <tr>
+                            <td class="ltd"><span class="red">*</span>姓名 :</td>
+                            <td class="rtd">
+                                <input type="text" name="fm-name" id="tname" org="" value=""/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ltd"><span class="red">*</span>性别 :</td>
+                            <td class="rtd">
+                                <label><input type="radio" name="fm-sex" value="1" class="mr5" checked="checked" />男</label>
+                                <label class="ml30"><input type="radio" name="fm-sex" value="0" class="mr5"/>女</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ltd"><span class="red">*</span>出生日期 :</td>
+                            <td class="rtd">
+                                <input type="text" name="fm-birthday" readonly="readonly" id="birth" org="" value=""onclick="WdatePicker()" class="date"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ltd"><span class="red">*</span>手机号 :</td>
+                            <td class="rtd">
+                                <input type="text" name="fm-phone" id="phone" org="" value=""/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ltd">所在学校 :</td>
+                            <td class="rtd">
+                                <input type="text" name="fm-college" id="school" org="" value=""/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ltd"><span class="red">*</span>密码 :</td>
+                            <td class="rtd">
+                                <input type="password" name="fm-password" id="pwd" org="" value=""/>
+                            </td>
+                        </tr>
+                        <tr class="lst_tr">
+                            <td class="ltd"></td>
+                            <td class="rtd">
+                                <a href="javascript:;" class="btn btn_blue submit" id="add_user_student">提&nbsp;&nbsp;交</a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!---------------------End: 右侧内容-------------------------->
+            </div>
+        </div>
+     <include file="./Tpl/Modules/footer.html"/>
+    <input type="hidden" id="pagename" value="add_student" />
+    <input type="hidden" id="pagetag" value="users" />
+</body>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/lib/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="{$FILE_ROOT}Theme/lib/datepicker/WdatePicker.js"></script>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/admin/base.js"></script>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/admin/page.js"></script>
+</html>

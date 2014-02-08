@@ -1,0 +1,195 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>视频管理-视频详细-好老师后台管理系统</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{$FILE_ROOT}Theme/admin/base.css" type="text/css" />
+        <link rel="stylesheet" href="{$FILE_ROOT}Theme/admin/theme.css" type="text/css" />
+        <link rel="stylesheet" href="{$FILE_ROOT}Theme/admin/page.css" type="text/css" />
+        <link href="{$FILE_ROOT}Theme/lib/swfupload/css/default.css" rel="stylesheet" type="text/css" />
+        <link href="{$FILE_ROOT}Theme/lib/imgCrop/imgareaselect.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class="struct clearfix">
+            <p class="rightbg" id="right_bg"></p>
+            <include file="./Tpl/Modules/navs.html"/>
+            <div class="lf main">
+                <!---------------------Start: 右侧顶部-------------------------->
+                <div class="header">
+                    <div class="bot_bdr"><a href="{$WEB_ROOT}videos">课程视频管理</a>>
+                        <if condition="$video['data']['videoId'] eq ''">
+                            <span>添加视频</span>
+                            <else /><span>{$video['data']['name']}</span>/编辑
+                        </if>
+                    </div>
+                    <div class="top_right">
+                        <span>超级管理员,</span>
+                        <a href="javascript:;" id="log_out">退出</a>
+                    </div>
+                </div>
+                <!---------------------Start: 右侧内容-------------------------->
+                <div class="article videos video_edit mt20 stu_edit comm ">
+                    <table class="lr_table formdata">
+                        <tr>
+                            <td class="ltd"><span class="red">*</span>视频名称 :</td>
+                            <td class="rtd">
+                                <input type="text" name="fm-name" id="video_name" org="{$video['data']['name']}" value="{$video['data']['name']}"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ltd ltop"><span class="red">*</span>分类 :</td>
+                            <td class="rtd">
+                                    <if condition="$video['data']['category'] neq ''">
+                                        <div class="operation">
+                                       <else /><div class="operation" style="display: none;">
+                                    </if>
+                                    <p class="mb10">已选择：</p>
+                                    <if condition="$video['data']['category']['name'] neq ''">
+                                        <div id="good_at" class="klist">
+                                            <span data_id="{$video['data']['category']['id']}"><em class="cate">{$video['data']['category']['name']}</em><a class="remove" href="javascript:;" title="删除">X</a></span>
+                                        </div>
+                                        <else /> <div id="good_at" class="klist"></div>
+                                    </if>
+                                </div>
+                                <a href="javascript:;" class="chose" id="chose_cates">选择</a>
+                                <div class="agency_cates mt10 mb10" style="display: none;">
+                                    <foreach name="goodats.data" item="gd">
+                                         <a href="javascript:;" rel="{$gd.id}">{$gd.name}</a>
+                                    </foreach>
+                                </div>
+                                <div class="sub_cates" id="scates"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ltd"><span class="red">*</span>关联者 :</td>
+                            <td class="rtd">
+                                <div class="remote_data">
+                                    <input type="text"  value="{$video['data']['user']['name']}" readonly  id="rname"/>
+                                    <input type="hidden" value="{$video['data']['user']['id']}" name="fm-userId" id="rid" />
+                                    <a href="javascript:;" id="chose_conter" class="ml10 fold">选择</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ltd ltop "><span class="red">*</span>封面图片：</td>
+                            <td class="rtd">
+                                <div class="pos">
+                                    <div class="sel">
+                                        <div class="cover thumbnails">
+                                            <img id="my_avatar" class="mcover" orig="{$API_FILE_ROOT}{$video['data']['videoImage']}" src="{$API_FILE_ROOT}{$video['data']['videoImage']}"/>
+                                        </div>
+                                        <if condition="$video['data']['videoImage'] neq ''">
+                                            <input type="hidden" name="fm-videoImage" id="v_cover" value="unChange" ref="unChange" />
+                                            <else /> <input type="hidden" name="fm-videoImage" id="v_cover" value="" ref=""/>
+                                        </if>
+                                        <span id="spanButtonPlaceholder6"></span>
+                                        <div id="divFileProgressContainer6"></div>
+                                    </div>
+                                        <div class="preview">
+                                            <div class="avatar_b_box">
+                                                <div id="b_avatar_div" class="avatar_b_pic">
+                                                    <img class="b_avatar" orig="{$API_FILE_ROOT}{$video['data']['videoImage']}" src="{$API_FILE_ROOT}{$video['data']['videoImage']}">
+                                                </div>
+                                                <p class="mt20">预览图片： 300 *215 px</p>
+                                            </div>
+                                        </div>
+                                </div>
+                                <p>
+                                    <input type="hidden" value="0" name="fm-x" id="x">
+                                    <input type="hidden" value="0" name="fm-y" id="y">
+                                    <input type="hidden" value="" name="fm-width" id="w">
+                                    <input type="hidden" value="" name="fm-height" id="h">
+                                    <input type="hidden" value="" name="fm-percent" id="percent" />
+                                </p>
+                                <div class="select_area" style="position: absolute;"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ltd ltop "><span class="red">*</span>介绍视频：</td>
+                            <td class="rtd">
+                                <div class="vp">
+                                    <input type="hidden" value="{$API_FILE_ROOT}{$video['data']['video']}" id="video_url" />
+                                    <input type="hidden" value="{$API_FILE_ROOT}{$video['data']['videoImage']}" id="video_image" />
+                                    <div id="video"><div id="a1"></div></div>
+                                    <div class="sel mt20">
+                                        <div class="filebg thumbnails video_type">
+                                            <img class="mid_shot mb10" src=""/>
+                                        </div>
+                                        <if condition="$video['data']['video'] neq ''">
+                                            <input type="hidden" name="fm-video" id="video_path" value="unChange" ref="unChange"  />
+                                            <else /> <input type="hidden" name="fm-video" id="video_path" value=""  ref="" />
+                                        </if>
+                                        <span id="spanButtonPlaceholder7"></span>
+                                        <div id="divFileProgressContainer7"></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr> 
+                            <td class="ltd ltop "><span class="red">*</span>视频时长：</td>
+                            <td class="rtd">
+                                <input type="text" id="vtime" name="fm-allTime" org="{$video['data']['allTime']}"  value="{$video['data']['allTime']}" /> (格式如 05：00、02：33)
+                            </td>
+                        </tr>
+                        <tr class="lst_tr">
+                            <td class="ltd"></td>
+                            <td class="rtd">
+                                <input type="hidden" id="ids" name="fm-categoryId" />
+                                <if condition="$video['data']['videoId'] eq ''">
+                                    <a href="javascript:;" class="btn btn_blue submit" id="add_courese_video">提&nbsp;&nbsp;交</a>
+                                    <else /> 
+                                   <input type="hidden" value="{$video['data']['videoId']}" name="fm-videoId" />
+                                    <a href="javascript:;" class="btn btn_blue submit" id="update_video_info">提&nbsp;&nbsp;交</a>
+                                </if>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="relative" id="userselect" style="display: none;">
+                        <p class="title">关联者列表</p>
+                        <div class="search">
+                            <p>
+                                <select id="stype">
+                                    <option value="3">老师</option>
+                                    <option value="1">机构</option>
+                                </select>
+                            </p>
+                            <input type="text"id="cid" class="gray" value="请输入搜索关键词"><a href="javascript:;" class="btn btn_green" id="searchUser">搜索</a>
+                        </div>
+                        <ul class="hgstemp" id="userlist"></ul>
+                     </div>
+                </div>
+                <!---------------------End: 右侧内容-------------------------->
+            </div>
+        </div>
+    <include file="./Tpl/Modules/footer.html"/>
+    <input type="hidden" id="pagename" value="video_edit" />
+    <input type="hidden" id="pagetag" value="videos" />
+    <input type="hidden" id="post_params" value="<?php echo session_id(); ?>" />
+</body>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/lib/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/lib/imgCrop/jquery.imgareaselect.min.js"></script>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/lib/swfupload/swfupload.js"></script>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/lib/swfupload/handlers.js"></script>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/admin/base.js"></script>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/admin/page.js"></script> 
+<script type="text/javascript" src="{$FILE_ROOT}/Theme/lib/ckplayer/ckplayer.js" charset="utf-8"></script>
+<script type="text/javascript">
+    var surl=$("#video_url").val();
+    var scover=$("#video_image").val();
+    var flashvars={
+        f:surl,
+        s:'0',
+        c:'0',
+        i:scover,
+        e:'2'
+    };
+    var params={bgcolor:'#000',allowFullScreen:true,allowScriptAccess:'always'};
+    var attributes={id:'ckplayer_a1',name:'ckplayer_a1'};
+    swfobject.embedSWF('{$FILE_ROOT}/Theme/lib/ckplayer/ckplayer.swf', 'a1', '600', '400', '10.0.0','{$FILE_ROOT}/Theme/lib/ckplayer/expressInstall.swf', flashvars, params, attributes); 
+//     var temp='var video={"'+surl+'":"video/mp4"};';
+//     eval(temp);
+//    var support=['iPad','iPhone','ios','android+false','msie10+false'];
+//    CKobject.embedHTML5('video','ckplayer_a1',600,400,video,flashvars,support);
+</script>
+</html>

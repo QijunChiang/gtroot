@@ -1,0 +1,851 @@
+/* 
+    Document   : page
+    Created on : 2013-4-22, 11:27:54
+    Author     : candice
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/*==============================================
+登陆
+==============================================*/
+div.mlogin{
+    width: 100%;
+    position: static;
+}
+div.mlogin .loginbg{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+div.mlogin .loginbg div{
+    width: 100%;
+    height: 110px;
+}
+div.mlogin .main{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    height: 378px;
+    width: 1018px;
+    margin-top: -189px;
+    overflow: visible;
+    margin-left: -509px;
+    background: url('../images/public/login.png') no-repeat center 0;
+    min-height: 378px;
+}
+div.mlogin .main .article{
+    padding-left: 490px;
+    padding-top: 70px;
+}
+div.mlogin .main .title{
+    padding-bottom: 23px;
+    font-size: 17px;
+    padding-top: 20px;
+}
+div.mlogin .main .item{
+    margin-bottom: 20px;
+    position: relative;
+}
+div.mlogin .btn_blue{
+    font-size: 16px;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+}
+div.mlogin .main .item .icon{
+    display: block;
+    width: 17px;
+    height: 16px;
+    background: url('../images/public/login_icon.png') no-repeat 0 0;
+    position: absolute;
+    top: 12px;
+    left: 7px;
+}
+div.mlogin .main .item .icon2{
+    background-position: 0 -18px; 
+}
+div.mlogin .main .item input{
+    width: 259px;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 15px;
+    padding-left: 35px;
+}
+div.mlogin p.copyright{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #9f9f9f;
+}   
+/*添加按钮*/
+div.article.comm a.btn{
+    margin:20px 0 0 20px;
+    width:90px;
+}
+div.article{
+    width:1030px;
+}
+/*===============================详细公用样式==============================================*/
+
+div.s_detail{
+    margin:20px 20px 0 20px;
+}
+div.s_detail div.info_box{
+    padding:30px 0 30px 50px;
+}
+div.s_detail div.info_box .box_l{
+    float:left;
+    width:680px;
+    overflow:hidden;
+}
+div.s_detail div.info_box .video_cont{
+    width:600px;
+}
+div.s_detail div.info_box div.aside_r{
+    margin-left:700px;
+    width:360px;
+    line-height: 24px;
+    font-size:13px;
+}
+div.s_detail div.info_box div.desc{
+    text-indent: 2em;
+    margin-left: 620px;
+}
+div.s_detail div.info_box div.aside_r img.img_agency{
+    width:120px;
+    height:120px;
+    float:left;
+}
+div.s_detail div.info_box div.aside_r p.check_links{
+    padding-top:10px;
+    *padding-top:0;
+}
+div.s_detail div.info_box div.aside_r a.btn{
+    display: block;
+    margin:0 0 15px 140px;
+    width:120px;
+}
+div.s_detail div.info_box .box_l p{
+    margin-bottom: 10px;
+    line-height:25px;
+}
+div.s_detail  p.atitle{
+    height:25px;
+    line-height:25px;
+    border-bottom:1px solid #dadada;
+    padding-bottom:5px;
+    font-weight: bold;
+}
+div.s_detail ul.screen_shot{
+    margin-left:50px;
+}
+div.s_detail ul.screen_shot li{
+    float:left;
+    margin:0 15px 20px 0;
+}
+div.s_detail ul.screen_shot li img.mid_shot{
+    width:170px;
+    height:150px;
+}
+/*==================================分类列表===================================*/
+div.categorys table.mul_table th.th1{
+    width:80px;
+}
+div.categorys table.mul_table th.th2{
+    width:100px;
+}
+div.categorys table.mul_table th.th3{
+    width:120px;
+}
+div.categorys table.mul_table th.th4{
+    width:100px;
+}
+div.categorys table.mul_table th.th5{
+    width:100px;
+}
+div.categorys table.mul_table th.th6{
+    width:200px;
+}
+div.categorys .icon_cate img{
+    width:120px;
+    height:120px;
+}
+div.category_edit{
+    margin-top:20px;
+}
+/*==================================用户管理===================================*/
+div.users table.mul_table th.th1{
+    width:60px;
+}
+div.users table.mul_table th.th2{
+    width:120px;
+}
+div.users table.mul_table th.th3{
+    width:80px;
+}
+div.users table.mul_table th.th4{
+    width:80px;
+}
+div.users table.mul_table th.th5{
+    width:150px;
+    *width:200px;
+}
+div.users table.mul_table th.th6{
+    width:320px;
+}
+/*==================================机构管理===================================*/
+div.agency table.mul_table th.th2{
+    width: 250px;
+}
+div.agency table.mul_table th.th4{
+    width: 120px;
+}
+div.agency table.mul_table th.th6{
+    width: 240px;
+}
+div.agency_detail div.score{
+    margin-bottom:10px;
+}
+div.agency_detail div.score span.lf{
+    display: inline-block;
+    margin-top:10px;
+}
+div.agency_detail div.score div.star{
+    float:left;
+}
+/*批量导入机构资料*/
+
+div.bulkimport{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/admin/gray.png") repeat 0 0;
+    z-index: 10000;
+    _background: none;
+    _position: absolute;
+}
+div.bulkimport div.video_player,
+div.bulkimport div.bg{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    padding: 30px 30px 15px 15px;
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .5);
+    box-shadow: 0 0 8px rgba(0, 0, 0, .5);
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    _position: absolute;
+    _margin-top: 80px;
+    border: 8px solid #ececec;
+}
+div.bulkimport div.bg{
+    margin-top: -110px;
+    margin-left: -208px;
+    width: 385px;
+    height: 220px;
+}
+div.bulkimport div.video_player{
+    width:600px;
+    height:400px;
+    margin:-200px 0 0 -300px;
+    padding:0;
+    border:none;
+}
+div.bulkimport div.bg table.lr_table{
+    margin-top: 25px;
+}
+div.bulkimport div.bg table.lr_table td{
+    padding-top: 5px;
+    text-align: left;
+}
+div.bulkimport div.bg table.lr_table td.ltd{
+    padding-left: 40px;
+    width: 80px;
+}
+div.bulkimport div.bg table.lr_table td.ltd span{
+    display: inline-block;
+    width:80px;
+}
+div.bulkimport div.bg table.lr_table td.rtd{
+    width: auto;
+}
+div.bulkimport div.bg table.lr_table div.cbutton{
+    width: 100px;
+    margin-left: 3px;
+}
+div.bulkimport div.bg table.lr_table input[type='file']{
+    width: 240px;
+}
+div.bulkimport div.bg div.close{
+    position: relative;
+    height: 1px;
+    width: 385px;
+    font-size: 0;
+}
+div.bulkimport  div.close a{
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    background: url("../images/admin/close.png") no-repeat 0 0;
+}
+div.bulkimport div.video_player div.close a{
+    top:-15px;
+    right:-15px;
+}
+
+/*机构编辑*/
+div.comm div.klist span{
+    display: inline-block;
+    background: #00B386;
+    color: #fff;
+    height:20px;
+    line-height:20px;
+    padding:0 0 0 5px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+div.comm div.klist span em.cate{
+    color:#fff;
+    margin-right:5px;
+    font-style: normal;
+}
+div.comm div.klist span a{
+    width:20px;
+    height:20px;
+    display: inline-block;
+    text-align: center;
+    color:#fff;
+}
+div.comm div.agency_cates  a{
+    margin-right: 15px;
+}
+div.comm div.agency_cates  a.cur{
+    color:#c00;
+}
+div.comm  div.sub_cates a{
+    display: inline-block;
+    padding:5px 15px;
+    margin-right:10px;
+    background:#efefef;
+    margin-bottom:10px;
+}
+div.comm  div.sub_cates a.cur{
+    background:#5cacff;
+    color:#fff;
+}
+div.comm div.place select{
+    min-width: 150px;
+}
+/*==================================视频管理===================================*/
+div.videos  table.mul_table th.th1{
+    width:50px;
+}
+div.videos  table.mul_table th.th2{
+    width:150px;
+}
+div.videos  table.mul_table th.th3{
+    width:200px;
+}
+div.videos  table.mul_table th.th4{
+    width:50px;
+}
+div.videos  table.mul_table th.th5{
+    width:150px;
+}
+div.videos  table.mul_table th.th6{
+    width:330px;
+}
+div.video_edit input.cbox{
+    width:185px !important;
+}
+div.video_edit div.relative{
+    position: absolute;
+    top: 90px;
+    right: 0;
+    width: 220px;
+    border: 1px solid #dcdcdc;
+    background:#fefefe;
+}
+div.video_edit div.relative p.title {
+    background-color: #efefef;
+    line-height: 30px;
+    padding-left: 5px;
+    font-size: 14px;
+    height: 30px;
+}
+div.video_edit div.relative div.search input {
+    width: 130px;
+    margin-top:10px;
+    margin-left:5px;
+}
+div.video_edit div.relative div.search {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    padding: 10px 0  0 5px;
+}
+div.video_edit div.relative div.search select{
+    width: 140px;
+    margin-left: 5px;
+}
+div.video_edit div.relative div.search a.btn {
+    font-size: 14px;
+    position: absolute;
+    top: 28px;
+    right: 15px;
+    width: 45px;
+    height: 30px;
+    line-height: 30px;
+}
+div.video_edit div.relative ul {
+    height: 300px;
+    overflow-x: hidden;
+    border-top: 1px solid #cdcdcd;
+    padding-top: 5px;
+}
+div.video_edit div.relative ul li a {
+    display: block;
+    width: 180px;
+    padding: 0 10px;
+    line-height: 30px;
+    height: 30px;
+    color: #686868;
+    overflow: hidden;
+    white-space: nowrap;
+    word-wrap: break-word;
+    word-break: break-all;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+div.video_edit div.relative ul li.choose.cur a, 
+div.video_edit div.relative ul li a:hover{
+    background:#ccc;;
+}
+div.video_edit div.relative ul li.nodata{
+    padding:10px 0 10px 0;
+    text-align:center;
+}
+/*==================================课程管理===================================*/
+div.courses table.mul_table th.th1{
+    width:50px;
+}
+div.courses table.mul_table th.th2{
+    width:100px;
+}
+div.courses table.mul_table th.th3{
+    width:120px;
+}
+div.courses table.mul_table th.th4{
+    width:150px;
+}
+div.courses table.mul_table th.th6,
+div.courses table.mul_table th.th5{
+    width:100px;
+}
+div.courses table.mul_table th.th8{
+    width:40px;
+}
+div.courses table.mul_table th.th9{
+    width:150px;
+}
+div.course_edit table.lr_table td.rtd input.cbox{
+    width:185px;
+}
+div.course_edit ul.class_time  li{
+    position: relative;
+    float: left;
+    width: 120px;
+    height: 25px;
+    overflow: hidden;
+    margin: 0 20px 20px 0;
+    padding: 10px;
+    background: #eee;
+    cursor: pointer;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 25px;
+}
+div.course_edit ul.class_time li.cur{
+    background: rgb(109,190,235) url('../images/admin/checkmark.png') no-repeat 110px 20px;
+}
+/*==================================用户管理===================================*/
+input.date{
+    background:url('../images/admin/date.png') no-repeat 160px center;
+    width:180px !important;
+    cursor: pointer;
+}
+div.comm table.filter_ops{
+    width:auto;
+    margin-top:10px;
+}
+div.comm table.filter_ops div.place select{
+    margin-right:10px;
+}
+div.comm table.filter_ops td{
+    padding:5px 10px 5px 0;
+}
+div.comm table.filter_ops td.ltd{
+    width: 80px;
+}
+div.comm table.filter_ops td.rtd{
+    text-align: left;
+}
+div.comm table.filter_ops td a.btn{
+    margin-left:0;
+    margin:0 20px 0 0;
+}
+
+
+div.comm table.mul_table  input.order_set{
+    width:60px;
+    text-align: center;
+}
+div.s_detail div.info_box .box_l_all{
+    width:100%;
+}
+div.s_detail table.lr_table td.ltd{
+    width:90px;
+    padding-right:15px;
+}
+div.s_detail table.lr_table td.rtd{
+    padding-right:0;
+    width:400px;
+}
+div.s_detail table.lr_table td.ltd span{
+    display: inline-block;
+    width:90px;
+}
+div.s_detail table.lr_table td.ltd span em.red{
+    margin-right:5px;
+}
+div.s_detail table.lr_table td.rtd input[type='text']{
+    width:220px;
+}
+div.stu_edit table.lr_table tr td.rtd textarea{
+    width:584px;
+    height:200px;
+    resize:none;
+}
+div.stu_edit table.lr_table tr td div.pos{
+    position: relative;
+}
+div.stu_edit table.lr_table tr td div.preview{
+    position: absolute;
+    right:140px;
+    top:0;
+}
+div.stu_edit table.lr_table tr td div.cover{
+    width:300px;
+    height:215px;
+    margin-bottom:20px;
+    text-align: center;
+    vertical-align: middle;
+    /*display: table-cell;*/
+    overflow: hidden;
+    border: 1px solid #cdcdcd;
+}
+div.stu_edit table.lr_table tr td div.avatar_pic{
+    text-align: center;
+}
+div.stu_edit table.lr_table tr td div.cover img{
+    vertical-align: middle;
+}
+div.stu_edit table.lr_table tr div.avatar_b_box{
+    width:300px;
+    height:215px;
+}
+div.stu_edit table.lr_table tr div.avatar_b_box .avatar_b_pic{
+    width:300px;
+    height:215px;
+    overflow: hidden;
+}
+div.stu_edit  ul.screen_shot{
+    margin-left:0;
+}
+div.stu_edit .screen_shot li{
+    height:240px;
+}
+div.teach_edit  div.score span.lf {
+    display: inline-block;
+    margin-top: 10px;
+}
+div.teach_edit table.lr_table td.pt20{
+    padding-top:20px;
+}
+div.teach_edit table.lr_table td.pt15{
+    padding-top:15px;
+}
+div.users div.item{
+    margin-bottom: 30px;
+}
+div.users div.item p{
+    margin-bottom:20px;
+}
+div.users div.item ul.auth_img li{
+    float:left;
+    width:450px;
+    margin-right:30px;
+    overflow:hidden;
+}
+div.users div.item ul.auth_img li img{
+    width:100%;
+}
+div.agency_edit table.lr_table td.ltd{
+    width:150px;
+    padding-right:15px;
+}
+/*==================================留言管理===================================*/
+div.messages table.mul_table th.th1{
+    width:320px;
+}
+div.messages table.mul_table th.th2{
+    width:100px;
+}
+div.messages table.mul_table th.th3{
+    width:220px;
+}
+div.messages table.mul_table th.th4{
+    width:100px;
+}
+div.messages table.mul_table th.th5{
+    width:220px;
+}
+div.messgae_edit{
+    padding:10px 20px 30px 20px;
+}
+div.messgae_edit div.devision{
+    border-bottom:1px solid #dadada;
+    line-height:25px;
+    margin:20px 0 10px 0;
+    font-weight: bold;
+}
+div.messgae_edit div.reply_l img.person{
+    width:80px;
+    height:80px;
+    border-radius:5px;
+}
+div.messgae_edit div.reply_r{
+    border: 1px solid #dadada;
+    padding: 10px;
+    background: #f9f9f9;
+    position: relative;
+    margin-left:20px;
+    width:900px;
+}
+div.messgae_edit  .reply_item{
+    padding:20px 0 20px 0;
+}
+div.messgae_edit em.sprite{
+    display: inline-block;
+    background: url('../images/admin/sprite.png') no-repeat 0 0;
+    height: 4px;
+    width: 3px;
+    position: absolute;
+    left: -3px;
+    top: -1px;
+}
+div.messgae_edit div.reply_r p.desc{
+    line-height:24px;
+    text-indent: 2em;
+}
+/*==================================消息管理===================================*/
+div.notices table.mul_table th.th1{
+    width:600px;
+}
+div.notices table.mul_table th.th2{
+    width:150px;
+}
+div.notices table.mul_table th.th3{
+    width:160px;
+}
+div.pro_notices table.mul_table th.th1{
+    width:400px;
+}
+div.pro_notices table.mul_table th.th2{
+    width:150px;
+}
+div.pro_notices table.mul_table th.th3{
+    width:150px;
+}
+div.pro_notices table.mul_table th.th4{
+    width:200px;
+}
+div.pro_notices table.mul_table img.pro_img{
+    width:150px;
+    height:90px;
+    vertical-align:top;
+}
+div.notice_edit table.lr_table tr td.rtd  textarea.mbox{
+    width:480px;
+    height:200px;
+}
+div.notice_edit table.lr_table tr td.rtd  img.pic{
+    width:500px;
+    height:300px;
+}
+/*==================================应用版本管理===================================*/
+div.app_edtions table.mul_table th.th1{
+    width:120px;
+}
+div.app_edtions table.mul_table th.th2{
+    width:120px;
+}
+div.app_edtions table.mul_table th.th3{
+    width:300px;
+}
+div.app_edtions table.mul_table th.th4{
+    width:200px;
+}
+/*==================================日志管理===================================*/
+div.logs  table.mul_table th.th1{
+    width:200px;
+}
+div.logs table.mul_table th.th2{
+    width:80px;
+}
+div.logs table.mul_table th.th3{
+    width:150px;
+}
+div.logs table.mul_table th.th4{
+    width:200px;
+}
+/*==================================行政区域管理===================================*/
+div.region select{
+    width:auto;
+    min-width:150px;
+}
+div.region table.mul_table{
+    background:#fff;
+}
+div.region table.mul_table th{
+    text-align: center;
+    width: 200px;
+}
+div.region table.mul_table th,
+div.region table.mul_table td{
+    height: 29px;
+    line-height: 29px;
+    border-bottom: 1px solid #efefef;
+    padding:8px 0 8px 0;
+}
+div.region table.mul_table tr td {
+    color: #2b6893;
+    width:185px;
+}
+div.region table.mul_table tr.tr_two td {
+    padding-top: 5px;
+    padding-left: 13px;
+}
+div.region table.mul_table tr.tr_two td div {
+    position: relative;
+    width: 185px;
+}
+div.region table.mul_table tr.tr_two td span.l_dis {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -2px;
+    width: 12px;
+    height: 3px;
+    background-color: #aaa;
+    left: 4px\9;
+}
+div.region table.mul_table tr.tr_two td p {
+    padding-left: 23px;
+    padding-left: 28px\9;
+}
+div.region table.mul_table tr.tr_three td {
+    padding-left: 0;
+    vertical-align: top;
+    padding-bottom: 20px;
+    height: 35px;
+    line-height: 35px;
+}
+div.region table.mul_table tr ul li{
+    position: relative;
+    padding-left: 13px;
+    padding:5px 0 5px 0;
+    cursor: pointer;
+}
+div.region table.mul_table tr ul li label{
+    cursor: pointer;
+    padding-left:10px;
+}
+div.region table.mul_table tr ul li a{
+    position:absolute;
+    right:0;
+    top: 50%;
+    margin-top:-10px;
+    display: none;
+}
+div.region table.mul_table tr ul li a.medit{
+     right: 15px;
+}
+div.region table.mul_table tr.tr_three td ul li.effect,
+div.region table.mul_table tr.tr_three td ul li.hoved{
+    background-color: #eef2f5;
+}
+div.region table.mul_table tr.tr_three td ul li.hoved  a.mdelete{
+    background-position: 0 -59px;
+}
+div.region table.mul_table tr.tr_three td ul li.hoved  a.medit{
+    background-position: 0 4px;
+}
+div.region table.mul_table tr.tr_three td ul li input{
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-top: 0;
+}
+div.region_edit table.lr_table{
+    margin-top:30px;
+}
+/*==================================老师管理--证件上传===================================*/
+div.teacher_file table.lr_table td .thumbnail_card{
+    width: 250px;
+    height: 250px;
+    margin-bottom: 20px;
+}
+div.teacher_file table.lr_table td .thumbnail_card img{
+    width:100%;
+}
+div.teacher_file table.lr_table td ul.certy li{
+    float:left;
+    margin:0 25px 40px 0;
+    height: 300px;
+}
+div.teacher_file table.lr_table td ul.certy img{
+    width:250px;
+    height: 250px;
+}/*==================================反馈管理==============================*/
+.mfeedback table.mul_table th.th1{
+    width: 130px;
+}
+.mfeedback table.mul_table th.th2{
+    width: 165px;
+}
+.mfeedback table.mul_table th.th3{
+    width: 185px;
+}
+.mfeedback table.mul_table th.th4{
+    width: 175px;
+}
+.mfeedback table.mul_table th.th5{
+    width: 246px;
+}

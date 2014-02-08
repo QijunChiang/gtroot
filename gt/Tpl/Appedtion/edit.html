@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>应用版本管理-添加应用版本-好老师后台管理系统</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{$FILE_ROOT}Theme/admin/base.css" type="text/css" />
+        <link rel="stylesheet" href="{$FILE_ROOT}Theme/admin/theme.css" type="text/css" />
+        <link rel="stylesheet" href="{$FILE_ROOT}Theme/admin/page.css" type="text/css" />
+        <link href="{$FILE_ROOT}Theme/lib/swfupload/css/default.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class="struct clearfix">
+            <p class="rightbg" id="right_bg"></p>
+             <include file="./Tpl/Modules/navs.html"/>
+            <div class="lf main">
+                <!---------------------Start: 右侧顶部-------------------------->
+                <div class="header">
+                    <div class="bot_bdr"><a href="{$WEB_ROOT}apps">应用版本管理</a>>
+                        <if condition="$higgsesApp['data']['id'] neq ''">
+                                <span>{$higgsesApp['data']['versionName']}</span>/编辑
+                           <else /> <span>上传新版本</span>
+                        </if>
+                    </div>
+                    <div class="top_right">
+                        <span>超级管理员,</span>
+                        <a href="javascript:;" id="log_out">退出</a>
+                    </div>
+                </div>
+                <!---------------------Start: 右侧内容-------------------------->
+                <div class="article app_edit mt20" id="app_edtion">
+                    <table class="lr_table formdata">
+                         <tr>
+                            <td class="ltd"><span><em  class="red">*</em> 版本名称 :</span></td>
+                            <td class="rtd">
+                                <input type="text" id="app_name"  value="{$higgsesApp['data']['versionName']}" org="{$higgsesApp['data']['versionName']}" name="fm-versionName"  />
+                            </td>
+                        </tr>
+                         <tr>
+                            <td class="ltd"><span><em  class="red">*</em> 版本号 :</span></td>
+                            <td class="rtd">
+                                <input type="text" id="app_number" value="{$higgsesApp['data']['versionCode']}" org="{$higgsesApp['data']['versionCode']}" name="fm-versionCode"  />
+                            </td>
+                        </tr>
+                         <tr>
+                            <td class="ltd"><span><em  class="red">*</em> 应用包 :</span></td>
+                            <td class="rtd sel">
+                                <if condition="$higgsesApp['data']['id'] neq ''">
+                                    <div class="mb10 thumbnails file" orig="{$higgsesApp['data']['downLink']}" id="pname">
+                                        <a href="{$FILE_ROOT}{$higgsesApp['data']['downLink']}" title="下载">下载</a>
+                                    </div>
+                                    <else /><div class="mb10 thumbnails file" orig="" id="pname"></div>
+                                </if>
+                                <if condition="$higgsesApp['data']['id'] neq ''">
+                                    <input type="hidden" id="app_package"  name="fm-package" value="unChange"  ref="unChange" />
+                                    <else /><input type="hidden" id="app_package"  name="fm-package"  ref="" />
+                                </if>
+                                 <span id="spanButtonPlaceholder"></span>
+                                 <div id="divFileProgressContainer"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ltd ltop"><span><em  class="red">*</em> 更新说明 :</span></td>
+                            <td class="rtd">
+                                <textarea class="mbox"  id="cont" name="fm-description" org="{$higgsesApp['data']['description']}">{$higgsesApp['data']['description']}</textarea>
+                            </td>
+                        </tr>
+                        <tr class="lst_tr">
+                            <td class="ltd"></td>
+                            <td class="rtd">
+                                <input type="hidden" name="fm-type" value="1" />
+                                <if condition="$higgsesApp['data']['id'] neq ''">
+                                    <input type="hidden" name="fm-higgsesAppId" value="{$higgsesApp['data']['id']}" />
+                                    <a href="javascript:;" class="btn btn_blue submit" id="update_appedtion">提&nbsp;&nbsp;交</a>
+                                    <else /><a href="javascript:;" class="btn btn_blue submit" id="add_new_appedtion">提&nbsp;&nbsp;交</a>
+                                </if>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!---------------------End: 右侧内容-------------------------->
+            </div>
+        </div>
+     <include file="./Tpl/Modules/footer.html"/>
+    <input type="hidden" id="pagename" value="appedtion_edit" />
+    <input type="hidden" id="pagetag" value="apps" />
+    <input type="hidden" id="post_params" value="<?php echo session_id(); ?>" />
+</body>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/lib/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/lib/swfupload/handlers.js"></script>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/lib/swfupload/swfupload.js"></script>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/admin/base.js"></script>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/admin/page.js"></script>
+</html>

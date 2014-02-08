@@ -1,0 +1,204 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>用户管理-老师详细-好老师后台管理系统</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{$FILE_ROOT}Theme/admin/base.css" type="text/css" />
+        <link rel="stylesheet" href="{$FILE_ROOT}Theme/admin/theme.css" type="text/css" />
+        <link rel="stylesheet" href="{$FILE_ROOT}Theme/admin/page.css" type="text/css" />
+        <script type="text/javascript" src="{$FILE_ROOT}Theme/lib/jquery-1.8.3.min.js"></script>
+    </head>
+    <body>
+        <div class="struct clearfix">
+            <p class="rightbg" id="right_bg"></p>
+             <include file="./Tpl/Modules/navs.html"/>
+            <div class="lf main">
+                <!---------------------Start: 右侧顶部-------------------------->
+                <div class="header">
+                    <div class="bot_bdr"><a href="{$WEB_ROOT}students">用户管理</a><span>></span><a href="{$WEB_ROOT}teachers">老师管理</a>><span>{$teacherDetail['data']['name']}/详细</span></div>
+                    <div class="top_right">
+                        <span>超级管理员,</span>
+                        <a href="javascript:;" id="log_out">退出</a>
+                    </div>
+                </div>
+                <!---------------------Start: 右侧内容-------------------------->
+                <div class="article s_detail comm users teach_edit">
+                    <p class="atitle">基本信息</p>
+                    <div class="info_box clearfix">
+                        <div class="box_l">
+                            <table class="lr_table">
+                                <tr>
+                                    <td class="ltd"><span>姓名：</span></td>
+                                    <td class="rtd">{$teacherDetail['data']['name']}</td>
+                                    <td class="ltd "><span>电话号码：</span></td>
+                                    <td class="rtd">{$teacherDetail['data']['phone']}</td>
+                                </tr>
+                                <tr>
+                                    <td class="ltd"><span>性别：</span></td>
+                                    <td class="rtd">
+                                        <if condition="$teacherDetail['data']['sex'] eq 0">女
+                                            <else />男
+                                        </if>
+                                    </td>
+                                    <td class="ltd"><span>年龄：</span></td>
+                                    <td class="rtd">
+                                        <if condition="$teacherDetail['data']['age'] eq 0 || $teacherDetail['data']['age'] lt 0">0 岁
+                                            <else />{$teacherDetail['data']['age']}岁
+                                        </if></td>
+                                </tr>
+                                <tr>
+                                    <td class="ltd"><span>所在学校：</span></td>
+                                    <td class="rtd">{$teacherDetail['data']['college']}</td>
+                                    <td class="ltd "><span>课时价格：</span></td>
+                                    <td class="rtd">{$teacherDetail['data']['price']} 元/时</td>
+                                </tr>
+                                <tr>
+                                    <td class="ltd"><span>专长：</span></td>
+                                    <td class="rtd"><foreach name="teacherDetail.data.categoryList" item="adc"><span class="mr10">{$adc.name}</span></foreach></td>
+                                    <td class="ltd ltop pt20"><span>评分：</span></td>
+                                    <td class="rtd">
+                                       <div class="clearfix score">
+                                            <div class="star lf" id="star"></div>
+                                            <span class="comt lf">
+                                                <if condition="$teacherDetail['data']['star'] eq 0 ||$teacherDetail['data']['star'] eq ''">
+                                                    暂无评分
+                                                    <else />{$teacherDetail['data']['star']} 分
+                                                </if>
+                                            </span>
+                                            <input type="hidden" id="score"  value="{$teacherDetail['data']['star']}" />
+                                         </div>
+                                      </td>
+                                </tr>
+                                <tr>
+                                    <td class="ltd"><span>专业技能：</span></td>
+                                    <td class="rtd" colspan="3">{$teacherDetail['data']['skill']}</td>
+                                </tr>
+                                <tr>
+                                    <td class="ltd"><span>地址信息：</span></td>
+                                    <td class="rtd" colspan="3">{$teacherDetail['data']['usuallyLocationInfo']}（{$teacherDetail['data']['usuallyLocationX']},{$teacherDetail['data']['usuallyLocationY']}</td>
+                                </tr>
+                                <tr>
+                                    <td class="ltd"><span>所在商区：</span></td>
+                                    <td class="rtd" colspan="3">
+                                        <if condition="$teacherDetail['data']['userCities'] eq NULL">无
+                                            <else />
+                                            <foreach name="teacherDetail.data.userCities" item="userCities">
+                                                <span>
+                                                     <foreach name="userCities.parents.parentNames" item="pnames">
+                                                        <if condition="$key neq 0">-<else /></if>{$pnames}
+                                                     </foreach>
+                                                </span>
+                                            </foreach>
+                                        </if>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="aside_r">
+                             <img  src="{$API_FILE_ROOT}{$teacherDetail['data']['photo']}" class="img_agency">
+<!--                            <p class="check_links">
+                                <a href="{$WEB_ROOT}" class="btn btn_green">查看留言</a>
+                                <a href="{$WEB_ROOT}" class="btn btn_green">报名课程</a>
+                            </p>-->
+                        </div>
+                    </div>
+                    <p class="atitle">自我介绍</p>
+                    <div class="info_box clearfix">
+                        <div class="box_l video_cont">
+                            <if condition="$teacherDetail['data']['introduction']['video']['url'] neq ''">
+                            <input type="hidden" value="{$API_FILE_ROOT}{$teacherDetail['data']['introduction']['video']['url']}" id="video_url" />
+                            <input type="hidden" value="{$API_FILE_ROOT}{$teacherDetail['data']['introduction']['video']['image']}" id="video_image" />
+                            <div id="video"><div id="a1"></div></div>
+                            <script type="text/javascript" src="{$FILE_ROOT}/Theme/lib/ckplayer/ckplayer.js" charset="utf-8"></script>
+                            <script type="text/javascript">
+                                var surl=$("#video_url").val();
+                                var scover=$("#video_image").val();
+;                                    var flashvars={
+                                        f:surl,
+                                        s:'0',
+                                        c:'0',
+                                        i:scover,
+                                        e:'2'
+                                    };
+                                var params={bgcolor:'#000',allowFullScreen:true,allowScriptAccess:'always'};
+                                var attributes={id:'ckplayer_a1',name:'ckplayer_a1'};
+                                swfobject.embedSWF('{$FILE_ROOT}/Theme/lib/ckplayer/ckplayer.swf', 'a1', '600', '400', '10.0.0','{$FILE_ROOT}/Theme/lib/ckplayer/expressInstall.swf', flashvars, params, attributes); 
+//                                 var temp='var video={"'+surl+'":"video/mp4"};';
+//                                eval(temp);
+//                                var support=['iPad','iPhone','ios','android+false','msie10+false'];
+//                                CKobject.embedHTML5('video','ckplayer_a1',600,400,video,flashvars,support);
+                            </script>
+                            <else />暂无视频
+                            </if>
+                        </div>
+                        <if condition="$teacherDetail['data']['introduction']['description'] neq '' && $teacherDetail['data']['introduction']['video']['url'] eq ''">
+                            <div class="aside_r desc" style="margin-left:0;width:100%;">
+                               {$teacherDetail['data']['introduction']['description']}
+                            </div>
+                            <elseif condition="$teacherDetail['data']['introduction']['description'] neq '' && $teacherDetail['data']['introduction']['video']['url'] neq ''"/>
+                                <div class="aside_r desc">
+                                  {$teacherDetail['data']['introduction']['description']}
+                               </div>
+                        </if>
+                    </div>
+                    <ul class="screen_shot clearfix">
+                        <foreach name="teacherDetail.data.introduction.image" item="sdm">
+                            <li>
+                                <img  src="{$API_FILE_ROOT}{$sdm.image}" class="mid_shot" />
+                            </li>
+                        </foreach>
+                    </ul>
+                    <p class="atitle">认证信息</p>
+                    <div class="info_box clearfix">
+                        <div class="item">
+                            <p>身份证认证</p>
+                            <ul class="auth_img clearfix">
+                                <if condition="$teacherDetail['data']['auth']['citizenid']['frontSide'] neq ''">
+                                    <li>
+                                        <img src="{$API_FILE_ROOT}{$teacherDetail['data']['auth']['citizenid']['frontSide']}" alt="" />
+                                    </li>
+                                    <li>
+                                        <img src="{$API_FILE_ROOT}{$teacherDetail['data']['auth']['citizenid']['backSide']}" alt="" />
+                                    </li>
+                                    <else /><li class="red">暂无数据</li>
+                                </if>
+                            </ul>
+                        </div>
+                        <div class="item">
+                            <p>毕业证认证</p>
+                            <ul class="auth_img clearfix">
+                                <if condition="$teacherDetail['data']['auth']['diploma']['diploma'] neq ''">
+                                    <li>
+                                        <img src="{$API_FILE_ROOT}{$teacherDetail['data']['auth']['diploma']['diploma']}" alt="" />
+                                    </li>
+                                    <else /><li class="red">暂无数据</li>
+                                </if>
+                            </ul>
+                        </div>
+                        <div class="item">
+                            <p>专业考级证明认证</p>
+                            <ul class="auth_img clearfix">
+                                <if condition="$teacherDetail['data']['auth']['certificatesList']['image'] neq ''">
+                                    <foreach name="teacherDetail.data.auth.certificatesList" item="tdc">
+                                        <li>
+                                            <img src="{$API_FILE_ROOT}{$tdc.image}" alt="" />
+                                        </li>
+                                    </foreach>
+                                    <else /><li class="red">暂无数据</li>
+                                </if>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!---------------------End: 右侧内容-------------------------->
+            </div>
+        </div>
+      <include file="./Tpl/Modules/footer.html"/>
+    <input type="hidden" id="pagename" value="teacher_detail" />
+    <input type="hidden" id="pagetag" value="users" />
+</body>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/admin/base.js"></script>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/lib/jquery.raty.js"></script>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/admin/page.js"></script>
+</html>

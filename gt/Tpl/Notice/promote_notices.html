@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>消息管理-消息列表-好老师后台管理系统</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{$FILE_ROOT}Theme/admin/base.css" type="text/css" />
+        <link rel="stylesheet" href="{$FILE_ROOT}Theme/admin/theme.css" type="text/css" />
+        <link rel="stylesheet" href="{$FILE_ROOT}Theme/admin/page.css" type="text/css" />
+        <link rel="stylesheet" href="{$FILE_ROOT}/Theme/lib/pagination.css" type="text/css" />
+    </head>
+    <body>
+        <div class="struct clearfix">
+            <p class="rightbg" id="right_bg"></p>
+             <include file="./Tpl/Modules/navs.html"/>
+            <div class="lf main">
+                <!---------------------Start: 右侧顶部-------------------------->
+                <div class="header">
+                    <div class="options">
+                        <a href="{$WEB_ROOT}notices">系统消息</a>
+                        <a class="cur">推广消息</a>
+                    </div>
+                    <div class="top_right">
+                        <span>超级管理员,</span>
+                        <a href="javascript:;" id="log_out">退出</a>
+                    </div>
+                </div>
+                <!---------------------Start: 右侧内容-------------------------->
+                <div class="article  pro_notices">
+                        <table class="filter ml20 mt20">
+                            <tr>
+                                <td class="ltd">
+                                    <a href="{$WEB_ROOT}prom_notedit" class="btn btn_blue">发布新消息</a>
+                                </td>
+                            </tr>
+                       </table>
+                        <table class="mul_table hgstemp" id="pro_notices">
+                            <tr>
+                                <th class="th1">接收对象</th>
+                                <th class="th1">标题</th>
+                                <th class="th2">图片</th>
+                                <th class="th2">图片链接</th>
+                                <th class="th3">发布时间</th>
+                                <th class="th4">操作</th>
+                            </tr>
+<!--                            <tr class="ops">
+                                <td>系统已升级到3.0版本，请赶快更新享受更多功能吧系统已升级到3.0版</td>
+                                <td>
+                                    <img  src="http://zs.higgses.com/Upload/m20130714070746502.png" class="pro_img" />
+                                </td>
+                                <td>2013-06-04 16:52</td>
+                                <td>
+                                      <a href="{$WEB_ROOT}message_edit" class="medit" rel="">编辑</a>
+                                      <a href="javascript:;" class="mdelete" rel="">删除</a>
+                                </td>
+                            </tr>-->
+                        </table>
+                    <div class="clearfix mt20">
+                        <div class="pages pagination" id="pagination"></div>
+                    </div>
+                </div>
+                <!---------------------End: 右侧内容-------------------------->
+            </div>
+        </div>
+    <input type="hidden" id="pagename" value="prom_notices" />
+    <input type="hidden" id="pagetag" value="notices" />
+</body>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/lib/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/lib/jquery.pagination.js"></script>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/admin/base.js"></script>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/admin/page.js"></script>
+</html>

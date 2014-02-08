@@ -1,0 +1,158 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>行政区域管理-{$region.name}-好老师后台管理系统</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{$FILE_ROOT}Theme/admin/base.css" type="text/css" />
+        <link rel="stylesheet" href="{$FILE_ROOT}Theme/admin/theme.css" type="text/css" />
+        <link rel="stylesheet" href="{$FILE_ROOT}Theme/admin/page.css" type="text/css" />
+        <link href="{$FILE_ROOT}Theme/lib/swfupload/css/default.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class="struct clearfix">
+            <p class="rightbg" id="right_bg"></p>
+            <include file="./Tpl/Modules/navs.html"/>
+            <div class="lf main">
+                <!---------------------Start: 右侧顶部-------------------------->
+                <div class="header">
+                    <div class="bot_bdr"><a href="{$web_root}regions">行政区域管理</a> >
+                        <if condition="$city neq ''"><span>{$city['data']['name']}  / 编辑</span><else /><span>添加区域</span></if>
+                    </div>
+                    <div class="top_right">
+                        <span>超级管理员,</span>
+                        <a href="javascript:;" id="log_out">退出</a>
+                    </div>
+                </div>
+                <!---------------------Start: 右侧内容-------------------------->
+                <div class="article  region region_edit">
+                    <table class="lr_table formdata">
+                        <tr>
+                            <td class="ltd"><span class="red">*</span>区域名称 :</td>
+                            <td class="rtd">
+                            <if condition="$city neq ''">
+                                <input type="hidden" value="{$city['data']['id']}" name="fm-id" />
+                            </if>
+                            <input type="text" name="fm-name" id="zone_name" org="{$city['data']['name']}" value="{$city['data']['name']}"/>
+                        </td>
+                        </tr>
+                        <if condition="$city neq ''">
+                            <tr id="cur_pos">
+                                <td class="ltd ltop">位置 :</td>
+                                <td class="rtd sel">
+                                    <span>
+                                        <if condition="$city.data.parents.parentNames neq ''">
+                                            <else />无
+                                        </if>
+                                        <foreach name="city.data.parents.parentNames" item="pname">
+                                            <if condition="$key neq 0">-<else /></if>{$pname}
+                                        </foreach>
+                                    </span>
+                                    <a href="javascript:;" class="edit_zone ml15" status="0">修改</a>
+                                </td>
+                            </tr>
+                            <tr id="new_pos" style="display: none;">
+                                <td class="ltd">新的位置 :</td>
+                                <td class="rtd sel">
+                                    <div class="place" id="addist"level="3">
+                                        <select class="prov" id="prov">
+                                            <option value="0">- 请选择省 - </option>
+                                            <foreach name="cityList.data" item="pro">
+                                                <option value="{$pro.id}">{$pro.name}</option>
+                                            </foreach>
+                                        </select>
+                                        <select  class="city" id="city">
+                                            <option value="-1">- 请选择市 - </option>
+                                        </select>
+                                        <select  class="area" id="area">
+                                            <option value="-1">- 请选择区 - </option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <else />
+                            <tr id="new_pos">
+                                <td class="ltd">位置 :</td>
+                                <td class="rtd sel">
+                                    <div class="place" id="addist" level="3">
+                                        <select class="prov" id="prov">
+                                            <option value="0">- 请选择省 - </option>
+                                            <foreach name="cityList.data" item="pro">
+                                                <option value="{$pro.id}">{$pro.name}</option>
+                                            </foreach>
+                                        </select>
+                                        <select  class="city" id="city">
+                                            <option value="-1">- 请选择市 - </option>
+                                        </select>
+                                        <select  class="area" id="area">
+                                            <option value="-1">- 请选择区 - </option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                        </if>
+                       <php>$count = count($city['data']['parents']['parentNames']);</php>
+                        <if condition="$city neq '' && $count eq 4 ">
+                            <tr id="distan">
+                               <td class="ltd"><span class="red">*</span> 范围：</td>
+                               <td class="rtd">
+                                   <input type="text" name="fm-mile" id="range" org="{$city['data']['mile']}" value="{$city['data']['mile']}"/> m
+                               </td>
+                           </tr>
+                           <tr id="mark">
+                               <td class="ltd"><span class="red">*</span>标记 :</td>
+                               <td class="rtd">
+                                   <input type="hidden"  id="address"/>
+                                   <p class="gray mt10">(提示：拖动小图标可标记位置)</p>
+                                   <div id="map" style="width:700px;height:400px;border:1px solid #cdcdcd;margin-top:20px;"></div>
+                                   <input type="hidden" id="latitude" data_org="{$city['data']['locationX']}" value="{$city['data']['locationX']}" name="fm-locationX"/>
+                                   <input type="hidden" id="longitude" data_org="{$city['data']['locationY']}" value="{$city['data']['locationY']}" name="fm-locationY"/>
+                                   <input type="hidden" value="{$city['data']['locationY']},{$city['data']['locationX']}" id="mapdata" />
+                                   <input type="hidden" value="{$location.lng},{$location.lat}" id="location" />
+                               </td>
+                           </tr>
+                           <else />
+                           <tr class="hidden" id="distan">
+                               <td class="ltd"><span class="red">*</span> 范围：</td>
+                               <td class="rtd">
+                                   <input type="text" name="fm-mile" id="range" org="{$city['data']['mile']}" value="{$city['data']['mile']}"/> m
+                               </td>
+                           </tr>
+                           <tr class="hidden" id="mark">
+                               <td class="ltd"><span class="red">*</span>标记 :</td>
+                               <td class="rtd">
+                                   <input type="hidden"  id="address"/>
+                                   <p class="gray mt10">(提示：拖动小图标可标记位置)</p>
+                                   <div id="map" style="width:700px;height:400px;border:1px solid #cdcdcd;margin-top:20px;"></div>
+                                  <input type="hidden" id="latitude" data_org="" value="" name="fm-locationX"/>
+                                   <input type="hidden" id="longitude" data_org="" value="" name="fm-locationY"/>
+                                   <input type="hidden" value="" id="mapdata" />
+                                   <input type="hidden" value="{$location.lng},{$location.lat}" id="location" />
+                               </td>
+                           </tr>
+                        </if>
+                        <tr class="lst_tr">
+                            <td class="ltd"></td>
+                            <td class="rtd">
+                                <input type="hidden" id="cityIds" name="fm-parentId" value="{$city['data']['parentId']}" />
+                                <input type="hidden" id="data_id" value="{$city['data']['id']}" />
+                                <if condition="$city eq ''">
+                                    <a href="javascript:;" class="btn btn_blue submit" id="add_xz_region">提&nbsp;&nbsp;交</a>
+                                    <else />  <a href="javascript:;" class="btn btn_blue submit" id="save_xz_region">提&nbsp;&nbsp;交</a>
+                                </if>
+                        </td>
+                        </tr>
+                    </table>
+                </div>
+                <!---------------------End: 右侧内容-------------------------->
+            </div>
+        </div>
+    <include file="./Tpl/Modules/footer.html"/>
+    <input type="hidden" id="pagename" value="region_edit" />
+    <input type="hidden" id="pagetag" value="regions" />
+    <input type="hidden" id="level" value="{$count}" />
+</body>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/lib/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/admin/base.js"></script>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/admin/page.js"></script>
+</html>

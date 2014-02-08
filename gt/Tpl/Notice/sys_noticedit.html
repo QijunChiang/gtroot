@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>消息管理-添加消息-好老师后台管理系统</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{$FILE_ROOT}Theme/admin/base.css" type="text/css" />
+        <link rel="stylesheet" href="{$FILE_ROOT}Theme/admin/theme.css" type="text/css" />
+        <link rel="stylesheet" href="{$FILE_ROOT}Theme/admin/page.css" type="text/css" />
+    </head>
+    <body>
+        <div class="struct clearfix">
+            <p class="rightbg" id="right_bg"></p>
+             <include file="./Tpl/Modules/navs.html"/>
+            <div class="lf main">
+                <!---------------------Start: 右侧顶部-------------------------->
+                <div class="header">
+                    <div class="bot_bdr"><a href="{$WEB_ROOT}notices">消息管理</a>><a href="{$WEB_ROOT}notices">系统消息管理</a>><span>发布新消息</span></div>
+                    <div class="top_right">
+                        <span>超级管理员,</span>
+                        <a href="javascript:;" id="log_out">退出</a>
+                    </div>
+                </div>
+                <!---------------------Start: 右侧内容-------------------------->
+                <div class="article notice_edit mt20">
+                    <table class="lr_table formdata">
+                        <tr>
+                            <td class="ltd"><span><em  class="red">*</em> 接收对象 :</span></td>
+                            <td class="rtd">
+                                <select id="towho" name="fm-roleId">
+                                    <if condition="$noticeSys['data']['roleId'] eq '-1'">
+                                        <option value="-1" selected="selected">全部</option>
+                                        <option value="2">学生</option>
+                                        <option value="3">老师</option>
+                                        <elseif condition="$noticeSys['data']['roleId'] eq '2'" />
+                                        <option value="-1">全部</option>
+                                        <option value="2" selected="selected">学生</option>
+                                        <option value="3">老师</option>
+                                        <else />
+                                        <option value="-1">全部</option>
+                                        <option value="2">学生</option>
+                                        <option value="3" selected="selected">老师</option>
+                                    </if>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="ltd ltop"><span><em  class="red">*</em> 内容 :</span></td>
+                            <td class="rtd">
+                                <textarea class="mbox" name="fm-body" id="cont" org="{$noticeSys['data']['body']}">{$noticeSys['data']['body']}</textarea>
+                            </td>
+                        </tr>
+                        <tr class="lst_tr">
+                            <td class="ltd"></td>
+                            <td class="rtd">
+                            <if condition="$noticeSys['data']['id'] eq ''">
+                                <a href="javascript:;" class="btn btn_blue submit" id="add_sys_notice">提&nbsp;&nbsp;交</a>
+                                <else />
+                                <input type="hidden" name="fm-noticeSysId" value="{$noticeSys['data']['id']}" />
+                                <a href="javascript:;" class="btn btn_blue submit" id="update_sys_notice">提&nbsp;&nbsp;交</a>
+                            </if>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!---------------------End: 右侧内容-------------------------->
+            </div>
+        </div>
+     <include file="./Tpl/Modules/footer.html"/>
+    <input type="hidden" id="pagename" value="sys_notedit" />
+    <input type="hidden" id="pagetag" value="notices" />
+</body>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/lib/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/admin/base.js"></script>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/admin/page.js"></script>
+</html>

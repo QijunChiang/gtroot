@@ -1,0 +1,137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>行政区域管理-好老师后台管理系统</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{$FILE_ROOT}Theme/admin/base.css" type="text/css" />
+        <link rel="stylesheet" href="{$FILE_ROOT}Theme/admin/theme.css" type="text/css" />
+        <link rel="stylesheet" href="{$FILE_ROOT}Theme/admin/page.css" type="text/css" />
+        <link rel="stylesheet" href="{$FILE_ROOT}/Theme/lib/pagination.css" type="text/css" />
+        <link href="{$FILE_ROOT}Theme/lib/swfupload/css/default.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class="struct clearfix">
+            <p class="rightbg" id="right_bg"></p>
+             <include file="./Tpl/Modules/navs.html"/>
+            <div class="lf main">
+                <!---------------------Start: 右侧顶部-------------------------->
+                <div class="header">
+                    <div class="options">
+                        <a class="cur">行政区域管理</a>
+                    </div>
+                    <div class="top_right">
+                        <span>超级管理员,</span>
+                        <a href="javascript:;" id="log_out">退出</a>
+                    </div>
+                </div>
+                <!---------------------Start: 右侧内容-------------------------->
+                <div class="article agency comm region">
+                        <table class="filter">
+                            <tr>
+                                <td class="ltd">
+                                    <!--<a href="javascript:;" class="btn btn_blue" id="import">批量导入</a>-->
+                                    <a href="{$WEB_ROOT}region_edit" class="btn btn_blue">添加区域</a>
+                                </td>
+                            </tr>
+                       </table>
+                        <table class="mul_table hgstemp" id="regions">
+                            <tr>
+                                <th class="th1">省份</th>
+                                <th class="th2">城市</th>
+                                <th class="th3">区域</th>
+                                <th class="th4">商圈</th>
+                            </tr>
+                            <tr class="tr_two">
+                                <td>
+                                    <div>
+                                        <span class="l_dis"></span>
+                                        <p>全部</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <span class="l_dis"></span>
+                                        <p>全部</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <span class="l_dis"></span>
+                                        <p>全部</p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div>
+                                        <span class="l_dis"></span>
+                                        <p>全部</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="tr_three">
+                                <td>
+                                    <ul class="hgstemp" id="cls_1">
+                                       <foreach name="cityList.data" item="pro">
+                                            <li>
+                                               <label data_id="{$pro.id}">{$pro.name}</label>
+                                               <a href="{$WEB_ROOT}/region_edit?id={$pro.id}" class="medit"></a>
+                                               <a href="javascript:;" class="mdelete" rel="{$pro.id}"></a>
+                                           </li>
+                                       </foreach>
+                                    </ul>
+                                </td>
+                                 <td>
+                                    <ul class="hgstemp" id="cls_2"></ul>
+                                </td>
+                                 <td>
+                                    <ul class="hgstemp" id="cls_3"></ul>
+                                </td>
+                                 <td>
+                                    <ul class="hgstemp" id="cls_4"></ul>
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="clearfix mt20">
+                            <div class="pages pagination" id="pagination"></div>
+                        </div>
+                </div>
+                <!---------------------End: 右侧内容-------------------------->
+            </div>
+        </div>
+       <include file="./Tpl/Modules/footer.html"/>
+    <input type="hidden" id="pagename" value="regions" />
+    <input type="hidden" id="pagetag" value="regions" />
+     <div class="bulkimport" id="bulkimport">
+        <div class="bg">
+            <div class="close"><a href="javascript:;"></a></div>
+            <table class="lr_table">
+                <tr>
+                    <td class="ltd"><span>选择文件:</span></td>
+                    <td class="rtd sel">
+                        <div class="filebg thumbnails">
+                            <img src="" style="display: none;" />
+                        </div>
+                         <input type="hidden" id="oExl" value="" ref=""/>
+                        <span id="spanButtonPlaceholder"></span>
+                        <div id="divFileProgressContainer"></div>
+                    </td>
+                </tr>
+                <tr class="lst_tr">
+                    <td class="ltd"></td>
+                    <td class="rtd">
+                        <a href="javascript:;" class="btn btn_green mt20" id="impro">导&nbsp;入</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <input type="hidden" id="post_params" value="<?php echo session_id(); ?>" />
+     <input type="hidden" id="data_id" value="" />
+</body>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/lib/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/lib/swfupload/swfupload.js"></script>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/lib/swfupload/handlers.js"></script>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/lib/jquery.pagination.js"></script>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/admin/base.js"></script>
+<script type="text/javascript" src="{$FILE_ROOT}Theme/admin/page.js"></script>
+</html>

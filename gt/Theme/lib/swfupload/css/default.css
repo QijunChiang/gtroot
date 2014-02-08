@@ -1,0 +1,105 @@
+.progressWrapper {
+    max-width:160px;
+    overflow: hidden;
+}
+
+.progressContainer {
+    margin: 5px;
+    padding: 4px;
+    border: solid 1px #E8E8E8;
+    background-color: #F7F7F7;
+    overflow: hidden;
+}
+/* Message */
+.message {
+    margin: 1em 0;
+    padding: 10px 20px;
+    border: solid 1px #FFDD99;
+    background-color: #FFFFCC;
+    overflow: hidden;
+}
+/* Error */
+.progressContainer .red {
+    border: solid 1px #B50000;
+    background-color: #FFEBEB;
+}
+
+/* Current */
+.progressContainer .green {
+    border: solid 1px #DDF0DD;
+    background-color: #EBFFEB;
+}
+
+/* Complete */
+.progressContainer .blue {
+    border: solid 1px #CEE2F2;
+    background-color: #F0F5FF;
+}
+
+.progressName {
+    font-size: 8pt;
+    font-weight: 700;
+    color: #555;
+    width: 145px;
+    height: 14px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.progressBarInProgress,
+.progressBarComplete,
+.progressBarError {
+    font-size: 0;
+    width: 0%;
+    height: 10px;
+    background-color: blue;
+    margin-top: 2px;
+    border-radius: 10px;
+}
+
+.progressBarComplete {
+    width: 100%;
+    background-color: green;
+    visibility: hidden;
+}
+
+.progressBarError {
+    width: 100%;
+    background-color: red;
+    visibility: hidden;
+}
+
+.progressBarStatus {
+    margin-top: 2px;
+    width: 337px;
+    font-size: 7pt;
+    font-family: Arial;
+    text-align: left;
+    white-space: nowrap;
+}
+.thumbnail_120{
+    width:120px;
+    height:120px;
+    overflow:hidden;
+    margin-bottom:20px;
+}
+.thumbnail_120 img.pic{
+    width:120px;
+    height:120px;
+}
+a.progressCancel {
+    display: block;
+    height: 14px;
+    width: 14px;
+    background: url('../images/cancelbutton.gif') no-repeat -14px 0;
+    float: right;
+}
+
+a.progressCancel:hover {
+    background-position: 0px 0px;
+}
+/* -- SWFUpload Object Styles ------------------------------- */
+.swfupload {
+    vertical-align: top;
+}
