@@ -1,0 +1,521 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="language" content="en" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/api.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<title>GetCommentsList</title>
+</head>
+
+<body>
+<div id="apiPage">
+
+<div id="apiHeader">
+My Web Application Class Reference. <a href="http://www.yiiframework.com">Yii Framework</a>
+</div><!-- end of header -->
+
+<div id="content">
+<h1>GetCommentsList</h1>
+<div id="nav">
+<a href="index.html">All Packages</a>
+| <a href="#properties">Properties</a>
+| <a href="#methods">Methods</a>
+</div>
+
+<table class="summaryTable docClass">
+<colgroup>
+	<col class="col-name" />
+	<col class="col-value" />
+</colgroup>
+<tr>
+  <th>Package</th>
+  <td><a href="index.html#com.server.controller.app.comments">com.server.controller.app.comments</a></td>
+</tr>
+<tr>
+  <th>Inheritance</th>
+  <td>class GetCommentsList &raquo;
+<a href="BaseAction.html">BaseAction</a> &raquo;
+<a href="RESTAction.html">RESTAction</a> &raquo;
+<a href="http://www.yiiframework.com/doc/api/1.1/CAction">CAction</a> &raquo;
+<a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr>
+  <th>Implements</th>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/IAction">IAction</a></td>
+</tr>
+<tr>
+  <th>Since</th>
+  <td>0.1.0</td>
+</tr>
+<tr>
+  <th>Version</th>
+  <td>$Id: GetCommentsList</td>
+</tr>
+<tr>
+  <th>Source Code</th>
+  <td></td>
+</tr>
+</table>
+
+<div id="classDescription">
+获得老师、机构或者课程视频的评论列表
+<pre>
+请求地址
+   app/get_comments_list
+请求方法
+   GET
+状态码
+   200: Ok
+错误码
+   1000：API 系统出现错误。
+   1006：你的sessionKey是无效或过期的，仅在传入了sessionKey的情况下才会出现。
+参数
+   format ： xml/json 可选
+   commentsId:'51d636282be46' 必选 被评论的Id（老师、学生、机构、课程视频）。
+   count:&quot;30&quot; 可选 一页的条数，默认20
+   page:'2' 可选 请求查询的页数 默认1
+   sessionKey:'51d3ed1124848' 可选 密匙，需要获得sessionKey所登录的用户信息。
+返回
+{
+  &quot;result&quot;: true,
+  &quot;data&quot;: [
+      {
+          &quot;id&quot;: &quot;2&quot;,//评论Id
+          &quot;body&quot;: &quot;你好坏啊。&quot;,//消息内容
+          &quot;user&quot;: {//发送用户的信息
+              &quot;userId&quot;: &quot;51fb899f4853d&quot;,//用户Id
+              &quot;name&quot;: &quot;艾蓓儿创艺英语（古北店）&quot;,//用户名称
+              &quot;photo&quot;: &quot;upload/user/photo/51fb899f4853d/51fb899f4f65e.jpg&quot;,//用户头像
+              &quot;roleId&quot;: &quot;1&quot;//用户角色：学生为2，老师为3，机构为1
+              &quot;v&quot;: [//V信息
+                  {
+                      &quot;id&quot;: &quot;23&quot;,//V编号
+                      &quot;name&quot;: &quot;&quot;,//V名称
+                  }
+              ]
+          },
+          &quot;reUser&quot;: {//被回复的用户
+              &quot;name&quot;: &quot;测试老师&quot;,//用户名称
+              &quot;photo&quot;: &quot;&quot;,//用户头像
+              &quot;roleId&quot;: &quot;3&quot;,//用户角色：学生为2，老师为3，机构为1
+              &quot;userId&quot;: &quot;51fb65eb69530&quot;//用户Id
+              &quot;v&quot;: [//V信息
+                  {
+                      &quot;id&quot;: &quot;23&quot;,//V编号
+                      &quot;name&quot;: &quot;&quot;,//V名称
+                  }
+              ]
+          },
+          &quot;type&quot;:'1',收藏的类型，收藏用户时与role角色相同，用户角色：学生为2，老师为3，机构为1,收藏类型：课程视频为4
+          &quot;sendTime&quot;:&quot;2012-03-11 10:11:12&quot;
+      }
+  ]
+}
+</pre></div>
+
+<a name="properties"></a>
+
+<div class="summary docProperty">
+<h2>Public Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-property" />
+	<col class="col-type" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="controller">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CAction/#controller-detail">controller</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+  <td>the controller who owns this action.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CAction">CAction</a></td>
+</tr>
+<tr class="inherited" id="id">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CAction/#id-detail">id</a></td>
+  <td>string</td>
+  <td>id of this action</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CAction">CAction</a></td>
+</tr>
+</table>
+</div>
+
+<div class="summary docProperty">
+<h2>Protected Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-property" />
+	<col class="col-type" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="requestArray">
+  <td><a href="BaseAction.html#requestArray-detail">requestArray</a></td>
+  <td>Array</td>
+  <td>get request array</td>
+  <td><a href="BaseAction.html">BaseAction</a></td>
+</tr>
+<tr class="inherited" id="responseArray">
+  <td><a href="BaseAction.html#responseArray-detail">responseArray</a></td>
+  <td>Array</td>
+  <td>get response array</td>
+  <td><a href="BaseAction.html">BaseAction</a></td>
+</tr>
+</table>
+</div>
+
+<a name="methods"></a>
+
+<div class="summary docMethod">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="__call">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#__call-detail">__call()</a></td>
+  <td>Calls the named method which is not a class method.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="__construct">
+  <td><a href="BaseAction.html#__construct-detail">__construct()</a></td>
+  <td></td>
+  <td><a href="BaseAction.html">BaseAction</a></td>
+</tr>
+<tr class="inherited" id="__get">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#__get-detail">__get()</a></td>
+  <td>Returns a property value, an event handler list or a behavior based on its name.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="__isset">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#__isset-detail">__isset()</a></td>
+  <td>Checks if a property value is null.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="__set">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#__set-detail">__set()</a></td>
+  <td>Sets value of a component property.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="__unset">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#__unset-detail">__unset()</a></td>
+  <td>Sets a component property to be null.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="asa">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#asa-detail">asa()</a></td>
+  <td>Returns the named behavior object.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="attachBehavior">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#attachBehavior-detail">attachBehavior()</a></td>
+  <td>Attaches a behavior to this component.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="attachBehaviors">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#attachBehaviors-detail">attachBehaviors()</a></td>
+  <td>Attaches a list of behaviors to the component.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="attachEventHandler">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#attachEventHandler-detail">attachEventHandler()</a></td>
+  <td>Attaches an event handler to an event.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="canGetProperty">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#canGetProperty-detail">canGetProperty()</a></td>
+  <td>Determines whether a property can be read.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="canSetProperty">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#canSetProperty-detail">canSetProperty()</a></td>
+  <td>Determines whether a property can be set.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="detachBehavior">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#detachBehavior-detail">detachBehavior()</a></td>
+  <td>Detaches a behavior from the component.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="detachBehaviors">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#detachBehaviors-detail">detachBehaviors()</a></td>
+  <td>Detaches all behaviors from the component.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="detachEventHandler">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#detachEventHandler-detail">detachEventHandler()</a></td>
+  <td>Detaches an existing event handler.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="disableBehavior">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#disableBehavior-detail">disableBehavior()</a></td>
+  <td>Disables an attached behavior.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="disableBehaviors">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#disableBehaviors-detail">disableBehaviors()</a></td>
+  <td>Disables all behaviors attached to this component.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="enableBehavior">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#enableBehavior-detail">enableBehavior()</a></td>
+  <td>Enables an attached behavior.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="enableBehaviors">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#enableBehaviors-detail">enableBehaviors()</a></td>
+  <td>Enables all behaviors attached to this component.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="evaluateExpression">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#evaluateExpression-detail">evaluateExpression()</a></td>
+  <td>Evaluates a PHP expression or callback under the context of this component.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="getController">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CAction/#getController-detail">getController()</a></td>
+  <td>Returns the controller who owns this action.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CAction">CAction</a></td>
+</tr>
+<tr class="inherited" id="getData">
+  <td><a href="BaseAction.html#getData-detail">getData()</a></td>
+  <td>get date by different way.</td>
+  <td><a href="BaseAction.html">BaseAction</a></td>
+</tr>
+<tr class="inherited" id="getEventHandlers">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#getEventHandlers-detail">getEventHandlers()</a></td>
+  <td>Returns the list of attached event handlers for an event.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="getId">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CAction/#getId-detail">getId()</a></td>
+  <td>Returns id of this action</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CAction">CAction</a></td>
+</tr>
+<tr class="inherited" id="hasEvent">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#hasEvent-detail">hasEvent()</a></td>
+  <td>Determines whether an event is defined.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="hasEventHandler">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#hasEventHandler-detail">hasEventHandler()</a></td>
+  <td>Checks whether the named event has attached handlers.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="hasProperty">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#hasProperty-detail">hasProperty()</a></td>
+  <td>Determines whether a property is defined.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="raiseEvent">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#raiseEvent-detail">raiseEvent()</a></td>
+  <td>Raises an event.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr id="run">
+  <td><a href="GetCommentsList.html#run-detail">run()</a></td>
+  <td>Action to run</td>
+  <td>GetCommentsList</td>
+</tr>
+<tr class="inherited" id="runWithParams">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CAction/#runWithParams-detail">runWithParams()</a></td>
+  <td>Runs the action with the supplied request parameters.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CAction">CAction</a></td>
+</tr>
+</table>
+</div>
+
+<div class="summary docMethod">
+<h2>Protected Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="_getStatusCodeMessage">
+  <td><a href="RESTAction.html#_getStatusCodeMessage-detail">_getStatusCodeMessage()</a></td>
+  <td>Gets the message for a status code</td>
+  <td><a href="RESTAction.html">RESTAction</a></td>
+</tr>
+<tr class="inherited" id="_sendResponse">
+  <td><a href="RESTAction.html#_sendResponse-detail">_sendResponse()</a></td>
+  <td>Sends the API response</td>
+  <td><a href="RESTAction.html">RESTAction</a></td>
+</tr>
+<tr class="inherited" id="addResponse">
+  <td><a href="BaseAction.html#addResponse-detail">addResponse()</a></td>
+  <td>Add result to response array.</td>
+  <td><a href="BaseAction.html">BaseAction</a></td>
+</tr>
+<tr class="inherited" id="addResponses">
+  <td><a href="BaseAction.html#addResponses-detail">addResponses()</a></td>
+  <td>add result array to response array, array_merge</td>
+  <td><a href="BaseAction.html">BaseAction</a></td>
+</tr>
+<tr class="inherited" id="checkParameters">
+  <td><a href="BaseAction.html#checkParameters-detail">checkParameters()</a></td>
+  <td>check parameters exists or not</td>
+  <td><a href="BaseAction.html">BaseAction</a></td>
+</tr>
+<tr class="inherited" id="clear">
+  <td><a href="BaseAction.html#clear-detail">clear()</a></td>
+  <td>clear response array.</td>
+  <td><a href="BaseAction.html">BaseAction</a></td>
+</tr>
+<tr class="inherited" id="decodeRequest">
+  <td><a href="BaseAction.html#decodeRequest-detail">decodeRequest()</a></td>
+  <td>decode request to array.</td>
+  <td><a href="BaseAction.html">BaseAction</a></td>
+</tr>
+<tr class="inherited" id="existsRequest">
+  <td><a href="BaseAction.html#existsRequest-detail">existsRequest()</a></td>
+  <td>check key exists or not in request</td>
+  <td><a href="BaseAction.html">BaseAction</a></td>
+</tr>
+<tr class="inherited" id="getRequest">
+  <td><a href="BaseAction.html#getRequest-detail">getRequest()</a></td>
+  <td>get request value,if isExists is true, will be check key is exists in request;</td>
+  <td><a href="BaseAction.html">BaseAction</a></td>
+</tr>
+<tr class="inherited" id="getRequestArray">
+  <td><a href="BaseAction.html#getRequestArray-detail">getRequestArray()</a></td>
+  <td>get request array</td>
+  <td><a href="BaseAction.html">BaseAction</a></td>
+</tr>
+<tr class="inherited" id="getResponseArray">
+  <td><a href="BaseAction.html#getResponseArray-detail">getResponseArray()</a></td>
+  <td>get response array</td>
+  <td><a href="BaseAction.html">BaseAction</a></td>
+</tr>
+<tr class="inherited" id="redecode">
+  <td><a href="BaseAction.html#redecode-detail">redecode()</a></td>
+  <td>redecode array.</td>
+  <td><a href="BaseAction.html">BaseAction</a></td>
+</tr>
+<tr class="inherited" id="runWithParamsInternal">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CAction/#runWithParamsInternal-detail">runWithParamsInternal()</a></td>
+  <td>Executes a method of an object with the supplied named parameters.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CAction">CAction</a></td>
+</tr>
+<tr class="inherited" id="sendResponse">
+  <td><a href="BaseAction.html#sendResponse-detail">sendResponse()</a></td>
+  <td>send response to client.</td>
+  <td><a href="BaseAction.html">BaseAction</a></td>
+</tr>
+<tr class="inherited" id="setErrorInfo">
+  <td><a href="BaseAction.html#setErrorInfo-detail">setErrorInfo()</a></td>
+  <td>return error to client</td>
+  <td><a href="BaseAction.html">BaseAction</a></td>
+</tr>
+<tr class="inherited" id="setModelAttribute">
+  <td><a href="BaseAction.html#setModelAttribute-detail">setModelAttribute()</a></td>
+  <td>set request value to Model.</td>
+  <td><a href="BaseAction.html">BaseAction</a></td>
+</tr>
+<tr class="inherited" id="setResponse">
+  <td><a href="BaseAction.html#setResponse-detail">setResponse()</a></td>
+  <td>set result array.</td>
+  <td><a href="BaseAction.html">BaseAction</a></td>
+</tr>
+<tr class="inherited" id="toJSON">
+  <td><a href="BaseAction.html#toJSON-detail">toJSON()</a></td>
+  <td>Encode response to json string.</td>
+  <td><a href="BaseAction.html">BaseAction</a></td>
+</tr>
+<tr class="inherited" id="toXML">
+  <td><a href="BaseAction.html#toXML-detail">toXML()</a></td>
+  <td>Encode response to XML string.</td>
+  <td><a href="BaseAction.html">BaseAction</a></td>
+</tr>
+</table>
+</div>
+
+<a name="events"></a>
+
+<h2>Method Details</h2>
+
+<div class="detailHeader" id="run-detail">
+run()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>run</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b>  (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">run</span><span style="color: #007700">()&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$commentsId&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getRequest</span><span style="color: #007700">(</span><span style="color: #DD0000">"commentsId"</span><span style="color: #007700">,</span><span style="color: #0000BB">true</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$count&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getRequest</span><span style="color: #007700">(</span><span style="color: #DD0000">'count'</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$count&nbsp;</span><span style="color: #007700">=&nbsp;!</span><span style="color: #0000BB">is_numeric</span><span style="color: #007700">(</span><span style="color: #0000BB">$count</span><span style="color: #007700">)?</span><span style="color: #0000BB">Contents</span><span style="color: #007700">::</span><span style="color: #0000BB">COUNT</span><span style="color: #007700">:</span><span style="color: #0000BB">$count</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$page&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getRequest</span><span style="color: #007700">(</span><span style="color: #DD0000">'page'</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$page&nbsp;</span><span style="color: #007700">=&nbsp;!</span><span style="color: #0000BB">is_numeric</span><span style="color: #007700">(</span><span style="color: #0000BB">$page</span><span style="color: #007700">)?</span><span style="color: #0000BB">Contents</span><span style="color: #007700">::</span><span style="color: #0000BB">PAGE</span><span style="color: #007700">:</span><span style="color: #0000BB">$page</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//根据传入的条件查询结果。<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$list&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">Comments</span><span style="color: #007700">::</span><span style="color: #0000BB">model</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">getListByUserId</span><span style="color: #007700">(</span><span style="color: #0000BB">$commentsId</span><span style="color: #007700">,</span><span style="color: #0000BB">$count</span><span style="color: #007700">,</span><span style="color: #0000BB">$page</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">addResponse</span><span style="color: #007700">(</span><span style="color: #0000BB">Contents</span><span style="color: #007700">::</span><span style="color: #0000BB">RESULT</span><span style="color: #007700">,</span><span style="color: #0000BB">true</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">addResponse</span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">Contents</span><span style="color: #007700">::</span><span style="color: #0000BB">DATA</span><span style="color: #007700">,</span><span style="color: #0000BB">$list</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">sendResponse</span><span style="color: #007700">();<br />}</span>
+</span>
+</code></div>
+</div>
+
+<p>Action to run</p>
+
+
+</div><!-- end of content -->
+
+<div id="apiFooter">
+Copyright &copy; 2008-2011 by <a href="http://www.yiisoft.com">Yii Software LLC</a><br/>
+All Rights Reserved.<br/>
+</div><!-- end of footer -->
+
+<script type="text/javascript">
+/*<![CDATA[*/
+$("a.toggle").toggle(function(){
+	$(this).text($(this).text().replace(/Hide/,'Show'));
+	$(this).parents(".summary").find(".inherited").hide();
+},function(){
+	$(this).text($(this).text().replace(/Show/,'Hide'));
+	$(this).parents(".summary").find(".inherited").show();
+});
+$(".sourceCode a.show").toggle(function(){
+	$(this).text($(this).text().replace(/show/,'hide'));
+	$(this).parents(".sourceCode").find("div.code").show();
+},function(){
+	$(this).text($(this).text().replace(/hide/,'show'));
+	$(this).parents(".sourceCode").find("div.code").hide();
+});
+$("a.sourceLink").click(function(){
+	$(this).attr('target','_blank');
+});
+/*]]>*/
+</script>
+
+</div><!-- end of page -->
+</body>
+</html>

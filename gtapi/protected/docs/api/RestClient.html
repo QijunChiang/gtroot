@@ -1,0 +1,895 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="language" content="en" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/api.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<title>RestClient</title>
+</head>
+
+<body>
+<div id="apiPage">
+
+<div id="apiHeader">
+My Console Application Class Reference
+</div><!-- end of header -->
+
+<div id="content">
+<h1>RestClient</h1>
+<div id="nav">
+<a href="index.html">All Packages</a>
+| <a href="#methods">Methods</a>
+</div>
+
+<table class="summaryTable docClass">
+<colgroup>
+	<col class="col-name" />
+	<col class="col-value" />
+</colgroup>
+<tr>
+  <th>Package</th>
+  <td><a href="index.html#com.server.components">com.server.components</a></td>
+</tr>
+<tr>
+  <th>Inheritance</th>
+  <td>class RestClient</td>
+</tr>
+<tr>
+  <th>Since</th>
+  <td>0.1.0</td>
+</tr>
+<tr>
+  <th>Version</th>
+  <td>$Id: LoginAction $</td>
+</tr>
+<tr>
+  <th>Source Code</th>
+  <td>app/components/RestClient.php</td>
+</tr>
+<tr>
+  <th>Author</th>
+  <td>Qijun Jiang &lt;aluzer.jiang@gmail.com&gt;</td>
+</tr>
+</table>
+
+<div id="classDescription">
+Rest client util class</div>
+<a name="properties"></a>
+
+<a name="methods"></a>
+
+<div class="summary docMethod">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr id="call">
+  <td><a href="RestClient.html#call-detail">call()</a></td>
+  <td>Convenience method wrapping a commom custom call</td>
+  <td>RestClient</td>
+</tr>
+<tr id="close">
+  <td><a href="RestClient.html#close-detail">close()</a></td>
+  <td>This closes the connection and release resources</td>
+  <td>RestClient</td>
+</tr>
+<tr id="createClient">
+  <td><a href="RestClient.html#createClient-detail">createClient()</a></td>
+  <td>Creates the RESTClient</td>
+  <td>RestClient</td>
+</tr>
+<tr id="delete">
+  <td><a href="RestClient.html#delete-detail">delete()</a></td>
+  <td>Convenience method wrapping a commom delete call</td>
+  <td>RestClient</td>
+</tr>
+<tr id="execute">
+  <td><a href="RestClient.html#execute-detail">execute()</a></td>
+  <td>Execute the call to the webservice</td>
+  <td>RestClient</td>
+</tr>
+<tr id="get">
+  <td><a href="RestClient.html#get-detail">get()</a></td>
+  <td>Convenience method wrapping a commom GET call</td>
+  <td>RestClient</td>
+</tr>
+<tr id="getHeaders">
+  <td><a href="RestClient.html#getHeaders-detail">getHeaders()</a></td>
+  <td></td>
+  <td>RestClient</td>
+</tr>
+<tr id="getResponse">
+  <td><a href="RestClient.html#getResponse-detail">getResponse()</a></td>
+  <td></td>
+  <td>RestClient</td>
+</tr>
+<tr id="getResponseCode">
+  <td><a href="RestClient.html#getResponseCode-detail">getResponseCode()</a></td>
+  <td></td>
+  <td>RestClient</td>
+</tr>
+<tr id="getResponseContentType">
+  <td><a href="RestClient.html#getResponseContentType-detail">getResponseContentType()</a></td>
+  <td></td>
+  <td>RestClient</td>
+</tr>
+<tr id="getResponseMessage">
+  <td><a href="RestClient.html#getResponseMessage-detail">getResponseMessage()</a></td>
+  <td></td>
+  <td>RestClient</td>
+</tr>
+<tr id="post">
+  <td><a href="RestClient.html#post-detail">post()</a></td>
+  <td>Convenience method wrapping a commom POST call</td>
+  <td>RestClient</td>
+</tr>
+<tr id="put">
+  <td><a href="RestClient.html#put-detail">put()</a></td>
+  <td>Convenience method wrapping a commom PUT call</td>
+  <td>RestClient</td>
+</tr>
+<tr id="setContentType">
+  <td><a href="RestClient.html#setContentType-detail">setContentType()</a></td>
+  <td>Set the Content-Type of the request to be send</td>
+  <td>RestClient</td>
+</tr>
+<tr id="setCredentials">
+  <td><a href="RestClient.html#setCredentials-detail">setCredentials()</a></td>
+  <td>Set the Credentials for BASIC Authentication</td>
+  <td>RestClient</td>
+</tr>
+<tr id="setMethod">
+  <td><a href="RestClient.html#setMethod-detail">setMethod()</a></td>
+  <td>Set the Request HTTP Method</td>
+  <td>RestClient</td>
+</tr>
+<tr id="setNoFollow">
+  <td><a href="RestClient.html#setNoFollow-detail">setNoFollow()</a></td>
+  <td>This sets that will not follow redirects</td>
+  <td>RestClient</td>
+</tr>
+<tr id="setParameters">
+  <td><a href="RestClient.html#setParameters-detail">setParameters()</a></td>
+  <td>Set Parameters to be send on the request</td>
+  <td>RestClient</td>
+</tr>
+<tr id="setUrl">
+  <td><a href="RestClient.html#setUrl-detail">setUrl()</a></td>
+  <td>Sets the URL to be Called</td>
+  <td>RestClient</td>
+</tr>
+</table>
+</div>
+<a name="events"></a>
+
+<h2>Method Details</h2>
+
+<div class="detailHeader" id="call-detail">
+call()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static RestClient <b>call</b>(string $method, string $url, string $body, string $user=NULL, string $pwd=NULL, string $contentType=NULL)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$method</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$url</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$body</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$user</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">=null [optional]</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$pwd</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">=null [optional]</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$contentType</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">=null [optional]</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">RestClient</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/components/RestClient.php#309 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB">&nbsp;</span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">call</span><span style="color: #007700">(</span><span style="color: #0000BB">$method</span><span style="color: #007700">,</span><span style="color: #0000BB">$url</span><span style="color: #007700">,</span><span style="color: #0000BB">$body</span><span style="color: #007700">,</span><span style="color: #0000BB">$user</span><span style="color: #007700">=</span><span style="color: #0000BB">null</span><span style="color: #007700">,</span><span style="color: #0000BB">$pwd</span><span style="color: #007700">=</span><span style="color: #0000BB">null</span><span style="color: #007700">,</span><span style="color: #0000BB">$contentType</span><span style="color: #007700">=</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">self</span><span style="color: #007700">::</span><span style="color: #0000BB">createClient</span><span style="color: #007700">(</span><span style="color: #0000BB">$url</span><span style="color: #007700">)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&gt;</span><span style="color: #0000BB">setParameters</span><span style="color: #007700">(</span><span style="color: #0000BB">$body</span><span style="color: #007700">)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&gt;</span><span style="color: #0000BB">setMethod</span><span style="color: #007700">(</span><span style="color: #0000BB">$method</span><span style="color: #007700">)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&gt;</span><span style="color: #0000BB">setCredentials</span><span style="color: #007700">(</span><span style="color: #0000BB">$user</span><span style="color: #007700">,</span><span style="color: #0000BB">$pwd</span><span style="color: #007700">)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&gt;</span><span style="color: #0000BB">setContentType</span><span style="color: #007700">(</span><span style="color: #0000BB">$contentType</span><span style="color: #007700">)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&gt;</span><span style="color: #0000BB">execute</span><span style="color: #007700">()<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&gt;</span><span style="color: #0000BB">close</span><span style="color: #007700">();<br />&nbsp;}</span>
+</span>
+</code></div>
+</div>
+<p>Convenience method wrapping a commom custom call</p>
+
+
+<div class="detailHeader" id="close-detail">
+close()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public RestClient <b>close</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">RestClient</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/components/RestClient.php#169 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB">&nbsp;</span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">close</span><span style="color: #007700">()&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">curl_close</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">curl</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">curl&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null&nbsp;</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">file&nbsp;</span><span style="color: #007700">!=</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">fclose</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">file</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this&nbsp;</span><span style="color: #007700">;<br />&nbsp;}</span>
+</span>
+</code></div>
+</div>
+<p>This closes the connection and release resources</p>
+
+
+<div class="detailHeader" id="createClient-detail">
+createClient()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static RestClient <b>createClient</b>(string $url=NULL)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$url</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">=null [optional]</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">RestClient</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/components/RestClient.php#241 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB">&nbsp;</span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">createClient</span><span style="color: #007700">(</span><span style="color: #0000BB">$url</span><span style="color: #007700">=</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$client&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;</span><span style="color: #0000BB">RestClient&nbsp;</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(</span><span style="color: #0000BB">$url&nbsp;</span><span style="color: #007700">!=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$client</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">setUrl</span><span style="color: #007700">(</span><span style="color: #0000BB">$url</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$client</span><span style="color: #007700">;<br />&nbsp;}</span>
+</span>
+</code></div>
+</div>
+<p>Creates the RESTClient</p>
+
+
+<div class="detailHeader" id="delete-detail">
+delete()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static RestClient <b>delete</b>(string $url, array $params=NULL, string $user=NULL, string $pwd=NULL)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$url</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$params</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">params</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$user</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">=null [optional]</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$pwd</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">=null [optional]</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">RestClient</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/components/RestClient.php#295 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB">&nbsp;</span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">delete</span><span style="color: #007700">(</span><span style="color: #0000BB">$url</span><span style="color: #007700">,array&nbsp;</span><span style="color: #0000BB">$params</span><span style="color: #007700">=</span><span style="color: #0000BB">null</span><span style="color: #007700">,</span><span style="color: #0000BB">$user</span><span style="color: #007700">=</span><span style="color: #0000BB">null</span><span style="color: #007700">,</span><span style="color: #0000BB">$pwd</span><span style="color: #007700">=</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">self</span><span style="color: #007700">::</span><span style="color: #0000BB">call</span><span style="color: #007700">(</span><span style="color: #DD0000">"DELETE"</span><span style="color: #007700">,</span><span style="color: #0000BB">$url</span><span style="color: #007700">,</span><span style="color: #0000BB">$params</span><span style="color: #007700">,</span><span style="color: #0000BB">$user</span><span style="color: #007700">,</span><span style="color: #0000BB">$pwd</span><span style="color: #007700">);<br />&nbsp;}</span>
+</span>
+</code></div>
+</div>
+<p>Convenience method wrapping a commom delete call</p>
+
+
+<div class="detailHeader" id="execute-detail">
+execute()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public RestClient <b>execute</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">RestClient</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/components/RestClient.php#46 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB">&nbsp;</span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">execute</span><span style="color: #007700">()&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">set_time_limit</span><span style="color: #007700">(</span><span style="color: #0000BB">0</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">method&nbsp;</span><span style="color: #007700">===&nbsp;</span><span style="color: #DD0000">"POST"</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">curl_setopt</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">curl</span><span style="color: #007700">,</span><span style="color: #0000BB">CURLOPT_POST</span><span style="color: #007700">,</span><span style="color: #0000BB">true</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">curl_setopt</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">curl</span><span style="color: #007700">,</span><span style="color: #0000BB">CURLOPT_POSTFIELDS</span><span style="color: #007700">,</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">params</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;if(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">method&nbsp;</span><span style="color: #007700">==&nbsp;</span><span style="color: #DD0000">"GET"</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">curl_setopt</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">curl</span><span style="color: #007700">,</span><span style="color: #0000BB">CURLOPT_HTTPGET</span><span style="color: #007700">,</span><span style="color: #0000BB">true</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">treatURL</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;if(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">method&nbsp;</span><span style="color: #007700">===&nbsp;</span><span style="color: #DD0000">"PUT"</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">curl_setopt</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">curl</span><span style="color: #007700">,</span><span style="color: #0000BB">CURLOPT_PUT</span><span style="color: #007700">,</span><span style="color: #0000BB">true</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">treatURL</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">file&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">tmpFile</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">fwrite</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">file</span><span style="color: #007700">,</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">params</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">fseek</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">file</span><span style="color: #007700">,</span><span style="color: #0000BB">0</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">curl_setopt</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">curl</span><span style="color: #007700">,</span><span style="color: #0000BB">CURLOPT_INFILE</span><span style="color: #007700">,</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">file</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">curl_setopt</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">curl</span><span style="color: #007700">,</span><span style="color: #0000BB">CURLOPT_INFILESIZE</span><span style="color: #007700">,</span><span style="color: #0000BB">strlen</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">params</span><span style="color: #007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">curl_setopt</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">curl</span><span style="color: #007700">,</span><span style="color: #0000BB">CURLOPT_CUSTOMREQUEST</span><span style="color: #007700">,</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">method</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">contentType&nbsp;</span><span style="color: #007700">!=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">curl_setopt</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">curl</span><span style="color: #007700">,</span><span style="color: #0000BB">CURLOPT_HTTPHEADER</span><span style="color: #007700">,array(</span><span style="color: #DD0000">"Content-Type:&nbsp;"</span><span style="color: #007700">.</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">contentType</span><span style="color: #007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">curl_setopt</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">curl</span><span style="color: #007700">,</span><span style="color: #0000BB">CURLOPT_URL</span><span style="color: #007700">,</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">url</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$r&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">curl_exec</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">curl</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">treatResponse</span><span style="color: #007700">(</span><span style="color: #0000BB">$r</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">//&nbsp;Extract&nbsp;the&nbsp;headers&nbsp;and&nbsp;response<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$this&nbsp;</span><span style="color: #007700">;<br />&nbsp;}</span>
+</span>
+</code></div>
+</div>
+<p>Execute the call to the webservice</p>
+
+
+<div class="detailHeader" id="get-detail">
+get()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static RestClient <b>get</b>(string $url, array $params=NULL, string $user=NULL, string $pwd=NULL)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$url</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$params</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol">params</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$user</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">=null [optional]</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$pwd</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">=null [optional]</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">RestClient</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/components/RestClient.php#283 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB">&nbsp;</span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">get</span><span style="color: #007700">(</span><span style="color: #0000BB">$url</span><span style="color: #007700">,array&nbsp;</span><span style="color: #0000BB">$params</span><span style="color: #007700">=</span><span style="color: #0000BB">null</span><span style="color: #007700">,</span><span style="color: #0000BB">$user</span><span style="color: #007700">=</span><span style="color: #0000BB">null</span><span style="color: #007700">,</span><span style="color: #0000BB">$pwd</span><span style="color: #007700">=</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">self</span><span style="color: #007700">::</span><span style="color: #0000BB">call</span><span style="color: #007700">(</span><span style="color: #DD0000">"GET"</span><span style="color: #007700">,</span><span style="color: #0000BB">$url</span><span style="color: #007700">,</span><span style="color: #0000BB">$params</span><span style="color: #007700">,</span><span style="color: #0000BB">$user</span><span style="color: #007700">,</span><span style="color: #0000BB">$pwd</span><span style="color: #007700">);<br />&nbsp;}</span>
+</span>
+</code></div>
+</div>
+<p>Convenience method wrapping a commom GET call</p>
+
+
+<div class="detailHeader" id="getHeaders-detail">
+getHeaders()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>getHeaders</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/components/RestClient.php#120 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB">&nbsp;</span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getHeaders</span><span style="color: #007700">()&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">headers</span><span style="color: #007700">;<br />&nbsp;}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getResponse-detail">
+getResponse()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>getResponse</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/components/RestClient.php#127 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB">&nbsp;</span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getResponse</span><span style="color: #007700">()&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">response&nbsp;</span><span style="color: #007700">;<br />&nbsp;}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getResponseCode-detail">
+getResponseCode()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>getResponseCode</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/components/RestClient.php#135 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB">&nbsp;</span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getResponseCode</span><span style="color: #007700">()&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;(int)&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">headers</span><span style="color: #007700">[</span><span style="color: #DD0000">'code'</span><span style="color: #007700">];<br />&nbsp;}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getResponseContentType-detail">
+getResponseContentType()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>getResponseContentType</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/components/RestClient.php#151 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB">&nbsp;</span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getResponseContentType</span><span style="color: #007700">()&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">headers</span><span style="color: #007700">[</span><span style="color: #DD0000">'content-type'</span><span style="color: #007700">];<br />&nbsp;}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getResponseMessage-detail">
+getResponseMessage()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>getResponseMessage</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/components/RestClient.php#143 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB">&nbsp;</span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getResponseMessage</span><span style="color: #007700">()&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">headers</span><span style="color: #007700">[</span><span style="color: #DD0000">'message'</span><span style="color: #007700">];<br />&nbsp;}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="post-detail">
+post()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static RestClient <b>post</b>(string $url, mixed $params=NULL, string $user=NULL, string $pwd=NULL, string $contentType='multipart/form-data')</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$url</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$params</td>
+  <td class="paramTypeCol">mixed</td>
+  <td class="paramDescCol">params</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$user</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">=null [optional]</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$pwd</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">=null [optional]</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$contentType</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">="multpary/form-data" [optional] commom post (multipart/form-data) as default</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">RestClient</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/components/RestClient.php#258 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB">&nbsp;</span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">post</span><span style="color: #007700">(</span><span style="color: #0000BB">$url</span><span style="color: #007700">,</span><span style="color: #0000BB">$params</span><span style="color: #007700">=</span><span style="color: #0000BB">null</span><span style="color: #007700">,</span><span style="color: #0000BB">$user</span><span style="color: #007700">=</span><span style="color: #0000BB">null</span><span style="color: #007700">,</span><span style="color: #0000BB">$pwd</span><span style="color: #007700">=</span><span style="color: #0000BB">null</span><span style="color: #007700">,</span><span style="color: #0000BB">$contentType</span><span style="color: #007700">=</span><span style="color: #DD0000">"multipart/form-data"</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">self</span><span style="color: #007700">::</span><span style="color: #0000BB">call</span><span style="color: #007700">(</span><span style="color: #DD0000">"POST"</span><span style="color: #007700">,</span><span style="color: #0000BB">$url</span><span style="color: #007700">,</span><span style="color: #0000BB">$params</span><span style="color: #007700">,</span><span style="color: #0000BB">$user</span><span style="color: #007700">,</span><span style="color: #0000BB">$pwd</span><span style="color: #007700">,</span><span style="color: #0000BB">$contentType</span><span style="color: #007700">);<br />&nbsp;}</span>
+</span>
+</code></div>
+</div>
+<p>Convenience method wrapping a commom POST call</p>
+
+
+<div class="detailHeader" id="put-detail">
+put()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static RestClient <b>put</b>(string $url, string $body, string $user=NULL, string $pwd=NULL, string $contentType=NULL)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$url</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$body</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$user</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">=null [optional]</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$pwd</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">=null [optional]</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$contentType</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">=null [optional]</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">RestClient</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/components/RestClient.php#271 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB">&nbsp;</span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">put</span><span style="color: #007700">(</span><span style="color: #0000BB">$url</span><span style="color: #007700">,</span><span style="color: #0000BB">$body</span><span style="color: #007700">,</span><span style="color: #0000BB">$user</span><span style="color: #007700">=</span><span style="color: #0000BB">null</span><span style="color: #007700">,</span><span style="color: #0000BB">$pwd</span><span style="color: #007700">=</span><span style="color: #0000BB">null</span><span style="color: #007700">,</span><span style="color: #0000BB">$contentType</span><span style="color: #007700">=</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">self</span><span style="color: #007700">::</span><span style="color: #0000BB">call</span><span style="color: #007700">(</span><span style="color: #DD0000">"PUT"</span><span style="color: #007700">,</span><span style="color: #0000BB">$url</span><span style="color: #007700">,</span><span style="color: #0000BB">$body</span><span style="color: #007700">,</span><span style="color: #0000BB">$user</span><span style="color: #007700">,</span><span style="color: #0000BB">$pwd</span><span style="color: #007700">,</span><span style="color: #0000BB">$contentType</span><span style="color: #007700">);<br />&nbsp;}</span>
+</span>
+</code></div>
+</div>
+<p>Convenience method wrapping a commom PUT call</p>
+
+
+<div class="detailHeader" id="setContentType-detail">
+setContentType()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public RestClient <b>setContentType</b>(string $contentType)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$contentType</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">RestClient</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/components/RestClient.php#193 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB">&nbsp;</span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">setContentType</span><span style="color: #007700">(</span><span style="color: #0000BB">$contentType</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">contentType&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$contentType</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">;<br />&nbsp;}</span>
+</span>
+</code></div>
+</div>
+<p>Set the Content-Type of the request to be send
+Format like "application/xml" or "text/plain" or other</p>
+
+
+<div class="detailHeader" id="setCredentials-detail">
+setCredentials()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public RestClient <b>setCredentials</b>(string $user, string $pass)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$user</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$pass</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">RestClient</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/components/RestClient.php#204 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB">&nbsp;</span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">setCredentials</span><span style="color: #007700">(</span><span style="color: #0000BB">$user</span><span style="color: #007700">,</span><span style="color: #0000BB">$pass</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(</span><span style="color: #0000BB">$user&nbsp;</span><span style="color: #007700">!=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">curl_setopt</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">curl</span><span style="color: #007700">,</span><span style="color: #0000BB">CURLOPT_HTTPAUTH</span><span style="color: #007700">,</span><span style="color: #0000BB">CURLAUTH_BASIC</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">curl_setopt</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">curl</span><span style="color: #007700">,</span><span style="color: #0000BB">CURLOPT_USERPWD</span><span style="color: #007700">,</span><span style="color: #DD0000">"</span><span style="color: #007700">{</span><span style="color: #0000BB">$user</span><span style="color: #007700">}</span><span style="color: #DD0000">:</span><span style="color: #007700">{</span><span style="color: #0000BB">$pass</span><span style="color: #007700">}</span><span style="color: #DD0000">"</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">;<br />&nbsp;}</span>
+</span>
+</code></div>
+</div>
+<p>Set the Credentials for BASIC Authentication</p>
+
+
+<div class="detailHeader" id="setMethod-detail">
+setMethod()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public RestClient <b>setMethod</b>(string $method)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$method</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">RestClient</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/components/RestClient.php#218 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB">&nbsp;</span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">setMethod</span><span style="color: #007700">(</span><span style="color: #0000BB">$method</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">method</span><span style="color: #007700">=</span><span style="color: #0000BB">$method</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">;<br />&nbsp;}</span>
+</span>
+</code></div>
+</div>
+<p>Set the Request HTTP Method
+For now, only accepts GET and POST</p>
+
+
+<div class="detailHeader" id="setNoFollow-detail">
+setNoFollow()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public RestClient <b>setNoFollow</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">RestClient</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/components/RestClient.php#159 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB">&nbsp;</span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">setNoFollow</span><span style="color: #007700">()&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">curl_setopt</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">curl</span><span style="color: #007700">,</span><span style="color: #0000BB">CURLOPT_AUTOREFERER</span><span style="color: #007700">,</span><span style="color: #0000BB">false</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">curl_setopt</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">curl</span><span style="color: #007700">,</span><span style="color: #0000BB">CURLOPT_FOLLOWLOCATION</span><span style="color: #007700">,</span><span style="color: #0000BB">false</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">;<br />&nbsp;}</span>
+</span>
+</code></div>
+</div>
+<p>This sets that will not follow redirects</p>
+
+
+<div class="detailHeader" id="setParameters-detail">
+setParameters()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public RestClient <b>setParameters</b>(mixed $params)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$params</td>
+  <td class="paramTypeCol">mixed</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">RestClient</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/components/RestClient.php#231 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB">&nbsp;</span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">setParameters</span><span style="color: #007700">(</span><span style="color: #0000BB">$params</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">params</span><span style="color: #007700">=</span><span style="color: #0000BB">$params</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">;<br />&nbsp;}</span>
+</span>
+</code></div>
+</div>
+<p>Set Parameters to be send on the request
+It can be both a key/value par array (as in array("key"=>"value"))
+or a string containing the body of the request, like a XML, JSON or other
+Proper content-type should be set for the body if not a array</p>
+
+
+<div class="detailHeader" id="setUrl-detail">
+setUrl()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public RestClient <b>setUrl</b>($url)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$url</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">RestClient</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/components/RestClient.php#182 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB">&nbsp;</span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">setUrl</span><span style="color: #007700">(</span><span style="color: #0000BB">$url</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">url&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$url</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">;<br />&nbsp;}</span>
+</span>
+</code></div>
+</div>
+<p>Sets the URL to be Called</p>
+
+
+</div><!-- end of content -->
+
+<div id="apiFooter">
+Copyright &copy; 2008-2011 by <a href="http://www.yiisoft.com">Yii Software LLC</a><br/>
+All Rights Reserved.<br/>
+</div><!-- end of footer -->
+
+<script type="text/javascript">
+/*<![CDATA[*/
+$("a.toggle").toggle(function(){
+	$(this).text($(this).text().replace(/Hide/,'Show'));
+	$(this).parents(".summary").find(".inherited").hide();
+},function(){
+	$(this).text($(this).text().replace(/Show/,'Hide'));
+	$(this).parents(".summary").find(".inherited").show();
+});
+$(".sourceCode a.show").toggle(function(){
+	$(this).text($(this).text().replace(/show/,'hide'));
+	$(this).parents(".sourceCode").find("div.code").show();
+},function(){
+	$(this).text($(this).text().replace(/hide/,'show'));
+	$(this).parents(".sourceCode").find("div.code").hide();
+});
+$("a.sourceLink").click(function(){
+	$(this).attr('target','_blank');
+});
+/*]]>*/
+</script>
+
+</div><!-- end of page -->
+</body>
+</html>

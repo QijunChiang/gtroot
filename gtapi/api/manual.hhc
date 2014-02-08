@@ -1,0 +1,1061 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+<meta name="GENERATOR" content="yiidoc http://www.yiiframework.com">
+</head>
+<body>
+<object type="text/site properties">
+<param name="Window Styles" value="0x800025">
+<param name="FrameName" value="right">
+<param name="ImageType" value="Folder">
+<param name="comment" value="title:Online Help">
+<param name="comment" value="base:index.html">
+</object>
+
+<ul>
+	<li><object type="text/sitemap">
+		<param name="Name" value="All Packages">
+		<param name="Local" value="index.html">
+		</object>
+	<li><object type="text/sitemap">
+		<param name="Name" value="application">
+		</object>
+	<ul>
+			<li><object type="text/sitemap">
+			<param name="Name" value="AppErrorLog">
+			<param name="Local" value="AppErrorLog.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="Category">
+			<param name="Local" value="Category.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="CategoryHot">
+			<param name="Local" value="CategoryHot.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="City">
+			<param name="Local" value="City.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="Collect">
+			<param name="Local" value="Collect.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="Comments">
+			<param name="Local" value="Comments.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="Feedback">
+			<param name="Local" value="Feedback.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="HiggsesApp">
+			<param name="Local" value="HiggsesApp.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="InterfaceLog">
+			<param name="Local" value="InterfaceLog.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="Introduction">
+			<param name="Local" value="Introduction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="IntroductionImage">
+			<param name="Local" value="IntroductionImage.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="Mb345">
+			<param name="Local" value="Mb345.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="Messages">
+			<param name="Local" value="Messages.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="MessagesDetails">
+			<param name="Local" value="MessagesDetails.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="MessagesOption">
+			<param name="Local" value="MessagesOption.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="Notice">
+			<param name="Local" value="Notice.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="NoticeOption">
+			<param name="Local" value="NoticeOption.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="NoticeSys">
+			<param name="Local" value="NoticeSys.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="NoticeUserDelete">
+			<param name="Local" value="NoticeUserDelete.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="PhoneCode">
+			<param name="Local" value="PhoneCode.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="PinYin">
+			<param name="Local" value="PinYin.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="Profile">
+			<param name="Local" value="Profile.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="Role">
+			<param name="Local" value="Role.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="SMS">
+			<param name="Local" value="SMS.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="Teach">
+			<param name="Local" value="Teach.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="TeachCategory">
+			<param name="Local" value="TeachCategory.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="TeachCourse">
+			<param name="Local" value="TeachCourse.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="TeachCourseSignUp">
+			<param name="Local" value="TeachCourseSignUp.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="TeachStar">
+			<param name="Local" value="TeachStar.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="TeachVideo">
+			<param name="Local" value="TeachVideo.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="TeachVideoStar">
+			<param name="Local" value="TeachVideoStar.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="User">
+			<param name="Local" value="User.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="UserAuth">
+			<param name="Local" value="UserAuth.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="UserAuthCertificate">
+			<param name="Local" value="UserAuthCertificate.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="UserAuthCitizenid">
+			<param name="Local" value="UserAuthCitizenid.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="UserAuthDiploma">
+			<param name="Local" value="UserAuthDiploma.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="UserBinding">
+			<param name="Local" value="UserBinding.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="UserCategory">
+			<param name="Local" value="UserCategory.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="UserCity">
+			<param name="Local" value="UserCity.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="UserLocation">
+			<param name="Local" value="UserLocation.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="UserSession">
+			<param name="Local" value="UserSession.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="UserSetting">
+			<param name="Local" value="UserSetting.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="UserVipSign">
+			<param name="Local" value="UserVipSign.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="Zy28">
+			<param name="Local" value="Zy28.html">
+			</object>
+		</ul>
+	<li><object type="text/sitemap">
+		<param name="Name" value="com.server.components">
+		</object>
+	<ul>
+			<li><object type="text/sitemap">
+			<param name="Name" value="BaseAction">
+			<param name="Local" value="BaseAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="BaseController">
+			<param name="Local" value="BaseController.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="CXML">
+			<param name="Local" value="CXML.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="Contents">
+			<param name="Local" value="Contents.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="IOSPush">
+			<param name="Local" value="IOSPush.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="LocationTool">
+			<param name="Local" value="LocationTool.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="OperateOpenfire">
+			<param name="Local" value="OperateOpenfire.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="RESTAction">
+			<param name="Local" value="RESTAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="RestClient">
+			<param name="Local" value="RestClient.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="SessionFilterAction">
+			<param name="Local" value="SessionFilterAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="Tools">
+			<param name="Local" value="Tools.html">
+			</object>
+		</ul>
+	<li><object type="text/sitemap">
+		<param name="Name" value="com.server.controller">
+		</object>
+	<ul>
+			<li><object type="text/sitemap">
+			<param name="Name" value="AppController">
+			<param name="Local" value="AppController.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="SystemController">
+			<param name="Local" value="SystemController.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="WebController">
+			<param name="Local" value="WebController.html">
+			</object>
+		</ul>
+	<li><object type="text/sitemap">
+		<param name="Name" value="com.server.controller.app.auth">
+		</object>
+	<ul>
+			<li><object type="text/sitemap">
+			<param name="Name" value="SignIn">
+			<param name="Local" value="SignIn.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="SignInAnonymous">
+			<param name="Local" value="SignInAnonymous.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="SignInByBinding">
+			<param name="Local" value="SignInByBinding.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="SignOut">
+			<param name="Local" value="SignOut.html">
+			</object>
+		</ul>
+	<li><object type="text/sitemap">
+		<param name="Name" value="com.server.controller.app.category">
+		</object>
+	<ul>
+			<li><object type="text/sitemap">
+			<param name="Name" value="AddUserCategories">
+			<param name="Local" value="AddUserCategories.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetCategoryHotList">
+			<param name="Local" value="GetCategoryHotList.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetCategoryList">
+			<param name="Local" value="GetCategoryList.html">
+			</object>
+		</ul>
+	<li><object type="text/sitemap">
+		<param name="Name" value="com.server.controller.app.city">
+		</object>
+	<ul>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetCityAllList">
+			<param name="Local" value="GetCityAllList.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetCityChildrenList">
+			<param name="Local" value="GetCityChildrenList.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetCityList">
+			<param name="Local" value="GetCityList.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="IsNewCityList">
+			<param name="Local" value="IsNewCityList.html">
+			</object>
+		</ul>
+	<li><object type="text/sitemap">
+		<param name="Name" value="com.server.controller.app.collect">
+		</object>
+	<ul>
+			<li><object type="text/sitemap">
+			<param name="Name" value="ChangeCollect">
+			<param name="Local" value="ChangeCollect.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetCollectUserList">
+			<param name="Local" value="GetCollectUserList.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetCollectVideoList">
+			<param name="Local" value="GetCollectVideoList.html">
+			</object>
+		</ul>
+	<li><object type="text/sitemap">
+		<param name="Name" value="com.server.controller.app.comments">
+		</object>
+	<ul>
+			<li><object type="text/sitemap">
+			<param name="Name" value="AddComment">
+			<param name="Local" value="AddComment.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="ChangIsReadComment">
+			<param name="Local" value="ChangIsReadComment.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetCommentsList">
+			<param name="Local" value="GetCommentsList.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetMyCommentsList">
+			<param name="Local" value="GetMyCommentsList.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetMyVideoCommentsList">
+			<param name="Local" value="GetMyVideoCommentsList.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetReplyMeCommentsList">
+			<param name="Local" value="GetReplyMeCommentsList.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="ReplyComment">
+			<param name="Local" value="ReplyComment.html">
+			</object>
+		</ul>
+	<li><object type="text/sitemap">
+		<param name="Name" value="com.server.controller.app.feedback">
+		</object>
+	<ul>
+			<li><object type="text/sitemap">
+			<param name="Name" value="AddFeedback">
+			<param name="Local" value="AddFeedback.html">
+			</object>
+		</ul>
+	<li><object type="text/sitemap">
+		<param name="Name" value="com.server.controller.app.messages">
+		</object>
+	<ul>
+			<li><object type="text/sitemap">
+			<param name="Name" value="AddMessages">
+			<param name="Local" value="AddMessages.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="DisableMessages">
+			<param name="Local" value="DisableMessages.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetMessagesDetailsList">
+			<param name="Local" value="GetMessagesDetailsList.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetMyMessagesList">
+			<param name="Local" value="GetMyMessagesList.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="ReplyMessages">
+			<param name="Local" value="ReplyMessages.html">
+			</object>
+		</ul>
+	<li><object type="text/sitemap">
+		<param name="Name" value="com.server.controller.app.notice">
+		</object>
+	<ul>
+			<li><object type="text/sitemap">
+			<param name="Name" value="AddShareVideoNotice">
+			<param name="Local" value="AddShareVideoNotice.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="DeleteNewNotice">
+			<param name="Local" value="DeleteNewNotice.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="DeleteNotice">
+			<param name="Local" value="DeleteNotice.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetNewNoticeList">
+			<param name="Local" value="GetNewNoticeList.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetNewSysNoticeList">
+			<param name="Local" value="GetNewSysNoticeList.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetNotice">
+			<param name="Local" value="GetNotice.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetNoticeList">
+			<param name="Local" value="GetNoticeList.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetSysNoticeList">
+			<param name="Local" value="GetSysNoticeList.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="SendNotice">
+			<param name="Local" value="SendNotice.html">
+			</object>
+		</ul>
+	<li><object type="text/sitemap">
+		<param name="Name" value="com.server.controller.app.teach">
+		</object>
+	<ul>
+			<li><object type="text/sitemap">
+			<param name="Name" value="AddTeachCourse">
+			<param name="Local" value="AddTeachCourse.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="AddTeachCourseSignUp">
+			<param name="Local" value="AddTeachCourseSignUp.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="ChangeVideoStar">
+			<param name="Local" value="ChangeVideoStar.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="DisableTeachCourse">
+			<param name="Local" value="DisableTeachCourse.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetMyVideoList">
+			<param name="Local" value="GetMyVideoList.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetTeachCourseList">
+			<param name="Local" value="GetTeachCourseList.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetTeachCourseSignUpList">
+			<param name="Local" value="GetTeachCourseSignUpList.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetTeachCourseSignUpUserList">
+			<param name="Local" value="GetTeachCourseSignUpUserList.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetTeachVideoAllList">
+			<param name="Local" value="GetTeachVideoAllList.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetTeachVideoList">
+			<param name="Local" value="GetTeachVideoList.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="UpdateTeachCourse">
+			<param name="Local" value="UpdateTeachCourse.html">
+			</object>
+		</ul>
+	<li><object type="text/sitemap">
+		<param name="Name" value="com.server.controller.app.user">
+		</object>
+	<ul>
+			<li><object type="text/sitemap">
+			<param name="Name" value="AddTeachCommentAndStar">
+			<param name="Local" value="AddTeachCommentAndStar.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="AddTeachStar">
+			<param name="Local" value="AddTeachStar.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="CreateAccount">
+			<param name="Local" value="CreateAccount.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetCreatePhoneCode">
+			<param name="Local" value="GetCreatePhoneCode.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetResetPhoneCode">
+			<param name="Local" value="GetResetPhoneCode.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetUserInfo">
+			<param name="Local" value="GetUserInfo.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetUserList">
+			<param name="Local" value="GetUserList.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetUserListCount">
+			<param name="Local" value="GetUserListCount.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetUserProfile">
+			<param name="Local" value="GetUserProfile.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="PhoneIsExist">
+			<param name="Local" value="PhoneIsExist.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="ResetPassword">
+			<param name="Local" value="ResetPassword.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="UpdatePassword">
+			<param name="Local" value="UpdatePassword.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="UpdateProfile">
+			<param name="Local" value="UpdateProfile.html">
+			</object>
+		</ul>
+	<li><object type="text/sitemap">
+		<param name="Name" value="com.server.controller.app.user.auth">
+		</object>
+	<ul>
+			<li><object type="text/sitemap">
+			<param name="Name" value="AddAuthCertificate">
+			<param name="Local" value="AddAuthCertificate.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="AddAuthCitizenid">
+			<param name="Local" value="AddAuthCitizenid.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="AddAuthDiploma">
+			<param name="Local" value="AddAuthDiploma.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="ChangeAuthCertificate">
+			<param name="Local" value="ChangeAuthCertificate.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="ChangeAuthCitizenid">
+			<param name="Local" value="ChangeAuthCitizenid.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="ChangeAuthDiploma">
+			<param name="Local" value="ChangeAuthDiploma.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="CreateAuth">
+			<param name="Local" value="CreateAuth.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="DeleteAuthCertificate">
+			<param name="Local" value="DeleteAuthCertificate.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetAuth">
+			<param name="Local" value="GetAuth.html">
+			</object>
+		</ul>
+	<li><object type="text/sitemap">
+		<param name="Name" value="com.server.controller.app.user.binding">
+		</object>
+	<ul>
+			<li><object type="text/sitemap">
+			<param name="Name" value="AddUserBinding">
+			<param name="Local" value="AddUserBinding.html">
+			</object>
+		</ul>
+	<li><object type="text/sitemap">
+		<param name="Name" value="com.server.controller.app.user.introduction">
+		</object>
+	<ul>
+			<li><object type="text/sitemap">
+			<param name="Name" value="AddIntroductionImage">
+			<param name="Local" value="AddIntroductionImage.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="ChangeIntroduction">
+			<param name="Local" value="ChangeIntroduction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="ChangeIntroductionImage">
+			<param name="Local" value="ChangeIntroductionImage.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="CreateIntroduction">
+			<param name="Local" value="CreateIntroduction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="DeleteIntroductionImage">
+			<param name="Local" value="DeleteIntroductionImage.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetIntroduction">
+			<param name="Local" value="GetIntroduction.html">
+			</object>
+		</ul>
+	<li><object type="text/sitemap">
+		<param name="Name" value="com.server.controller.app.user.setting">
+		</object>
+	<ul>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetAllSettings">
+			<param name="Local" value="GetAllSettings.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="UpdateSettings">
+			<param name="Local" value="UpdateSettings.html">
+			</object>
+		</ul>
+	<li><object type="text/sitemap">
+		<param name="Name" value="com.server.controller.system">
+		</object>
+	<ul>
+			<li><object type="text/sitemap">
+			<param name="Name" value="ErrorAction">
+			<param name="Local" value="ErrorAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="IndexAction">
+			<param name="Local" value="IndexAction.html">
+			</object>
+		</ul>
+	<li><object type="text/sitemap">
+		<param name="Name" value="com.server.controller.system.higgses">
+		</object>
+	<ul>
+			<li><object type="text/sitemap">
+			<param name="Name" value="AddHiggsesAppAction">
+			<param name="Local" value="AddHiggsesAppAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="CheckVersionAction">
+			<param name="Local" value="CheckVersionAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="DisableHiggsesAppAction">
+			<param name="Local" value="DisableHiggsesAppAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetHiggsesAppAction">
+			<param name="Local" value="GetHiggsesAppAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetHiggsesAppListAction">
+			<param name="Local" value="GetHiggsesAppListAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="PublishHiggsesAppAction">
+			<param name="Local" value="PublishHiggsesAppAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="UpdateHiggsesAppAction">
+			<param name="Local" value="UpdateHiggsesAppAction.html">
+			</object>
+		</ul>
+	<li><object type="text/sitemap">
+		<param name="Name" value="com.server.controller.system.log">
+		</object>
+	<ul>
+			<li><object type="text/sitemap">
+			<param name="Name" value="AddAppErrorLogAction">
+			<param name="Local" value="AddAppErrorLogAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="DisableAppErrorLogAction">
+			<param name="Local" value="DisableAppErrorLogAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetAppErrorLogListAction">
+			<param name="Local" value="GetAppErrorLogListAction.html">
+			</object>
+		</ul>
+	<li><object type="text/sitemap">
+		<param name="Name" value="com.server.controller.web.auth">
+		</object>
+	<ul>
+			<li><object type="text/sitemap">
+			<param name="Name" value="LoginAction">
+			<param name="Local" value="LoginAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="LogoutAction">
+			<param name="Local" value="LogoutAction.html">
+			</object>
+		</ul>
+	<li><object type="text/sitemap">
+		<param name="Name" value="com.server.controller.web.category">
+		</object>
+	<ul>
+			<li><object type="text/sitemap">
+			<param name="Name" value="AddCategoryAction">
+			<param name="Local" value="AddCategoryAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="DeleteCategoryAction">
+			<param name="Local" value="DeleteCategoryAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="DisableCategoryAction">
+			<param name="Local" value="DisableCategoryAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetCategoryAction">
+			<param name="Local" value="GetCategoryAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetCategoryAllListAction">
+			<param name="Local" value="GetCategoryAllListAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetCategoryListAction">
+			<param name="Local" value="GetCategoryListAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="UpdateCategoryAction">
+			<param name="Local" value="UpdateCategoryAction.html">
+			</object>
+		</ul>
+	<li><object type="text/sitemap">
+		<param name="Name" value="com.server.controller.web.categoryHot">
+		</object>
+	<ul>
+			<li><object type="text/sitemap">
+			<param name="Name" value="AddCategoryHotAction">
+			<param name="Local" value="AddCategoryHotAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="DeleteCategoryHotAction">
+			<param name="Local" value="DeleteCategoryHotAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetCategoryHotListAction">
+			<param name="Local" value="GetCategoryHotListAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="UpdateCategoryHotAction">
+			<param name="Local" value="UpdateCategoryHotAction.html">
+			</object>
+		</ul>
+	<li><object type="text/sitemap">
+		<param name="Name" value="com.server.controller.web.city">
+		</object>
+	<ul>
+			<li><object type="text/sitemap">
+			<param name="Name" value="AddCityAction">
+			<param name="Local" value="AddCityAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="DeleteCityAction">
+			<param name="Local" value="DeleteCityAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetCityAction">
+			<param name="Local" value="GetCityAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetCityListAction">
+			<param name="Local" value="GetCityListAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="UpdateCityAction">
+			<param name="Local" value="UpdateCityAction.html">
+			</object>
+		</ul>
+	<li><object type="text/sitemap">
+		<param name="Name" value="com.server.controller.web.comments">
+		</object>
+	<ul>
+			<li><object type="text/sitemap">
+			<param name="Name" value="DisableCommentsAction">
+			<param name="Local" value="DisableCommentsAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetUserCommentsListAction">
+			<param name="Local" value="GetUserCommentsListAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetVideoCommentsListAction">
+			<param name="Local" value="GetVideoCommentsListAction.html">
+			</object>
+		</ul>
+	<li><object type="text/sitemap">
+		<param name="Name" value="com.server.controller.web.messages">
+		</object>
+	<ul>
+			<li><object type="text/sitemap">
+			<param name="Name" value="DisableMessagesAction">
+			<param name="Local" value="DisableMessagesAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="DisableMessagesDetailsAction">
+			<param name="Local" value="DisableMessagesDetailsAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetMessagesDetailsListAction">
+			<param name="Local" value="GetMessagesDetailsListAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetMessagesListAction">
+			<param name="Local" value="GetMessagesListAction.html">
+			</object>
+		</ul>
+	<li><object type="text/sitemap">
+		<param name="Name" value="com.server.controller.web.notice">
+		</object>
+	<ul>
+			<li><object type="text/sitemap">
+			<param name="Name" value="AddNoticeAction">
+			<param name="Local" value="AddNoticeAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="DisableNoticeAction">
+			<param name="Local" value="DisableNoticeAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetNoticeAction">
+			<param name="Local" value="GetNoticeAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetNoticeListAction">
+			<param name="Local" value="GetNoticeListAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="UpdateNoticeAction">
+			<param name="Local" value="UpdateNoticeAction.html">
+			</object>
+		</ul>
+	<li><object type="text/sitemap">
+		<param name="Name" value="com.server.controller.web.org">
+		</object>
+	<ul>
+			<li><object type="text/sitemap">
+			<param name="Name" value="AddOrgAction">
+			<param name="Local" value="AddOrgAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="DisableOrgAction">
+			<param name="Local" value="DisableOrgAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetOrgAction">
+			<param name="Local" value="GetOrgAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetOrgInfoAction">
+			<param name="Local" value="GetOrgInfoAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetOrgListAction">
+			<param name="Local" value="GetOrgListAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="ImportOrgAction">
+			<param name="Local" value="ImportOrgAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="ShowOrgAction">
+			<param name="Local" value="ShowOrgAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="UpdateOrgAction">
+			<param name="Local" value="UpdateOrgAction.html">
+			</object>
+		</ul>
+	<li><object type="text/sitemap">
+		<param name="Name" value="com.server.controller.web.setting">
+		</object>
+	<ul>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetUserRadiusMileAction">
+			<param name="Local" value="GetUserRadiusMileAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="SetUserRadiusMileAction">
+			<param name="Local" value="SetUserRadiusMileAction.html">
+			</object>
+		</ul>
+	<li><object type="text/sitemap">
+		<param name="Name" value="com.server.controller.web.teach.course">
+		</object>
+	<ul>
+			<li><object type="text/sitemap">
+			<param name="Name" value="AddCourseAction">
+			<param name="Local" value="AddCourseAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="DisableCourseAction">
+			<param name="Local" value="DisableCourseAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetCourseAction">
+			<param name="Local" value="GetCourseAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetCourseListAction">
+			<param name="Local" value="GetCourseListAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="UpdateCourseAction">
+			<param name="Local" value="UpdateCourseAction.html">
+			</object>
+		</ul>
+	<li><object type="text/sitemap">
+		<param name="Name" value="com.server.controller.web.teach.video">
+		</object>
+	<ul>
+			<li><object type="text/sitemap">
+			<param name="Name" value="AddVideoAction">
+			<param name="Local" value="AddVideoAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="DisableVideoAction">
+			<param name="Local" value="DisableVideoAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetUserListAction">
+			<param name="Local" value="GetUserListAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetVideoAction">
+			<param name="Local" value="GetVideoAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetVideoListAction">
+			<param name="Local" value="GetVideoListAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="UpdateVideoAction">
+			<param name="Local" value="UpdateVideoAction.html">
+			</object>
+		</ul>
+	<li><object type="text/sitemap">
+		<param name="Name" value="com.server.controller.web.user">
+		</object>
+	<ul>
+			<li><object type="text/sitemap">
+			<param name="Name" value="UpdatePasswordAction">
+			<param name="Local" value="UpdatePasswordAction.html">
+			</object>
+		</ul>
+	<li><object type="text/sitemap">
+		<param name="Name" value="com.server.controller.web.user.auth">
+		</object>
+	<ul>
+			<li><object type="text/sitemap">
+			<param name="Name" value="ChangeAuthAction">
+			<param name="Local" value="ChangeAuthAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="CreateAuthAction">
+			<param name="Local" value="CreateAuthAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetAuthAction">
+			<param name="Local" value="GetAuthAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetAuthAllAction">
+			<param name="Local" value="GetAuthAllAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetAuthListAction">
+			<param name="Local" value="GetAuthListAction.html">
+			</object>
+		</ul>
+	<li><object type="text/sitemap">
+		<param name="Name" value="com.server.controller.web.user.stu">
+		</object>
+	<ul>
+			<li><object type="text/sitemap">
+			<param name="Name" value="AddStuAction">
+			<param name="Local" value="AddStuAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="DisableStuAction">
+			<param name="Local" value="DisableStuAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetStuAction">
+			<param name="Local" value="GetStuAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetStuListAction">
+			<param name="Local" value="GetStuListAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="UpdateStuAction">
+			<param name="Local" value="UpdateStuAction.html">
+			</object>
+		</ul>
+	<li><object type="text/sitemap">
+		<param name="Name" value="com.server.controller.web.user.teacher">
+		</object>
+	<ul>
+			<li><object type="text/sitemap">
+			<param name="Name" value="AddTeacherAction">
+			<param name="Local" value="AddTeacherAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="DisableTeacherAction">
+			<param name="Local" value="DisableTeacherAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetTeacherAction">
+			<param name="Local" value="GetTeacherAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetTeacherInfoAction">
+			<param name="Local" value="GetTeacherInfoAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="GetTeacherListAction">
+			<param name="Local" value="GetTeacherListAction.html">
+			</object>
+			<li><object type="text/sitemap">
+			<param name="Name" value="UpdateTeacherAction">
+			<param name="Local" value="UpdateTeacherAction.html">
+			</object>
+		</ul>
+</ul>
+</body>
+</html>

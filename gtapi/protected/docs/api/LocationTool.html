@@ -1,0 +1,380 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="language" content="en" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/api.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<title>LocationTool</title>
+</head>
+
+<body>
+<div id="apiPage">
+
+<div id="apiHeader">
+My Console Application Class Reference
+</div><!-- end of header -->
+
+<div id="content">
+<h1>LocationTool</h1>
+<div id="nav">
+<a href="index.html">All Packages</a>
+| <a href="#properties">Properties</a>
+| <a href="#methods">Methods</a>
+</div>
+
+<table class="summaryTable docClass">
+<colgroup>
+	<col class="col-name" />
+	<col class="col-value" />
+</colgroup>
+<tr>
+  <th>Package</th>
+  <td><a href="index.html#com.server.components">com.server.components</a></td>
+</tr>
+<tr>
+  <th>Inheritance</th>
+  <td>class LocationTool</td>
+</tr>
+<tr>
+  <th>Since</th>
+  <td>0.1.0</td>
+</tr>
+<tr>
+  <th>Version</th>
+  <td>$Id: LocationTool $</td>
+</tr>
+<tr>
+  <th>Source Code</th>
+  <td>app/components/LocationTool.php</td>
+</tr>
+<tr>
+  <th>Author</th>
+  <td>Qijun Chiang &lt;QijunChiang@gmail.com&gt;</td>
+</tr>
+</table>
+
+<div id="classDescription">
+This LocationTool have some location tools</div>
+<a name="properties"></a>
+
+<div class="summary docProperty">
+<h2>Public Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-property" />
+	<col class="col-type" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr id="baidu_key">
+  <td><a href="LocationTool.html#baidu_key-detail">baidu_key</a></td>
+  <td></td>
+  <td></td>
+  <td>LocationTool</td>
+</tr>
+</table>
+</div>
+<a name="methods"></a>
+
+<div class="summary docMethod">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr id="__construct">
+  <td><a href="LocationTool.html#__construct-detail">__construct()</a></td>
+  <td></td>
+  <td>LocationTool</td>
+</tr>
+<tr id="getAddressByLocation">
+  <td><a href="LocationTool.html#getAddressByLocation-detail">getAddressByLocation()</a></td>
+  <td></td>
+  <td>LocationTool</td>
+</tr>
+<tr id="getAddressByLocation_google">
+  <td><a href="LocationTool.html#getAddressByLocation_google-detail">getAddressByLocation_google()</a></td>
+  <td></td>
+  <td>LocationTool</td>
+</tr>
+<tr id="getLocationByAddress">
+  <td><a href="LocationTool.html#getLocationByAddress-detail">getLocationByAddress()</a></td>
+  <td></td>
+  <td>LocationTool</td>
+</tr>
+<tr id="getLocationByAddress_google">
+  <td><a href="LocationTool.html#getLocationByAddress_google-detail">getLocationByAddress_google()</a></td>
+  <td></td>
+  <td>LocationTool</td>
+</tr>
+<tr id="getResponse">
+  <td><a href="LocationTool.html#getResponse-detail">getResponse()</a></td>
+  <td></td>
+  <td>LocationTool</td>
+</tr>
+</table>
+</div>
+<a name="events"></a>
+
+<h2>Property Details</h2>
+<div class="detailHeader" id="baidu_key-detail">
+baidu_key<span class="detailHeaderTag">
+property
+</span>
+</div>
+
+<div class="signature">
+public <b>$baidu_key</b>;</div>
+
+<p></p>
+
+
+<h2>Method Details</h2>
+
+<div class="detailHeader" id="__construct-detail">
+__construct()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>__construct</b>($baidu_key='')</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$baidu_key</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/components/LocationTool.php#19 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">__construct</span><span style="color: #007700">(</span><span style="color: #0000BB">$baidu_key</span><span style="color: #007700">=</span><span style="color: #DD0000">''</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;if(!empty(</span><span style="color: #0000BB">$baidu_key</span><span style="color: #007700">)){<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">baidu_key&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$baidu_key</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getAddressByLocation-detail">
+getAddressByLocation()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>getAddressByLocation</b>($location_x, $location_y, $output='json')</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$location_x</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$location_y</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$output</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/components/LocationTool.php#25 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getAddressByLocation</span><span style="color: #007700">(</span><span style="color: #0000BB">$location_x</span><span style="color: #007700">,</span><span style="color: #0000BB">$location_y</span><span style="color: #007700">,</span><span style="color: #0000BB">$output</span><span style="color: #007700">=</span><span style="color: #DD0000">'json'</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$url&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'http://api.map.baidu.com/geocoder?output='</span><span style="color: #007700">.</span><span style="color: #0000BB">$output</span><span style="color: #007700">.</span><span style="color: #DD0000">'&amp;location='</span><span style="color: #007700">.</span><span style="color: #0000BB">$location_x</span><span style="color: #007700">.</span><span style="color: #DD0000">','</span><span style="color: #007700">.</span><span style="color: #0000BB">$location_y</span><span style="color: #007700">.</span><span style="color: #DD0000">'&amp;key='</span><span style="color: #007700">.</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">baidu_key</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">LocationTool</span><span style="color: #007700">::</span><span style="color: #0000BB">getResponse</span><span style="color: #007700">(</span><span style="color: #0000BB">$url</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getAddressByLocation_google-detail">
+getAddressByLocation_google()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static void <b>getAddressByLocation_google</b>($location_x, $location_y)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$location_x</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$location_y</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/components/LocationTool.php#35 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">getAddressByLocation_google</span><span style="color: #007700">(</span><span style="color: #0000BB">$location_x</span><span style="color: #007700">,</span><span style="color: #0000BB">$location_y</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$url&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'http://maps.googleapis.com/maps/api/geocode/json?latlng='</span><span style="color: #007700">.</span><span style="color: #0000BB">$location_x</span><span style="color: #007700">.</span><span style="color: #DD0000">','</span><span style="color: #007700">.</span><span style="color: #0000BB">$location_y</span><span style="color: #007700">.</span><span style="color: #DD0000">'&amp;sensor=true&amp;language=zh-CN'</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">LocationTool</span><span style="color: #007700">::</span><span style="color: #0000BB">getResponse</span><span style="color: #007700">(</span><span style="color: #0000BB">$url</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getLocationByAddress-detail">
+getLocationByAddress()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>getLocationByAddress</b>($address, $output='json')</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$address</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$output</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/components/LocationTool.php#30 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getLocationByAddress</span><span style="color: #007700">(</span><span style="color: #0000BB">$address</span><span style="color: #007700">,</span><span style="color: #0000BB">$output</span><span style="color: #007700">=</span><span style="color: #DD0000">'json'</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$url&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'http://api.map.baidu.com/geocoder?output='</span><span style="color: #007700">.</span><span style="color: #0000BB">$output</span><span style="color: #007700">.</span><span style="color: #DD0000">'&amp;address='</span><span style="color: #007700">.</span><span style="color: #0000BB">urlencode</span><span style="color: #007700">(</span><span style="color: #0000BB">$address</span><span style="color: #007700">).</span><span style="color: #DD0000">'&amp;key='</span><span style="color: #007700">.</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">baidu_key</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">LocationTool</span><span style="color: #007700">::</span><span style="color: #0000BB">getResponse</span><span style="color: #007700">(</span><span style="color: #0000BB">$url</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getLocationByAddress_google-detail">
+getLocationByAddress_google()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static void <b>getLocationByAddress_google</b>($address, $output='json')</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$address</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$output</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/components/LocationTool.php#40 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">getLocationByAddress_google</span><span style="color: #007700">(</span><span style="color: #0000BB">$address</span><span style="color: #007700">,</span><span style="color: #0000BB">$output</span><span style="color: #007700">=</span><span style="color: #DD0000">'json'</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$url&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'http://maps.googleapis.com/maps/api/geocode/json?address='</span><span style="color: #007700">.</span><span style="color: #0000BB">urlencode</span><span style="color: #007700">(</span><span style="color: #0000BB">$address</span><span style="color: #007700">).</span><span style="color: #DD0000">'&amp;sensor=true&amp;language=zh-CN'</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">LocationTool</span><span style="color: #007700">::</span><span style="color: #0000BB">getResponse</span><span style="color: #007700">(</span><span style="color: #0000BB">$url</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getResponse-detail">
+getResponse()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static void <b>getResponse</b>($url)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$url</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/components/LocationTool.php#45 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">getResponse</span><span style="color: #007700">(</span><span style="color: #0000BB">$url</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$response&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">''</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$f&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">fopen</span><span style="color: #007700">(</span><span style="color: #0000BB">$url</span><span style="color: #007700">,</span><span style="color: #DD0000">'r'</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$response&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">stream_get_contents</span><span style="color: #007700">(</span><span style="color: #0000BB">$f</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">fclose</span><span style="color: #007700">(</span><span style="color: #0000BB">$f</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">CJSON</span><span style="color: #007700">::</span><span style="color: #0000BB">decode</span><span style="color: #007700">(</span><span style="color: #0000BB">$response</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+</div><!-- end of content -->
+
+<div id="apiFooter">
+Copyright &copy; 2008-2011 by <a href="http://www.yiisoft.com">Yii Software LLC</a><br/>
+All Rights Reserved.<br/>
+</div><!-- end of footer -->
+
+<script type="text/javascript">
+/*<![CDATA[*/
+$("a.toggle").toggle(function(){
+	$(this).text($(this).text().replace(/Hide/,'Show'));
+	$(this).parents(".summary").find(".inherited").hide();
+},function(){
+	$(this).text($(this).text().replace(/Show/,'Hide'));
+	$(this).parents(".summary").find(".inherited").show();
+});
+$(".sourceCode a.show").toggle(function(){
+	$(this).text($(this).text().replace(/show/,'hide'));
+	$(this).parents(".sourceCode").find("div.code").show();
+},function(){
+	$(this).text($(this).text().replace(/hide/,'show'));
+	$(this).parents(".sourceCode").find("div.code").hide();
+});
+$("a.sourceLink").click(function(){
+	$(this).attr('target','_blank');
+});
+/*]]>*/
+</script>
+
+</div><!-- end of page -->
+</body>
+</html>

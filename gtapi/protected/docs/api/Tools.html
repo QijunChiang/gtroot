@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="language" content="en" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/api.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<title>Tools</title>
+</head>
+
+<body>
+<div id="apiPage">
+
+<div id="apiHeader">
+My Console Application Class Reference
+</div><!-- end of header -->
+
+<div id="content">
+<h1>Tools</h1>
+<div id="nav">
+<a href="index.html">All Packages</a>
+| <a href="#methods">Methods</a>
+</div>
+
+<table class="summaryTable docClass">
+<colgroup>
+	<col class="col-name" />
+	<col class="col-value" />
+</colgroup>
+<tr>
+  <th>Package</th>
+  <td><a href="index.html#com.server.components">com.server.components</a></td>
+</tr>
+<tr>
+  <th>Inheritance</th>
+  <td>class Tools</td>
+</tr>
+<tr>
+  <th>Since</th>
+  <td>0.1.0</td>
+</tr>
+<tr>
+  <th>Version</th>
+  <td>$Id: Contents $</td>
+</tr>
+<tr>
+  <th>Source Code</th>
+  <td>app/components/Tools.php</td>
+</tr>
+<tr>
+  <th>Author</th>
+  <td>Qijun Chiang &lt;QijunChiang@gmail.com&gt;</td>
+</tr>
+</table>
+
+<div id="classDescription">
+Tools</div>
+<a name="properties"></a>
+
+<a name="methods"></a>
+
+<div class="summary docMethod">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr id="checkFile">
+  <td><a href="Tools.html#checkFile-detail">checkFile()</a></td>
+  <td>check extension</td>
+  <td>Tools</td>
+</tr>
+<tr id="is_date">
+  <td><a href="Tools.html#is_date-detail">is_date()</a></td>
+  <td>check $data is data for format</td>
+  <td>Tools</td>
+</tr>
+</table>
+</div>
+<a name="events"></a>
+
+<h2>Method Details</h2>
+
+<div class="detailHeader" id="checkFile-detail">
+checkFile()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static void <b>checkFile</b>(file $file, array $types, $size=20971520)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$file</td>
+  <td class="paramTypeCol">file</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$types</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$size</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/components/Tools.php#21 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">checkFile</span><span style="color: #007700">(</span><span style="color: #0000BB">$file</span><span style="color: #007700">,</span><span style="color: #0000BB">$types</span><span style="color: #007700">,</span><span style="color: #0000BB">$size&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">Contents</span><span style="color: #007700">::</span><span style="color: #0000BB">FILE_SIZE</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;if(</span><span style="color: #0000BB">$file&nbsp;</span><span style="color: #007700">==&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">){return;}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$fileName</span><span style="color: #007700">=</span><span style="color: #0000BB">$file</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getExtensionName</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;if(</span><span style="color: #0000BB">is_string</span><span style="color: #007700">(</span><span style="color: #0000BB">$types</span><span style="color: #007700">))<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$types</span><span style="color: #007700">=</span><span style="color: #0000BB">preg_split</span><span style="color: #007700">(</span><span style="color: #DD0000">'/[\s,]+/'</span><span style="color: #007700">,</span><span style="color: #0000BB">strtolower</span><span style="color: #007700">(</span><span style="color: #0000BB">$types</span><span style="color: #007700">),-</span><span style="color: #0000BB">1</span><span style="color: #007700">,</span><span style="color: #0000BB">PREG_SPLIT_NO_EMPTY</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;if(</span><span style="color: #0000BB">in_array</span><span style="color: #007700">(</span><span style="color: #0000BB">strtolower</span><span style="color: #007700">(</span><span style="color: #0000BB">$fileName</span><span style="color: #007700">),</span><span style="color: #0000BB">$types</span><span style="color: #007700">)){<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(empty(</span><span style="color: #0000BB">$size</span><span style="color: #007700">)){return;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$fileSize</span><span style="color: #007700">=</span><span style="color: #0000BB">$file</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getSize</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(</span><span style="color: #0000BB">$fileSize</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">$size</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">CHttpException</span><span style="color: #007700">(</span><span style="color: #0000BB">1012</span><span style="color: #007700">,</span><span style="color: #DD0000">"File&nbsp;size&nbsp;can't&nbsp;more&nbsp;than"</span><span style="color: #007700">.</span><span style="color: #0000BB">$size</span><span style="color: #007700">.</span><span style="color: #DD0000">'b'</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}else{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">CHttpException</span><span style="color: #007700">(</span><span style="color: #0000BB">1013</span><span style="color: #007700">,</span><span style="color: #DD0000">'File&nbsp;extension&nbsp;must&nbsp;be&nbsp;'</span><span style="color: #007700">.</span><span style="color: #0000BB">implode</span><span style="color: #007700">(</span><span style="color: #DD0000">","</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$types</span><span style="color: #007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+<p>check extension</p>
+
+
+<div class="detailHeader" id="is_date-detail">
+is_date()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static boolean <b>is_date</b>(string $date, string $format='Y-m-d')</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$date</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$format</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/components/Tools.php#43 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">is_date</span><span style="color: #007700">(</span><span style="color: #0000BB">$date</span><span style="color: #007700">,</span><span style="color: #0000BB">$format</span><span style="color: #007700">=</span><span style="color: #0000BB">Contents</span><span style="color: #007700">::</span><span style="color: #0000BB">DATETIME_YMD</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if(</span><span style="color: #0000BB">$date&nbsp;</span><span style="color: #007700">==&nbsp;</span><span style="color: #0000BB">date</span><span style="color: #007700">(</span><span style="color: #0000BB">$format</span><span style="color: #007700">,</span><span style="color: #0000BB">strtotime</span><span style="color: #007700">(</span><span style="color: #0000BB">$date</span><span style="color: #007700">))){<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}else{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />}</span>
+</span>
+</code></div>
+</div>
+<p>check $data is data for format</p>
+
+
+</div><!-- end of content -->
+
+<div id="apiFooter">
+Copyright &copy; 2008-2011 by <a href="http://www.yiisoft.com">Yii Software LLC</a><br/>
+All Rights Reserved.<br/>
+</div><!-- end of footer -->
+
+<script type="text/javascript">
+/*<![CDATA[*/
+$("a.toggle").toggle(function(){
+	$(this).text($(this).text().replace(/Hide/,'Show'));
+	$(this).parents(".summary").find(".inherited").hide();
+},function(){
+	$(this).text($(this).text().replace(/Show/,'Hide'));
+	$(this).parents(".summary").find(".inherited").show();
+});
+$(".sourceCode a.show").toggle(function(){
+	$(this).text($(this).text().replace(/show/,'hide'));
+	$(this).parents(".sourceCode").find("div.code").show();
+},function(){
+	$(this).text($(this).text().replace(/hide/,'show'));
+	$(this).parents(".sourceCode").find("div.code").hide();
+});
+$("a.sourceLink").click(function(){
+	$(this).attr('target','_blank');
+});
+/*]]>*/
+</script>
+
+</div><!-- end of page -->
+</body>
+</html>

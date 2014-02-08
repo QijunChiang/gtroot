@@ -1,0 +1,526 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="language" content="en" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/api.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<title>UpdateOrgAction</title>
+</head>
+
+<body>
+<div id="apiPage">
+
+<div id="apiHeader">
+My Web Application Class Reference. <a href="http://www.yiiframework.com">Yii Framework</a>
+</div><!-- end of header -->
+
+<div id="content">
+<h1>UpdateOrgAction</h1>
+<div id="nav">
+<a href="index.html">All Packages</a>
+| <a href="#properties">Properties</a>
+| <a href="#methods">Methods</a>
+</div>
+
+<table class="summaryTable docClass">
+<colgroup>
+	<col class="col-name" />
+	<col class="col-value" />
+</colgroup>
+<tr>
+  <th>Package</th>
+  <td><a href="index.html#com.server.controller.web.org">com.server.controller.web.org</a></td>
+</tr>
+<tr>
+  <th>Inheritance</th>
+  <td>class UpdateOrgAction &raquo;
+<a href="SessionFilterAction.html">SessionFilterAction</a> &raquo;
+<a href="BaseAction.html">BaseAction</a> &raquo;
+<a href="RESTAction.html">RESTAction</a> &raquo;
+<a href="http://www.yiiframework.com/doc/api/1.1/CAction">CAction</a> &raquo;
+<a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr>
+  <th>Implements</th>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/IAction">IAction</a></td>
+</tr>
+<tr>
+  <th>Since</th>
+  <td>0.1.0</td>
+</tr>
+<tr>
+  <th>Version</th>
+  <td>$Id: UpdateOrg</td>
+</tr>
+<tr>
+  <th>Source Code</th>
+  <td></td>
+</tr>
+</table>
+
+<div id="classDescription">
+修改机构
+<pre>
+请求地址
+   web/update_org
+请求方法
+   POST
+状态码
+   200: Ok
+错误码
+   1000：API 系统出现错误。
+   1001：缺省为保存时候验证出错所返回的信息。
+   1002：插入数据出错。
+   1006：你的sessionKey是无效或过期的。
+   1009：手机号码已经被注册。
+   1010：你的手机号码已被管理员冻结，请联系管理员。
+   1020：不能根据orgId找到机构。
+参数
+   format ： xml/json 可选
+   sessionKey ：&quot;51d39bdf0a0f0&quot; 必选 密匙，需要获得sessionKey所登录的用户信息。
+   orgId: '51e4c3b44168b' 必选 机构编号ID
+   phone: '13333333333' 可选 手机号码
+   photo: 'iVBORw0KGgoAAAANSUhEUgAAADkAAAA5CAYAAACM'// 可选 base64位编码
+   price：'80' 可选 平均价格，创建账号时，在没有任何课程价格的情况下显示
+   name:'王尼玛' 可选
+   usuallyLocationX:'' 可选 纬度
+   usuallyLocationY:'' 可选 经度
+   usuallyLocationInfo:'' 可选 地址描述信息，可自己设置，没有设置时，会根据经纬度获得地址信息。
+   categoryIds：'1,2,3' 可选 我的专长
+   videoImage: '' 选填 视频截图,添加了视频时，此参数必填。
+   video:'' 选填 视频流。
+   imageIds:'51e4c3b44168b,51e4c3b44168b,51e4c3b44168b' 选填 //获得数据时，已经存在的ID集合
+   file1:'' 选填 //文件
+   file2:'' 选填 //文件
+   images:'0,1,file1,file2' 选填
+   //images配合imageIds使用，ID存在，对应值为delete，删除，为unChange表示不改变，其他表示修改的数据；ID为0，对应值存在，添加。
+   order:'1212' 可选 序号修改。
+   cityIds:&quot;1,2,3,4&quot;, 可选 区域（前台限制，只能是区或者商区）
+返回
+{
+  &quot;result&quot;: true,
+  &quot;data&quot;: [
+      {
+          &quot;orgId&quot;: &quot;1&quot;
+      }
+  ]
+}
+</pre></div>
+
+<a name="properties"></a>
+
+<div class="summary docProperty">
+<h2>Public Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-property" />
+	<col class="col-type" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="controller">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CAction/#controller-detail">controller</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+  <td>the controller who owns this action.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CAction">CAction</a></td>
+</tr>
+<tr class="inherited" id="id">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CAction/#id-detail">id</a></td>
+  <td>string</td>
+  <td>id of this action</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CAction">CAction</a></td>
+</tr>
+<tr class="inherited" id="userSession">
+  <td><a href="SessionFilterAction.html#userSession-detail">userSession</a></td>
+  <td></td>
+  <td></td>
+  <td><a href="SessionFilterAction.html">SessionFilterAction</a></td>
+</tr>
+</table>
+</div>
+
+<div class="summary docProperty">
+<h2>Protected Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-property" />
+	<col class="col-type" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="requestArray">
+  <td><a href="BaseAction.html#requestArray-detail">requestArray</a></td>
+  <td>Array</td>
+  <td>get request array</td>
+  <td><a href="BaseAction.html">BaseAction</a></td>
+</tr>
+<tr class="inherited" id="responseArray">
+  <td><a href="BaseAction.html#responseArray-detail">responseArray</a></td>
+  <td>Array</td>
+  <td>get response array</td>
+  <td><a href="BaseAction.html">BaseAction</a></td>
+</tr>
+</table>
+</div>
+
+<a name="methods"></a>
+
+<div class="summary docMethod">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="__call">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#__call-detail">__call()</a></td>
+  <td>Calls the named method which is not a class method.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="__construct">
+  <td><a href="SessionFilterAction.html#__construct-detail">__construct()</a></td>
+  <td></td>
+  <td><a href="SessionFilterAction.html">SessionFilterAction</a></td>
+</tr>
+<tr class="inherited" id="__get">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#__get-detail">__get()</a></td>
+  <td>Returns a property value, an event handler list or a behavior based on its name.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="__isset">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#__isset-detail">__isset()</a></td>
+  <td>Checks if a property value is null.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="__set">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#__set-detail">__set()</a></td>
+  <td>Sets value of a component property.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="__unset">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#__unset-detail">__unset()</a></td>
+  <td>Sets a component property to be null.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="asa">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#asa-detail">asa()</a></td>
+  <td>Returns the named behavior object.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="attachBehavior">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#attachBehavior-detail">attachBehavior()</a></td>
+  <td>Attaches a behavior to this component.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="attachBehaviors">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#attachBehaviors-detail">attachBehaviors()</a></td>
+  <td>Attaches a list of behaviors to the component.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="attachEventHandler">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#attachEventHandler-detail">attachEventHandler()</a></td>
+  <td>Attaches an event handler to an event.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="canGetProperty">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#canGetProperty-detail">canGetProperty()</a></td>
+  <td>Determines whether a property can be read.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="canSetProperty">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#canSetProperty-detail">canSetProperty()</a></td>
+  <td>Determines whether a property can be set.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="detachBehavior">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#detachBehavior-detail">detachBehavior()</a></td>
+  <td>Detaches a behavior from the component.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="detachBehaviors">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#detachBehaviors-detail">detachBehaviors()</a></td>
+  <td>Detaches all behaviors from the component.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="detachEventHandler">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#detachEventHandler-detail">detachEventHandler()</a></td>
+  <td>Detaches an existing event handler.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="disableBehavior">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#disableBehavior-detail">disableBehavior()</a></td>
+  <td>Disables an attached behavior.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="disableBehaviors">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#disableBehaviors-detail">disableBehaviors()</a></td>
+  <td>Disables all behaviors attached to this component.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="enableBehavior">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#enableBehavior-detail">enableBehavior()</a></td>
+  <td>Enables an attached behavior.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="enableBehaviors">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#enableBehaviors-detail">enableBehaviors()</a></td>
+  <td>Enables all behaviors attached to this component.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="evaluateExpression">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#evaluateExpression-detail">evaluateExpression()</a></td>
+  <td>Evaluates a PHP expression or callback under the context of this component.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="getController">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CAction/#getController-detail">getController()</a></td>
+  <td>Returns the controller who owns this action.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CAction">CAction</a></td>
+</tr>
+<tr class="inherited" id="getData">
+  <td><a href="BaseAction.html#getData-detail">getData()</a></td>
+  <td>get date by different way.</td>
+  <td><a href="BaseAction.html">BaseAction</a></td>
+</tr>
+<tr class="inherited" id="getEventHandlers">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#getEventHandlers-detail">getEventHandlers()</a></td>
+  <td>Returns the list of attached event handlers for an event.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="getId">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CAction/#getId-detail">getId()</a></td>
+  <td>Returns id of this action</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CAction">CAction</a></td>
+</tr>
+<tr class="inherited" id="hasEvent">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#hasEvent-detail">hasEvent()</a></td>
+  <td>Determines whether an event is defined.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="hasEventHandler">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#hasEventHandler-detail">hasEventHandler()</a></td>
+  <td>Checks whether the named event has attached handlers.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="hasProperty">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#hasProperty-detail">hasProperty()</a></td>
+  <td>Determines whether a property is defined.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="raiseEvent">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#raiseEvent-detail">raiseEvent()</a></td>
+  <td>Raises an event.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr id="run">
+  <td><a href="UpdateOrgAction.html#run-detail">run()</a></td>
+  <td>Action to run</td>
+  <td>UpdateOrgAction</td>
+</tr>
+<tr class="inherited" id="runWithParams">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CAction/#runWithParams-detail">runWithParams()</a></td>
+  <td>Runs the action with the supplied request parameters.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CAction">CAction</a></td>
+</tr>
+</table>
+</div>
+
+<div class="summary docMethod">
+<h2>Protected Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="_getStatusCodeMessage">
+  <td><a href="RESTAction.html#_getStatusCodeMessage-detail">_getStatusCodeMessage()</a></td>
+  <td>Gets the message for a status code</td>
+  <td><a href="RESTAction.html">RESTAction</a></td>
+</tr>
+<tr class="inherited" id="_sendResponse">
+  <td><a href="RESTAction.html#_sendResponse-detail">_sendResponse()</a></td>
+  <td>Sends the API response</td>
+  <td><a href="RESTAction.html">RESTAction</a></td>
+</tr>
+<tr class="inherited" id="addResponse">
+  <td><a href="BaseAction.html#addResponse-detail">addResponse()</a></td>
+  <td>Add result to response array.</td>
+  <td><a href="BaseAction.html">BaseAction</a></td>
+</tr>
+<tr class="inherited" id="addResponses">
+  <td><a href="BaseAction.html#addResponses-detail">addResponses()</a></td>
+  <td>add result array to response array, array_merge</td>
+  <td><a href="BaseAction.html">BaseAction</a></td>
+</tr>
+<tr class="inherited" id="checkParameters">
+  <td><a href="BaseAction.html#checkParameters-detail">checkParameters()</a></td>
+  <td>check parameters exists or not</td>
+  <td><a href="BaseAction.html">BaseAction</a></td>
+</tr>
+<tr class="inherited" id="checkSessionKey">
+  <td><a href="SessionFilterAction.html#checkSessionKey-detail">checkSessionKey()</a></td>
+  <td>check session is invalid.</td>
+  <td><a href="SessionFilterAction.html">SessionFilterAction</a></td>
+</tr>
+<tr class="inherited" id="clear">
+  <td><a href="BaseAction.html#clear-detail">clear()</a></td>
+  <td>clear response array.</td>
+  <td><a href="BaseAction.html">BaseAction</a></td>
+</tr>
+<tr class="inherited" id="decodeRequest">
+  <td><a href="BaseAction.html#decodeRequest-detail">decodeRequest()</a></td>
+  <td>decode request to array.</td>
+  <td><a href="BaseAction.html">BaseAction</a></td>
+</tr>
+<tr class="inherited" id="existsRequest">
+  <td><a href="BaseAction.html#existsRequest-detail">existsRequest()</a></td>
+  <td>check key exists or not in request</td>
+  <td><a href="BaseAction.html">BaseAction</a></td>
+</tr>
+<tr class="inherited" id="getRequest">
+  <td><a href="BaseAction.html#getRequest-detail">getRequest()</a></td>
+  <td>get request value,if isExists is true, will be check key is exists in request;</td>
+  <td><a href="BaseAction.html">BaseAction</a></td>
+</tr>
+<tr class="inherited" id="getRequestArray">
+  <td><a href="BaseAction.html#getRequestArray-detail">getRequestArray()</a></td>
+  <td>get request array</td>
+  <td><a href="BaseAction.html">BaseAction</a></td>
+</tr>
+<tr class="inherited" id="getResponseArray">
+  <td><a href="BaseAction.html#getResponseArray-detail">getResponseArray()</a></td>
+  <td>get response array</td>
+  <td><a href="BaseAction.html">BaseAction</a></td>
+</tr>
+<tr class="inherited" id="redecode">
+  <td><a href="BaseAction.html#redecode-detail">redecode()</a></td>
+  <td>redecode array.</td>
+  <td><a href="BaseAction.html">BaseAction</a></td>
+</tr>
+<tr class="inherited" id="runWithParamsInternal">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CAction/#runWithParamsInternal-detail">runWithParamsInternal()</a></td>
+  <td>Executes a method of an object with the supplied named parameters.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CAction">CAction</a></td>
+</tr>
+<tr class="inherited" id="sendResponse">
+  <td><a href="BaseAction.html#sendResponse-detail">sendResponse()</a></td>
+  <td>send response to client.</td>
+  <td><a href="BaseAction.html">BaseAction</a></td>
+</tr>
+<tr class="inherited" id="setErrorInfo">
+  <td><a href="BaseAction.html#setErrorInfo-detail">setErrorInfo()</a></td>
+  <td>return error to client</td>
+  <td><a href="BaseAction.html">BaseAction</a></td>
+</tr>
+<tr class="inherited" id="setModelAttribute">
+  <td><a href="BaseAction.html#setModelAttribute-detail">setModelAttribute()</a></td>
+  <td>set request value to Model.</td>
+  <td><a href="BaseAction.html">BaseAction</a></td>
+</tr>
+<tr class="inherited" id="setResponse">
+  <td><a href="BaseAction.html#setResponse-detail">setResponse()</a></td>
+  <td>set result array.</td>
+  <td><a href="BaseAction.html">BaseAction</a></td>
+</tr>
+<tr class="inherited" id="toJSON">
+  <td><a href="BaseAction.html#toJSON-detail">toJSON()</a></td>
+  <td>Encode response to json string.</td>
+  <td><a href="BaseAction.html">BaseAction</a></td>
+</tr>
+<tr class="inherited" id="toXML">
+  <td><a href="BaseAction.html#toXML-detail">toXML()</a></td>
+  <td>Encode response to XML string.</td>
+  <td><a href="BaseAction.html">BaseAction</a></td>
+</tr>
+</table>
+</div>
+
+<a name="events"></a>
+
+<h2>Method Details</h2>
+
+<div class="detailHeader" id="run-detail">
+run()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>run</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b>  (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">run</span><span style="color: #007700">()&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//获取参数信息<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$userId&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getRequest</span><span style="color: #007700">(</span><span style="color: #DD0000">"orgId"</span><span style="color: #007700">,</span><span style="color: #0000BB">true</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$name&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getRequest</span><span style="color: #007700">(</span><span style="color: #DD0000">"name"</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$shortName&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getRequest</span><span style="color: #007700">(</span><span style="color: #DD0000">"shortName"</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$phone&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getRequest</span><span style="color: #007700">(</span><span style="color: #DD0000">"phone"</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$photo&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">CUploadedFile</span><span style="color: #007700">::</span><span style="color: #0000BB">getInstanceByName</span><span style="color: #007700">(</span><span style="color: #DD0000">"photo"</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">Tools</span><span style="color: #007700">::</span><span style="color: #0000BB">checkFile</span><span style="color: #007700">(</span><span style="color: #0000BB">$photo</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">Contents</span><span style="color: #007700">::</span><span style="color: #0000BB">IMAGE_TYPE</span><span style="color: #007700">,</span><span style="color: #0000BB">Contents</span><span style="color: #007700">::</span><span style="color: #0000BB">IMAGE_FILE_SIZE</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$price&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getRequest</span><span style="color: #007700">(</span><span style="color: #DD0000">"price"</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$usuallyLocationX&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getRequest</span><span style="color: #007700">(</span><span style="color: #DD0000">"usuallyLocationX"</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$usuallyLocationY&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getRequest</span><span style="color: #007700">(</span><span style="color: #DD0000">"usuallyLocationY"</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$usuallyLocationInfo&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getRequest</span><span style="color: #007700">(</span><span style="color: #DD0000">"usuallyLocationInfo"</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$categoryIds&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getRequest</span><span style="color: #007700">(</span><span style="color: #DD0000">"categoryIds"</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$order&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getRequest</span><span style="color: #007700">(</span><span style="color: #DD0000">"order"</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$user&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">User</span><span style="color: #007700">::</span><span style="color: #0000BB">model</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">findByPk</span><span style="color: #007700">(</span><span style="color: #0000BB">$userId</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;if(!</span><span style="color: #0000BB">$user</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">CHttpException</span><span style="color: #007700">(</span><span style="color: #0000BB">1020</span><span style="color: #007700">,</span><span style="color: #0000BB">Contents</span><span style="color: #007700">::</span><span style="color: #0000BB">getErrorByCode</span><span style="color: #007700">(</span><span style="color: #0000BB">1020</span><span style="color: #007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">/*<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;修改机构，不验证该项<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;if($phone&nbsp;!=&nbsp;null&nbsp;&amp;&amp;&nbsp;trim($phone)&nbsp;!=&nbsp;''&nbsp;&amp;&amp;&nbsp;$phone&nbsp;!=&nbsp;$user-&gt;phone){<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//查询数据库中phone的用户。<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$user_o&nbsp;=&nbsp;User::model()-&gt;getUserByphone($phone);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if($user_o){<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//已经被删除<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if($user_o-&gt;isDelete&nbsp;==&nbsp;Contents::T){<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;CHttpException(1010,Contents::getErrorByCode(1010));<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}else{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//已经注册了<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;CHttpException(1009,Contents::getErrorByCode(1009));<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}*/<br />&nbsp;&nbsp;&nbsp;&nbsp;//修改账号信息<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">User</span><span style="color: #007700">::</span><span style="color: #0000BB">model</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">updateAccount</span><span style="color: #007700">(</span><span style="color: #0000BB">$userId</span><span style="color: #007700">,</span><span style="color: #0000BB">$phone</span><span style="color: #007700">,</span><span style="color: #0000BB">null</span><span style="color: #007700">,</span><span style="color: #0000BB">null</span><span style="color: #007700">,</span><span style="color: #0000BB">$order</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//修改共有信息<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$profile&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">Profile</span><span style="color: #007700">::</span><span style="color: #0000BB">model</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">updateProfile</span><span style="color: #007700">(</span><span style="color: #0000BB">$userId</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$photo</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$shortName</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//修改机构资料<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$teach&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">Teach</span><span style="color: #007700">::</span><span style="color: #0000BB">model</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">updateTeach</span><span style="color: #007700">(</span><span style="color: #0000BB">$userId</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$price</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$usuallyLocationX</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$usuallyLocationY</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$usuallyLocationInfo</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;if(!</span><span style="color: #0000BB">Tools</span><span style="color: #007700">::</span><span style="color: #0000BB">isEmpty</span><span style="color: #007700">(</span><span style="color: #0000BB">$categoryIds</span><span style="color: #007700">)){<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//为机构添加专长。<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$ids&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">TeachCategory</span><span style="color: #007700">::</span><span style="color: #0000BB">model</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">addTeachCategory</span><span style="color: #007700">(</span><span style="color: #0000BB">$userId</span><span style="color: #007700">,</span><span style="color: #0000BB">$categoryIds</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">/**<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;2013/07/30&nbsp;管理后台增加机构修改视频，截图，等信息的修改或添加<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$description&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getRequest</span><span style="color: #007700">(</span><span style="color: #DD0000">"description"</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$video</span><span style="color: #007700">=&nbsp;&nbsp;</span><span style="color: #0000BB">CUploadedFile</span><span style="color: #007700">::</span><span style="color: #0000BB">getInstanceByName</span><span style="color: #007700">(</span><span style="color: #DD0000">'video'</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">//视频文件<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">Tools</span><span style="color: #007700">::</span><span style="color: #0000BB">checkFile</span><span style="color: #007700">(</span><span style="color: #0000BB">$video</span><span style="color: #007700">,</span><span style="color: #DD0000">"3gp,mp4"</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$videoImage&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">CUploadedFile</span><span style="color: #007700">::</span><span style="color: #0000BB">getInstanceByName</span><span style="color: #007700">(</span><span style="color: #DD0000">'videoImage'</span><span style="color: #007700">);</span><span style="color: #FF8000">//视频截图<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">Tools</span><span style="color: #007700">::</span><span style="color: #0000BB">checkFile</span><span style="color: #007700">(</span><span style="color: #0000BB">$videoImage</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">Contents</span><span style="color: #007700">::</span><span style="color: #0000BB">IMAGE_TYPE</span><span style="color: #007700">,</span><span style="color: #0000BB">Contents</span><span style="color: #007700">::</span><span style="color: #0000BB">IMAGE_FILE_SIZE</span><span style="color: #007700">);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$images&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getRequest</span><span style="color: #007700">(</span><span style="color: #DD0000">"images"</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$imageIds&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getRequest</span><span style="color: #007700">(</span><span style="color: #DD0000">"imageIds"</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//创建自我介绍文字介绍和视频介绍<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$introduction&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">Introduction</span><span style="color: #007700">::</span><span style="color: #0000BB">model</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">createIntroduction</span><span style="color: #007700">(</span><span style="color: #0000BB">$user</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">id</span><span style="color: #007700">,</span><span style="color: #0000BB">$description</span><span style="color: #007700">,</span><span style="color: #0000BB">$video</span><span style="color: #007700">,</span><span style="color: #0000BB">$videoImage</span><span style="color: #007700">);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;if(!</span><span style="color: #0000BB">Tools</span><span style="color: #007700">::</span><span style="color: #0000BB">isEmpty</span><span style="color: #007700">(</span><span style="color: #0000BB">$images</span><span style="color: #007700">)){<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$image_array</span><span style="color: #007700">=array();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">explode</span><span style="color: #007700">(</span><span style="color: #DD0000">","&nbsp;</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$images</span><span style="color: #007700">)&nbsp;as&nbsp;</span><span style="color: #0000BB">$input_name</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$icon&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">CUploadedFile</span><span style="color: #007700">::</span><span style="color: #0000BB">getInstanceByName</span><span style="color: #007700">(</span><span style="color: #0000BB">$input_name</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(!empty(</span><span style="color: #0000BB">$icon</span><span style="color: #007700">)){<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">Tools</span><span style="color: #007700">::</span><span style="color: #0000BB">checkFile</span><span style="color: #007700">(</span><span style="color: #0000BB">$icon</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">Contents</span><span style="color: #007700">::</span><span style="color: #0000BB">IMAGE_TYPE</span><span style="color: #007700">,</span><span style="color: #0000BB">Contents</span><span style="color: #007700">::</span><span style="color: #0000BB">IMAGE_FILE_SIZE</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">array_push</span><span style="color: #007700">(</span><span style="color: #0000BB">$image_array</span><span style="color: #007700">,</span><span style="color: #0000BB">$icon</span><span style="color: #007700">);</span><span style="color: #FF8000">//添加图片<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}else{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">array_push</span><span style="color: #007700">(</span><span style="color: #0000BB">$image_array</span><span style="color: #007700">,</span><span style="color: #0000BB">$input_name</span><span style="color: #007700">);</span><span style="color: #FF8000">//unChange,delete保持不变<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(!</span><span style="color: #0000BB">Tools</span><span style="color: #007700">::</span><span style="color: #0000BB">isEmpty</span><span style="color: #007700">(</span><span style="color: #0000BB">$imageIds</span><span style="color: #007700">)){<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$imageIds&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">explode</span><span style="color: #007700">(</span><span style="color: #DD0000">","&nbsp;</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$imageIds</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}else{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$imageIds&nbsp;</span><span style="color: #007700">=&nbsp;array();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">$image_array&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$i</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">$image</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(</span><span style="color: #0000BB">$image&nbsp;</span><span style="color: #007700">==&nbsp;</span><span style="color: #DD0000">'delete'&nbsp;</span><span style="color: #007700">&amp;&amp;&nbsp;!</span><span style="color: #0000BB">Tools</span><span style="color: #007700">::</span><span style="color: #0000BB">isEmpty</span><span style="color: #007700">(</span><span style="color: #0000BB">$imageIds</span><span style="color: #007700">[</span><span style="color: #0000BB">$i</span><span style="color: #007700">])){<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//删除自我介绍图片<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">IntroductionImage</span><span style="color: #007700">::</span><span style="color: #0000BB">model</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">deleteIntroductionImage</span><span style="color: #007700">(</span><span style="color: #0000BB">$imageIds</span><span style="color: #007700">[</span><span style="color: #0000BB">$i</span><span style="color: #007700">]);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(</span><span style="color: #0000BB">$image&nbsp;</span><span style="color: #007700">!=&nbsp;</span><span style="color: #DD0000">'unChange'&nbsp;</span><span style="color: #007700">&amp;&amp;&nbsp;</span><span style="color: #0000BB">$image&nbsp;</span><span style="color: #007700">!=&nbsp;</span><span style="color: #DD0000">'delete'&nbsp;</span><span style="color: #007700">&amp;&amp;&nbsp;!</span><span style="color: #0000BB">Tools</span><span style="color: #007700">::</span><span style="color: #0000BB">isEmpty</span><span style="color: #007700">(</span><span style="color: #0000BB">$image</span><span style="color: #007700">)){<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(!</span><span style="color: #0000BB">Tools</span><span style="color: #007700">::</span><span style="color: #0000BB">isEmpty</span><span style="color: #007700">(</span><span style="color: #0000BB">$imageIds</span><span style="color: #007700">[</span><span style="color: #0000BB">$i</span><span style="color: #007700">])){<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//修改自我介绍图片<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">IntroductionImage</span><span style="color: #007700">::</span><span style="color: #0000BB">model</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">changeIntroductionImage</span><span style="color: #007700">(</span><span style="color: #0000BB">$imageIds</span><span style="color: #007700">[</span><span style="color: #0000BB">$i</span><span style="color: #007700">],&nbsp;</span><span style="color: #0000BB">$image</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}else{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//添加自我介绍图片<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">IntroductionImage</span><span style="color: #007700">::</span><span style="color: #0000BB">model</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">addIntroductionImage</span><span style="color: #007700">(</span><span style="color: #0000BB">$userId</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$image</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">/*$cityIds&nbsp;=&nbsp;$this-&gt;getRequest("cityIds");<br />&nbsp;&nbsp;&nbsp;&nbsp;//添加商区<br />&nbsp;&nbsp;&nbsp;&nbsp;if(!Tools::isEmpty($cityIds)){<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$cityIds&nbsp;=&nbsp;explode(',',&nbsp;$cityIds);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//添加用户在城市区域内<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UserCity::model()-&gt;addCity2User($userId,$cityIds);<br />&nbsp;&nbsp;&nbsp;&nbsp;}*/<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$num&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">UserCity</span><span style="color: #007700">::</span><span style="color: #0000BB">model</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">randCity2User</span><span style="color: #007700">(</span><span style="color: #0000BB">$usuallyLocationX</span><span style="color: #007700">,</span><span style="color: #0000BB">$usuallyLocationY</span><span style="color: #007700">,</span><span style="color: #0000BB">$userId</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;if(</span><span style="color: #0000BB">$num&nbsp;</span><span style="color: #007700">&lt;&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$locationInfo&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">LocationTool</span><span style="color: #007700">::</span><span style="color: #0000BB">getAddressByLocation</span><span style="color: #007700">(</span><span style="color: #0000BB">$usuallyLocationX</span><span style="color: #007700">,</span><span style="color: #0000BB">$usuallyLocationY</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//没有结果，失败<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if&nbsp;(</span><span style="color: #0000BB">$locationInfo</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">status&nbsp;</span><span style="color: #007700">!=&nbsp;</span><span style="color: #DD0000">'OK'</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//throw&nbsp;new&nbsp;CHttpException(1008,Contents::getErrorByCode(1008));<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}else{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$district&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$locationInfo</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">result</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">addressComponent</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">district</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$city&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">City</span><span style="color: #007700">::</span><span style="color: #0000BB">model</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">find</span><span style="color: #007700">(</span><span style="color: #DD0000">'name&nbsp;=&nbsp;:name'</span><span style="color: #007700">,array(</span><span style="color: #DD0000">'name'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">$district</span><span style="color: #007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(</span><span style="color: #0000BB">$city</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">UserCity</span><span style="color: #007700">::</span><span style="color: #0000BB">model</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">addCity2User</span><span style="color: #007700">(</span><span style="color: #0000BB">$userId</span><span style="color: #007700">,array(</span><span style="color: #0000BB">$city</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">id</span><span style="color: #007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">addResponse</span><span style="color: #007700">(</span><span style="color: #0000BB">Contents</span><span style="color: #007700">::</span><span style="color: #0000BB">RESULT</span><span style="color: #007700">,</span><span style="color: #0000BB">true</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">addResponse</span><span style="color: #007700">(</span><span style="color: #0000BB">Contents</span><span style="color: #007700">::</span><span style="color: #0000BB">DATA</span><span style="color: #007700">,array(</span><span style="color: #DD0000">'orgId'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">$userId</span><span style="color: #007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">sendResponse</span><span style="color: #007700">();<br />}</span>
+</span>
+</code></div>
+</div>
+
+<p>Action to run</p>
+
+
+</div><!-- end of content -->
+
+<div id="apiFooter">
+Copyright &copy; 2008-2011 by <a href="http://www.yiisoft.com">Yii Software LLC</a><br/>
+All Rights Reserved.<br/>
+</div><!-- end of footer -->
+
+<script type="text/javascript">
+/*<![CDATA[*/
+$("a.toggle").toggle(function(){
+	$(this).text($(this).text().replace(/Hide/,'Show'));
+	$(this).parents(".summary").find(".inherited").hide();
+},function(){
+	$(this).text($(this).text().replace(/Show/,'Hide'));
+	$(this).parents(".summary").find(".inherited").show();
+});
+$(".sourceCode a.show").toggle(function(){
+	$(this).text($(this).text().replace(/show/,'hide'));
+	$(this).parents(".sourceCode").find("div.code").show();
+},function(){
+	$(this).text($(this).text().replace(/hide/,'show'));
+	$(this).parents(".sourceCode").find("div.code").hide();
+});
+$("a.sourceLink").click(function(){
+	$(this).attr('target','_blank');
+});
+/*]]>*/
+</script>
+
+</div><!-- end of page -->
+</body>
+</html>

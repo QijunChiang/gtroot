@@ -1,0 +1,763 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="language" content="en" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/api.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<title>Tools</title>
+</head>
+
+<body>
+<div id="apiPage">
+
+<div id="apiHeader">
+My Web Application Class Reference. <a href="http://www.yiiframework.com">Yii Framework</a>
+</div><!-- end of header -->
+
+<div id="content">
+<h1>Tools</h1>
+<div id="nav">
+<a href="index.html">All Packages</a>
+| <a href="#methods">Methods</a>
+</div>
+
+<table class="summaryTable docClass">
+<colgroup>
+	<col class="col-name" />
+	<col class="col-value" />
+</colgroup>
+<tr>
+  <th>Package</th>
+  <td><a href="index.html#com.server.components">com.server.components</a></td>
+</tr>
+<tr>
+  <th>Inheritance</th>
+  <td>class Tools</td>
+</tr>
+<tr>
+  <th>Since</th>
+  <td>0.1.0</td>
+</tr>
+<tr>
+  <th>Version</th>
+  <td>$Id: Contents $</td>
+</tr>
+<tr>
+  <th>Source Code</th>
+  <td></td>
+</tr>
+</table>
+
+<div id="classDescription">
+Tools</div>
+
+<a name="properties"></a>
+
+<a name="methods"></a>
+
+<div class="summary docMethod">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr id="age">
+  <td><a href="Tools.html#age-detail">age()</a></td>
+  <td>计算年龄，可精确到分钟</td>
+  <td>Tools</td>
+</tr>
+<tr id="asyn_do">
+  <td><a href="Tools.html#asyn_do-detail">asyn_do()</a></td>
+  <td>异步，非阻塞请求</td>
+  <td>Tools</td>
+</tr>
+<tr id="base64_encode_file">
+  <td><a href="Tools.html#base64_encode_file-detail">base64_encode_file()</a></td>
+  <td>return file's base64 encode</td>
+  <td>Tools</td>
+</tr>
+<tr id="checkDateFormat">
+  <td><a href="Tools.html#checkDateFormat-detail">checkDateFormat()</a></td>
+  <td>check $date is date for format</td>
+  <td>Tools</td>
+</tr>
+<tr id="checkFile">
+  <td><a href="Tools.html#checkFile-detail">checkFile()</a></td>
+  <td>check extension</td>
+  <td>Tools</td>
+</tr>
+<tr id="cleardir">
+  <td><a href="Tools.html#cleardir-detail">cleardir()</a></td>
+  <td>clear file under dir.</td>
+  <td>Tools</td>
+</tr>
+<tr id="deldir">
+  <td><a href="Tools.html#deldir-detail">deldir()</a></td>
+  <td>delete dir</td>
+  <td>Tools</td>
+</tr>
+<tr id="finddir">
+  <td><a href="Tools.html#finddir-detail">finddir()</a></td>
+  <td>find dirname in $dir;</td>
+  <td>Tools</td>
+</tr>
+<tr id="getIpAddress">
+  <td><a href="Tools.html#getIpAddress-detail">getIpAddress()</a></td>
+  <td>get ip address, cant get return null</td>
+  <td>Tools</td>
+</tr>
+<tr id="isDate">
+  <td><a href="Tools.html#isDate-detail">isDate()</a></td>
+  <td>check $date is date</td>
+  <td>Tools</td>
+</tr>
+<tr id="isEmpty">
+  <td><a href="Tools.html#isEmpty-detail">isEmpty()</a></td>
+  <td>not null,'   ','' return false;</td>
+  <td>Tools</td>
+</tr>
+<tr id="mkdir">
+  <td><a href="Tools.html#mkdir-detail">mkdir()</a></td>
+  <td>make dir</td>
+  <td>Tools</td>
+</tr>
+<tr id="saveBase64File">
+  <td><a href="Tools.html#saveBase64File-detail">saveBase64File()</a></td>
+  <td>将编码保存成图片</td>
+  <td>Tools</td>
+</tr>
+<tr id="saveFile">
+  <td><a href="Tools.html#saveFile-detail">saveFile()</a></td>
+  <td>另存图片</td>
+  <td>Tools</td>
+</tr>
+<tr id="validateIsDate">
+  <td><a href="Tools.html#validateIsDate-detail">validateIsDate()</a></td>
+  <td>使用YII的验证函数验证时间格式</td>
+  <td>Tools</td>
+</tr>
+</table>
+</div>
+
+<a name="events"></a>
+
+<h2>Method Details</h2>
+
+<div class="detailHeader" id="age-detail">
+age()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static boolean|number <b>age</b>(date $birthday)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$birthday</td>
+  <td class="paramTypeCol">date</td>
+  <td class="paramDescCol">string $birthday</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean|number</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b>  (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">age</span><span style="color: #007700">(</span><span style="color: #0000BB">$birthday</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$age&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">strtotime</span><span style="color: #007700">(</span><span style="color: #0000BB">$birthday</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;if(</span><span style="color: #0000BB">$age&nbsp;</span><span style="color: #007700">===&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;list(</span><span style="color: #0000BB">$y1</span><span style="color: #007700">,</span><span style="color: #0000BB">$m1</span><span style="color: #007700">,</span><span style="color: #0000BB">$d1</span><span style="color: #007700">)&nbsp;=&nbsp;</span><span style="color: #0000BB">explode</span><span style="color: #007700">(</span><span style="color: #DD0000">"-"</span><span style="color: #007700">,</span><span style="color: #0000BB">date</span><span style="color: #007700">(</span><span style="color: #0000BB">Contents</span><span style="color: #007700">::</span><span style="color: #0000BB">DATETIME</span><span style="color: #007700">,</span><span style="color: #0000BB">$age</span><span style="color: #007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$now&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">strtotime</span><span style="color: #007700">(</span><span style="color: #DD0000">"now"</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;list(</span><span style="color: #0000BB">$y2</span><span style="color: #007700">,</span><span style="color: #0000BB">$m2</span><span style="color: #007700">,</span><span style="color: #0000BB">$d2</span><span style="color: #007700">)&nbsp;=&nbsp;</span><span style="color: #0000BB">explode</span><span style="color: #007700">(</span><span style="color: #DD0000">"-"</span><span style="color: #007700">,</span><span style="color: #0000BB">date</span><span style="color: #007700">(</span><span style="color: #0000BB">Contents</span><span style="color: #007700">::</span><span style="color: #0000BB">DATETIME</span><span style="color: #007700">,</span><span style="color: #0000BB">$now</span><span style="color: #007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$age&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$y2&nbsp;</span><span style="color: #007700">-&nbsp;</span><span style="color: #0000BB">$y1</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;if((int)(</span><span style="color: #0000BB">$m2</span><span style="color: #007700">.</span><span style="color: #0000BB">$d2</span><span style="color: #007700">)&nbsp;&lt;&nbsp;(int)(</span><span style="color: #0000BB">$m1</span><span style="color: #007700">.</span><span style="color: #0000BB">$d1</span><span style="color: #007700">))<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$age&nbsp;</span><span style="color: #007700">-=&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$age</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+
+<p>计算年龄，可精确到分钟</p>
+
+
+<div class="detailHeader" id="asyn_do-detail">
+asyn_do()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static void <b>asyn_do</b>($url $url, string $post='', string $cookie='', bool $bysocket=false, string $ip='', int $timeout=15)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$url</td>
+  <td class="paramTypeCol">$url</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$post</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$cookie</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$bysocket</td>
+  <td class="paramTypeCol">bool</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$ip</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$timeout</td>
+  <td class="paramTypeCol">int</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b>  (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">asyn_do</span><span style="color: #007700">(</span><span style="color: #0000BB">$url</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$post&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">''</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$cookie&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">''</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$bysocket&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">FALSE</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$ip&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">''</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$timeout&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">15</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$matches&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">parse_url</span><span style="color: #007700">(</span><span style="color: #0000BB">$url</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;!isset(</span><span style="color: #0000BB">$matches</span><span style="color: #007700">[</span><span style="color: #DD0000">'host'</span><span style="color: #007700">])&nbsp;&amp;&amp;&nbsp;</span><span style="color: #0000BB">$matches</span><span style="color: #007700">[</span><span style="color: #DD0000">'host'</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #DD0000">''</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;!isset(</span><span style="color: #0000BB">$matches</span><span style="color: #007700">[</span><span style="color: #DD0000">'path'</span><span style="color: #007700">])&nbsp;&amp;&amp;&nbsp;</span><span style="color: #0000BB">$matches</span><span style="color: #007700">[</span><span style="color: #DD0000">'path'</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #DD0000">''</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;!isset(</span><span style="color: #0000BB">$matches</span><span style="color: #007700">[</span><span style="color: #DD0000">'query'</span><span style="color: #007700">])&nbsp;&amp;&amp;&nbsp;</span><span style="color: #0000BB">$matches</span><span style="color: #007700">[</span><span style="color: #DD0000">'query'</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #DD0000">''</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;!isset(</span><span style="color: #0000BB">$matches</span><span style="color: #007700">[</span><span style="color: #DD0000">'port'</span><span style="color: #007700">])&nbsp;&amp;&amp;&nbsp;</span><span style="color: #0000BB">$matches</span><span style="color: #007700">[</span><span style="color: #DD0000">'port'</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #DD0000">''</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$host&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$matches</span><span style="color: #007700">[</span><span style="color: #DD0000">'host'</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$path&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$matches</span><span style="color: #007700">[</span><span style="color: #DD0000">'path'</span><span style="color: #007700">]&nbsp;?&nbsp;</span><span style="color: #0000BB">$matches</span><span style="color: #007700">[</span><span style="color: #DD0000">'path'</span><span style="color: #007700">]&nbsp;.&nbsp;(</span><span style="color: #0000BB">$matches</span><span style="color: #007700">[</span><span style="color: #DD0000">'query'</span><span style="color: #007700">]&nbsp;?&nbsp;</span><span style="color: #DD0000">'?'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$matches</span><span style="color: #007700">[</span><span style="color: #DD0000">'query'</span><span style="color: #007700">]&nbsp;:&nbsp;</span><span style="color: #DD0000">''</span><span style="color: #007700">)&nbsp;:&nbsp;</span><span style="color: #DD0000">'/'</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$port&nbsp;</span><span style="color: #007700">=&nbsp;!empty(</span><span style="color: #0000BB">$matches</span><span style="color: #007700">[</span><span style="color: #DD0000">'port'</span><span style="color: #007700">])&nbsp;?&nbsp;</span><span style="color: #0000BB">$matches</span><span style="color: #007700">[</span><span style="color: #DD0000">'port'</span><span style="color: #007700">]&nbsp;:&nbsp;</span><span style="color: #0000BB">80</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$post</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$out&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"POST&nbsp;</span><span style="color: #0000BB">$path</span><span style="color: #DD0000">&nbsp;HTTP/1.0\r\n"</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$out&nbsp;</span><span style="color: #007700">.=&nbsp;</span><span style="color: #DD0000">"Accept:&nbsp;*/*\r\n"</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//$out&nbsp;.=&nbsp;"Referer:&nbsp;$boardurl\r\n";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$out&nbsp;</span><span style="color: #007700">.=&nbsp;</span><span style="color: #DD0000">"Accept-Language:&nbsp;zh-cn\r\n"</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$out&nbsp;</span><span style="color: #007700">.=&nbsp;</span><span style="color: #DD0000">"Content-Type:&nbsp;application/x-www-form-urlencoded\r\n"</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//$out&nbsp;.=&nbsp;"User-Agent:&nbsp;$_SERVER[HTTP_USER_AGENT]\r\n";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$out&nbsp;</span><span style="color: #007700">.=&nbsp;</span><span style="color: #DD0000">"Host:&nbsp;</span><span style="color: #0000BB">$host</span><span style="color: #DD0000">\r\n"</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$out&nbsp;</span><span style="color: #007700">.=&nbsp;</span><span style="color: #DD0000">'Content-Length:&nbsp;'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">strlen</span><span style="color: #007700">(</span><span style="color: #0000BB">$post</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #DD0000">"\r\n"</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$out&nbsp;</span><span style="color: #007700">.=&nbsp;</span><span style="color: #DD0000">"Connection:&nbsp;Close\r\n"</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$out&nbsp;</span><span style="color: #007700">.=&nbsp;</span><span style="color: #DD0000">"Cache-Control:&nbsp;no-cache\r\n"</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$out&nbsp;</span><span style="color: #007700">.=&nbsp;</span><span style="color: #DD0000">"Cookie:&nbsp;</span><span style="color: #0000BB">$cookie</span><span style="color: #DD0000">\r\n\r\n"</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$out&nbsp;</span><span style="color: #007700">.=&nbsp;</span><span style="color: #0000BB">$post</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$out&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"GET&nbsp;</span><span style="color: #0000BB">$path</span><span style="color: #DD0000">&nbsp;HTTP/1.0\r\n"</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$out&nbsp;</span><span style="color: #007700">.=&nbsp;</span><span style="color: #DD0000">"Accept:&nbsp;*/*\r\n"</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//$out&nbsp;.=&nbsp;"Referer:&nbsp;$boardurl\r\n";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$out&nbsp;</span><span style="color: #007700">.=&nbsp;</span><span style="color: #DD0000">"Accept-Language:&nbsp;zh-cn\r\n"</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//$out&nbsp;.=&nbsp;"User-Agent:&nbsp;$_SERVER[HTTP_USER_AGENT]\r\n";<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$out&nbsp;</span><span style="color: #007700">.=&nbsp;</span><span style="color: #DD0000">"Host:&nbsp;</span><span style="color: #0000BB">$host</span><span style="color: #DD0000">\r\n"</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$out&nbsp;</span><span style="color: #007700">.=&nbsp;</span><span style="color: #DD0000">"Connection:&nbsp;Close\r\n"</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$out&nbsp;</span><span style="color: #007700">.=&nbsp;</span><span style="color: #DD0000">"Cookie:&nbsp;</span><span style="color: #0000BB">$cookie</span><span style="color: #DD0000">\r\n\r\n"</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$fp&nbsp;</span><span style="color: #007700">=&nbsp;@</span><span style="color: #0000BB">fsockopen</span><span style="color: #007700">((</span><span style="color: #0000BB">$ip&nbsp;</span><span style="color: #007700">?&nbsp;</span><span style="color: #0000BB">$ip&nbsp;</span><span style="color: #007700">:&nbsp;</span><span style="color: #0000BB">$host</span><span style="color: #007700">),&nbsp;</span><span style="color: #0000BB">$port</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$errno</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$errstr</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$timeout</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">stream_set_blocking</span><span style="color: #007700">(</span><span style="color: #0000BB">$fp</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">stream_set_timeout</span><span style="color: #007700">(</span><span style="color: #0000BB">$fp</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$timeout</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;@</span><span style="color: #0000BB">fwrite</span><span style="color: #007700">(</span><span style="color: #0000BB">$fp</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$out</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;@</span><span style="color: #0000BB">fclose</span><span style="color: #007700">(</span><span style="color: #0000BB">$fp</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+
+<p>异步，非阻塞请求</p>
+
+
+<div class="detailHeader" id="base64_encode_file-detail">
+base64_encode_file()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static string|NULL <b>base64_encode_file</b>(string $filePath)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$filePath</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string|NULL</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b>  (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">base64_encode_file</span><span style="color: #007700">(</span><span style="color: #0000BB">$filePath</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">is_file</span><span style="color: #007700">(</span><span style="color: #0000BB">$filePath</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//大于2M。<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if(</span><span style="color: #0000BB">sprintf</span><span style="color: #007700">(</span><span style="color: #DD0000">"%u"</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">filesize</span><span style="color: #007700">(</span><span style="color: #0000BB">$filePath</span><span style="color: #007700">))&gt;</span><span style="color: #0000BB">1024</span><span style="color: #007700">*</span><span style="color: #0000BB">1024</span><span style="color: #007700">*</span><span style="color: #0000BB">2</span><span style="color: #007700">)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$fp&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">fopen</span><span style="color: #007700">(</span><span style="color: #0000BB">$filePath</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'rb'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$base&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">base64_encode</span><span style="color: #007700">(</span><span style="color: #0000BB">fread</span><span style="color: #007700">(</span><span style="color: #0000BB">$fp</span><span style="color: #007700">,</span><span style="color: #0000BB">filesize</span><span style="color: #007700">(</span><span style="color: #0000BB">$filePath</span><span style="color: #007700">)));<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">fclose</span><span style="color: #007700">(</span><span style="color: #0000BB">$fp</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$base</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}else{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+
+<p>return file's base64 encode</p>
+
+
+<div class="detailHeader" id="checkDateFormat-detail">
+checkDateFormat()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static bool <b>checkDateFormat</b>($date $date, $format $format='Y-m-d')</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$date</td>
+  <td class="paramTypeCol">$date</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$format</td>
+  <td class="paramTypeCol">$format</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">bool</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b>  (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">checkDateFormat</span><span style="color: #007700">(</span><span style="color: #0000BB">$date</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$format&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">Contents</span><span style="color: #007700">::</span><span style="color: #0000BB">DATETIME_YMD</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$date&nbsp;</span><span style="color: #007700">==&nbsp;</span><span style="color: #0000BB">date</span><span style="color: #007700">(</span><span style="color: #0000BB">$format</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">strtotime</span><span style="color: #007700">(</span><span style="color: #0000BB">$date</span><span style="color: #007700">)))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+
+<p>check $date is date for format</p>
+
+
+<div class="detailHeader" id="checkFile-detail">
+checkFile()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static void <b>checkFile</b>(CUploadedFile $file, array $types, $size $size=52428800)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$file</td>
+  <td class="paramTypeCol">CUploadedFile</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$types</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$size</td>
+  <td class="paramTypeCol">$size</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b>  (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">checkFile</span><span style="color: #007700">(</span><span style="color: #0000BB">$file</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$types</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$size&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">Contents</span><span style="color: #007700">::</span><span style="color: #0000BB">FILE_SIZE</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$file&nbsp;</span><span style="color: #007700">==&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$fileName&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$file</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getExtensionName</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">is_string</span><span style="color: #007700">(</span><span style="color: #0000BB">$types</span><span style="color: #007700">))<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$types&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">preg_split</span><span style="color: #007700">(</span><span style="color: #DD0000">'/[\s,]+/'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">strtolower</span><span style="color: #007700">(</span><span style="color: #0000BB">$types</span><span style="color: #007700">),&nbsp;-</span><span style="color: #0000BB">1</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">PREG_SPLIT_NO_EMPTY</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">in_array</span><span style="color: #007700">(</span><span style="color: #0000BB">strtolower</span><span style="color: #007700">(</span><span style="color: #0000BB">$fileName</span><span style="color: #007700">),&nbsp;</span><span style="color: #0000BB">$types</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(empty(</span><span style="color: #0000BB">$size</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$fileSize&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$file</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getSize</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$fileSize&nbsp;</span><span style="color: #007700">&gt;&nbsp;</span><span style="color: #0000BB">$size</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">CHttpException</span><span style="color: #007700">(</span><span style="color: #0000BB">1014</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">"File&nbsp;size&nbsp;can't&nbsp;more&nbsp;than&nbsp;"&nbsp;</span><span style="color: #007700">.&nbsp;(</span><span style="color: #0000BB">$size</span><span style="color: #007700">/</span><span style="color: #0000BB">1024</span><span style="color: #007700">/</span><span style="color: #0000BB">1204</span><span style="color: #007700">)&nbsp;.&nbsp;</span><span style="color: #DD0000">'MB'</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">CHttpException</span><span style="color: #007700">(</span><span style="color: #0000BB">1015</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'File&nbsp;extension&nbsp;must&nbsp;be&nbsp;'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">implode</span><span style="color: #007700">(</span><span style="color: #DD0000">","</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$types</span><span style="color: #007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+
+<p>check extension</p>
+
+
+<div class="detailHeader" id="cleardir-detail">
+cleardir()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static void <b>cleardir</b>(string $dir, boolean $isAll=false)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$dir</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$isAll</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b>  (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">cleardir</span><span style="color: #007700">(</span><span style="color: #0000BB">$dir</span><span style="color: #007700">,</span><span style="color: #0000BB">$isAll&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!</span><span style="color: #0000BB">is_dir</span><span style="color: #007700">(</span><span style="color: #0000BB">$dir</span><span style="color: #007700">))&nbsp;{return;}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//目录下的文件：<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$dh</span><span style="color: #007700">=</span><span style="color: #0000BB">opendir</span><span style="color: #007700">(</span><span style="color: #0000BB">$dir</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;while&nbsp;(</span><span style="color: #0000BB">$file</span><span style="color: #007700">=</span><span style="color: #0000BB">readdir</span><span style="color: #007700">(</span><span style="color: #0000BB">$dh</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(</span><span style="color: #0000BB">$file</span><span style="color: #007700">!=</span><span style="color: #DD0000">"."&nbsp;</span><span style="color: #007700">&amp;&amp;&nbsp;</span><span style="color: #0000BB">$file</span><span style="color: #007700">!=</span><span style="color: #DD0000">".."</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$fullpath</span><span style="color: #007700">=</span><span style="color: #0000BB">$dir</span><span style="color: #007700">.</span><span style="color: #DD0000">"/"</span><span style="color: #007700">.</span><span style="color: #0000BB">$file</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(!</span><span style="color: #0000BB">is_dir</span><span style="color: #007700">(</span><span style="color: #0000BB">$fullpath</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">unlink</span><span style="color: #007700">(</span><span style="color: #0000BB">$fullpath</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;if(</span><span style="color: #0000BB">$isAll</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">self</span><span style="color: #007700">::</span><span style="color: #0000BB">deldir</span><span style="color: #007700">(</span><span style="color: #0000BB">$fullpath</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">closedir</span><span style="color: #007700">(</span><span style="color: #0000BB">$dh</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+
+<p>clear file under dir.
+if $isAll is ture will be clear all.it's false just delete file under dir,not delete dir</p>
+
+
+<div class="detailHeader" id="deldir-detail">
+deldir()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static boolean <b>deldir</b>(string $dir)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$dir</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b>  (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">deldir</span><span style="color: #007700">(</span><span style="color: #0000BB">$dir</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//清除文件夹下的文件<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">self</span><span style="color: #007700">::</span><span style="color: #0000BB">cleardir</span><span style="color: #007700">(</span><span style="color: #0000BB">$dir</span><span style="color: #007700">,</span><span style="color: #0000BB">true</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//删除当前文件夹<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if(</span><span style="color: #0000BB">is_dir</span><span style="color: #007700">(</span><span style="color: #0000BB">$dir</span><span style="color: #007700">)&nbsp;&amp;&amp;&nbsp;</span><span style="color: #0000BB">rmdir</span><span style="color: #007700">(</span><span style="color: #0000BB">$dir</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+
+<p>delete dir</p>
+
+
+<div class="detailHeader" id="finddir-detail">
+finddir()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static string <b>finddir</b>(string $dir, string $dirname, bool $isR=true)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$dir</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$dirname</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$isR</td>
+  <td class="paramTypeCol">bool</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b>  (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">finddir</span><span style="color: #007700">(</span><span style="color: #0000BB">$dir</span><span style="color: #007700">,</span><span style="color: #0000BB">$dirname</span><span style="color: #007700">,</span><span style="color: #0000BB">$isR&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$dir_r&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$isR&nbsp;</span><span style="color: #007700">?&nbsp;</span><span style="color: #0000BB">$dir</span><span style="color: #007700">.</span><span style="color: #DD0000">'/'</span><span style="color: #007700">.</span><span style="color: #0000BB">$dirname&nbsp;</span><span style="color: #007700">:&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!</span><span style="color: #0000BB">is_dir</span><span style="color: #007700">(</span><span style="color: #0000BB">$dir</span><span style="color: #007700">)&nbsp;&amp;&amp;&nbsp;</span><span style="color: #0000BB">$isR</span><span style="color: #007700">)&nbsp;{return&nbsp;</span><span style="color: #0000BB">$dir_r</span><span style="color: #007700">;}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//目录下的文件：<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$dh</span><span style="color: #007700">=</span><span style="color: #0000BB">opendir</span><span style="color: #007700">(</span><span style="color: #0000BB">$dir</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;while&nbsp;(</span><span style="color: #0000BB">$file</span><span style="color: #007700">=</span><span style="color: #0000BB">readdir</span><span style="color: #007700">(</span><span style="color: #0000BB">$dh</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(</span><span style="color: #0000BB">$file</span><span style="color: #007700">!=</span><span style="color: #DD0000">"."&nbsp;</span><span style="color: #007700">&amp;&amp;&nbsp;</span><span style="color: #0000BB">$file</span><span style="color: #007700">!=</span><span style="color: #DD0000">".."</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$fullpath</span><span style="color: #007700">=</span><span style="color: #0000BB">$dir</span><span style="color: #007700">.</span><span style="color: #DD0000">"/"</span><span style="color: #007700">.</span><span style="color: #0000BB">$file</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(</span><span style="color: #0000BB">is_dir</span><span style="color: #007700">(</span><span style="color: #0000BB">$fullpath</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(</span><span style="color: #0000BB">$file&nbsp;</span><span style="color: #007700">==&nbsp;</span><span style="color: #0000BB">$dirname</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$fullpath</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}else{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$path&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">self</span><span style="color: #007700">::</span><span style="color: #0000BB">finddir</span><span style="color: #007700">(</span><span style="color: #0000BB">$fullpath</span><span style="color: #007700">,</span><span style="color: #0000BB">$dirname</span><span style="color: #007700">,</span><span style="color: #0000BB">false</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//说明找到了。<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if(</span><span style="color: #0000BB">$path&nbsp;</span><span style="color: #007700">!=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$path</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">closedir</span><span style="color: #007700">(</span><span style="color: #0000BB">$dh</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$dir_r</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+
+<p>find dirname in $dir;</p>
+
+
+<div class="detailHeader" id="getIpAddress-detail">
+getIpAddress()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static string <b>getIpAddress</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">ip address</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b>  (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">getIpAddress</span><span style="color: #007700">()&nbsp;{<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">/**&nbsp;@var&nbsp;$HTTP_SERVER_VARS&nbsp;PHP系统对象&nbsp;*/<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">if&nbsp;(</span><span style="color: #0000BB">$HTTP_SERVER_VARS</span><span style="color: #007700">[</span><span style="color: #DD0000">"HTTP_X_FORWARDED_FOR"</span><span style="color: #007700">])<br />&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$ip&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$HTTP_SERVER_VARS</span><span style="color: #007700">[</span><span style="color: #DD0000">"HTTP_X_FORWARDED_FOR"</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;elseif&nbsp;(</span><span style="color: #0000BB">$HTTP_SERVER_VARS</span><span style="color: #007700">[</span><span style="color: #DD0000">"HTTP_CLIENT_IP"</span><span style="color: #007700">])<br />&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$ip&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$HTTP_SERVER_VARS</span><span style="color: #007700">[</span><span style="color: #DD0000">"HTTP_CLIENT_IP"</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;elseif&nbsp;(</span><span style="color: #0000BB">$HTTP_SERVER_VARS</span><span style="color: #007700">[</span><span style="color: #DD0000">"REMOTE_ADDR"</span><span style="color: #007700">])<br />&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$ip&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$HTTP_SERVER_VARS</span><span style="color: #007700">[</span><span style="color: #DD0000">"REMOTE_ADDR"</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;elseif&nbsp;(</span><span style="color: #0000BB">getenv</span><span style="color: #007700">(</span><span style="color: #DD0000">"HTTP_X_FORWARDED_FOR"</span><span style="color: #007700">))<br />&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$ip&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">getenv</span><span style="color: #007700">(</span><span style="color: #DD0000">"HTTP_X_FORWARDED_FOR"</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;elseif&nbsp;(</span><span style="color: #0000BB">getenv</span><span style="color: #007700">(</span><span style="color: #DD0000">"HTTP_CLIENT_IP"</span><span style="color: #007700">))<br />&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$ip&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">getenv</span><span style="color: #007700">(</span><span style="color: #DD0000">"HTTP_CLIENT_IP"</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;elseif&nbsp;(</span><span style="color: #0000BB">getenv</span><span style="color: #007700">(</span><span style="color: #DD0000">"REMOTE_ADDR"</span><span style="color: #007700">))<br />&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$ip&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">getenv</span><span style="color: #007700">(</span><span style="color: #DD0000">"REMOTE_ADDR"</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$ip&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$ip</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+
+<p>get ip address, cant get return null</p>
+
+
+<div class="detailHeader" id="isDate-detail">
+isDate()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static boolean <b>isDate</b>(string $date)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$date</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b>  (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">isDate</span><span style="color: #007700">(</span><span style="color: #0000BB">$date</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$isDate&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;try{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$date&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">date_parse</span><span style="color: #007700">(</span><span style="color: #0000BB">$date</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">checkdate</span><span style="color: #007700">(</span><span style="color: #0000BB">$date</span><span style="color: #007700">[</span><span style="color: #DD0000">"month"</span><span style="color: #007700">],&nbsp;</span><span style="color: #0000BB">$date</span><span style="color: #007700">[</span><span style="color: #DD0000">"day"</span><span style="color: #007700">],&nbsp;</span><span style="color: #0000BB">$date</span><span style="color: #007700">[</span><span style="color: #DD0000">"year"</span><span style="color: #007700">])){<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$isDate&nbsp;</span><span style="color: #007700">=&nbsp;&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}catch&nbsp;(</span><span style="color: #0000BB">Exception&nbsp;$e</span><span style="color: #007700">){}<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$isDate</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+
+<p>check $date is date</p>
+
+
+<div class="detailHeader" id="isEmpty-detail">
+isEmpty()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static boolean <b>isEmpty</b>(string $value)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b>  (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">isEmpty</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!</span><span style="color: #0000BB">is_null</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">)&nbsp;&amp;&amp;&nbsp;</span><span style="color: #0000BB">trim</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">)&nbsp;!=&nbsp;</span><span style="color: #DD0000">''</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+
+<p>not null,'   ','' return false;</p>
+
+
+<div class="detailHeader" id="mkdir-detail">
+mkdir()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static void <b>mkdir</b>(string $dir)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$dir</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b>  (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">mkdir</span><span style="color: #007700">(</span><span style="color: #0000BB">$dir</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!</span><span style="color: #0000BB">is_dir</span><span style="color: #007700">(</span><span style="color: #0000BB">$dir</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">mkdir</span><span style="color: #007700">(</span><span style="color: #0000BB">$dir</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">0777</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">chmod</span><span style="color: #007700">(</span><span style="color: #0000BB">$dir</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">0777</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+
+<p>make dir</p>
+
+
+<div class="detailHeader" id="saveBase64File-detail">
+saveBase64File()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static string <b>saveBase64File</b>(string $icon, $dirPath $dirPath, $fileName $fileName)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$icon</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">base64 编码</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$dirPath</td>
+  <td class="paramTypeCol">$dirPath</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$fileName</td>
+  <td class="paramTypeCol">$fileName</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b>  (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">saveBase64File</span><span style="color: #007700">(</span><span style="color: #0000BB">$icon</span><span style="color: #007700">,</span><span style="color: #0000BB">$dirPath</span><span style="color: #007700">,</span><span style="color: #0000BB">$fileName</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;if(</span><span style="color: #0000BB">$icon&nbsp;</span><span style="color: #007700">!=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$data&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">base64_decode</span><span style="color: #007700">(</span><span style="color: #0000BB">$icon</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$file_path&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$dirPath</span><span style="color: #007700">.</span><span style="color: #DD0000">'/'</span><span style="color: #007700">.</span><span style="color: #0000BB">$fileName</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">Tools</span><span style="color: #007700">::</span><span style="color: #0000BB">cleardir</span><span style="color: #007700">(</span><span style="color: #0000BB">$dirPath</span><span style="color: #007700">);</span><span style="color: #FF8000">//清除文件夹下其他的文件,不清楚文件夹以及文件夹下的内容<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">Tools</span><span style="color: #007700">::</span><span style="color: #0000BB">mkdir</span><span style="color: #007700">(</span><span style="color: #0000BB">$dirPath</span><span style="color: #007700">);</span><span style="color: #FF8000">//不存在文件夹时创建文件夹<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">file_put_contents</span><span style="color: #007700">(</span><span style="color: #0000BB">$file_path</span><span style="color: #007700">,</span><span style="color: #0000BB">$data</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+
+<p>将编码保存成图片</p>
+
+
+<div class="detailHeader" id="saveFile-detail">
+saveFile()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static void <b>saveFile</b>(CUploadedFile $file, unknown $dirPath, unknown $fileName)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$file</td>
+  <td class="paramTypeCol">CUploadedFile</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$dirPath</td>
+  <td class="paramTypeCol">unknown</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$fileName</td>
+  <td class="paramTypeCol">unknown</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b>  (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">saveFile</span><span style="color: #007700">(</span><span style="color: #0000BB">CUploadedFile&nbsp;$file</span><span style="color: #007700">,</span><span style="color: #0000BB">$dirPath</span><span style="color: #007700">,</span><span style="color: #0000BB">$fileName</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;if(</span><span style="color: #0000BB">$file&nbsp;</span><span style="color: #007700">!=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$file_path&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$dirPath</span><span style="color: #007700">.</span><span style="color: #DD0000">'/'</span><span style="color: #007700">.</span><span style="color: #0000BB">$fileName</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">Tools</span><span style="color: #007700">::</span><span style="color: #0000BB">cleardir</span><span style="color: #007700">(</span><span style="color: #0000BB">$dirPath</span><span style="color: #007700">);</span><span style="color: #FF8000">//清除文件夹下其他的文件,不清楚文件夹以及文件夹下的内容<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">Tools</span><span style="color: #007700">::</span><span style="color: #0000BB">mkdir</span><span style="color: #007700">(</span><span style="color: #0000BB">$dirPath</span><span style="color: #007700">);</span><span style="color: #FF8000">//不存在文件夹时创建文件夹<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$file</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">saveAs</span><span style="color: #007700">(</span><span style="color: #0000BB">$file_path</span><span style="color: #007700">);</span><span style="color: #FF8000">//另存文件<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br />}</span>
+</span>
+</code></div>
+</div>
+
+<p>另存图片</p>
+
+
+<div class="detailHeader" id="validateIsDate-detail">
+validateIsDate()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static bool <b>validateIsDate</b>($value $value, $format $format)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol">$value</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$format</td>
+  <td class="paramTypeCol">$format</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">bool</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b>  (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">validateIsDate</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">,</span><span style="color: #0000BB">$format</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$valid</span><span style="color: #007700">=</span><span style="color: #0000BB">false</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$timestamp</span><span style="color: #007700">=</span><span style="color: #0000BB">CDateTimeParser</span><span style="color: #007700">::</span><span style="color: #0000BB">parse</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">,</span><span style="color: #0000BB">$format</span><span style="color: #007700">,array(</span><span style="color: #DD0000">'month'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">1</span><span style="color: #007700">,</span><span style="color: #DD0000">'day'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">1</span><span style="color: #007700">,</span><span style="color: #DD0000">'hour'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">0</span><span style="color: #007700">,</span><span style="color: #DD0000">'minute'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">0</span><span style="color: #007700">,</span><span style="color: #DD0000">'second'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">0</span><span style="color: #007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;if(</span><span style="color: #0000BB">$timestamp</span><span style="color: #007700">!==</span><span style="color: #0000BB">false</span><span style="color: #007700">)<br />&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$valid</span><span style="color: #007700">=</span><span style="color: #0000BB">true</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$valid</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+
+<p>使用YII的验证函数验证时间格式</p>
+
+
+</div><!-- end of content -->
+
+<div id="apiFooter">
+Copyright &copy; 2008-2011 by <a href="http://www.yiisoft.com">Yii Software LLC</a><br/>
+All Rights Reserved.<br/>
+</div><!-- end of footer -->
+
+<script type="text/javascript">
+/*<![CDATA[*/
+$("a.toggle").toggle(function(){
+	$(this).text($(this).text().replace(/Hide/,'Show'));
+	$(this).parents(".summary").find(".inherited").hide();
+},function(){
+	$(this).text($(this).text().replace(/Show/,'Hide'));
+	$(this).parents(".summary").find(".inherited").show();
+});
+$(".sourceCode a.show").toggle(function(){
+	$(this).text($(this).text().replace(/show/,'hide'));
+	$(this).parents(".sourceCode").find("div.code").show();
+},function(){
+	$(this).text($(this).text().replace(/hide/,'show'));
+	$(this).parents(".sourceCode").find("div.code").hide();
+});
+$("a.sourceLink").click(function(){
+	$(this).attr('target','_blank');
+});
+/*]]>*/
+</script>
+
+</div><!-- end of page -->
+</body>
+</html>

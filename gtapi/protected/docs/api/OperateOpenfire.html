@@ -1,0 +1,387 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="language" content="en" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/api.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<title>OperateOpenfire</title>
+</head>
+
+<body>
+<div id="apiPage">
+
+<div id="apiHeader">
+My Console Application Class Reference
+</div><!-- end of header -->
+
+<div id="content">
+<h1>OperateOpenfire</h1>
+<div id="nav">
+<a href="index.html">All Packages</a>
+| <a href="#methods">Methods</a>
+</div>
+
+<table class="summaryTable docClass">
+<colgroup>
+	<col class="col-name" />
+	<col class="col-value" />
+</colgroup>
+<tr>
+  <th>Package</th>
+  <td><a href="index.html#com.server.components">com.server.components</a></td>
+</tr>
+<tr>
+  <th>Inheritance</th>
+  <td>class OperateOpenfire</td>
+</tr>
+<tr>
+  <th>Since</th>
+  <td>0.1.0</td>
+</tr>
+<tr>
+  <th>Version</th>
+  <td>$Id: OperateOpenfire $</td>
+</tr>
+<tr>
+  <th>Source Code</th>
+  <td>app/components/OperateOpenfire.php</td>
+</tr>
+<tr>
+  <th>Author</th>
+  <td>Qijun Chiang &lt;QijunChiang@gmail.com&gt;</td>
+</tr>
+</table>
+
+<div id="classDescription">
+This OperateOpenfire have some function to operate openfire. For example:add user,delete user,update user, sendMessage, sendMessages.</div>
+<a name="properties"></a>
+
+<a name="methods"></a>
+
+<div class="summary docMethod">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr id="__construct">
+  <td><a href="OperateOpenfire.html#__construct-detail">__construct()</a></td>
+  <td></td>
+  <td>OperateOpenfire</td>
+</tr>
+<tr id="getHostName">
+  <td><a href="OperateOpenfire.html#getHostName-detail">getHostName()</a></td>
+  <td>get host name</td>
+  <td>OperateOpenfire</td>
+</tr>
+<tr id="intiXmpp">
+  <td><a href="OperateOpenfire.html#intiXmpp-detail">intiXmpp()</a></td>
+  <td>init xmpp config.</td>
+  <td>OperateOpenfire</td>
+</tr>
+<tr id="operate">
+  <td><a href="OperateOpenfire.html#operate-detail">operate()</a></td>
+  <td>operate openfire.</td>
+  <td>OperateOpenfire</td>
+</tr>
+<tr id="sendMessageToUser">
+  <td><a href="OperateOpenfire.html#sendMessageToUser-detail">sendMessageToUser()</a></td>
+  <td>send $msg to $user.</td>
+  <td>OperateOpenfire</td>
+</tr>
+<tr id="sendMessageToUsers">
+  <td><a href="OperateOpenfire.html#sendMessageToUsers-detail">sendMessageToUsers()</a></td>
+  <td>send $msg to $users.</td>
+  <td>OperateOpenfire</td>
+</tr>
+<tr id="sendMessages">
+  <td><a href="OperateOpenfire.html#sendMessages-detail">sendMessages()</a></td>
+  <td>send $msg to $users.</td>
+  <td>OperateOpenfire</td>
+</tr>
+</table>
+</div>
+<a name="events"></a>
+
+<h2>Method Details</h2>
+
+<div class="detailHeader" id="__construct-detail">
+__construct()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>__construct</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/components/OperateOpenfire.php#27 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">__construct</span><span style="color: #007700">(){<br />&nbsp;&nbsp;&nbsp;&nbsp;require_once(</span><span style="color: #DD0000">'XMPPHP/Config.php'</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">server&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">Config</span><span style="color: #007700">::</span><span style="color: #0000BB">SERVER</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">host_name&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">Config</span><span style="color: #007700">::</span><span style="color: #0000BB">HOST_NAME</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">xmpp_port&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">Config</span><span style="color: #007700">::</span><span style="color: #0000BB">XMPP_PORT</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">http_port&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">Config</span><span style="color: #007700">::</span><span style="color: #0000BB">HTTP_PORT</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">secret_key&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">Config</span><span style="color: #007700">::</span><span style="color: #0000BB">SECRET_KEY</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">xmpp_user&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">Config</span><span style="color: #007700">::</span><span style="color: #0000BB">XMPP_USER</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">xmpp_password&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">Config</span><span style="color: #007700">::</span><span style="color: #0000BB">XMPP_PASSWORD</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">xmpp_resource&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">Config</span><span style="color: #007700">::</span><span style="color: #0000BB">XMPP_RESOURCE</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">xmpp_server&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">Config</span><span style="color: #007700">::</span><span style="color: #0000BB">XMPP_SERVER</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p></p>
+
+
+<div class="detailHeader" id="getHostName-detail">
+getHostName()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public string <b>getHostName</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/components/OperateOpenfire.php#103 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getHostName</span><span style="color: #007700">(){<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">host_name</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>get host name</p>
+
+
+<div class="detailHeader" id="intiXmpp-detail">
+intiXmpp()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public XMPPHP_XMPP <b>intiXmpp</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">XMPPHP_XMPP</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/components/OperateOpenfire.php#65 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">intiXmpp</span><span style="color: #007700">(){<br />&nbsp;&nbsp;&nbsp;&nbsp;require_once(</span><span style="color: #DD0000">'XMPPHP/XMPP.php'</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$conn&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;</span><span style="color: #0000BB">XMPPHP_XMPP</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">server</span><span style="color: #007700">,</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">xmpp_port</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">xmpp_user</span><span style="color: #007700">,</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">xmpp_password</span><span style="color: #007700">,</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">xmpp_resource</span><span style="color: #007700">,</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">xmpp_server</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$conn</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">useEncryption</span><span style="color: #007700">(</span><span style="color: #0000BB">false</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$conn</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">connect</span><span style="color: #007700">(</span><span style="color: #0000BB">10</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$conn</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">processUntil</span><span style="color: #007700">(</span><span style="color: #DD0000">'session_start'</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$conn</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">presence</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$conn</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+<p>init xmpp config.</p>
+
+
+<div class="detailHeader" id="operate-detail">
+operate()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public boolean <b>operate</b>(string $type, string $username, string $password='', string $name='', string $email='', string $groups='')</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$type</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">, Required, The admin service required. Possible values are add, delete, update, enable, disable</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$username</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">, Required, The username of the user to add, update, delete, enable, or disable. ie the part before the @ symbol.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$password</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">, Required for add operation, The password of the new user or the user being updated.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">, Optional, The display name of the new user or the user being updated.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$email</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">, Optional, The email address of the new user or the user being updated.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$groups</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">, Optional, List of groups where the user is a member. Values are comma delimited.</td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/components/OperateOpenfire.php#49 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">operate</span><span style="color: #007700">(</span><span style="color: #0000BB">$type</span><span style="color: #007700">,</span><span style="color: #0000BB">$username</span><span style="color: #007700">,</span><span style="color: #0000BB">$password</span><span style="color: #007700">=</span><span style="color: #DD0000">''</span><span style="color: #007700">,</span><span style="color: #0000BB">$name</span><span style="color: #007700">=</span><span style="color: #DD0000">''</span><span style="color: #007700">,</span><span style="color: #0000BB">$email</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">''</span><span style="color: #007700">,</span><span style="color: #0000BB">$groups&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">''</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$parameter&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">setParameters</span><span style="color: #007700">(array(<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'type'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">$type</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'username'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">$username</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'password'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">$password</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'name'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">$name</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'email'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">$email</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'groups'</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">$groups<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">));<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">connect</span><span style="color: #007700">(</span><span style="color: #0000BB">$parameter</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+<p>operate openfire.</p>
+
+
+<div class="detailHeader" id="sendMessageToUser-detail">
+sendMessageToUser()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>sendMessageToUser</b>(string $user, json $msg)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$user</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$msg</td>
+  <td class="paramTypeCol">json</td>
+  <td class="paramDescCol">string $msg</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/components/OperateOpenfire.php#80 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">sendMessageToUser</span><span style="color: #007700">(</span><span style="color: #0000BB">$user</span><span style="color: #007700">,</span><span style="color: #0000BB">$msg</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$conn&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">intiXmpp</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$conn</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">message</span><span style="color: #007700">(</span><span style="color: #0000BB">$user</span><span style="color: #007700">.</span><span style="color: #DD0000">'@'</span><span style="color: #007700">.</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getHostName</span><span style="color: #007700">(),&nbsp;</span><span style="color: #0000BB">$msg</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$conn</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">disconnect</span><span style="color: #007700">();</span><span style="color: #FF8000">//colse&nbsp;connect.<br /></span><span style="color: #007700">}</span>
+</span>
+</code></div>
+</div>
+<p>send $msg to $user.</p>
+
+
+<div class="detailHeader" id="sendMessageToUsers-detail">
+sendMessageToUsers()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>sendMessageToUsers</b>(array $users, json $msg)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$users</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$msg</td>
+  <td class="paramTypeCol">json</td>
+  <td class="paramDescCol">string $msg</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/components/OperateOpenfire.php#91 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">sendMessageToUsers</span><span style="color: #007700">(</span><span style="color: #0000BB">$users</span><span style="color: #007700">,</span><span style="color: #0000BB">$msg</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$conn&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">intiXmpp</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">$users&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$user</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$conn</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">message</span><span style="color: #007700">(</span><span style="color: #0000BB">$user</span><span style="color: #007700">.</span><span style="color: #DD0000">'@'</span><span style="color: #007700">.</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getHostName</span><span style="color: #007700">(),&nbsp;</span><span style="color: #0000BB">$msg</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$conn</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">disconnect</span><span style="color: #007700">();</span><span style="color: #FF8000">//close&nbsp;connect.<br /></span><span style="color: #007700">}</span>
+</span>
+</code></div>
+</div>
+<p>send $msg to $users.</p>
+
+
+<div class="detailHeader" id="sendMessages-detail">
+sendMessages()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>sendMessages</b>(array $messages)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$messages</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b> app/components/OperateOpenfire.php#112 (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">sendMessages</span><span style="color: #007700">(</span><span style="color: #0000BB">$messages</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$conn&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">intiXmpp</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">$messages&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$user</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">$msg</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$conn</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">message</span><span style="color: #007700">(</span><span style="color: #0000BB">$user</span><span style="color: #007700">.</span><span style="color: #DD0000">'@'</span><span style="color: #007700">.</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getHostName</span><span style="color: #007700">(),&nbsp;</span><span style="color: #0000BB">$msg</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$conn</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">disconnect</span><span style="color: #007700">();</span><span style="color: #FF8000">//close&nbsp;connect.<br /></span><span style="color: #007700">}</span>
+</span>
+</code></div>
+</div>
+<p>send $msg to $users.</p>
+
+
+</div><!-- end of content -->
+
+<div id="apiFooter">
+Copyright &copy; 2008-2011 by <a href="http://www.yiisoft.com">Yii Software LLC</a><br/>
+All Rights Reserved.<br/>
+</div><!-- end of footer -->
+
+<script type="text/javascript">
+/*<![CDATA[*/
+$("a.toggle").toggle(function(){
+	$(this).text($(this).text().replace(/Hide/,'Show'));
+	$(this).parents(".summary").find(".inherited").hide();
+},function(){
+	$(this).text($(this).text().replace(/Show/,'Hide'));
+	$(this).parents(".summary").find(".inherited").show();
+});
+$(".sourceCode a.show").toggle(function(){
+	$(this).text($(this).text().replace(/show/,'hide'));
+	$(this).parents(".sourceCode").find("div.code").show();
+},function(){
+	$(this).text($(this).text().replace(/hide/,'show'));
+	$(this).parents(".sourceCode").find("div.code").hide();
+});
+$("a.sourceLink").click(function(){
+	$(this).attr('target','_blank');
+});
+/*]]>*/
+</script>
+
+</div><!-- end of page -->
+</body>
+</html>

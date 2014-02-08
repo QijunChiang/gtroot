@@ -1,0 +1,1031 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="language" content="en" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/api.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<title>BaseAction</title>
+</head>
+
+<body>
+<div id="apiPage">
+
+<div id="apiHeader">
+My Web Application Class Reference. <a href="http://www.yiiframework.com">Yii Framework</a>
+</div><!-- end of header -->
+
+<div id="content">
+<h1>BaseAction</h1>
+<div id="nav">
+<a href="index.html">All Packages</a>
+| <a href="#properties">Properties</a>
+| <a href="#methods">Methods</a>
+</div>
+
+<table class="summaryTable docClass">
+<colgroup>
+	<col class="col-name" />
+	<col class="col-value" />
+</colgroup>
+<tr>
+  <th>Package</th>
+  <td><a href="index.html#com.server.components">com.server.components</a></td>
+</tr>
+<tr>
+  <th>Inheritance</th>
+  <td>class BaseAction &raquo;
+<a href="RESTAction.html">RESTAction</a> &raquo;
+<a href="http://www.yiiframework.com/doc/api/1.1/CAction">CAction</a> &raquo;
+<a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr>
+  <th>Implements</th>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/IAction">IAction</a></td>
+</tr>
+<tr>
+  <th>Subclasses</th>
+  <td><a href="AddAppErrorLogAction.html">AddAppErrorLogAction</a>, <a href="AddFeedback.html">AddFeedback</a>, <a href="CheckVersionAction.html">CheckVersionAction</a>, <a href="CreateAccount.html">CreateAccount</a>, <a href="DisableAppErrorLogAction.html">DisableAppErrorLogAction</a>, <a href="ErrorAction.html">ErrorAction</a>, <a href="GetAppErrorLogListAction.html">GetAppErrorLogListAction</a>, <a href="GetCategoryHotList.html">GetCategoryHotList</a>, <a href="GetCategoryList.html">GetCategoryList</a>, <a href="GetCityAllList.html">GetCityAllList</a>, <a href="GetCityChildrenList.html">GetCityChildrenList</a>, <a href="GetCityList.html">GetCityList</a>, <a href="GetCommentsList.html">GetCommentsList</a>, <a href="GetCreatePhoneCode.html">GetCreatePhoneCode</a>, <a href="GetNewSysNoticeList.html">GetNewSysNoticeList</a>, <a href="GetResetPhoneCode.html">GetResetPhoneCode</a>, <a href="GetSysNoticeList.html">GetSysNoticeList</a>, <a href="GetTeachCourseList.html">GetTeachCourseList</a>, <a href="GetTeachVideoAllList.html">GetTeachVideoAllList</a>, <a href="GetTeachVideoList.html">GetTeachVideoList</a>, <a href="GetUserInfo.html">GetUserInfo</a>, <a href="GetUserList.html">GetUserList</a>, <a href="GetUserListCount.html">GetUserListCount</a>, <a href="IndexAction.html">IndexAction</a>, <a href="IsNewCityList.html">IsNewCityList</a>, <a href="LoginAction.html">LoginAction</a>, <a href="LogoutAction.html">LogoutAction</a>, <a href="PhoneIsExist.html">PhoneIsExist</a>, <a href="ResetPassword.html">ResetPassword</a>, <a href="SendNotice.html">SendNotice</a>, <a href="SessionFilterAction.html">SessionFilterAction</a>, <a href="SignIn.html">SignIn</a>, <a href="SignInAnonymous.html">SignInAnonymous</a>, <a href="SignInByBinding.html">SignInByBinding</a>, <a href="SignOut.html">SignOut</a></td>
+</tr>
+<tr>
+  <th>Since</th>
+  <td>0.1.0</td>
+</tr>
+<tr>
+  <th>Version</th>
+  <td>$Id: BaseAction $</td>
+</tr>
+<tr>
+  <th>Source Code</th>
+  <td></td>
+</tr>
+</table>
+
+<div id="classDescription">
+This Action Extends RESTAction.</div>
+
+<a name="properties"></a>
+
+<div class="summary docProperty">
+<h2>Public Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-property" />
+	<col class="col-type" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="controller">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CAction/#controller-detail">controller</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+  <td>the controller who owns this action.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CAction">CAction</a></td>
+</tr>
+<tr class="inherited" id="id">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CAction/#id-detail">id</a></td>
+  <td>string</td>
+  <td>id of this action</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CAction">CAction</a></td>
+</tr>
+</table>
+</div>
+
+<div class="summary docProperty">
+<h2>Protected Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-property" />
+	<col class="col-type" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr id="requestArray">
+  <td><a href="BaseAction.html#requestArray-detail">requestArray</a></td>
+  <td>Array</td>
+  <td>get request array</td>
+  <td>BaseAction</td>
+</tr>
+<tr id="responseArray">
+  <td><a href="BaseAction.html#responseArray-detail">responseArray</a></td>
+  <td>Array</td>
+  <td>get response array</td>
+  <td>BaseAction</td>
+</tr>
+</table>
+</div>
+
+<a name="methods"></a>
+
+<div class="summary docMethod">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="__call">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#__call-detail">__call()</a></td>
+  <td>Calls the named method which is not a class method.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr id="__construct">
+  <td><a href="BaseAction.html#__construct-detail">__construct()</a></td>
+  <td></td>
+  <td>BaseAction</td>
+</tr>
+<tr class="inherited" id="__get">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#__get-detail">__get()</a></td>
+  <td>Returns a property value, an event handler list or a behavior based on its name.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="__isset">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#__isset-detail">__isset()</a></td>
+  <td>Checks if a property value is null.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="__set">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#__set-detail">__set()</a></td>
+  <td>Sets value of a component property.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="__unset">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#__unset-detail">__unset()</a></td>
+  <td>Sets a component property to be null.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="asa">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#asa-detail">asa()</a></td>
+  <td>Returns the named behavior object.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="attachBehavior">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#attachBehavior-detail">attachBehavior()</a></td>
+  <td>Attaches a behavior to this component.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="attachBehaviors">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#attachBehaviors-detail">attachBehaviors()</a></td>
+  <td>Attaches a list of behaviors to the component.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="attachEventHandler">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#attachEventHandler-detail">attachEventHandler()</a></td>
+  <td>Attaches an event handler to an event.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="canGetProperty">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#canGetProperty-detail">canGetProperty()</a></td>
+  <td>Determines whether a property can be read.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="canSetProperty">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#canSetProperty-detail">canSetProperty()</a></td>
+  <td>Determines whether a property can be set.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="detachBehavior">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#detachBehavior-detail">detachBehavior()</a></td>
+  <td>Detaches a behavior from the component.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="detachBehaviors">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#detachBehaviors-detail">detachBehaviors()</a></td>
+  <td>Detaches all behaviors from the component.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="detachEventHandler">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#detachEventHandler-detail">detachEventHandler()</a></td>
+  <td>Detaches an existing event handler.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="disableBehavior">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#disableBehavior-detail">disableBehavior()</a></td>
+  <td>Disables an attached behavior.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="disableBehaviors">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#disableBehaviors-detail">disableBehaviors()</a></td>
+  <td>Disables all behaviors attached to this component.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="enableBehavior">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#enableBehavior-detail">enableBehavior()</a></td>
+  <td>Enables an attached behavior.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="enableBehaviors">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#enableBehaviors-detail">enableBehaviors()</a></td>
+  <td>Enables all behaviors attached to this component.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="evaluateExpression">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#evaluateExpression-detail">evaluateExpression()</a></td>
+  <td>Evaluates a PHP expression or callback under the context of this component.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="getController">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CAction/#getController-detail">getController()</a></td>
+  <td>Returns the controller who owns this action.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CAction">CAction</a></td>
+</tr>
+<tr id="getData">
+  <td><a href="BaseAction.html#getData-detail">getData()</a></td>
+  <td>get date by different way.</td>
+  <td>BaseAction</td>
+</tr>
+<tr class="inherited" id="getEventHandlers">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#getEventHandlers-detail">getEventHandlers()</a></td>
+  <td>Returns the list of attached event handlers for an event.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="getId">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CAction/#getId-detail">getId()</a></td>
+  <td>Returns id of this action</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CAction">CAction</a></td>
+</tr>
+<tr class="inherited" id="hasEvent">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#hasEvent-detail">hasEvent()</a></td>
+  <td>Determines whether an event is defined.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="hasEventHandler">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#hasEventHandler-detail">hasEventHandler()</a></td>
+  <td>Checks whether the named event has attached handlers.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="hasProperty">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#hasProperty-detail">hasProperty()</a></td>
+  <td>Determines whether a property is defined.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="raiseEvent">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#raiseEvent-detail">raiseEvent()</a></td>
+  <td>Raises an event.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="runWithParams">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CAction/#runWithParams-detail">runWithParams()</a></td>
+  <td>Runs the action with the supplied request parameters.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CAction">CAction</a></td>
+</tr>
+</table>
+</div>
+
+<div class="summary docMethod">
+<h2>Protected Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="_getStatusCodeMessage">
+  <td><a href="RESTAction.html#_getStatusCodeMessage-detail">_getStatusCodeMessage()</a></td>
+  <td>Gets the message for a status code</td>
+  <td><a href="RESTAction.html">RESTAction</a></td>
+</tr>
+<tr class="inherited" id="_sendResponse">
+  <td><a href="RESTAction.html#_sendResponse-detail">_sendResponse()</a></td>
+  <td>Sends the API response</td>
+  <td><a href="RESTAction.html">RESTAction</a></td>
+</tr>
+<tr id="addResponse">
+  <td><a href="BaseAction.html#addResponse-detail">addResponse()</a></td>
+  <td>Add result to response array.</td>
+  <td>BaseAction</td>
+</tr>
+<tr id="addResponses">
+  <td><a href="BaseAction.html#addResponses-detail">addResponses()</a></td>
+  <td>add result array to response array, array_merge</td>
+  <td>BaseAction</td>
+</tr>
+<tr id="checkParameters">
+  <td><a href="BaseAction.html#checkParameters-detail">checkParameters()</a></td>
+  <td>check parameters exists or not</td>
+  <td>BaseAction</td>
+</tr>
+<tr id="clear">
+  <td><a href="BaseAction.html#clear-detail">clear()</a></td>
+  <td>clear response array.</td>
+  <td>BaseAction</td>
+</tr>
+<tr id="decodeRequest">
+  <td><a href="BaseAction.html#decodeRequest-detail">decodeRequest()</a></td>
+  <td>decode request to array.</td>
+  <td>BaseAction</td>
+</tr>
+<tr id="existsRequest">
+  <td><a href="BaseAction.html#existsRequest-detail">existsRequest()</a></td>
+  <td>check key exists or not in request</td>
+  <td>BaseAction</td>
+</tr>
+<tr id="getRequest">
+  <td><a href="BaseAction.html#getRequest-detail">getRequest()</a></td>
+  <td>get request value,if isExists is true, will be check key is exists in request;</td>
+  <td>BaseAction</td>
+</tr>
+<tr id="getRequestArray">
+  <td><a href="BaseAction.html#getRequestArray-detail">getRequestArray()</a></td>
+  <td>get request array</td>
+  <td>BaseAction</td>
+</tr>
+<tr id="getResponseArray">
+  <td><a href="BaseAction.html#getResponseArray-detail">getResponseArray()</a></td>
+  <td>get response array</td>
+  <td>BaseAction</td>
+</tr>
+<tr id="redecode">
+  <td><a href="BaseAction.html#redecode-detail">redecode()</a></td>
+  <td>redecode array.</td>
+  <td>BaseAction</td>
+</tr>
+<tr class="inherited" id="runWithParamsInternal">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CAction/#runWithParamsInternal-detail">runWithParamsInternal()</a></td>
+  <td>Executes a method of an object with the supplied named parameters.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CAction">CAction</a></td>
+</tr>
+<tr id="sendResponse">
+  <td><a href="BaseAction.html#sendResponse-detail">sendResponse()</a></td>
+  <td>send response to client.</td>
+  <td>BaseAction</td>
+</tr>
+<tr id="setErrorInfo">
+  <td><a href="BaseAction.html#setErrorInfo-detail">setErrorInfo()</a></td>
+  <td>return error to client</td>
+  <td>BaseAction</td>
+</tr>
+<tr id="setModelAttribute">
+  <td><a href="BaseAction.html#setModelAttribute-detail">setModelAttribute()</a></td>
+  <td>set request value to Model.</td>
+  <td>BaseAction</td>
+</tr>
+<tr id="setResponse">
+  <td><a href="BaseAction.html#setResponse-detail">setResponse()</a></td>
+  <td>set result array.</td>
+  <td>BaseAction</td>
+</tr>
+<tr id="toJSON">
+  <td><a href="BaseAction.html#toJSON-detail">toJSON()</a></td>
+  <td>Encode response to json string.</td>
+  <td>BaseAction</td>
+</tr>
+<tr id="toXML">
+  <td><a href="BaseAction.html#toXML-detail">toXML()</a></td>
+  <td>Encode response to XML string.</td>
+  <td>BaseAction</td>
+</tr>
+</table>
+</div>
+
+<a name="events"></a>
+
+<h2>Property Details</h2>
+<div class="detailHeader" id="requestArray-detail">
+requestArray<span class="detailHeaderTag">
+property
+ <em>read-only</em> </span>
+</div>
+
+<div class="signature">
+protected Array <a href="BaseAction.html#getRequestArray"><b>getRequestArray</b></a>()</div>
+
+<p>get request array</p>
+
+
+<div class="detailHeader" id="responseArray-detail">
+responseArray<span class="detailHeaderTag">
+property
+ <em>read-only</em> </span>
+</div>
+
+<div class="signature">
+protected Array <a href="BaseAction.html#getResponseArray"><b>getResponseArray</b></a>()</div>
+
+<p>get response array</p>
+
+
+<h2>Method Details</h2>
+
+<div class="detailHeader" id="__construct-detail">
+__construct()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>__construct</b>($controller, $id)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$controller</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$id</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b>  (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">__construct</span><span style="color: #007700">(</span><span style="color: #0000BB">$controller</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$id</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;TODO:&nbsp;Auto-generated&nbsp;method&nbsp;stub<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">parent</span><span style="color: #007700">::</span><span style="color: #0000BB">__construct</span><span style="color: #007700">(</span><span style="color: #0000BB">$controller</span><span style="color: #007700">,</span><span style="color: #0000BB">$id</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">init</span><span style="color: #007700">();<br />}</span>
+</span>
+</code></div>
+</div>
+
+<p></p>
+
+
+<div class="detailHeader" id="addResponse-detail">
+addResponse()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected void <b>addResponse</b>(Object $name, Object $value)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$name</td>
+  <td class="paramTypeCol">Object</td>
+  <td class="paramDescCol">parameters name</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$value</td>
+  <td class="paramTypeCol">Object</td>
+  <td class="paramDescCol">parameters value</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b>  (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">addResponse</span><span style="color: #007700">(</span><span style="color: #0000BB">$name</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">responseArray</span><span style="color: #007700">[</span><span style="color: #0000BB">$name</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">redecode</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+
+<p>Add result to response array.</p>
+
+
+<div class="detailHeader" id="addResponses-detail">
+addResponses()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected void <b>addResponses</b>(Array $response)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$response</td>
+  <td class="paramTypeCol">Array</td>
+  <td class="paramDescCol">parameters response</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b>  (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">addResponses</span><span style="color: #007700">(</span><span style="color: #0000BB">$response</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">responseArray&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">array_merge</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">responseArray</span><span style="color: #007700">,</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">redecode</span><span style="color: #007700">(</span><span style="color: #0000BB">$response</span><span style="color: #007700">));<br />}</span>
+</span>
+</code></div>
+</div>
+
+<p>add result array to response array, array_merge</p>
+
+
+<div class="detailHeader" id="checkParameters-detail">
+checkParameters()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected void <b>checkParameters</b>(array $rules)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$rules</td>
+  <td class="paramTypeCol">array</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b>  (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">checkParameters</span><span style="color: #007700">(Array&nbsp;</span><span style="color: #0000BB">$rules</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">$rules&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$key</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">existsRequest</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+
+<p>check parameters exists or not</p>
+
+
+<div class="detailHeader" id="clear-detail">
+clear()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected void <b>clear</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b>  (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">clear</span><span style="color: #007700">(){<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">responseArray&nbsp;</span><span style="color: #007700">=&nbsp;array();<br />}</span>
+</span>
+</code></div>
+</div>
+
+<p>clear response array.</p>
+
+
+<div class="detailHeader" id="decodeRequest-detail">
+decodeRequest()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected void <b>decodeRequest</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b>  (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">decodeRequest</span><span style="color: #007700">(){<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">requestArray&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getData</span><span style="color: #007700">();<br />}</span>
+</span>
+</code></div>
+</div>
+
+<p>decode request to array.</p>
+
+
+<div class="detailHeader" id="existsRequest-detail">
+existsRequest()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected void <b>existsRequest</b>(string $key)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$key</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">parameters name key</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b>  (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">existsRequest</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;if(!</span><span style="color: #0000BB">array_key_exists</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">requestArray</span><span style="color: #007700">)){<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">CHttpException</span><span style="color: #007700">(</span><span style="color: #0000BB">999</span><span style="color: #007700">,</span><span style="color: #DD0000">'Parameters&nbsp;'</span><span style="color: #007700">.</span><span style="color: #0000BB">$key</span><span style="color: #007700">.</span><span style="color: #DD0000">'&nbsp;is&nbsp;missing'</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;if(empty(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">requestArray</span><span style="color: #007700">[</span><span style="color: #0000BB">$key</span><span style="color: #007700">])&nbsp;&amp;&amp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">requestArray</span><span style="color: #007700">[</span><span style="color: #0000BB">$key</span><span style="color: #007700">]&nbsp;!=&nbsp;</span><span style="color: #DD0000">'0'</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;</span><span style="color: #0000BB">CHttpException</span><span style="color: #007700">(</span><span style="color: #0000BB">999</span><span style="color: #007700">,</span><span style="color: #DD0000">'Parameters&nbsp;'</span><span style="color: #007700">.</span><span style="color: #0000BB">$key</span><span style="color: #007700">.</span><span style="color: #DD0000">'&nbsp;is&nbsp;empty'</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+
+<p>check key exists or not in request</p>
+
+
+<div class="detailHeader" id="getData-detail">
+getData()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public static array; <b>getData</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">array;</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b>  (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;static&nbsp;function&nbsp;</span><span style="color: #0000BB">getData</span><span style="color: #007700">(){<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;get&nbsp;our&nbsp;verb<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$request_method&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">strtolower</span><span style="color: #007700">(</span><span style="color: #0000BB">$_SERVER</span><span style="color: #007700">[</span><span style="color: #DD0000">'REQUEST_METHOD'</span><span style="color: #007700">]);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$data&nbsp;</span><span style="color: #007700">=&nbsp;array();<br />&nbsp;&nbsp;&nbsp;&nbsp;switch&nbsp;(</span><span style="color: #0000BB">$request_method</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;gets&nbsp;are&nbsp;easy...<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">case&nbsp;</span><span style="color: #DD0000">'get'</span><span style="color: #007700">:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$data&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$_GET</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//$data&nbsp;=&nbsp;CJSON::decode($GLOBALS['HTTP_RAW_GET_DATA']);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">break;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;so&nbsp;are&nbsp;posts<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">case&nbsp;</span><span style="color: #DD0000">'post'</span><span style="color: #007700">:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$data&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$_POST</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(empty(</span><span style="color: #0000BB">$data</span><span style="color: #007700">)){<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$data&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">CJSON</span><span style="color: #007700">::</span><span style="color: #0000BB">decode</span><span style="color: #007700">(</span><span style="color: #0000BB">$GLOBALS</span><span style="color: #007700">[</span><span style="color: #DD0000">'HTTP_RAW_POST_DATA'</span><span style="color: #007700">]);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;here's&nbsp;the&nbsp;tricky&nbsp;bit...<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">case&nbsp;</span><span style="color: #DD0000">'put'</span><span style="color: #007700">:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;basically,&nbsp;we&nbsp;read&nbsp;a&nbsp;string&nbsp;from&nbsp;PHP's&nbsp;special&nbsp;input&nbsp;location,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;and&nbsp;then&nbsp;parse&nbsp;it&nbsp;out&nbsp;into&nbsp;an&nbsp;array&nbsp;via&nbsp;parse_str...&nbsp;per&nbsp;the&nbsp;PHP&nbsp;docs:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;Parses&nbsp;str&nbsp;&nbsp;as&nbsp;if&nbsp;it&nbsp;were&nbsp;the&nbsp;query&nbsp;string&nbsp;passed&nbsp;via&nbsp;a&nbsp;URL&nbsp;and&nbsp;sets<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;variables&nbsp;in&nbsp;the&nbsp;current&nbsp;scope.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">parse_str</span><span style="color: #007700">(</span><span style="color: #0000BB">file_get_contents</span><span style="color: #007700">(</span><span style="color: #DD0000">'php://input'</span><span style="color: #007700">),&nbsp;</span><span style="color: #0000BB">$put_vars</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$data&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$put_vars</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;empty(</span><span style="color: #0000BB">$data</span><span style="color: #007700">)?&nbsp;array():</span><span style="color: #0000BB">$data</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+
+<p>get date by different way.</p>
+
+
+<div class="detailHeader" id="getRequest-detail">
+getRequest()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected void <b>getRequest</b>(string $key, boolean $isExists=false)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$key</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">parameters name key</td>
+</tr>
+<tr>
+  <td class="paramNameCol">$isExists</td>
+  <td class="paramTypeCol">boolean</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b>  (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">getRequest</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">,</span><span style="color: #0000BB">$isExists&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;if(</span><span style="color: #0000BB">$isExists</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">existsRequest</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;!</span><span style="color: #0000BB">array_key_exists</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">requestArray</span><span style="color: #007700">)&nbsp;?&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">:</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">requestArray</span><span style="color: #007700">[</span><span style="color: #0000BB">$key</span><span style="color: #007700">];<br />}</span>
+</span>
+</code></div>
+</div>
+
+<p>get request value,if isExists is true, will be check key is exists in request;</p>
+
+
+<div class="detailHeader" id="getRequestArray-detail">
+getRequestArray()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected Array <b>getRequestArray</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">Array</td>
+  <td class="paramDescCol">requestArray</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b>  (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">getRequestArray</span><span style="color: #007700">(){<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">requestArray</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+
+<p>get request array</p>
+
+
+<div class="detailHeader" id="getResponseArray-detail">
+getResponseArray()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected Array <b>getResponseArray</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">Array</td>
+  <td class="paramDescCol">responseArray</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b>  (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">getResponseArray</span><span style="color: #007700">(){<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">responseArray</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+
+<p>get response array</p>
+
+
+<div class="detailHeader" id="redecode-detail">
+redecode()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected Array. <b>redecode</b>(Array $response)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$response</td>
+  <td class="paramTypeCol">Array</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">Array.</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b>  (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">redecode</span><span style="color: #007700">(</span><span style="color: #0000BB">$response</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">CJSON</span><span style="color: #007700">::</span><span style="color: #0000BB">decode</span><span style="color: #007700">(</span><span style="color: #0000BB">CJSON</span><span style="color: #007700">::</span><span style="color: #0000BB">encode</span><span style="color: #007700">(</span><span style="color: #0000BB">$response</span><span style="color: #007700">));<br />}</span>
+</span>
+</code></div>
+</div>
+
+<p>redecode array.</p>
+
+
+<div class="detailHeader" id="sendResponse-detail">
+sendResponse()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected void <b>sendResponse</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b>  (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">sendResponse</span><span style="color: #007700">(){<br />&nbsp;&nbsp;&nbsp;&nbsp;if(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">format&nbsp;</span><span style="color: #007700">==&nbsp;</span><span style="color: #DD0000">'json'</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_sendResponse</span><span style="color: #007700">(</span><span style="color: #0000BB">200</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">toJSON</span><span style="color: #007700">(),</span><span style="color: #0000BB">Contents</span><span style="color: #007700">::</span><span style="color: #0000BB">CONTENT_TYPE_JSON</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}else&nbsp;if(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">format&nbsp;</span><span style="color: #007700">==&nbsp;</span><span style="color: #DD0000">'xml'</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_sendResponse</span><span style="color: #007700">(</span><span style="color: #0000BB">200</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">toXML</span><span style="color: #007700">(),</span><span style="color: #0000BB">Contents</span><span style="color: #007700">::</span><span style="color: #0000BB">CONTENT_TYPE_XML</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+
+<p>send response to client.</p>
+
+
+<div class="detailHeader" id="setErrorInfo-detail">
+setErrorInfo()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected void <b>setErrorInfo</b>(String $error, Integer $error_code, String $request)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$error</td>
+  <td class="paramTypeCol">String</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$error_code</td>
+  <td class="paramTypeCol">Integer</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$request</td>
+  <td class="paramTypeCol">String</td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b>  (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">setErrorInfo</span><span style="color: #007700">(</span><span style="color: #0000BB">$error</span><span style="color: #007700">,</span><span style="color: #0000BB">$error_code</span><span style="color: #007700">,</span><span style="color: #0000BB">$request</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$array&nbsp;</span><span style="color: #007700">=&nbsp;array();<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$array</span><span style="color: #007700">[</span><span style="color: #0000BB">Contents</span><span style="color: #007700">::</span><span style="color: #0000BB">ERROR</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$error</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$array</span><span style="color: #007700">[</span><span style="color: #0000BB">Contents</span><span style="color: #007700">::</span><span style="color: #0000BB">ERROR_CODE</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$error_code</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$array</span><span style="color: #007700">[</span><span style="color: #0000BB">Contents</span><span style="color: #007700">::</span><span style="color: #0000BB">REQUEST</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$request</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$array</span><span style="color: #007700">[</span><span style="color: #0000BB">Contents</span><span style="color: #007700">::</span><span style="color: #0000BB">REQUEST_METHOD</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$_SERVER</span><span style="color: #007700">[</span><span style="color: #DD0000">'REQUEST_METHOD'</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">addResponse</span><span style="color: #007700">(</span><span style="color: #0000BB">Contents</span><span style="color: #007700">::</span><span style="color: #0000BB">RESULT</span><span style="color: #007700">,</span><span style="color: #0000BB">false</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">addResponse</span><span style="color: #007700">(</span><span style="color: #0000BB">Contents</span><span style="color: #007700">::</span><span style="color: #0000BB">DATA</span><span style="color: #007700">,</span><span style="color: #0000BB">$array</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+
+<p>return error to client</p>
+
+
+<div class="detailHeader" id="setModelAttribute-detail">
+setModelAttribute()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected void <b>setModelAttribute</b>(CActiveRecord $model, $rules, $isSome=false)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$model</td>
+  <td class="paramTypeCol">CActiveRecord</td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$rules</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+<tr>
+  <td class="paramNameCol">$isSome</td>
+  <td class="paramTypeCol"></td>
+  <td class="paramDescCol"></td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b>  (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">setModelAttribute</span><span style="color: #007700">(</span><span style="color: #0000BB">CActiveRecord&nbsp;$model</span><span style="color: #007700">,</span><span style="color: #0000BB">$rules</span><span style="color: #007700">,</span><span style="color: #0000BB">$isSome&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;foreach&nbsp;(</span><span style="color: #0000BB">$rules&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">$key</span><span style="color: #007700">=&gt;</span><span style="color: #0000BB">$val</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$value&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getRequest</span><span style="color: #007700">(</span><span style="color: #0000BB">$val</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(</span><span style="color: #0000BB">$isSome</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$model</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">setAttribute</span><span style="color: #007700">(</span><span style="color: #0000BB">$val</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}else{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$model</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">setAttribute</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$value</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span>
+</span>
+</code></div>
+</div>
+
+<p>set request value to Model.</p>
+
+
+<div class="detailHeader" id="setResponse-detail">
+setResponse()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected void <b>setResponse</b>(Array $response)</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">$response</td>
+  <td class="paramTypeCol">Array</td>
+  <td class="paramDescCol">parameters response</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b>  (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">setResponse</span><span style="color: #007700">(</span><span style="color: #0000BB">$response</span><span style="color: #007700">){<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">responseArray</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">redecode</span><span style="color: #007700">(</span><span style="color: #0000BB">$response</span><span style="color: #007700">);<br />}</span>
+</span>
+</code></div>
+</div>
+
+<p>set result array.</p>
+
+
+<div class="detailHeader" id="toJSON-detail">
+toJSON()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected string <b>toJSON</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the json string.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b>  (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">toJSON</span><span style="color: #007700">(){<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$result&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">CJSON</span><span style="color: #007700">::</span><span style="color: #0000BB">encode</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">responseArray</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">clear</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$result</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+
+<p>Encode response to json string.</p>
+
+
+<div class="detailHeader" id="toXML-detail">
+toXML()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+protected string <b>toXML</b>()</div>
+</td></tr>
+<tr>
+  <td class="paramNameCol">{return}</td>
+  <td class="paramTypeCol">string</td>
+  <td class="paramDescCol">the XML string.</td>
+</tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b>  (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">protected&nbsp;function&nbsp;</span><span style="color: #0000BB">toXML</span><span style="color: #007700">(){<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$result&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">CXML</span><span style="color: #007700">::</span><span style="color: #0000BB">encode</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">responseArray</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">clear</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$result</span><span style="color: #007700">;<br />}</span>
+</span>
+</code></div>
+</div>
+
+<p>Encode response to XML string.</p>
+
+
+</div><!-- end of content -->
+
+<div id="apiFooter">
+Copyright &copy; 2008-2011 by <a href="http://www.yiisoft.com">Yii Software LLC</a><br/>
+All Rights Reserved.<br/>
+</div><!-- end of footer -->
+
+<script type="text/javascript">
+/*<![CDATA[*/
+$("a.toggle").toggle(function(){
+	$(this).text($(this).text().replace(/Hide/,'Show'));
+	$(this).parents(".summary").find(".inherited").hide();
+},function(){
+	$(this).text($(this).text().replace(/Show/,'Hide'));
+	$(this).parents(".summary").find(".inherited").show();
+});
+$(".sourceCode a.show").toggle(function(){
+	$(this).text($(this).text().replace(/show/,'hide'));
+	$(this).parents(".sourceCode").find("div.code").show();
+},function(){
+	$(this).text($(this).text().replace(/hide/,'show'));
+	$(this).parents(".sourceCode").find("div.code").hide();
+});
+$("a.sourceLink").click(function(){
+	$(this).attr('target','_blank');
+});
+/*]]>*/
+</script>
+
+</div><!-- end of page -->
+</body>
+</html>

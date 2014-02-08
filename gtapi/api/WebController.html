@@ -1,0 +1,715 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="language" content="en" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/api.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<title>WebController</title>
+</head>
+
+<body>
+<div id="apiPage">
+
+<div id="apiHeader">
+My Web Application Class Reference. <a href="http://www.yiiframework.com">Yii Framework</a>
+</div><!-- end of header -->
+
+<div id="content">
+<h1>WebController</h1>
+<div id="nav">
+<a href="index.html">All Packages</a>
+| <a href="#properties">Properties</a>
+| <a href="#methods">Methods</a>
+</div>
+
+<table class="summaryTable docClass">
+<colgroup>
+	<col class="col-name" />
+	<col class="col-value" />
+</colgroup>
+<tr>
+  <th>Package</th>
+  <td><a href="index.html#com.server.controller">com.server.controller</a></td>
+</tr>
+<tr>
+  <th>Inheritance</th>
+  <td>class WebController &raquo;
+<a href="BaseController.html">BaseController</a> &raquo;
+<a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a> &raquo;
+<a href="http://www.yiiframework.com/doc/api/1.1/CBaseController">CBaseController</a> &raquo;
+<a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr>
+  <th>Since</th>
+  <td>0.1.0</td>
+</tr>
+<tr>
+  <th>Version</th>
+  <td>$Id: WebController $</td>
+</tr>
+<tr>
+  <th>Source Code</th>
+  <td></td>
+</tr>
+</table>
+
+<div id="classDescription">
+web 后端的控制器，定义web的action</div>
+
+<a name="properties"></a>
+
+<div class="summary docProperty">
+<h2>Public Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-property" />
+	<col class="col-type" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="action">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#action-detail">action</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CAction">CAction</a></td>
+  <td>the action currently being executed, null if no active action.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="actionParams">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#actionParams-detail">actionParams</a></td>
+  <td>array</td>
+  <td>Returns the request parameters that will be used for action parameter binding.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="cachingStack">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#cachingStack-detail">cachingStack</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CStack">CStack</a></td>
+  <td>stack of COutputCache objects</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="clips">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#clips-detail">clips</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CMap">CMap</a></td>
+  <td>Returns the list of clips.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="defaultAction">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#defaultAction-detail">defaultAction</a></td>
+  <td>string</td>
+  <td>the name of the default action.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="id">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#id-detail">id</a></td>
+  <td>string</td>
+  <td>ID of the controller</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="layout">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#layout-detail">layout</a></td>
+  <td>mixed</td>
+  <td>the name of the layout to be applied to this controller's views.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="module">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#module-detail">module</a></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CWebModule">CWebModule</a></td>
+  <td>the module that this controller belongs to.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="pageTitle">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#pageTitle-detail">pageTitle</a></td>
+  <td>string</td>
+  <td>the page title.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="route">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#route-detail">route</a></td>
+  <td>string</td>
+  <td>the route (module ID, controller ID and action ID) of the current request.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="uniqueId">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#uniqueId-detail">uniqueId</a></td>
+  <td>string</td>
+  <td>the controller ID that is prefixed with the module ID (if any).</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="viewPath">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#viewPath-detail">viewPath</a></td>
+  <td>string</td>
+  <td>Returns the directory containing view files for this controller.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+</table>
+</div>
+
+<a name="methods"></a>
+
+<div class="summary docMethod">
+<h2>Public Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="FilterSaveInterfaceLog">
+  <td><a href="BaseController.html#FilterSaveInterfaceLog-detail">FilterSaveInterfaceLog()</a></td>
+  <td>添加事务支持，所有方法均含有事务</td>
+  <td><a href="BaseController.html">BaseController</a></td>
+</tr>
+<tr class="inherited" id="__call">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#__call-detail">__call()</a></td>
+  <td>Calls the named method which is not a class method.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="__construct">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#__construct-detail">__construct()</a></td>
+  <td></td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="__get">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#__get-detail">__get()</a></td>
+  <td>Returns a property value, an event handler list or a behavior based on its name.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="__isset">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#__isset-detail">__isset()</a></td>
+  <td>Checks if a property value is null.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="__set">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#__set-detail">__set()</a></td>
+  <td>Sets value of a component property.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="__unset">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#__unset-detail">__unset()</a></td>
+  <td>Sets a component property to be null.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="accessRules">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#accessRules-detail">accessRules()</a></td>
+  <td>Returns the access rules for this controller.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr id="actions">
+  <td><a href="WebController.html#actions-detail">actions()</a></td>
+  <td>Declares class-based actions.</td>
+  <td>WebController</td>
+</tr>
+<tr class="inherited" id="asa">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#asa-detail">asa()</a></td>
+  <td>Returns the named behavior object.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="attachBehavior">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#attachBehavior-detail">attachBehavior()</a></td>
+  <td>Attaches a behavior to this component.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="attachBehaviors">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#attachBehaviors-detail">attachBehaviors()</a></td>
+  <td>Attaches a list of behaviors to the component.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="attachEventHandler">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#attachEventHandler-detail">attachEventHandler()</a></td>
+  <td>Attaches an event handler to an event.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="beginCache">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController/#beginCache-detail">beginCache()</a></td>
+  <td>Begins fragment caching.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController">CBaseController</a></td>
+</tr>
+<tr class="inherited" id="beginClip">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController/#beginClip-detail">beginClip()</a></td>
+  <td>Begins recording a clip.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController">CBaseController</a></td>
+</tr>
+<tr class="inherited" id="beginContent">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController/#beginContent-detail">beginContent()</a></td>
+  <td>Begins the rendering of content that is to be decorated by the specified view.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController">CBaseController</a></td>
+</tr>
+<tr class="inherited" id="beginWidget">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController/#beginWidget-detail">beginWidget()</a></td>
+  <td>Creates a widget and executes it.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController">CBaseController</a></td>
+</tr>
+<tr class="inherited" id="behaviors">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#behaviors-detail">behaviors()</a></td>
+  <td>Returns a list of behaviors that this controller should behave as.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="canGetProperty">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#canGetProperty-detail">canGetProperty()</a></td>
+  <td>Determines whether a property can be read.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="canSetProperty">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#canSetProperty-detail">canSetProperty()</a></td>
+  <td>Determines whether a property can be set.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="clearPageStates">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#clearPageStates-detail">clearPageStates()</a></td>
+  <td>Removes all page states.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="createAbsoluteUrl">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#createAbsoluteUrl-detail">createAbsoluteUrl()</a></td>
+  <td>Creates an absolute URL for the specified action defined in this controller.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="createAction">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#createAction-detail">createAction()</a></td>
+  <td>Creates the action instance based on the action name.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="createUrl">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#createUrl-detail">createUrl()</a></td>
+  <td>Creates a relative URL for the specified action defined in this controller.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="createWidget">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController/#createWidget-detail">createWidget()</a></td>
+  <td>Creates a widget and initializes it.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController">CBaseController</a></td>
+</tr>
+<tr class="inherited" id="detachBehavior">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#detachBehavior-detail">detachBehavior()</a></td>
+  <td>Detaches a behavior from the component.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="detachBehaviors">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#detachBehaviors-detail">detachBehaviors()</a></td>
+  <td>Detaches all behaviors from the component.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="detachEventHandler">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#detachEventHandler-detail">detachEventHandler()</a></td>
+  <td>Detaches an existing event handler.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="disableBehavior">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#disableBehavior-detail">disableBehavior()</a></td>
+  <td>Disables an attached behavior.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="disableBehaviors">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#disableBehaviors-detail">disableBehaviors()</a></td>
+  <td>Disables all behaviors attached to this component.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="enableBehavior">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#enableBehavior-detail">enableBehavior()</a></td>
+  <td>Enables an attached behavior.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="enableBehaviors">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#enableBehaviors-detail">enableBehaviors()</a></td>
+  <td>Enables all behaviors attached to this component.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="endCache">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController/#endCache-detail">endCache()</a></td>
+  <td>Ends fragment caching.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController">CBaseController</a></td>
+</tr>
+<tr class="inherited" id="endClip">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController/#endClip-detail">endClip()</a></td>
+  <td>Ends recording a clip.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController">CBaseController</a></td>
+</tr>
+<tr class="inherited" id="endContent">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController/#endContent-detail">endContent()</a></td>
+  <td>Ends the rendering of content.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController">CBaseController</a></td>
+</tr>
+<tr class="inherited" id="endWidget">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController/#endWidget-detail">endWidget()</a></td>
+  <td>Ends the execution of the named widget.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController">CBaseController</a></td>
+</tr>
+<tr class="inherited" id="evaluateExpression">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#evaluateExpression-detail">evaluateExpression()</a></td>
+  <td>Evaluates a PHP expression or callback under the context of this component.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="filterAccessControl">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#filterAccessControl-detail">filterAccessControl()</a></td>
+  <td>The filter method for 'accessControl' filter.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="filterAjaxOnly">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#filterAjaxOnly-detail">filterAjaxOnly()</a></td>
+  <td>The filter method for 'ajaxOnly' filter.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="filterPostOnly">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#filterPostOnly-detail">filterPostOnly()</a></td>
+  <td>The filter method for 'postOnly' filter.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="filters">
+  <td><a href="BaseController.html#filters-detail">filters()</a></td>
+  <td></td>
+  <td><a href="BaseController.html">BaseController</a></td>
+</tr>
+<tr class="inherited" id="forward">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#forward-detail">forward()</a></td>
+  <td>Processes the request using another controller action.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="getAction">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#getAction-detail">getAction()</a></td>
+  <td>Returns the action currently being executed, null if no active action.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="getActionParams">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#getActionParams-detail">getActionParams()</a></td>
+  <td>Returns the request parameters that will be used for action parameter binding.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="getCachingStack">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#getCachingStack-detail">getCachingStack()</a></td>
+  <td>Returns stack of COutputCache objects</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="getClips">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#getClips-detail">getClips()</a></td>
+  <td>Returns the list of clips.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="getEventHandlers">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#getEventHandlers-detail">getEventHandlers()</a></td>
+  <td>Returns the list of attached event handlers for an event.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="getId">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#getId-detail">getId()</a></td>
+  <td>Returns ID of the controller</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="getLayoutFile">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#getLayoutFile-detail">getLayoutFile()</a></td>
+  <td>Looks for the layout view script based on the layout name.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="getModule">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#getModule-detail">getModule()</a></td>
+  <td>Returns the module that this controller belongs to. It returns null
+if the controller does not belong to any module</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="getPageState">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#getPageState-detail">getPageState()</a></td>
+  <td>Returns a persistent page state value.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="getPageTitle">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#getPageTitle-detail">getPageTitle()</a></td>
+  <td>Returns the page title. Defaults to the controller name and the action name.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="getRoute">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#getRoute-detail">getRoute()</a></td>
+  <td>Returns the route (module ID, controller ID and action ID) of the current request.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="getUniqueId">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#getUniqueId-detail">getUniqueId()</a></td>
+  <td>Returns the controller ID that is prefixed with the module ID (if any).</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="getViewFile">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#getViewFile-detail">getViewFile()</a></td>
+  <td>Looks for the view file according to the given view name.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="getViewPath">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#getViewPath-detail">getViewPath()</a></td>
+  <td>Returns the directory containing view files for this controller.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="hasEvent">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#hasEvent-detail">hasEvent()</a></td>
+  <td>Determines whether an event is defined.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="hasEventHandler">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#hasEventHandler-detail">hasEventHandler()</a></td>
+  <td>Checks whether the named event has attached handlers.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="hasProperty">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#hasProperty-detail">hasProperty()</a></td>
+  <td>Determines whether a property is defined.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="init">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#init-detail">init()</a></td>
+  <td>Initializes the controller.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="invalidActionParams">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#invalidActionParams-detail">invalidActionParams()</a></td>
+  <td>This method is invoked when the request parameters do not satisfy the requirement of the specified action.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="isCachingStackEmpty">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#isCachingStackEmpty-detail">isCachingStackEmpty()</a></td>
+  <td>Returns whether the caching stack is empty.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="missingAction">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#missingAction-detail">missingAction()</a></td>
+  <td>Handles the request whose action is not recognized.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="processDynamicOutput">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#processDynamicOutput-detail">processDynamicOutput()</a></td>
+  <td>Postprocesses the dynamic output.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="processOutput">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#processOutput-detail">processOutput()</a></td>
+  <td>Postprocesses the output generated by <a href="WebController.html#render">render()</a>.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="raiseEvent">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent/#raiseEvent-detail">raiseEvent()</a></td>
+  <td>Raises an event.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CComponent">CComponent</a></td>
+</tr>
+<tr class="inherited" id="recordCachingAction">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#recordCachingAction-detail">recordCachingAction()</a></td>
+  <td>Records a method call when an output cache is in effect.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="redirect">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#redirect-detail">redirect()</a></td>
+  <td>Redirects the browser to the specified URL or route (controller/action).</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="refresh">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#refresh-detail">refresh()</a></td>
+  <td>Refreshes the current page.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="render">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#render-detail">render()</a></td>
+  <td>Renders a view with a layout.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="renderClip">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#renderClip-detail">renderClip()</a></td>
+  <td>Renders a named clip with the supplied parameters.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="renderDynamic">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#renderDynamic-detail">renderDynamic()</a></td>
+  <td>Renders dynamic content returned by the specified callback.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="renderDynamicInternal">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#renderDynamicInternal-detail">renderDynamicInternal()</a></td>
+  <td>This method is internally used.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="renderFile">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController/#renderFile-detail">renderFile()</a></td>
+  <td>Renders a view file.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController">CBaseController</a></td>
+</tr>
+<tr class="inherited" id="renderInternal">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController/#renderInternal-detail">renderInternal()</a></td>
+  <td>Renders a view file.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController">CBaseController</a></td>
+</tr>
+<tr class="inherited" id="renderPartial">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#renderPartial-detail">renderPartial()</a></td>
+  <td>Renders a view.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="renderText">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#renderText-detail">renderText()</a></td>
+  <td>Renders a static text string.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="resolveViewFile">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#resolveViewFile-detail">resolveViewFile()</a></td>
+  <td>Finds a view file based on its name.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="run">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#run-detail">run()</a></td>
+  <td>Runs the named action.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="runAction">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#runAction-detail">runAction()</a></td>
+  <td>Runs the action after passing through all filters.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="runActionWithFilters">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#runActionWithFilters-detail">runActionWithFilters()</a></td>
+  <td>Runs an action with the specified filters.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="setAction">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#setAction-detail">setAction()</a></td>
+  <td>Sets the action currently being executed.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="setPageState">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#setPageState-detail">setPageState()</a></td>
+  <td>Saves a persistent page state value.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="setPageTitle">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#setPageTitle-detail">setPageTitle()</a></td>
+  <td>Sets the page title.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="widget">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController/#widget-detail">widget()</a></td>
+  <td>Creates a widget and executes it.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CBaseController">CBaseController</a></td>
+</tr>
+</table>
+</div>
+
+<div class="summary docMethod">
+<h2>Protected Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summaryTable">
+<colgroup>
+	<col class="col-method" />
+	<col class="col-description" />
+	<col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+<tr class="inherited" id="afterAction">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#afterAction-detail">afterAction()</a></td>
+  <td>This method is invoked right after an action is executed.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="afterRender">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#afterRender-detail">afterRender()</a></td>
+  <td>This method is invoked after the specified is rendered by calling <a href="WebController.html#render">render()</a>.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="beforeAction">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#beforeAction-detail">beforeAction()</a></td>
+  <td>This method is invoked right before an action is to be executed (after all possible filters.)</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="beforeRender">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#beforeRender-detail">beforeRender()</a></td>
+  <td>This method is invoked at the beginning of <a href="WebController.html#render">render()</a>.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="createActionFromMap">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#createActionFromMap-detail">createActionFromMap()</a></td>
+  <td>Creates the action instance based on the action map.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="loadPageStates">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#loadPageStates-detail">loadPageStates()</a></td>
+  <td>Loads page states from a hidden input.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="replaceDynamicOutput">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#replaceDynamicOutput-detail">replaceDynamicOutput()</a></td>
+  <td>Replaces the dynamic content placeholders with actual content.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+<tr class="inherited" id="savePageStates">
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController/#savePageStates-detail">savePageStates()</a></td>
+  <td>Saves page states as a base64 string.</td>
+  <td><a href="http://www.yiiframework.com/doc/api/1.1/CController">CController</a></td>
+</tr>
+</table>
+</div>
+
+<a name="events"></a>
+
+<h2>Method Details</h2>
+
+<div class="detailHeader" id="actions-detail">
+actions()
+<span class="detailHeaderTag">
+method
+</span>
+</div>
+
+<table class="summaryTable">
+<tr><td colspan="3">
+<div class="signature2">
+public void <b>actions</b>()</div>
+</td></tr>
+</table>
+
+<div class="sourceCode">
+<b>Source Code:</b>  (<b><a href="#" class="show">show</a></b>)
+<div class="code"><code><span style="color: #000000">
+<span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">actions</span><span style="color: #007700">(){<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;array(<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/login&nbsp;登录&nbsp;LoginAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'login'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.auth.LoginAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/logout&nbsp;登出&nbsp;LogoutAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'logout'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.auth.LogoutAction'</span><span style="color: #007700">,<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">/**<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;分类<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//index.php/web/get_category_list&nbsp;获得分类的列表&nbsp;&nbsp;GetCategoryListAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'getCategoryList'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.category.GetCategoryListAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/add_category&nbsp;添加分类&nbsp;&nbsp;AddCategoryAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'addCategory'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.category.AddCategoryAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/update_category&nbsp;修改分类&nbsp;&nbsp;UpdateCategoryAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'updateCategory'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.category.UpdateCategoryAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/delete_category&nbsp;删除分类&nbsp;&nbsp;DeleteCategoryAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'deleteCategory'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.category.DeleteCategoryAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/disable_category&nbsp;显示/隐藏&nbsp;分类&nbsp;&nbsp;DisableCategoryAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'disableCategory'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.category.DisableCategoryAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/get_category&nbsp;获取分类&nbsp;&nbsp;GetCategoryAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'getCategory'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.category.GetCategoryAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/get_category_all_list&nbsp;获得所有分类的列表&nbsp;&nbsp;GetCategoryAllListAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'getCategoryAllList'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.category.GetCategoryAllListAction'</span><span style="color: #007700">,<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">/**<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;热门分类<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//index.php/web/get_category_hot_list&nbsp;获得热门分类的列表&nbsp;&nbsp;GetCategoryHotListAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'getCategoryHotList'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.categoryHot.GetCategoryHotListAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/add_category_hot&nbsp;添加热门分类&nbsp;&nbsp;AddCategoryHotAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'addCategoryHot'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.categoryHot.AddCategoryHotAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/update_category_hot&nbsp;修改热门分类&nbsp;&nbsp;UpdateCategoryHotAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'updateCategoryHot'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.categoryHot.UpdateCategoryHotAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/delete_category_hot&nbsp;删除热门分类&nbsp;&nbsp;DeleteCategoryHotAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'deleteCategoryHot'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.categoryHot.DeleteCategoryHotAction'</span><span style="color: #007700">,<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">/**<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;机构<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//index.php/web/add_org&nbsp;添加机构&nbsp;&nbsp;AddOrgAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'addOrg'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.org.AddOrgAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/update_org&nbsp;修改机构&nbsp;&nbsp;UpdateOrgAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'updateOrg'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.org.UpdateOrgAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/get_org_list&nbsp;获得机构列表&nbsp;&nbsp;GetOrgListAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'getOrgList'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.org.GetOrgListAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/disable_org&nbsp;逻辑删除机构&nbsp;&nbsp;DisableOrgAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'disableOrg'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.org.DisableOrgAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/get_org_info&nbsp;获得机构展示信息&nbsp;&nbsp;GetOrgInfoAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'getOrgInfo'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.org.GetOrgInfoAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/get_org&nbsp;获得机构的数据&nbsp;&nbsp;GetOrgAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'getOrg'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.org.GetOrgAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/import_org&nbsp;导入机构&nbsp;&nbsp;ImportOrgAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'importOrg'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.org.ImportOrgAction'</span><span style="color: #007700">,<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/show_org&nbsp;隐藏/显示机构,隐藏后不能在附近的列表可见，但是能搜索出对应的课程视频。&nbsp;&nbsp;ShowOrgAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'showOrg'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.org.ShowOrgAction'</span><span style="color: #007700">,<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">/**<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;用户&nbsp;-&nbsp;学生<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//index.php/web/get_stu_list&nbsp;获得学生列表&nbsp;&nbsp;GetStuListAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'getStuList'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.user.stu.GetStuListAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/add_stu&nbsp;添加学生&nbsp;AddStuAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'addStu'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.user.stu.AddStuAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/get_stu&nbsp;获得学生的数据&nbsp;&nbsp;GetStuAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'getStu'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.user.stu.GetStuAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/disable_stu&nbsp;逻辑删除学生&nbsp;&nbsp;DisableStuAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'disableStu'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.user.stu.DisableStuAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/update_stu&nbsp;修改学生&nbsp;&nbsp;UpdateStuAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'updateStu'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.user.stu.UpdateStuAction'</span><span style="color: #007700">,<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">/**<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;用户&nbsp;-&nbsp;老师<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//index.php/web/get_teacher_list&nbsp;获得老师列表&nbsp;&nbsp;GetTeacherListAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'getTeacherList'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.user.teacher.GetTeacherListAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/add_teacher&nbsp;添加老师&nbsp;AddTeacherAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'addTeacher'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.user.teacher.AddTeacherAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/get_teacher&nbsp;获得老师的数据&nbsp;&nbsp;GetTeacherAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'getTeacher'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.user.teacher.GetTeacherAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/disable_teacher&nbsp;逻辑删除老师&nbsp;&nbsp;DisableTeacherAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'disableTeacher'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.user.teacher.DisableTeacherAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/get_teacher_info&nbsp;获得老师展示信息&nbsp;GetTeacherInfoAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'getTeacherInfo'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.user.teacher.GetTeacherInfoAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/update_teacher&nbsp;修改老师&nbsp;&nbsp;UpdateTeacherAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'updateTeacher'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.user.teacher.UpdateTeacherAction'</span><span style="color: #007700">,<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">/**<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;用户-认证审核<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//index.php/web/get_auth_list&nbsp;获得用户认证的列表&nbsp;&nbsp;GetAuthListAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'getAuthList'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.user.auth.GetAuthListAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/change_auth&nbsp;审核认证&nbsp;&nbsp;ChangeAuthAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'changeAuth'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.user.auth.ChangeAuthAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/get_auth&nbsp;获得审核认证时显示的信息&nbsp;&nbsp;GetAuthAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'getAuth'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.user.auth.GetAuthAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/get_auth_all&nbsp;获得用户的认证信息&nbsp;&nbsp;GetAuthAllAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'getAuthAll'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.user.auth.GetAuthAllAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/create_auth&nbsp;添加认证信息&nbsp;&nbsp;CreateAuthAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'createAuth'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.user.auth.CreateAuthAction'</span><span style="color: #007700">,<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">/**<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;课程视频<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//index.php/web/add_video&nbsp;添加课程视频&nbsp;&nbsp;AddVideoAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'addVideo'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.teach.video.AddVideoAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/get_video_list&nbsp;获得课程视频列表&nbsp;&nbsp;GetVideoListAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'getVideoList'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.teach.video.GetVideoListAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/get_user_list&nbsp;获得学生或机构的ID，name的列表，用于视频添加时，联想用户&nbsp;GetUserListAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'getUserList'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.teach.video.GetUserListAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/disable_video&nbsp;逻辑删除视频&nbsp;DisableVideoAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'disableVideo'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.teach.video.DisableVideoAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/update_video&nbsp;修改课程视频&nbsp;&nbsp;UpdateVideoAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'updateVideo'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.teach.video.UpdateVideoAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/get_video&nbsp;获得课程视频详细&nbsp;&nbsp;GetVideoAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'getVideo'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.teach.video.GetVideoAction'</span><span style="color: #007700">,<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">/**<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;课程<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//index.php/web/add_course&nbsp;添加课程<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'addCourse'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.teach.course.AddCourseAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/get_course_list&nbsp;获得课程列表&nbsp;&nbsp;GetCourseListAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'getCourseList'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.teach.course.GetCourseListAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/disable_course&nbsp;逻辑删除课程&nbsp;DisableCourseAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'disableCourse'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.teach.course.DisableCourseAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/update_course&nbsp;修改课程&nbsp;UpdateCourseAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'updateCourse'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.teach.course.UpdateCourseAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/get_course&nbsp;获得课程详细&nbsp;&nbsp;GetCourseAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'getCourse'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.teach.course.GetCourseAction'</span><span style="color: #007700">,<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">/**<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;评论列表<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//index.php/web/get_user_comments_list&nbsp;获得所有老师或机构评论列表（网站后台查看）&nbsp;&nbsp;GetUserCommentsListAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'getUserCommentsList'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.comments.GetUserCommentsListAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/get_video_comments_list&nbsp;获得所有视频评论列表（网站后台查看）&nbsp;&nbsp;GetVideoCommentsListAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'getVideoCommentsList'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.comments.GetVideoCommentsListAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/disable_comments&nbsp;逻辑改变评论的删除状态&nbsp;DisableCommentsAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'disableComments'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.comments.DisableCommentsAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">/**<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;消息列表<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//index.php/web/get_messages_list&nbsp;获得所有留言消息列表（后台查看）&nbsp;&nbsp;GetMessagesListAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'getMessagesList'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.messages.GetMessagesListAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/get_messages_details_list&nbsp;获得一个会话的留言和回复详细。&nbsp;&nbsp;GetMessagesDetailsListAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'getMessagesDetailsList'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.messages.GetMessagesDetailsListAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/disable_messages&nbsp;逻辑改变消息的删除状态&nbsp;DisableMessagesAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'disableMessages'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.messages.DisableMessagesAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/disable_messages_details&nbsp;逻辑改变消息详细的删除状态&nbsp;DisableMessagesDetailsAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'disableMessagesDetails'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.messages.DisableMessagesDetailsAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">/**<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;查询范围设定<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//index.php/web/get_user_radius_mile&nbsp;获得查询范围&nbsp;GetUserRadiusMileAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'getUserRadiusMile'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.setting.GetUserRadiusMileAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/set_user_radius_mile&nbsp;设置查询范围&nbsp;SetUserRadiusMileAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'setUserRadiusMile'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.setting.SetUserRadiusMileAction'</span><span style="color: #007700">,<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">/**<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;消息通知&nbsp;开始<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//index.php/web/add_notice&nbsp;添加系统通知或推广通知&nbsp;AddNoticeAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'addNotice'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.notice.AddNoticeAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/disable_notice&nbsp;逻辑删除系统消息通知&nbsp;&nbsp;DisableNoticeAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'disableNotice'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.notice.DisableNoticeAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/get_notice&nbsp;获得系统通知或推广通知&nbsp;&nbsp;DisableNoticeAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'getNotice'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.notice.GetNoticeAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/get_notice_list&nbsp;获得通知消息列表&nbsp;&nbsp;DisableNoticeAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'getNoticeList'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.notice.GetNoticeListAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/update_notice&nbsp;修改系统通知消息&nbsp;&nbsp;DisableNoticeAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'updateNotice'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.notice.UpdateNoticeAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">/**<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;消息通知&nbsp;结束<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/**<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;行政区域<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//index.php/web/add_city&nbsp;添加城市&nbsp;AddCityAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'addCity'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.city.AddCityAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/delete_city&nbsp;删除城市信息&nbsp;&nbsp;DeleteCityAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'deleteCity'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.city.DeleteCityAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/get_city&nbsp;获得城市信息&nbsp;&nbsp;GetCityAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'getCity'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.city.GetCityAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/get_city_list&nbsp;获得城市列表&nbsp;&nbsp;GetCityListAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'getCityList'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.city.GetCityListAction'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/update_city&nbsp;修改城市&nbsp;&nbsp;UpdateCityAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'updateCity'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.city.UpdateCityAction'</span><span style="color: #007700">,<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//index.php/web/update_password&nbsp;修改密码&nbsp;UpdatePasswordAction<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'updatePassword'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'application.controllers.web.user.UpdatePasswordAction'</span><span style="color: #007700">,<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;);<br />}</span>
+</span>
+</code></div>
+</div>
+
+<p>Declares class-based actions.</p>
+
+
+</div><!-- end of content -->
+
+<div id="apiFooter">
+Copyright &copy; 2008-2011 by <a href="http://www.yiisoft.com">Yii Software LLC</a><br/>
+All Rights Reserved.<br/>
+</div><!-- end of footer -->
+
+<script type="text/javascript">
+/*<![CDATA[*/
+$("a.toggle").toggle(function(){
+	$(this).text($(this).text().replace(/Hide/,'Show'));
+	$(this).parents(".summary").find(".inherited").hide();
+},function(){
+	$(this).text($(this).text().replace(/Show/,'Hide'));
+	$(this).parents(".summary").find(".inherited").show();
+});
+$(".sourceCode a.show").toggle(function(){
+	$(this).text($(this).text().replace(/show/,'hide'));
+	$(this).parents(".sourceCode").find("div.code").show();
+},function(){
+	$(this).text($(this).text().replace(/hide/,'show'));
+	$(this).parents(".sourceCode").find("div.code").hide();
+});
+$("a.sourceLink").click(function(){
+	$(this).attr('target','_blank');
+});
+/*]]>*/
+</script>
+
+</div><!-- end of page -->
+</body>
+</html>

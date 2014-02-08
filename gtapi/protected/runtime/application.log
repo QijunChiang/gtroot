@@ -1,0 +1,2904 @@
+2014/01/18 12:03:33 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`goodteacher`.`category_hot`, CONSTRAINT `FK_Reference_category` FOREIGN KEY (`id`) REFERENCES `category` (`id`)). The SQL statement executed was: INSERT INTO `category_hot` (`id`, `searchCount`, `createTime`, `editTime`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in /mnt/gtapi/protected/models/CategoryHot.php (117)
+in /mnt/gtapi/protected/models/User.php (482)
+in /mnt/gtapi/protected/controllers/app/user/GetUserList.php (211)
+2014/01/18 12:03:44 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`goodteacher`.`category_hot`, CONSTRAINT `FK_Reference_category` FOREIGN KEY (`id`) REFERENCES `category` (`id`)). The SQL statement executed was: INSERT INTO `category_hot` (`id`, `searchCount`, `createTime`, `editTime`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in /mnt/gtapi/protected/models/CategoryHot.php (117)
+in /mnt/gtapi/protected/models/User.php (482)
+in /mnt/gtapi/protected/controllers/app/user/GetUserList.php (211)
+2014/01/18 12:03:52 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`goodteacher`.`category_hot`, CONSTRAINT `FK_Reference_category` FOREIGN KEY (`id`) REFERENCES `category` (`id`)). The SQL statement executed was: INSERT INTO `category_hot` (`id`, `searchCount`, `createTime`, `editTime`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in /mnt/gtapi/protected/models/CategoryHot.php (117)
+in /mnt/gtapi/protected/models/User.php (482)
+in /mnt/gtapi/protected/controllers/app/user/GetUserList.php (211)
+2014/01/18 12:04:05 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`goodteacher`.`category_hot`, CONSTRAINT `FK_Reference_category` FOREIGN KEY (`id`) REFERENCES `category` (`id`)). The SQL statement executed was: INSERT INTO `category_hot` (`id`, `searchCount`, `createTime`, `editTime`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in /mnt/gtapi/protected/models/CategoryHot.php (117)
+in /mnt/gtapi/protected/models/User.php (482)
+in /mnt/gtapi/protected/controllers/app/user/GetUserList.php (211)
+2014/01/18 12:07:24 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`goodteacher`.`category_hot`, CONSTRAINT `FK_Reference_category` FOREIGN KEY (`id`) REFERENCES `category` (`id`)). The SQL statement executed was: INSERT INTO `category_hot` (`id`, `searchCount`, `createTime`, `editTime`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in /mnt/gtapi/protected/models/CategoryHot.php (117)
+in /mnt/gtapi/protected/models/User.php (482)
+in /mnt/gtapi/protected/controllers/app/user/GetUserList.php (211)
+2014/01/18 12:07:24 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`goodteacher`.`category_hot`, CONSTRAINT `FK_Reference_category` FOREIGN KEY (`id`) REFERENCES `category` (`id`)). The SQL statement executed was: INSERT INTO `category_hot` (`id`, `searchCount`, `createTime`, `editTime`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in /mnt/gtapi/protected/models/CategoryHot.php (117)
+in /mnt/gtapi/protected/models/User.php (362)
+in /mnt/gtapi/protected/controllers/app/user/GetUserList.php (213)
+2014/01/18 12:07:31 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`goodteacher`.`category_hot`, CONSTRAINT `FK_Reference_category` FOREIGN KEY (`id`) REFERENCES `category` (`id`)). The SQL statement executed was: INSERT INTO `category_hot` (`id`, `searchCount`, `createTime`, `editTime`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in /mnt/gtapi/protected/models/CategoryHot.php (117)
+in /mnt/gtapi/protected/models/User.php (482)
+in /mnt/gtapi/protected/controllers/app/user/GetUserList.php (211)
+2014/01/18 12:07:31 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`goodteacher`.`category_hot`, CONSTRAINT `FK_Reference_category` FOREIGN KEY (`id`) REFERENCES `category` (`id`)). The SQL statement executed was: INSERT INTO `category_hot` (`id`, `searchCount`, `createTime`, `editTime`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in /mnt/gtapi/protected/models/CategoryHot.php (117)
+in /mnt/gtapi/protected/models/User.php (362)
+in /mnt/gtapi/protected/controllers/app/user/GetUserList.php (213)
+2014/01/18 12:07:35 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`goodteacher`.`category_hot`, CONSTRAINT `FK_Reference_category` FOREIGN KEY (`id`) REFERENCES `category` (`id`)). The SQL statement executed was: INSERT INTO `category_hot` (`id`, `searchCount`, `createTime`, `editTime`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in /mnt/gtapi/protected/models/CategoryHot.php (117)
+in /mnt/gtapi/protected/models/User.php (482)
+in /mnt/gtapi/protected/controllers/app/user/GetUserList.php (211)
+2014/01/18 12:07:35 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`goodteacher`.`category_hot`, CONSTRAINT `FK_Reference_category` FOREIGN KEY (`id`) REFERENCES `category` (`id`)). The SQL statement executed was: INSERT INTO `category_hot` (`id`, `searchCount`, `createTime`, `editTime`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in /mnt/gtapi/protected/models/CategoryHot.php (117)
+in /mnt/gtapi/protected/models/User.php (362)
+in /mnt/gtapi/protected/controllers/app/user/GetUserList.php (213)
+2014/01/18 12:09:15 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`goodteacher`.`category_hot`, CONSTRAINT `FK_Reference_category` FOREIGN KEY (`id`) REFERENCES `category` (`id`)). The SQL statement executed was: INSERT INTO `category_hot` (`id`, `searchCount`, `createTime`, `editTime`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in /mnt/gtapi/protected/models/CategoryHot.php (117)
+in /mnt/gtapi/protected/models/User.php (482)
+in /mnt/gtapi/protected/controllers/app/user/GetUserList.php (211)
+2014/01/18 12:09:15 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`goodteacher`.`category_hot`, CONSTRAINT `FK_Reference_category` FOREIGN KEY (`id`) REFERENCES `category` (`id`)). The SQL statement executed was: INSERT INTO `category_hot` (`id`, `searchCount`, `createTime`, `editTime`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in /mnt/gtapi/protected/models/CategoryHot.php (117)
+in /mnt/gtapi/protected/models/User.php (362)
+in /mnt/gtapi/protected/controllers/app/user/GetUserList.php (213)
+2014/01/18 12:09:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/18 12:09:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/18 12:45:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/18 12:45:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/18 14:10:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/18 14:10:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "null".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('null')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/null
+---
+2014/01/18 14:10:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/18 14:10:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/18 15:02:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/18 15:02:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/18 15:04:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/18 15:04:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/18 16:29:13 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`goodteacher`.`category_hot`, CONSTRAINT `FK_Reference_category` FOREIGN KEY (`id`) REFERENCES `category` (`id`)). The SQL statement executed was: INSERT INTO `category_hot` (`id`, `searchCount`, `createTime`, `editTime`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in /mnt/gtapi/protected/models/CategoryHot.php (117)
+in /mnt/gtapi/protected/models/User.php (482)
+in /mnt/gtapi/protected/controllers/app/user/GetUserList.php (211)
+2014/01/18 16:29:13 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`goodteacher`.`category_hot`, CONSTRAINT `FK_Reference_category` FOREIGN KEY (`id`) REFERENCES `category` (`id`)). The SQL statement executed was: INSERT INTO `category_hot` (`id`, `searchCount`, `createTime`, `editTime`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in /mnt/gtapi/protected/models/CategoryHot.php (117)
+in /mnt/gtapi/protected/models/User.php (362)
+in /mnt/gtapi/protected/controllers/app/user/GetUserList.php (213)
+2014/01/18 17:02:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/18 23:06:33 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`goodteacher`.`category_hot`, CONSTRAINT `FK_Reference_category` FOREIGN KEY (`id`) REFERENCES `category` (`id`)). The SQL statement executed was: INSERT INTO `category_hot` (`id`, `searchCount`, `createTime`, `editTime`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in /mnt/gtapi/protected/models/CategoryHot.php (117)
+in /mnt/gtapi/protected/models/User.php (482)
+in /mnt/gtapi/protected/controllers/app/user/GetUserList.php (211)
+2014/01/18 23:06:36 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`goodteacher`.`category_hot`, CONSTRAINT `FK_Reference_category` FOREIGN KEY (`id`) REFERENCES `category` (`id`)). The SQL statement executed was: INSERT INTO `category_hot` (`id`, `searchCount`, `createTime`, `editTime`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in /mnt/gtapi/protected/models/CategoryHot.php (117)
+in /mnt/gtapi/protected/models/User.php (482)
+in /mnt/gtapi/protected/controllers/app/user/GetUserList.php (211)
+2014/01/18 23:06:37 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`goodteacher`.`category_hot`, CONSTRAINT `FK_Reference_category` FOREIGN KEY (`id`) REFERENCES `category` (`id`)). The SQL statement executed was: INSERT INTO `category_hot` (`id`, `searchCount`, `createTime`, `editTime`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in /mnt/gtapi/protected/models/CategoryHot.php (117)
+in /mnt/gtapi/protected/models/User.php (482)
+in /mnt/gtapi/protected/controllers/app/user/GetUserList.php (211)
+2014/01/18 23:06:45 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`goodteacher`.`category_hot`, CONSTRAINT `FK_Reference_category` FOREIGN KEY (`id`) REFERENCES `category` (`id`)). The SQL statement executed was: INSERT INTO `category_hot` (`id`, `searchCount`, `createTime`, `editTime`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in /mnt/gtapi/protected/models/CategoryHot.php (117)
+in /mnt/gtapi/protected/models/User.php (482)
+in /mnt/gtapi/protected/controllers/app/user/GetUserList.php (211)
+2014/01/18 23:06:46 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`goodteacher`.`category_hot`, CONSTRAINT `FK_Reference_category` FOREIGN KEY (`id`) REFERENCES `category` (`id`)). The SQL statement executed was: INSERT INTO `category_hot` (`id`, `searchCount`, `createTime`, `editTime`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in /mnt/gtapi/protected/models/CategoryHot.php (117)
+in /mnt/gtapi/protected/models/User.php (482)
+in /mnt/gtapi/protected/controllers/app/user/GetUserList.php (211)
+2014/01/18 23:06:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "sign_in_anonymous".' in /mnt/gtapi/framework/web/CController.php:483
+Stack trace:
+#0 /mnt/gtapi/framework/web/CController.php(270): CController->missingAction('sign_in_anonymo...')
+#1 /mnt/gtapi/framework/web/CWebApplication.php(282): CController->run('sign_in_anonymo...')
+#2 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('app/sign_in_ano...')
+#3 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /mnt/gtapi/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/gtapi/app/sign_in_anonymous
+---
+2014/01/18 23:06:53 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`goodteacher`.`category_hot`, CONSTRAINT `FK_Reference_category` FOREIGN KEY (`id`) REFERENCES `category` (`id`)). The SQL statement executed was: INSERT INTO `category_hot` (`id`, `searchCount`, `createTime`, `editTime`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in /mnt/gtapi/protected/models/CategoryHot.php (117)
+in /mnt/gtapi/protected/models/User.php (482)
+in /mnt/gtapi/protected/controllers/app/user/GetUserList.php (211)
+2014/01/18 23:06:55 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`goodteacher`.`category_hot`, CONSTRAINT `FK_Reference_category` FOREIGN KEY (`id`) REFERENCES `category` (`id`)). The SQL statement executed was: INSERT INTO `category_hot` (`id`, `searchCount`, `createTime`, `editTime`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in /mnt/gtapi/protected/models/CategoryHot.php (117)
+in /mnt/gtapi/protected/models/User.php (482)
+in /mnt/gtapi/protected/controllers/app/user/GetUserList.php (211)
+2014/01/18 23:06:56 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`goodteacher`.`category_hot`, CONSTRAINT `FK_Reference_category` FOREIGN KEY (`id`) REFERENCES `category` (`id`)). The SQL statement executed was: INSERT INTO `category_hot` (`id`, `searchCount`, `createTime`, `editTime`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in /mnt/gtapi/protected/models/CategoryHot.php (117)
+in /mnt/gtapi/protected/models/User.php (482)
+in /mnt/gtapi/protected/controllers/app/user/GetUserList.php (211)
+2014/01/18 23:07:09 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`goodteacher`.`category_hot`, CONSTRAINT `FK_Reference_category` FOREIGN KEY (`id`) REFERENCES `category` (`id`)). The SQL statement executed was: INSERT INTO `category_hot` (`id`, `searchCount`, `createTime`, `editTime`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in /mnt/gtapi/protected/models/CategoryHot.php (117)
+in /mnt/gtapi/protected/models/TeachVideo.php (187)
+in /mnt/gtapi/protected/controllers/app/teach/GetTeachVideoAllList.php (113)
+2014/01/19 09:15:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "sign_in_anonymous".' in /mnt/gtapi/framework/web/CController.php:483
+Stack trace:
+#0 /mnt/gtapi/framework/web/CController.php(270): CController->missingAction('sign_in_anonymo...')
+#1 /mnt/gtapi/framework/web/CWebApplication.php(282): CController->run('sign_in_anonymo...')
+#2 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('app/sign_in_ano...')
+#3 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /mnt/gtapi/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/gtapi/app/sign_in_anonymous
+---
+2014/01/19 09:15:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/19 09:15:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/19 09:16:24 [error] [exception.CHttpException.1005] exception 'CHttpException' with message 'your username or password is wrong' in /mnt/gtapi/protected/controllers/app/auth/SignIn.php:70
+Stack trace:
+#0 /mnt/gtapi/framework/web/actions/CAction.php(76): SignIn->run()
+#1 /mnt/gtapi/framework/web/CController.php(308): CAction->runWithParams(Array)
+#2 /mnt/gtapi/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(SignIn))
+#3 /mnt/gtapi/protected/components/BaseController.php(45): CFilterChain->run()
+#4 /mnt/gtapi/framework/web/filters/CInlineFilter.php(58): BaseController->FilterSaveInterfaceLog(Object(CFilterChain))
+#5 /mnt/gtapi/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /mnt/gtapi/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /mnt/gtapi/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /mnt/gtapi/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /mnt/gtapi/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /mnt/gtapi/framework/web/CController.php(291): CFilterChain->run()
+#11 /mnt/gtapi/framework/web/CController.php(265): CController->runActionWithFilters(Object(SignIn), Array)
+#12 /mnt/gtapi/framework/web/CWebApplication.php(282): CController->run('signIn')
+#13 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('app/signIn')
+#14 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /mnt/gtapi/index.php(15): CApplication->run()
+#16 {main}
+REQUEST_URI=/gtapi/app/sign_in
+---
+2014/01/19 09:16:39 [error] [exception.CHttpException.1005] exception 'CHttpException' with message 'your username or password is wrong' in /mnt/gtapi/protected/controllers/app/auth/SignIn.php:70
+Stack trace:
+#0 /mnt/gtapi/framework/web/actions/CAction.php(76): SignIn->run()
+#1 /mnt/gtapi/framework/web/CController.php(308): CAction->runWithParams(Array)
+#2 /mnt/gtapi/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(SignIn))
+#3 /mnt/gtapi/protected/components/BaseController.php(45): CFilterChain->run()
+#4 /mnt/gtapi/framework/web/filters/CInlineFilter.php(58): BaseController->FilterSaveInterfaceLog(Object(CFilterChain))
+#5 /mnt/gtapi/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /mnt/gtapi/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /mnt/gtapi/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /mnt/gtapi/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /mnt/gtapi/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /mnt/gtapi/framework/web/CController.php(291): CFilterChain->run()
+#11 /mnt/gtapi/framework/web/CController.php(265): CController->runActionWithFilters(Object(SignIn), Array)
+#12 /mnt/gtapi/framework/web/CWebApplication.php(282): CController->run('signIn')
+#13 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('app/signIn')
+#14 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /mnt/gtapi/index.php(15): CApplication->run()
+#16 {main}
+REQUEST_URI=/gtapi/app/sign_in
+---
+2014/01/19 09:17:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/19 09:17:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/19 09:18:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/19 09:18:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/19 09:18:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/19 09:18:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/19 09:18:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/19 09:18:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/19 09:18:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/19 09:18:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/19 09:18:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/19 09:18:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/19 09:18:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/19 09:20:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/19 09:20:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/19 09:20:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/19 09:20:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/19 09:21:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/19 09:21:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/19 09:21:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/19 09:21:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/19 09:21:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/19 09:21:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/19 09:21:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/19 09:21:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/19 09:21:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/19 09:21:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/19 09:21:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/19 09:21:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/19 09:22:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/19 09:22:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/19 09:22:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/19 09:22:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/19 09:22:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/19 09:22:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/19 09:23:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/19 09:23:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/19 09:23:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/19 09:23:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/19 12:50:48 [error] [exception.CHttpException.1005] exception 'CHttpException' with message 'your username or password is wrong' in /mnt/gtapi/protected/controllers/app/auth/SignIn.php:70
+Stack trace:
+#0 /mnt/gtapi/framework/web/actions/CAction.php(76): SignIn->run()
+#1 /mnt/gtapi/framework/web/CController.php(308): CAction->runWithParams(Array)
+#2 /mnt/gtapi/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(SignIn))
+#3 /mnt/gtapi/protected/components/BaseController.php(45): CFilterChain->run()
+#4 /mnt/gtapi/framework/web/filters/CInlineFilter.php(58): BaseController->FilterSaveInterfaceLog(Object(CFilterChain))
+#5 /mnt/gtapi/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /mnt/gtapi/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /mnt/gtapi/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /mnt/gtapi/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /mnt/gtapi/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /mnt/gtapi/framework/web/CController.php(291): CFilterChain->run()
+#11 /mnt/gtapi/framework/web/CController.php(265): CController->runActionWithFilters(Object(SignIn), Array)
+#12 /mnt/gtapi/framework/web/CWebApplication.php(282): CController->run('signIn')
+#13 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('app/signIn')
+#14 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /mnt/gtapi/index.php(15): CApplication->run()
+#16 {main}
+REQUEST_URI=/gtapi/app/sign_in
+---
+2014/01/19 12:51:09 [error] [exception.CHttpException.1005] exception 'CHttpException' with message 'your username or password is wrong' in /mnt/gtapi/protected/controllers/app/auth/SignIn.php:70
+Stack trace:
+#0 /mnt/gtapi/framework/web/actions/CAction.php(76): SignIn->run()
+#1 /mnt/gtapi/framework/web/CController.php(308): CAction->runWithParams(Array)
+#2 /mnt/gtapi/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(SignIn))
+#3 /mnt/gtapi/protected/components/BaseController.php(45): CFilterChain->run()
+#4 /mnt/gtapi/framework/web/filters/CInlineFilter.php(58): BaseController->FilterSaveInterfaceLog(Object(CFilterChain))
+#5 /mnt/gtapi/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /mnt/gtapi/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /mnt/gtapi/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /mnt/gtapi/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /mnt/gtapi/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /mnt/gtapi/framework/web/CController.php(291): CFilterChain->run()
+#11 /mnt/gtapi/framework/web/CController.php(265): CController->runActionWithFilters(Object(SignIn), Array)
+#12 /mnt/gtapi/framework/web/CWebApplication.php(282): CController->run('signIn')
+#13 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('app/signIn')
+#14 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /mnt/gtapi/index.php(15): CApplication->run()
+#16 {main}
+REQUEST_URI=/gtapi/app/sign_in
+---
+2014/01/19 12:51:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/19 12:51:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/19 12:54:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/19 12:54:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/20 13:54:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+HTTP_REFERER=http://www.kaopuu.com/gt/subcate_edit?parent_id=51f136b153c6b&&parent_name=%E5%A4%96%E8%AF%AD
+---
+2014/01/20 13:54:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+HTTP_REFERER=http://www.kaopuu.com/gt/subcate_edit?parent_id=51f136b153c6b&&parent_name=%E5%A4%96%E8%AF%AD
+---
+2014/01/20 13:55:16 [error] [exception.CHttpException.999] exception 'CHttpException' with message 'Parameters icon is missing' in /mnt/gtapi/protected/controllers/web/category/AddCategoryAction.php:61
+Stack trace:
+#0 /mnt/gtapi/framework/web/actions/CAction.php(76): AddCategoryAction->run()
+#1 /mnt/gtapi/framework/web/CController.php(308): CAction->runWithParams(Array)
+#2 /mnt/gtapi/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(AddCategoryAction))
+#3 /mnt/gtapi/protected/components/BaseController.php(45): CFilterChain->run()
+#4 /mnt/gtapi/framework/web/filters/CInlineFilter.php(58): BaseController->FilterSaveInterfaceLog(Object(CFilterChain))
+#5 /mnt/gtapi/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /mnt/gtapi/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /mnt/gtapi/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /mnt/gtapi/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /mnt/gtapi/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /mnt/gtapi/framework/web/CController.php(291): CFilterChain->run()
+#11 /mnt/gtapi/framework/web/CController.php(265): CController->runActionWithFilters(Object(AddCategoryAction), Array)
+#12 /mnt/gtapi/framework/web/CWebApplication.php(282): CController->run('addCategory')
+#13 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('web/addCategory')
+#14 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /mnt/gtapi/index.php(15): CApplication->run()
+#16 {main}
+REQUEST_URI=/gtapi/index.php/web/add_category
+---
+2014/01/20 13:55:20 [error] [exception.CHttpException.999] exception 'CHttpException' with message 'Parameters icon is missing' in /mnt/gtapi/protected/controllers/web/category/AddCategoryAction.php:61
+Stack trace:
+#0 /mnt/gtapi/framework/web/actions/CAction.php(76): AddCategoryAction->run()
+#1 /mnt/gtapi/framework/web/CController.php(308): CAction->runWithParams(Array)
+#2 /mnt/gtapi/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(AddCategoryAction))
+#3 /mnt/gtapi/protected/components/BaseController.php(45): CFilterChain->run()
+#4 /mnt/gtapi/framework/web/filters/CInlineFilter.php(58): BaseController->FilterSaveInterfaceLog(Object(CFilterChain))
+#5 /mnt/gtapi/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /mnt/gtapi/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /mnt/gtapi/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /mnt/gtapi/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /mnt/gtapi/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /mnt/gtapi/framework/web/CController.php(291): CFilterChain->run()
+#11 /mnt/gtapi/framework/web/CController.php(265): CController->runActionWithFilters(Object(AddCategoryAction), Array)
+#12 /mnt/gtapi/framework/web/CWebApplication.php(282): CController->run('addCategory')
+#13 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('web/addCategory')
+#14 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /mnt/gtapi/index.php(15): CApplication->run()
+#16 {main}
+REQUEST_URI=/gtapi/index.php/web/add_category
+---
+2014/01/20 13:55:35 [error] [exception.CHttpException.1006] exception 'CHttpException' with message 'your session key is invalid' in /mnt/gtapi/protected/components/SessionFilterAction.php:35
+Stack trace:
+#0 /mnt/gtapi/protected/components/SessionFilterAction.php(22): SessionFilterAction->checkSessionKey()
+#1 /mnt/gtapi/framework/YiiBase.php(204): SessionFilterAction->__construct(Object(WebController), 'getStuList')
+#2 /mnt/gtapi/framework/web/CController.php(440): YiiBase::createComponent(Array, Object(WebController), 'getStuList')
+#3 /mnt/gtapi/framework/web/CController.php(417): CController->createActionFromMap(Array, 'getStuList', 'getStuList')
+#4 /mnt/gtapi/framework/web/CController.php(259): CController->createAction('getStuList')
+#5 /mnt/gtapi/framework/web/CWebApplication.php(282): CController->run('getStuList')
+#6 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('web/getStuList')
+#7 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#8 /mnt/gtapi/index.php(15): CApplication->run()
+#9 {main}
+REQUEST_URI=/gtapi/index.php/web/get_stu_list?&page=1&count=20&searchKey=&cityId=&sessionKey=52dcb8b4efd97
+---
+2014/01/20 13:55:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+HTTP_REFERER=http://www.kaopuu.com/gt/category_edit
+---
+2014/01/20 13:56:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+HTTP_REFERER=http://www.kaopuu.com/gt/subcate_edit?parent_id=51f136b153c6b&&parent_name=%E5%A4%96%E8%AF%AD
+---
+2014/01/20 13:57:46 [error] [exception.CHttpException.999] exception 'CHttpException' with message 'Parameters icon is missing' in /mnt/gtapi/protected/controllers/web/category/AddCategoryAction.php:61
+Stack trace:
+#0 /mnt/gtapi/framework/web/actions/CAction.php(76): AddCategoryAction->run()
+#1 /mnt/gtapi/framework/web/CController.php(308): CAction->runWithParams(Array)
+#2 /mnt/gtapi/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(AddCategoryAction))
+#3 /mnt/gtapi/protected/components/BaseController.php(45): CFilterChain->run()
+#4 /mnt/gtapi/framework/web/filters/CInlineFilter.php(58): BaseController->FilterSaveInterfaceLog(Object(CFilterChain))
+#5 /mnt/gtapi/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /mnt/gtapi/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /mnt/gtapi/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /mnt/gtapi/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /mnt/gtapi/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /mnt/gtapi/framework/web/CController.php(291): CFilterChain->run()
+#11 /mnt/gtapi/framework/web/CController.php(265): CController->runActionWithFilters(Object(AddCategoryAction), Array)
+#12 /mnt/gtapi/framework/web/CWebApplication.php(282): CController->run('addCategory')
+#13 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('web/addCategory')
+#14 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /mnt/gtapi/index.php(15): CApplication->run()
+#16 {main}
+REQUEST_URI=/gtapi/index.php/web/add_category
+---
+2014/01/20 14:02:03 [error] [exception.CHttpException.1010] exception 'CHttpException' with message 'your phone has been disabled' in /mnt/gtapi/protected/controllers/web/user/teacher/AddTeacherAction.php:80
+Stack trace:
+#0 /mnt/gtapi/framework/web/actions/CAction.php(76): AddTeacherAction->run()
+#1 /mnt/gtapi/framework/web/CController.php(308): CAction->runWithParams(Array)
+#2 /mnt/gtapi/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(AddTeacherAction))
+#3 /mnt/gtapi/protected/components/BaseController.php(45): CFilterChain->run()
+#4 /mnt/gtapi/framework/web/filters/CInlineFilter.php(58): BaseController->FilterSaveInterfaceLog(Object(CFilterChain))
+#5 /mnt/gtapi/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /mnt/gtapi/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /mnt/gtapi/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /mnt/gtapi/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /mnt/gtapi/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /mnt/gtapi/framework/web/CController.php(291): CFilterChain->run()
+#11 /mnt/gtapi/framework/web/CController.php(265): CController->runActionWithFilters(Object(AddTeacherAction), Array)
+#12 /mnt/gtapi/framework/web/CWebApplication.php(282): CController->run('addTeacher')
+#13 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('web/addTeacher')
+#14 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /mnt/gtapi/index.php(15): CApplication->run()
+#16 {main}
+REQUEST_URI=/gtapi/index.php/web/add_teacher
+---
+2014/01/20 14:02:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+HTTP_REFERER=http://www.kaopuu.com/gt/teacher_edit?teacherId=52dcbbe9d6c5a
+---
+2014/01/20 14:02:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+HTTP_REFERER=http://www.kaopuu.com/gt/teacher_edit?teacherId=52dcbbe9d6c5a
+---
+2014/01/20 14:04:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+HTTP_REFERER=http://www.kaopuu.com/gt/teacher_edit?teacherId=52dcbbe9d6c5a
+---
+2014/01/20 14:05:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+HTTP_REFERER=http://www.kaopuu.com/gt/teacher_edit?teacherId=52dcbbe9d6c5a
+---
+2014/01/20 14:05:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+HTTP_REFERER=http://www.kaopuu.com/gt/teacher_edit?teacherId=52dcbbe9d6c5a
+---
+2014/01/20 14:05:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+HTTP_REFERER=http://www.kaopuu.com/gt/teacher_edit?teacherId=52dcbbe9d6c5a
+---
+2014/01/20 15:00:17 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`goodteacher`.`category_hot`, CONSTRAINT `FK_Reference_category` FOREIGN KEY (`id`) REFERENCES `category` (`id`)). The SQL statement executed was: INSERT INTO `category_hot` (`id`, `searchCount`, `createTime`, `editTime`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in /mnt/gtapi/protected/models/CategoryHot.php (117)
+in /mnt/gtapi/protected/models/User.php (482)
+in /mnt/gtapi/protected/controllers/app/user/GetUserList.php (211)
+2014/01/20 21:36:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/20 21:36:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/21 11:53:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/21 15:26:55 [error] [php] Trying to get property of non-object (/mnt/gtapi/protected/models/UserLocation.php:132)
+Stack trace:
+#0 /mnt/gtapi/framework/web/CController.php(308): GetUserList->runWithParams()
+#1 /mnt/gtapi/framework/web/filters/CFilterChain.php(133): AppController->runAction()
+#2 /mnt/gtapi/protected/components/BaseController.php(45): CFilterChain->run()
+#3 /mnt/gtapi/framework/web/filters/CInlineFilter.php(58): AppController->FilterSaveInterfaceLog()
+#4 /mnt/gtapi/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /mnt/gtapi/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /mnt/gtapi/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#7 /mnt/gtapi/framework/web/filters/CInlineFilter.php(58): AppController->filterAccessControl()
+#8 /mnt/gtapi/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#9 /mnt/gtapi/framework/web/CController.php(291): CFilterChain->run()
+#10 /mnt/gtapi/framework/web/CController.php(265): AppController->runActionWithFilters()
+#11 /mnt/gtapi/framework/web/CWebApplication.php(282): AppController->run()
+#12 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /mnt/gtapi/index.php(15): CWebApplication->run()
+REQUEST_URI=/gtapi/app/get_user_list?locationY=116.361308&mile=&categoryIds=&cityId=527dfd457c69a&order=0&isMap=0&sessionKey=52d3ac29f180d&roleId=3&page=1&name=&locationX=39.985484&count=10
+in /mnt/gtapi/protected/models/UserLocation.php (132)
+in /mnt/gtapi/protected/controllers/app/user/GetUserList.php (196)
+in /mnt/gtapi/protected/components/BaseController.php (45)
+2014/01/21 15:27:12 [error] [php] Trying to get property of non-object (/mnt/gtapi/protected/models/UserLocation.php:132)
+Stack trace:
+#0 /mnt/gtapi/framework/web/CController.php(308): GetUserList->runWithParams()
+#1 /mnt/gtapi/framework/web/filters/CFilterChain.php(133): AppController->runAction()
+#2 /mnt/gtapi/protected/components/BaseController.php(45): CFilterChain->run()
+#3 /mnt/gtapi/framework/web/filters/CInlineFilter.php(58): AppController->FilterSaveInterfaceLog()
+#4 /mnt/gtapi/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /mnt/gtapi/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /mnt/gtapi/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#7 /mnt/gtapi/framework/web/filters/CInlineFilter.php(58): AppController->filterAccessControl()
+#8 /mnt/gtapi/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#9 /mnt/gtapi/framework/web/CController.php(291): CFilterChain->run()
+#10 /mnt/gtapi/framework/web/CController.php(265): AppController->runActionWithFilters()
+#11 /mnt/gtapi/framework/web/CWebApplication.php(282): AppController->run()
+#12 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /mnt/gtapi/index.php(15): CWebApplication->run()
+REQUEST_URI=/gtapi/app/get_user_list?locationY=116.361308&mile=&categoryIds=&cityId=527dfd457c69a&order=0&isMap=0&sessionKey=52d3ac29f180d&roleId=1&page=1&name=&locationX=39.985484&count=10
+in /mnt/gtapi/protected/models/UserLocation.php (132)
+in /mnt/gtapi/protected/controllers/app/user/GetUserList.php (196)
+in /mnt/gtapi/protected/components/BaseController.php (45)
+2014/01/21 15:27:27 [error] [php] Trying to get property of non-object (/mnt/gtapi/protected/models/UserLocation.php:132)
+Stack trace:
+#0 /mnt/gtapi/framework/web/CController.php(308): GetUserList->runWithParams()
+#1 /mnt/gtapi/framework/web/filters/CFilterChain.php(133): AppController->runAction()
+#2 /mnt/gtapi/protected/components/BaseController.php(45): CFilterChain->run()
+#3 /mnt/gtapi/framework/web/filters/CInlineFilter.php(58): AppController->FilterSaveInterfaceLog()
+#4 /mnt/gtapi/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /mnt/gtapi/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /mnt/gtapi/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#7 /mnt/gtapi/framework/web/filters/CInlineFilter.php(58): AppController->filterAccessControl()
+#8 /mnt/gtapi/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#9 /mnt/gtapi/framework/web/CController.php(291): CFilterChain->run()
+#10 /mnt/gtapi/framework/web/CController.php(265): AppController->runActionWithFilters()
+#11 /mnt/gtapi/framework/web/CWebApplication.php(282): AppController->run()
+#12 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /mnt/gtapi/index.php(15): CWebApplication->run()
+REQUEST_URI=/gtapi/app/get_user_list?locationY=116.361308&mile=&categoryIds=&cityId=527dfd457c69a&order=0&isMap=0&sessionKey=52d3ac29f180d&roleId=3&page=1&name=&locationX=39.985484&count=10
+in /mnt/gtapi/protected/models/UserLocation.php (132)
+in /mnt/gtapi/protected/controllers/app/user/GetUserList.php (196)
+in /mnt/gtapi/protected/components/BaseController.php (45)
+2014/01/21 15:27:42 [error] [php] Trying to get property of non-object (/mnt/gtapi/protected/models/UserLocation.php:132)
+Stack trace:
+#0 /mnt/gtapi/framework/web/CController.php(308): GetUserList->runWithParams()
+#1 /mnt/gtapi/framework/web/filters/CFilterChain.php(133): AppController->runAction()
+#2 /mnt/gtapi/protected/components/BaseController.php(45): CFilterChain->run()
+#3 /mnt/gtapi/framework/web/filters/CInlineFilter.php(58): AppController->FilterSaveInterfaceLog()
+#4 /mnt/gtapi/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /mnt/gtapi/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /mnt/gtapi/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#7 /mnt/gtapi/framework/web/filters/CInlineFilter.php(58): AppController->filterAccessControl()
+#8 /mnt/gtapi/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#9 /mnt/gtapi/framework/web/CController.php(291): CFilterChain->run()
+#10 /mnt/gtapi/framework/web/CController.php(265): AppController->runActionWithFilters()
+#11 /mnt/gtapi/framework/web/CWebApplication.php(282): AppController->run()
+#12 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /mnt/gtapi/index.php(15): CWebApplication->run()
+REQUEST_URI=/gtapi/app/get_user_list?locationY=116.361308&mile=&categoryIds=&cityId=527dfd457c69a&order=0&isMap=0&sessionKey=52d3ac29f180d&roleId=3&page=1&name=&locationX=39.985484&count=10
+in /mnt/gtapi/protected/models/UserLocation.php (132)
+in /mnt/gtapi/protected/controllers/app/user/GetUserList.php (196)
+in /mnt/gtapi/protected/components/BaseController.php (45)
+2014/01/21 15:46:29 [error] [php] Trying to get property of non-object (/mnt/gtapi/protected/models/UserLocation.php:132)
+Stack trace:
+#0 /mnt/gtapi/framework/web/CController.php(308): GetUserList->runWithParams()
+#1 /mnt/gtapi/framework/web/filters/CFilterChain.php(133): AppController->runAction()
+#2 /mnt/gtapi/protected/components/BaseController.php(45): CFilterChain->run()
+#3 /mnt/gtapi/framework/web/filters/CInlineFilter.php(58): AppController->FilterSaveInterfaceLog()
+#4 /mnt/gtapi/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /mnt/gtapi/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /mnt/gtapi/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#7 /mnt/gtapi/framework/web/filters/CInlineFilter.php(58): AppController->filterAccessControl()
+#8 /mnt/gtapi/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#9 /mnt/gtapi/framework/web/CController.php(291): CFilterChain->run()
+#10 /mnt/gtapi/framework/web/CController.php(265): AppController->runActionWithFilters()
+#11 /mnt/gtapi/framework/web/CWebApplication.php(282): AppController->run()
+#12 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /mnt/gtapi/index.php(15): CWebApplication->run()
+REQUEST_URI=/gtapi/app/get_user_list?locationY=116.361308&mile=&categoryIds=&cityId=527dfd457c69a&order=0&isMap=0&sessionKey=52d3ac29f180d&roleId=1&page=1&name=&locationX=39.985484&count=10
+in /mnt/gtapi/protected/models/UserLocation.php (132)
+in /mnt/gtapi/protected/controllers/app/user/GetUserList.php (196)
+in /mnt/gtapi/protected/components/BaseController.php (45)
+2014/01/21 15:47:02 [error] [php] Trying to get property of non-object (/mnt/gtapi/protected/models/UserLocation.php:132)
+Stack trace:
+#0 /mnt/gtapi/framework/web/CController.php(308): GetUserList->runWithParams()
+#1 /mnt/gtapi/framework/web/filters/CFilterChain.php(133): AppController->runAction()
+#2 /mnt/gtapi/protected/components/BaseController.php(45): CFilterChain->run()
+#3 /mnt/gtapi/framework/web/filters/CInlineFilter.php(58): AppController->FilterSaveInterfaceLog()
+#4 /mnt/gtapi/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /mnt/gtapi/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /mnt/gtapi/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#7 /mnt/gtapi/framework/web/filters/CInlineFilter.php(58): AppController->filterAccessControl()
+#8 /mnt/gtapi/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#9 /mnt/gtapi/framework/web/CController.php(291): CFilterChain->run()
+#10 /mnt/gtapi/framework/web/CController.php(265): AppController->runActionWithFilters()
+#11 /mnt/gtapi/framework/web/CWebApplication.php(282): AppController->run()
+#12 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /mnt/gtapi/index.php(15): CWebApplication->run()
+REQUEST_URI=/gtapi/app/get_user_list?categoryIds=&roleId=1&cityId=527dfd457c69a&isMap=1&name=&locationX=39.985485&page=2&sessionKey=52d3ac29f180d&mile=&count=10&locationY=116.361305
+in /mnt/gtapi/protected/models/UserLocation.php (132)
+in /mnt/gtapi/protected/controllers/app/user/GetUserList.php (196)
+in /mnt/gtapi/protected/components/BaseController.php (45)
+2014/01/21 15:47:17 [error] [php] Trying to get property of non-object (/mnt/gtapi/protected/models/UserLocation.php:132)
+Stack trace:
+#0 /mnt/gtapi/framework/web/CController.php(308): GetUserList->runWithParams()
+#1 /mnt/gtapi/framework/web/filters/CFilterChain.php(133): AppController->runAction()
+#2 /mnt/gtapi/protected/components/BaseController.php(45): CFilterChain->run()
+#3 /mnt/gtapi/framework/web/filters/CInlineFilter.php(58): AppController->FilterSaveInterfaceLog()
+#4 /mnt/gtapi/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /mnt/gtapi/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /mnt/gtapi/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#7 /mnt/gtapi/framework/web/filters/CInlineFilter.php(58): AppController->filterAccessControl()
+#8 /mnt/gtapi/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#9 /mnt/gtapi/framework/web/CController.php(291): CFilterChain->run()
+#10 /mnt/gtapi/framework/web/CController.php(265): AppController->runActionWithFilters()
+#11 /mnt/gtapi/framework/web/CWebApplication.php(282): AppController->run()
+#12 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /mnt/gtapi/index.php(15): CWebApplication->run()
+REQUEST_URI=/gtapi/app/get_user_list?categoryIds=&roleId=1&cityId=527dfd457c69a&isMap=1&name=&locationX=39.985485&page=6&sessionKey=52d3ac29f180d&mile=&count=10&locationY=116.361305
+in /mnt/gtapi/protected/models/UserLocation.php (132)
+in /mnt/gtapi/protected/controllers/app/user/GetUserList.php (196)
+in /mnt/gtapi/protected/components/BaseController.php (45)
+2014/01/21 15:47:32 [error] [php] Trying to get property of non-object (/mnt/gtapi/protected/models/UserLocation.php:132)
+Stack trace:
+#0 /mnt/gtapi/framework/web/CController.php(308): GetUserList->runWithParams()
+#1 /mnt/gtapi/framework/web/filters/CFilterChain.php(133): AppController->runAction()
+#2 /mnt/gtapi/protected/components/BaseController.php(45): CFilterChain->run()
+#3 /mnt/gtapi/framework/web/filters/CInlineFilter.php(58): AppController->FilterSaveInterfaceLog()
+#4 /mnt/gtapi/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /mnt/gtapi/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /mnt/gtapi/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#7 /mnt/gtapi/framework/web/filters/CInlineFilter.php(58): AppController->filterAccessControl()
+#8 /mnt/gtapi/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#9 /mnt/gtapi/framework/web/CController.php(291): CFilterChain->run()
+#10 /mnt/gtapi/framework/web/CController.php(265): AppController->runActionWithFilters()
+#11 /mnt/gtapi/framework/web/CWebApplication.php(282): AppController->run()
+#12 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /mnt/gtapi/index.php(15): CWebApplication->run()
+REQUEST_URI=/gtapi/app/get_user_list?categoryIds=&roleId=1&cityId=527dfd457c69a&isMap=1&name=&locationX=39.985485&page=3&sessionKey=52d3ac29f180d&mile=&count=10&locationY=116.361305
+in /mnt/gtapi/protected/models/UserLocation.php (132)
+in /mnt/gtapi/protected/controllers/app/user/GetUserList.php (196)
+in /mnt/gtapi/protected/components/BaseController.php (45)
+2014/01/21 15:47:47 [error] [php] Trying to get property of non-object (/mnt/gtapi/protected/models/UserLocation.php:132)
+Stack trace:
+#0 /mnt/gtapi/framework/web/CController.php(308): GetUserList->runWithParams()
+#1 /mnt/gtapi/framework/web/filters/CFilterChain.php(133): AppController->runAction()
+#2 /mnt/gtapi/protected/components/BaseController.php(45): CFilterChain->run()
+#3 /mnt/gtapi/framework/web/filters/CInlineFilter.php(58): AppController->FilterSaveInterfaceLog()
+#4 /mnt/gtapi/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /mnt/gtapi/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /mnt/gtapi/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#7 /mnt/gtapi/framework/web/filters/CInlineFilter.php(58): AppController->filterAccessControl()
+#8 /mnt/gtapi/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#9 /mnt/gtapi/framework/web/CController.php(291): CFilterChain->run()
+#10 /mnt/gtapi/framework/web/CController.php(265): AppController->runActionWithFilters()
+#11 /mnt/gtapi/framework/web/CWebApplication.php(282): AppController->run()
+#12 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /mnt/gtapi/index.php(15): CWebApplication->run()
+REQUEST_URI=/gtapi/app/get_user_list?categoryIds=&roleId=1&cityId=527dfd457c69a&isMap=1&name=&locationX=39.985485&page=4&sessionKey=52d3ac29f180d&mile=&count=10&locationY=116.361305
+in /mnt/gtapi/protected/models/UserLocation.php (132)
+in /mnt/gtapi/protected/controllers/app/user/GetUserList.php (196)
+in /mnt/gtapi/protected/components/BaseController.php (45)
+2014/01/21 15:48:02 [error] [php] Trying to get property of non-object (/mnt/gtapi/protected/models/UserLocation.php:132)
+Stack trace:
+#0 /mnt/gtapi/framework/web/CController.php(308): GetUserList->runWithParams()
+#1 /mnt/gtapi/framework/web/filters/CFilterChain.php(133): AppController->runAction()
+#2 /mnt/gtapi/protected/components/BaseController.php(45): CFilterChain->run()
+#3 /mnt/gtapi/framework/web/filters/CInlineFilter.php(58): AppController->FilterSaveInterfaceLog()
+#4 /mnt/gtapi/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /mnt/gtapi/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /mnt/gtapi/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#7 /mnt/gtapi/framework/web/filters/CInlineFilter.php(58): AppController->filterAccessControl()
+#8 /mnt/gtapi/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#9 /mnt/gtapi/framework/web/CController.php(291): CFilterChain->run()
+#10 /mnt/gtapi/framework/web/CController.php(265): AppController->runActionWithFilters()
+#11 /mnt/gtapi/framework/web/CWebApplication.php(282): AppController->run()
+#12 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /mnt/gtapi/index.php(15): CWebApplication->run()
+REQUEST_URI=/gtapi/app/get_user_list?categoryIds=&roleId=1&cityId=527dfd457c69a&isMap=1&name=&locationX=39.985485&page=7&sessionKey=52d3ac29f180d&mile=&count=10&locationY=116.361305
+in /mnt/gtapi/protected/models/UserLocation.php (132)
+in /mnt/gtapi/protected/controllers/app/user/GetUserList.php (196)
+in /mnt/gtapi/protected/components/BaseController.php (45)
+2014/01/21 15:48:17 [error] [php] Trying to get property of non-object (/mnt/gtapi/protected/models/UserLocation.php:132)
+Stack trace:
+#0 /mnt/gtapi/framework/web/CController.php(308): GetUserList->runWithParams()
+#1 /mnt/gtapi/framework/web/filters/CFilterChain.php(133): AppController->runAction()
+#2 /mnt/gtapi/protected/components/BaseController.php(45): CFilterChain->run()
+#3 /mnt/gtapi/framework/web/filters/CInlineFilter.php(58): AppController->FilterSaveInterfaceLog()
+#4 /mnt/gtapi/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /mnt/gtapi/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /mnt/gtapi/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#7 /mnt/gtapi/framework/web/filters/CInlineFilter.php(58): AppController->filterAccessControl()
+#8 /mnt/gtapi/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#9 /mnt/gtapi/framework/web/CController.php(291): CFilterChain->run()
+#10 /mnt/gtapi/framework/web/CController.php(265): AppController->runActionWithFilters()
+#11 /mnt/gtapi/framework/web/CWebApplication.php(282): AppController->run()
+#12 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /mnt/gtapi/index.php(15): CWebApplication->run()
+REQUEST_URI=/gtapi/app/get_user_list?categoryIds=&roleId=1&cityId=527dfd457c69a&isMap=1&name=&locationX=39.985485&page=5&sessionKey=52d3ac29f180d&mile=&count=10&locationY=116.361305
+in /mnt/gtapi/protected/models/UserLocation.php (132)
+in /mnt/gtapi/protected/controllers/app/user/GetUserList.php (196)
+in /mnt/gtapi/protected/components/BaseController.php (45)
+2014/01/21 15:48:32 [error] [php] Trying to get property of non-object (/mnt/gtapi/protected/models/UserLocation.php:132)
+Stack trace:
+#0 /mnt/gtapi/framework/web/CController.php(308): GetUserList->runWithParams()
+#1 /mnt/gtapi/framework/web/filters/CFilterChain.php(133): AppController->runAction()
+#2 /mnt/gtapi/protected/components/BaseController.php(45): CFilterChain->run()
+#3 /mnt/gtapi/framework/web/filters/CInlineFilter.php(58): AppController->FilterSaveInterfaceLog()
+#4 /mnt/gtapi/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /mnt/gtapi/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /mnt/gtapi/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#7 /mnt/gtapi/framework/web/filters/CInlineFilter.php(58): AppController->filterAccessControl()
+#8 /mnt/gtapi/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#9 /mnt/gtapi/framework/web/CController.php(291): CFilterChain->run()
+#10 /mnt/gtapi/framework/web/CController.php(265): AppController->runActionWithFilters()
+#11 /mnt/gtapi/framework/web/CWebApplication.php(282): AppController->run()
+#12 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /mnt/gtapi/index.php(15): CWebApplication->run()
+REQUEST_URI=/gtapi/app/get_user_list?categoryIds=&roleId=1&cityId=527dfd457c69a&isMap=1&name=&locationX=39.985485&page=8&sessionKey=52d3ac29f180d&mile=&count=10&locationY=116.361305
+in /mnt/gtapi/protected/models/UserLocation.php (132)
+in /mnt/gtapi/protected/controllers/app/user/GetUserList.php (196)
+in /mnt/gtapi/protected/components/BaseController.php (45)
+2014/01/21 15:50:52 [error] [php] Trying to get property of non-object (/mnt/gtapi/protected/models/Teach.php:178)
+Stack trace:
+#0 /mnt/gtapi/framework/web/CController.php(308): CreateAccount->runWithParams()
+#1 /mnt/gtapi/framework/web/filters/CFilterChain.php(133): AppController->runAction()
+#2 /mnt/gtapi/protected/components/BaseController.php(45): CFilterChain->run()
+#3 /mnt/gtapi/framework/web/filters/CInlineFilter.php(58): AppController->FilterSaveInterfaceLog()
+#4 /mnt/gtapi/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /mnt/gtapi/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /mnt/gtapi/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#7 /mnt/gtapi/framework/web/filters/CInlineFilter.php(58): AppController->filterAccessControl()
+#8 /mnt/gtapi/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#9 /mnt/gtapi/framework/web/CController.php(291): CFilterChain->run()
+#10 /mnt/gtapi/framework/web/CController.php(265): AppController->runActionWithFilters()
+#11 /mnt/gtapi/framework/web/CWebApplication.php(282): AppController->run()
+#12 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#13 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /mnt/gtapi/index.php(15): CWebApplication->run()
+REQUEST_URI=/gtapi/app/create_account
+in /mnt/gtapi/protected/models/Teach.php (178)
+in /mnt/gtapi/protected/controllers/app/user/CreateAccount.php (143)
+in /mnt/gtapi/protected/components/BaseController.php (45)
+2014/01/21 16:04:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "sign_in_anonymous".' in /mnt/gtapi/framework/web/CController.php:483
+Stack trace:
+#0 /mnt/gtapi/framework/web/CController.php(270): CController->missingAction('sign_in_anonymo...')
+#1 /mnt/gtapi/framework/web/CWebApplication.php(282): CController->run('sign_in_anonymo...')
+#2 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('app/sign_in_ano...')
+#3 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /mnt/gtapi/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/gtapi/app/sign_in_anonymous
+---
+2014/01/21 17:01:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "sign_in_anonymous".' in /mnt/gtapi/framework/web/CController.php:483
+Stack trace:
+#0 /mnt/gtapi/framework/web/CController.php(270): CController->missingAction('sign_in_anonymo...')
+#1 /mnt/gtapi/framework/web/CWebApplication.php(282): CController->run('sign_in_anonymo...')
+#2 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('app/sign_in_ano...')
+#3 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /mnt/gtapi/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/gtapi/app/sign_in_anonymous
+---
+2014/01/22 06:38:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "sign_in_anonymous".' in /mnt/gtapi/framework/web/CController.php:483
+Stack trace:
+#0 /mnt/gtapi/framework/web/CController.php(270): CController->missingAction('sign_in_anonymo...')
+#1 /mnt/gtapi/framework/web/CWebApplication.php(282): CController->run('sign_in_anonymo...')
+#2 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('app/sign_in_ano...')
+#3 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /mnt/gtapi/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/gtapi/app/sign_in_anonymous
+---
+2014/01/23 15:03:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 15:03:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 15:03:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "null".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('null')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/null
+---
+2014/01/23 15:06:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "null".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('null')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/null
+---
+2014/01/23 15:06:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "null".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('null')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/null
+---
+2014/01/23 15:06:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 15:06:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 15:06:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 15:06:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 20:08:10 [error] [exception.CHttpException.1006] exception 'CHttpException' with message 'your session key is invalid' in /mnt/gtapi/protected/components/SessionFilterAction.php:35
+Stack trace:
+#0 /mnt/gtapi/protected/components/SessionFilterAction.php(22): SessionFilterAction->checkSessionKey()
+#1 /mnt/gtapi/framework/YiiBase.php(204): SessionFilterAction->__construct(Object(AppController), 'getNewNoticeLis...')
+#2 /mnt/gtapi/framework/web/CController.php(440): YiiBase::createComponent(Array, Object(AppController), 'getNewNoticeLis...')
+#3 /mnt/gtapi/framework/web/CController.php(417): CController->createActionFromMap(Array, 'getNewNoticeLis...', 'getNewNoticeLis...')
+#4 /mnt/gtapi/framework/web/CController.php(259): CController->createAction('getNewNoticeLis...')
+#5 /mnt/gtapi/framework/web/CWebApplication.php(282): CController->run('getNewNoticeLis...')
+#6 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('app/getNewNotic...')
+#7 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#8 /mnt/gtapi/index.php(15): CApplication->run()
+#9 {main}
+REQUEST_URI=/gtapi/app/get_new_notice_list?count=10&&page=1&&sessionKey=52dfce4e2c215&&
+---
+2014/01/23 20:08:13 [error] [exception.CHttpException.1006] exception 'CHttpException' with message 'your session key is invalid' in /mnt/gtapi/protected/components/SessionFilterAction.php:35
+Stack trace:
+#0 /mnt/gtapi/protected/components/SessionFilterAction.php(22): SessionFilterAction->checkSessionKey()
+#1 /mnt/gtapi/framework/YiiBase.php(204): SessionFilterAction->__construct(Object(AppController), 'getAllSettings')
+#2 /mnt/gtapi/framework/web/CController.php(440): YiiBase::createComponent(Array, Object(AppController), 'getAllSettings')
+#3 /mnt/gtapi/framework/web/CController.php(417): CController->createActionFromMap(Array, 'getAllSettings', 'getAllSettings')
+#4 /mnt/gtapi/framework/web/CController.php(259): CController->createAction('getAllSettings')
+#5 /mnt/gtapi/framework/web/CWebApplication.php(282): CController->run('getAllSettings')
+#6 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('app/getAllSetti...')
+#7 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#8 /mnt/gtapi/index.php(15): CApplication->run()
+#9 {main}
+REQUEST_URI=/gtapi/app/get_all_settings?sessionKey=52dfce4e2c215&&
+---
+2014/01/23 20:09:36 [error] [exception.CHttpException.1006] exception 'CHttpException' with message 'your session key is invalid' in /mnt/gtapi/protected/controllers/app/user/GetUserList.php:192
+Stack trace:
+#0 /mnt/gtapi/framework/web/actions/CAction.php(76): GetUserList->run()
+#1 /mnt/gtapi/framework/web/CController.php(308): CAction->runWithParams(Array)
+#2 /mnt/gtapi/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(GetUserList))
+#3 /mnt/gtapi/protected/components/BaseController.php(45): CFilterChain->run()
+#4 /mnt/gtapi/framework/web/filters/CInlineFilter.php(58): BaseController->FilterSaveInterfaceLog(Object(CFilterChain))
+#5 /mnt/gtapi/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /mnt/gtapi/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /mnt/gtapi/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /mnt/gtapi/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /mnt/gtapi/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /mnt/gtapi/framework/web/CController.php(291): CFilterChain->run()
+#11 /mnt/gtapi/framework/web/CController.php(265): CController->runActionWithFilters(Object(GetUserList), Array)
+#12 /mnt/gtapi/framework/web/CWebApplication.php(282): CController->run('getUserList')
+#13 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('app/getUserList')
+#14 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /mnt/gtapi/index.php(15): CApplication->run()
+#16 {main}
+REQUEST_URI=/gtapi/app/get_user_list?categoryIds=52233fb84064e&&count=10&&order=0&&cityId=527df9f77318d&&page=1&&name=&&mile=&&locationX=30.522688&&sessionKey=52dfce4e2c215&&locationY=104.055435&&roleId=3&&
+---
+2014/01/23 20:09:37 [error] [exception.CHttpException.1006] exception 'CHttpException' with message 'your session key is invalid' in /mnt/gtapi/protected/components/SessionFilterAction.php:35
+Stack trace:
+#0 /mnt/gtapi/protected/components/SessionFilterAction.php(22): SessionFilterAction->checkSessionKey()
+#1 /mnt/gtapi/framework/YiiBase.php(204): SessionFilterAction->__construct(Object(AppController), 'getAllSettings')
+#2 /mnt/gtapi/framework/web/CController.php(440): YiiBase::createComponent(Array, Object(AppController), 'getAllSettings')
+#3 /mnt/gtapi/framework/web/CController.php(417): CController->createActionFromMap(Array, 'getAllSettings', 'getAllSettings')
+#4 /mnt/gtapi/framework/web/CController.php(259): CController->createAction('getAllSettings')
+#5 /mnt/gtapi/framework/web/CWebApplication.php(282): CController->run('getAllSettings')
+#6 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('app/getAllSetti...')
+#7 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#8 /mnt/gtapi/index.php(15): CApplication->run()
+#9 {main}
+REQUEST_URI=/gtapi/app/get_all_settings?sessionKey=52dfce4e2c215&&
+---
+2014/01/23 20:09:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 20:09:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 20:10:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 20:10:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 20:10:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 20:34:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "sign_in_anonymous".' in /mnt/gtapi/framework/web/CController.php:483
+Stack trace:
+#0 /mnt/gtapi/framework/web/CController.php(270): CController->missingAction('sign_in_anonymo...')
+#1 /mnt/gtapi/framework/web/CWebApplication.php(282): CController->run('sign_in_anonymo...')
+#2 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('app/sign_in_ano...')
+#3 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /mnt/gtapi/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/gtapi/app/sign_in_anonymous
+---
+2014/01/23 20:53:08 [error] [php] imagecreatefromjpeg(): gd-jpeg, libjpeg: recoverable error: Corrupt JPEG data: premature end of data segment
+ (/mnt/gtapi/protected/components/phpthumb-latest/GdThumb.inc.php:111)
+Stack trace:
+#0 /mnt/gtapi/protected/components/Tools.php(356): create()
+#1 /mnt/gtapi/protected/components/Tools.php(200): resizeImage()
+#2 /mnt/gtapi/protected/models/Profile.php(166): saveFile()
+#3 /mnt/gtapi/protected/controllers/app/user/CreateAccount.php(139): Profile->addProfile()
+#4 /mnt/gtapi/framework/web/actions/CAction.php(76): CreateAccount->run()
+#5 /mnt/gtapi/framework/web/CController.php(308): CreateAccount->runWithParams()
+#6 /mnt/gtapi/framework/web/filters/CFilterChain.php(133): AppController->runAction()
+#7 /mnt/gtapi/protected/components/BaseController.php(45): CFilterChain->run()
+#8 /mnt/gtapi/framework/web/filters/CInlineFilter.php(58): AppController->FilterSaveInterfaceLog()
+#9 /mnt/gtapi/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /mnt/gtapi/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /mnt/gtapi/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#12 /mnt/gtapi/framework/web/filters/CInlineFilter.php(58): AppController->filterAccessControl()
+#13 /mnt/gtapi/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#14 /mnt/gtapi/framework/web/CController.php(291): CFilterChain->run()
+#15 /mnt/gtapi/framework/web/CController.php(265): AppController->runActionWithFilters()
+#16 /mnt/gtapi/framework/web/CWebApplication.php(282): AppController->run()
+#17 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#18 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#19 /mnt/gtapi/index.php(15): CWebApplication->run()
+REQUEST_URI=/gtapi/app/create_account
+in /mnt/gtapi/protected/components/phpthumb-latest/GdThumb.inc.php (111)
+in /mnt/gtapi/protected/components/phpthumb-latest/ThumbLib.inc.php (127)
+in /mnt/gtapi/protected/components/Tools.php (356)
+2014/01/23 21:48:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+HTTP_REFERER=http://www.kaopuu.com/gt/teacher_edit?teacherId=52d673fe35a6a
+---
+2014/01/23 21:48:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+HTTP_REFERER=http://www.kaopuu.com/gt/teacher_edit?teacherId=52d673fe35a6a
+---
+2014/01/23 22:41:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "null".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('null')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/null
+---
+2014/01/23 22:41:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:41:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:42:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:42:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:42:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:42:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:42:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:42:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:42:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:43:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:43:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:43:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:43:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:43:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:44:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:44:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:46:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:46:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:46:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "null".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('null')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/null
+---
+2014/01/23 22:46:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:48:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:48:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:48:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:48:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:48:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:54:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:54:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:54:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:54:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:55:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:55:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:55:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:56:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:56:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:56:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:56:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:56:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:56:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:56:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:56:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:56:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:56:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:57:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:57:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:57:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:57:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:57:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:57:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:57:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:58:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:58:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:58:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:58:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:58:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:58:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:58:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:59:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:59:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:59:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:59:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:59:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:59:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:59:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:59:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:59:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:59:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 22:59:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 23:00:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 23:00:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 23:00:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 23:00:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 23:00:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 23:00:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 23:00:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 23:00:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 23:01:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 23:01:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 23:01:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 23:01:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 23:01:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 23:01:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 23:01:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 23:01:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 23:02:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 23:02:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "null".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('null')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/null
+---
+2014/01/23 23:02:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "null".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('null')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/null
+---
+2014/01/23 23:02:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 23:02:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "null".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('null')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/null
+---
+2014/01/23 23:03:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 23:03:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 23:03:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 23:03:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 23:03:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "null".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('null')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/null
+---
+2014/01/23 23:03:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 23:03:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 23:04:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 23:04:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "null".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('null')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/null
+---
+2014/01/23 23:10:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 23:11:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 23:11:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 23:12:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 23:12:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 23:12:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 23:12:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 23:12:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 23:12:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 23:12:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 23:13:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/23 23:13:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 10:10:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 10:10:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 10:15:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 10:15:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 10:20:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 10:20:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 11:07:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 11:07:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 11:08:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 11:08:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 11:08:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 11:08:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 11:09:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 11:09:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 11:10:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 11:10:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 11:10:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 11:10:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 11:10:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 11:11:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 11:11:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 11:11:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 11:11:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 11:11:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 11:11:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 11:11:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 11:36:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 11:36:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 11:37:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 11:37:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 11:42:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 11:42:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "null".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('null')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/null
+---
+2014/01/24 12:25:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "null".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('null')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/null
+---
+2014/01/24 12:25:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "null".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('null')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/null
+---
+2014/01/24 12:26:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 13:14:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 13:14:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 15:00:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 15:00:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 15:11:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 15:11:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 15:31:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 15:31:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 16:19:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 16:21:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 16:21:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 17:46:50 [error] [exception.CHttpException.1009] exception 'CHttpException' with message 'your phone has been created' in /mnt/gtapi/protected/controllers/app/user/PhoneIsExist.php:52
+Stack trace:
+#0 /mnt/gtapi/framework/web/actions/CAction.php(76): PhoneIsExist->run()
+#1 /mnt/gtapi/framework/web/CController.php(308): CAction->runWithParams(Array)
+#2 /mnt/gtapi/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(PhoneIsExist))
+#3 /mnt/gtapi/protected/components/BaseController.php(45): CFilterChain->run()
+#4 /mnt/gtapi/framework/web/filters/CInlineFilter.php(58): BaseController->FilterSaveInterfaceLog(Object(CFilterChain))
+#5 /mnt/gtapi/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /mnt/gtapi/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /mnt/gtapi/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /mnt/gtapi/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /mnt/gtapi/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /mnt/gtapi/framework/web/CController.php(291): CFilterChain->run()
+#11 /mnt/gtapi/framework/web/CController.php(265): CController->runActionWithFilters(Object(PhoneIsExist), Array)
+#12 /mnt/gtapi/framework/web/CWebApplication.php(282): CController->run('phoneIsExist')
+#13 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('app/phoneIsExis...')
+#14 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /mnt/gtapi/index.php(15): CApplication->run()
+#16 {main}
+REQUEST_URI=/gtapi/app/phone_is_exist?phone=13840162360
+---
+2014/01/24 22:16:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 22:16:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 22:16:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 22:16:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 22:16:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 22:20:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 22:43:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 22:43:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 22:43:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 22:43:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "null".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('null')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/null
+---
+2014/01/24 22:44:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 22:44:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 22:44:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 22:44:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 22:44:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/24 22:44:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /mnt/gtapi/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /mnt/gtapi/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/01/25 01:36:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "sign_in_anonymous".' in /mnt/gtapi/framework/web/CController.php:483
+Stack trace:
+#0 /mnt/gtapi/framework/web/CController.php(270): CController->missingAction('sign_in_anonymo...')
+#1 /mnt/gtapi/framework/web/CWebApplication.php(282): CController->run('sign_in_anonymo...')
+#2 /mnt/gtapi/framework/web/CWebApplication.php(141): CWebApplication->runController('app/sign_in_ano...')
+#3 /mnt/gtapi/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /mnt/gtapi/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/gtapi/app/sign_in_anonymous
+---
+2014/02/07 20:16:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in D:\Venture_Project\Good Teacher\SourceCode\gtapi\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Venture_Project\Good Teacher\SourceCode\gtapi\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 D:\Venture_Project\Good Teacher\SourceCode\gtapi\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\Venture_Project\Good Teacher\SourceCode\gtapi\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/02/07 20:24:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in D:\Venture_Project\Good Teacher\SourceCode\gtapi\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Venture_Project\Good Teacher\SourceCode\gtapi\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 D:\Venture_Project\Good Teacher\SourceCode\gtapi\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\Venture_Project\Good Teacher\SourceCode\gtapi\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/index.php
+---
+2014/02/07 20:45:09 [error] [exception.CHttpException.1006] exception 'CHttpException' with message 'your session key is invalid' in D:\Venture_Project\Good Teacher\SourceCode\gtapi\protected\components\SessionFilterAction.php:31
+Stack trace:
+#0 D:\Venture_Project\Good Teacher\SourceCode\gtapi\protected\components\SessionFilterAction.php(22): SessionFilterAction->checkSessionKey()
+#1 D:\Venture_Project\Good Teacher\SourceCode\gtapi\framework\YiiBase.php(204): SessionFilterAction->__construct(Object(WebController), 'getCategoryHotL...')
+#2 D:\Venture_Project\Good Teacher\SourceCode\gtapi\framework\web\CController.php(440): YiiBase::createComponent(Array, Object(WebController), 'getCategoryHotL...')
+#3 D:\Venture_Project\Good Teacher\SourceCode\gtapi\framework\web\CController.php(417): CController->createActionFromMap(Array, 'getCategoryHotL...', 'getCategoryHotL...')
+#4 D:\Venture_Project\Good Teacher\SourceCode\gtapi\framework\web\CController.php(259): CController->createAction('getCategoryHotL...')
+#5 D:\Venture_Project\Good Teacher\SourceCode\gtapi\framework\web\CWebApplication.php(282): CController->run('getCategoryHotL...')
+#6 D:\Venture_Project\Good Teacher\SourceCode\gtapi\framework\web\CWebApplication.php(141): CWebApplication->runController('web/getCategory...')
+#7 D:\Venture_Project\Good Teacher\SourceCode\gtapi\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 D:\Venture_Project\Good Teacher\SourceCode\gtapi\index.php(15): CApplication->run()
+#9 {main}
+REQUEST_URI=/gtapi/index.php/web/get_category_hot_list
+---
+2014/02/07 20:45:31 [error] [exception.CHttpException.1006] exception 'CHttpException' with message 'your session key is invalid' in D:\Venture_Project\Good Teacher\SourceCode\gtapi\protected\components\SessionFilterAction.php:31
+Stack trace:
+#0 D:\Venture_Project\Good Teacher\SourceCode\gtapi\protected\components\SessionFilterAction.php(22): SessionFilterAction->checkSessionKey()
+#1 D:\Venture_Project\Good Teacher\SourceCode\gtapi\framework\YiiBase.php(204): SessionFilterAction->__construct(Object(WebController), 'getCategoryList')
+#2 D:\Venture_Project\Good Teacher\SourceCode\gtapi\framework\web\CController.php(440): YiiBase::createComponent(Array, Object(WebController), 'getCategoryList')
+#3 D:\Venture_Project\Good Teacher\SourceCode\gtapi\framework\web\CController.php(417): CController->createActionFromMap(Array, 'getCategoryList', 'getCategoryList')
+#4 D:\Venture_Project\Good Teacher\SourceCode\gtapi\framework\web\CController.php(259): CController->createAction('getCategoryList')
+#5 D:\Venture_Project\Good Teacher\SourceCode\gtapi\framework\web\CWebApplication.php(282): CController->run('getCategoryList')
+#6 D:\Venture_Project\Good Teacher\SourceCode\gtapi\framework\web\CWebApplication.php(141): CWebApplication->runController('web/getCategory...')
+#7 D:\Venture_Project\Good Teacher\SourceCode\gtapi\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 D:\Venture_Project\Good Teacher\SourceCode\gtapi\index.php(15): CApplication->run()
+#9 {main}
+REQUEST_URI=/gtapi/index.php/web/get_category_list
+---
+2014/02/07 22:15:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in D:\Venture_Project\Good Teacher\SourceCode\gtapi\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Venture_Project\Good Teacher\SourceCode\gtapi\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 D:\Venture_Project\Good Teacher\SourceCode\gtapi\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\Venture_Project\Good Teacher\SourceCode\gtapi\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/
+---
+2014/02/07 22:22:43 [error] [exception.CHttpException.1006] exception 'CHttpException' with message 'your session key is invalid' in D:\Venture_Project\Good Teacher\SourceCode\gtapi\protected\components\SessionFilterAction.php:31
+Stack trace:
+#0 D:\Venture_Project\Good Teacher\SourceCode\gtapi\protected\components\SessionFilterAction.php(22): SessionFilterAction->checkSessionKey()
+#1 D:\Venture_Project\Good Teacher\SourceCode\gtapi\framework\YiiBase.php(204): SessionFilterAction->__construct(Object(WebController), 'getCategoryHotL...')
+#2 D:\Venture_Project\Good Teacher\SourceCode\gtapi\framework\web\CController.php(440): YiiBase::createComponent(Array, Object(WebController), 'getCategoryHotL...')
+#3 D:\Venture_Project\Good Teacher\SourceCode\gtapi\framework\web\CController.php(417): CController->createActionFromMap(Array, 'getCategoryHotL...', 'getCategoryHotL...')
+#4 D:\Venture_Project\Good Teacher\SourceCode\gtapi\framework\web\CController.php(259): CController->createAction('getCategoryHotL...')
+#5 D:\Venture_Project\Good Teacher\SourceCode\gtapi\framework\web\CWebApplication.php(282): CController->run('getCategoryHotL...')
+#6 D:\Venture_Project\Good Teacher\SourceCode\gtapi\framework\web\CWebApplication.php(141): CWebApplication->runController('web/getCategory...')
+#7 D:\Venture_Project\Good Teacher\SourceCode\gtapi\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 D:\Venture_Project\Good Teacher\SourceCode\gtapi\index.php(15): CApplication->run()
+#9 {main}
+REQUEST_URI=/gtapi/index.php/web/get_category_hot_list
+---
+2014/02/07 22:31:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in D:\Venture_Project\Good Teacher\SourceCode\gtapi\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Venture_Project\Good Teacher\SourceCode\gtapi\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 D:\Venture_Project\Good Teacher\SourceCode\gtapi\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\Venture_Project\Good Teacher\SourceCode\gtapi\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/gtapi/index.php?web/get_category_hot_list
+---
+2014/02/07 22:31:34 [error] [exception.CHttpException.1006] exception 'CHttpException' with message 'your session key is invalid' in D:\Venture_Project\Good Teacher\SourceCode\gtapi\protected\components\SessionFilterAction.php:31
+Stack trace:
+#0 D:\Venture_Project\Good Teacher\SourceCode\gtapi\protected\components\SessionFilterAction.php(22): SessionFilterAction->checkSessionKey()
+#1 D:\Venture_Project\Good Teacher\SourceCode\gtapi\framework\YiiBase.php(204): SessionFilterAction->__construct(Object(WebController), 'getCategoryHotL...')
+#2 D:\Venture_Project\Good Teacher\SourceCode\gtapi\framework\web\CController.php(440): YiiBase::createComponent(Array, Object(WebController), 'getCategoryHotL...')
+#3 D:\Venture_Project\Good Teacher\SourceCode\gtapi\framework\web\CController.php(417): CController->createActionFromMap(Array, 'getCategoryHotL...', 'getCategoryHotL...')
+#4 D:\Venture_Project\Good Teacher\SourceCode\gtapi\framework\web\CController.php(259): CController->createAction('getCategoryHotL...')
+#5 D:\Venture_Project\Good Teacher\SourceCode\gtapi\framework\web\CWebApplication.php(282): CController->run('getCategoryHotL...')
+#6 D:\Venture_Project\Good Teacher\SourceCode\gtapi\framework\web\CWebApplication.php(141): CWebApplication->runController('web/getCategory...')
+#7 D:\Venture_Project\Good Teacher\SourceCode\gtapi\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 D:\Venture_Project\Good Teacher\SourceCode\gtapi\index.php(15): CApplication->run()
+#9 {main}
+REQUEST_URI=/gtapi/index.php/web/get_category_hot_list
+---
