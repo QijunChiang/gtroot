@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<package name="/" extends="struts-default">
+
+		<action name="weixin" class="com.sungtech.goodTeacher.action.WeiXinAction" method="execute">
+			<result name="success">jsp/home.jsp</result>
+		</action>
+		
+		<action name="teacherInfo" class="com.sungtech.goodTeacher.action.TeacherInfoAction" method="execute">
+			<result name="success">index.jsp</result>
+		</action>
+
+	</package>
+
+</struts>
