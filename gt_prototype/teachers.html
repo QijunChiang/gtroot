@@ -1,0 +1,546 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>無標題文件</title>
+<!-- InstanceEndEditable -->
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/css.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery-ui-1.8.17.custom.css" rel="stylesheet" type="text/css" />
+<!--IE6 PNG透明-->
+<!--[if lte IE 6]>
+<script src="js/DD_belatedPNG_0.0.8a.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        DD_belatedPNG.fix('div, ul, img, li, input , a');
+    </script>
+<![endif]-->
+<!--banner js-->
+<link rel="stylesheet" type="text/css" href="css/jquery.jslides.css" media="screen" />
+<script src="js/jquery-1.8.0.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/jquery.placeholder.js"></script>
+<script type="text/javascript" src="js/jquery.showAlert.js"></script>
+<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+<!-- <script type="text/javascript" src="js/jquery.jslides.js"></script> -->
+<script type="text/javascript">
+$(function(){
+	$(".city_r a").click(function(){ $("#city").html($(this).html())});
+		
+//下拉 js
+
+		/*$(".nav_list_in").click(function(){
+			 $(".nav_list").css("backgroundImage", "url(images/nav_list.gif)");
+			 $("#study").fadeIn(200);
+		})*/
+		
+        $(".nav_list_b ul li").mouseover(function(){$(this).css("background", "#f5f5f5"),function(){$(this).children().css("display", "none")}});
+		$(".nav_list_b ul li").mouseover(function(){$(this).children(".nav_list_b ul li ul").css("display", "block")});
+		$(".nav_list_b ul li").mouseout(function(){$(this).css("background", "#fff")});
+		$(".nav_list_b ul li").mouseout(function(){$(this).children(".nav_list_b ul li ul").css("display", "none")});
+		
+		$("#study li ul li").mouseover(function(){$(this).css("background", "#e0e0e0")});
+		$("#study li ul li").mouseout(function(){$(this).css("background", "#f5f5f5")});
+		
+			$(".nav_list_in").toggle(function(){
+				$(this).parent().css("backgroundImage", "url(images/nav_list.gif)");
+				$("#study").fadeIn(200);
+				$(".city_in").stop(false,true).fadeOut(200);
+			},function(){
+				$(this).parent().css("backgroundImage", "url(images/nav_list2.gif)");
+				$("#study").fadeOut(200);
+			});
+			
+			$("#city").toggle(function(){
+				$(this).css("backgroundImage", "url(images/dot2.gif)");
+				$(".city_in").fadeIn(200);
+				$("#study").stop(false,true).fadeOut(200);
+			},function(){
+				$(this).css("backgroundImage", "url(images/dot1.gif)");
+				$(".city_in").fadeOut(200);
+			});
+			
+			$(".select2_b ul li a").click(function(){ $(this).parent().parent().parent().prev(".select2 a").html($(this).html())});
+			$(".select2_b ul li a").click(function(){ $(".select2_b").stop(false,true).fadeOut(200)});
+			
+			
+			
+			$(".select2_b ul li a").click(function(){ $(this).addClass("rn")});
+			$(".select2_b ul li a").click(function(){ $(this).parent().prevAll().children().removeClass("rn")});
+			$(".select2_b ul li a").click(function(){ $(this).parent().nextAll().children().removeClass("rn")});
+			
+			$(".select2_b ul li.distance a").click(function(){ $(this).addClass("rn2")});
+			$(".select2_b ul li.distance a").click(function(){ $(this).parent().prevAll().children().removeClass("rn2")});
+			$(".select2_b ul li.distance a").click(function(){ $(this).parent().nextAll().children().removeClass("rn2")});
+			
+		
+			
+			$(".select2 a").toggle(function(){
+				$(this).next(".select2_b").stop(false,true).fadeIn(200);
+			},function(){
+				$(this).next(".select2_b").stop(false,true).fadeOut(200);
+			});
+			
+			$('body').click(function(){
+				$(".nav_list").css("backgroundImage", "url(images/nav_list2.gif)");
+				$("#city").css("backgroundImage", "url(images/dot1.gif)");
+				$("#study").stop(false,true).fadeOut(200);
+				$(".city_in").stop(false,true).fadeOut(200);
+				$("#shareList").stop(false,true).fadeOut(200);				
+			});
+			//登录
+			$('#login_btn').click(function(){
+				$(this).showAlert({
+					alertWidth:578,
+					alertHeight:433,
+					alertObject:$("#login"),
+					opacity:.7//透明度
+				});
+			})
+			//注册
+			function showReg(e){
+				$(e).showAlert({
+					alertWidth:578,
+					alertHeight:546,
+					alertObject:$("#reg"),
+					opacity:.7//透明度
+				});			
+			}
+			$('#reg_btn').click(function(){
+				showReg(this);
+			})				
+			$('#loginToReg').click(function(){
+				showReg(this);
+			})
+			//搜索下拉框
+            $("#search_input").bind("keydown", keyDown)
+            .autocomplete($.extend(options, {
+                minLength: 1,
+                source: function(request, response) {
+                    // delegate back to autocomplete, but extract the last term
+                    response($.ui.autocomplete.filter(
+					    availableTags, extractLast(request.term)));
+                }
+            }));
+			//console.log($("#search_input").offset().);
+			/* multi value autocomplete */
+            // 按逗号分隔多个值
+            function split(val) {
+                return val.split(/,\s*/);
+            }
+            // 提取输入的最后一个值
+            function extractLast(term) {
+                return split(term).pop();
+            }			
+            // 按Tab键时，取消为输入框设置value
+            function keyDown(event) {
+                if (event.keyCode === $.ui.keyCode.TAB &&
+						$(this).data("autocomplete").menu.active) {
+                    event.preventDefault();
+                }
+            }
+            var options = {
+                // 获得焦点
+                focus: function() {
+                    // prevent value inserted on focus
+                    return false;
+                },
+                // 从autocomplete弹出菜单选择一个值时，加到输入框最后，并以逗号分隔
+                select: function(event, ui) {
+                    var terms = split(this.value);
+                    // remove the current input
+                    terms.pop();
+                    // add the selected item
+                    terms.push(ui.item.value);
+                    // add placeholder to get the comma-and-space at the end
+                    terms.push("");
+                    this.value = terms.join(", ");
+                    return false;
+                }
+            };			
+            // 本地字符串数组
+            var availableTags = [
+			    "C#",
+			    "C++",
+			    "Java",
+			    "JavaScript",
+			    "ASP",
+                "ASP.NET",
+			    "JSP",
+			    "PHP",
+			    "Python",
+			    "Ruby",
+				"语文",
+				"数学",
+				"英语",
+				"物理"
+		    ];	
+});
+</script>
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+<div class="top">
+  <div class="top_in">
+    <div class="logo"><img src="images/logo.gif" width="150" height="39"  /></div>
+    <div class="logo_r"></div>
+    <div class="city"> <a id="city" href="#">广州</a>
+      <div class="city_in">
+        <div id="close" class="close"></div>
+        <div class="city_list">
+          <div class="city_l">华北华东</div>
+          <div class="city_r"> <a href="#">北京</a> <a href="#">呼和浩特</a> <a href="#">北京</a> <a href="#">北京</a> <a href="#">北京</a> <a href="#">北京</a> <a href="#">北京</a> <a href="#">北京</a> <a href="#">北京</a> <a href="#">北京</a> <a href="#">北京</a>
+            <div class="clear"></div>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="city_list">
+          <div class="city_l">华北华东</div>
+          <div class="city_r"> <a href="#">北京</a> <a href="#">呼和浩特</a> <a href="#">北京</a> <a href="#">北京</a> <a href="#">北京</a> <a href="#">北京</a> <a href="#">北京</a>
+            <div class="clear"></div>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div class="city_list">
+          <div class="city_l">华北华东</div>
+          <div class="city_r"> <a href="#">北京</a> <a href="#">呼和浩特</a> <a href="#">北京</a> <a href="#">北京</a> <a href="#">北京</a> <a href="#">北京</a> <a href="#">北京</a>
+            <div class="clear"></div>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+    <div class="search">
+      <div class="search_l">
+        <input id="search_input" type="text" class="text" placeholder="输入您想学的课程"/>
+      </div>
+      <!-- 输入您想学的课程 -->
+      <div class="search_r">
+        <input type="button" value="搜索" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--导航-->
+<div class="nav" style="box-shadow:none;">
+  <div class="nav_in">
+    <div class="nav_list">
+      <div class="nav_list_in"><a href="#">雅思英语</a></div>
+      <div class="nav_list_b">
+        <ul id="study">
+          <li><a style="background:url(images/list_all.png)" href="#">全部分类</a></li>
+          <li> <a style="background:url(images/list_ys.png)" href="#">外语</a>
+            <ul>
+              <li><a href="teachers.html">全部分类</a></li>
+              <li><a href="teachers.html">雅思英语</a></li>
+              <li><a href="teachers.html">商务英语</a></li>
+              <li><a href="teachers.html">口语</a></li>
+              <li><a href="teachers.html">托福</a></li>
+              <li><a href="teachers.html">GRE</a></li>
+            </ul>
+          </li>
+          <li><a style="background:url(images/list_ysh.png)" href="#">应试教育</a></li>
+          <li><a style="background:url(images/list_yd.png)" href="#">运动健身</a></li>
+          <li><a style="background:url(images/list_yy.png)" href="#">艺术音乐</a></li>
+          <li><a style="background:url(images/list_xz.png)" href="#">写作技巧</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="nav_r">
+      <ul>
+        <li> <a  style="background:url(images/nav_home.png) left center no-repeat;" onMouseOver="this.style.background='url(images/nav_home2.png) left center no-repeat'"  onMouseOut="this.style.background='url(images/nav_home.png) left center no-repeat'" href="index.html">首页</a> </li>
+        <li> <a  style="background:url(images/nav_about.png) left center no-repeat;" onMouseOver="this.style.background='url(images/nav_about2.png) left center no-repeat'"  onMouseOut="this.style.background='url(images/nav_about.png) left center no-repeat'" href="about%20us.html">关于我们</a> </li>
+        
+      </ul>
+    </div>
+    <div class="lr"> <a id="login_btn" href="#">登录</a><span>|</span><a id="reg_btn" href="#">注册</a> </div>
+  </div>
+</div>
+<!-- InstanceBeginEditable name="EditRegion3" -->
+<!--老师列表-->
+<div class="banner_b"></div>
+<div class="center">
+<div class="list_center">
+
+<!--回头部-->
+<div  class="fixed-bottom"><a href="#"><img src="images/to_top.png" width="82" height="82"></a></div>
+
+    	<div class="list_t">
+        	<div class="title1">外语教育</div>
+            <div class="title2">Foreign Language Education</div>
+            
+            <div class="select2">
+            	<a>按距离排序</a>
+                <div class="select2_b">
+                	<ul>
+                    	<li class="distance"><a href="#">按距离排序</a></li>
+                        <li class="distance"><a href="#">按日期排序</a></li>
+                        <li class="distance"><a href="#">按性别排序</a></li>
+                        <li class="distance"><a href="#">按价格排序</a></li>
+                    </ul>
+                </div>
+            </div>
+          <div class="select2_l"><img src="images/area2.gif" width="17" height="17"></div>
+            <div class="ge2"></div>
+            <div class="select2">
+            	<a>所有地区</a>
+                <div class="select2_b">
+                	<ul>
+                    	<li><a href="#">所有地区</a></li>
+                        <li><a href="#">越秀区</a></li>
+                        <li><a href="#">珠海区</a></li>
+                        <li><a href="#">天河区</a></li>
+                        <li><a href="#">荔湾区</a></li>
+                        <li><a href="#">白云区</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="select2_l"><img src="images/area.gif" width="17" height="17"></div>
+            
+        </div>
+        
+        <!--老师列表-->
+        <div class="teacher">
+            <div class="photo">
+                    <div class="photo1">
+                        <img src="images/teacher.jpg" width="220" height="160">
+                        <span class="circle" style="position:absolute; display:inline-block; background:url(images/teacher2.jpg) no-repeat center center; width: 71px; height: 71px; left: 183px; top: -14px; border:2px solid #fff;"></span>
+              </div>
+                    <div class="photo_b"><em><a href="#"><img src="images/media2.gif" width="25" height="25"></a></em><span>外教 Helen</span></div>
+          </div>
+            <div class="photo_l">
+            	<div class="teacher_t">
+                	<span><a href="#">雅思英语培训</a></span>
+                    <em><font class="redfont">￥366</font>/小时</em>
+                </div>
+            	<div class="detail">
+                	雅思(IELTS)考试雅思(International English Language Testing System)于1989年由英国文化协会、剑桥大学考试委员会和澳大利亚国际教育开发署三方共同合作开发、管理，针对到英国或澳大利亚...
+                </div>
+                <a href="teacher.html" target="_blank"  class="detail_btn"><input type="image" src="images/detail.gif"></a>
+                <div class="clear"></div>
+                <div class="pf1">分数</div>
+                <div class="pf2" style="background-position:-26px top;"></div>
+                <div class="pf3">3.8</div>
+                <div class="pf_r">发布时间 : 2013-12-31 21:23</div>
+          </div>
+            <div class="clear"></div>
+</div>
+        <div class="teacher">
+                    <div class="photo">
+                            <div class="photo1">
+                                <img src="images/teacher3.jpg" width="220" height="160">
+                                <span class="circle" style="position:absolute; display:inline-block; background:url(images/teacher4.jpg) no-repeat center center; width: 71px; height: 71px; left: 183px; top: -14px; border:2px solid #fff;"></span>
+                      </div>
+                            <div class="photo_b"><em><a href="#"><img src="images/media.gif" width="25" height="25"></a></em><span>林俊荣</span></div>
+          </div>
+                    <div class="photo_l">
+                        <div class="teacher_t">
+                            <span><a href="#">商务英语突击小班</a></span>
+                            <em><font class="redfont">￥126</font>/小时</em>
+                        </div>
+                        <div class="detail">
+                            雅思(IELTS)考试雅思(International English Language Testing System)于1989年由英国文化协会、剑桥大学考试委员会和澳大利亚国际教育开发署三方共同合作开发、管理，针对到英国或澳大利亚...
+                        </div>
+                        <a href="teacher.html" target="_blank"  class="detail_btn"><input type="image" src="images/detail.gif"></a>
+                        <div class="clear"></div>
+                        <div class="pf1">分数</div>
+                        <div class="pf2" style="background-position:left top;"></div>
+                        <div class="pf3">3.8</div>
+                        <div class="pf_r">发布时间 : 2013-12-31 21:23</div>
+                  </div>
+                    <div class="clear"></div>
+        </div>
+        <div class="teacher">
+                    <div class="photo">
+                            <div class="photo1">
+                                <img src="images/teacher5.jpg" width="220" height="160">
+                                <span class="circle" style="position:absolute; display:inline-block; background:url(images/teacher6.jpg) no-repeat center center; width: 71px; height: 71px; left: 183px; top: -14px; border:2px solid #fff;"></span>
+                      </div>
+                            <div class="photo_b"><em><a href="#"><img src="images/media2.gif" width="25" height="25"></a></em><span>Anna</span></div>
+          </div>
+                    <div class="photo_l">
+                        <div class="teacher_t">
+                            <span><a href="#">口语训练</a></span>
+                            <em><font class="redfont">￥280</font>/小时</em>
+                        </div>
+                        <div class="detail">
+                            雅思(IELTS)考试雅思(International English Language Testing System)于1989年由英国文化协会、剑桥大学考试委员会和澳大利亚国际教育开发署三方共同合作开发、管理，针对到英国或澳大利亚...
+                        </div>
+                        <a href="teacher.html" target="_blank"  class="detail_btn"><input type="image" src="images/detail.gif"></a>
+                        <div class="clear"></div>
+                        <div class="pf1">分数</div>
+                        <div class="pf2" style="background-position:-52px top;"></div>
+                        <div class="pf3">3.8</div>
+                        <div class="pf_r">发布时间 : 2013-12-31 21:23</div>
+                  </div>
+                    <div class="clear"></div>
+        </div>
+        <div class="teacher">
+            <div class="photo">
+                    <div class="photo1">
+                        <img src="images/teacher7.jpg" width="220" height="160">
+                        <span class="circle" style="position:absolute; display:inline-block; background:url(images/teacher8.jpg) no-repeat center center; width: 71px; height: 71px; left: 183px; top: -14px; border:2px solid #fff;"></span>
+              </div>
+                    <div class="photo_b"><em><a href="#"><img src="images/media2.gif" width="25" height="25"></a></em><span>外教 Helen</span></div>
+          </div>
+            <div class="photo_l">
+            	<div class="teacher_t">
+                	<span><a href="#">托福英语培训班</a></span>
+                    <em><font class="redfont">￥35</font>/小时</em>
+                </div>
+            	<div class="detail">
+                	雅思(IELTS)考试雅思(International English Language Testing System)于1989年由英国文化协会、剑桥大学考试委员会和澳大利亚国际教育开发署三方共同合作开发、管理，针对到英国或澳大利亚...
+                </div>
+                <a href="teacher.html" target="_blank"  class="detail_btn"><input type="image" src="images/detail.gif"></a>
+                <div class="clear"></div>
+                <div class="pf1">分数</div>
+                <div class="pf2" style="background-position:-26px top;"></div>
+                <div class="pf3">3.8</div>
+                <div class="pf_r">发布时间 : 2013-12-31 21:23</div>
+          </div>
+            <div class="clear"></div>
+</div>
+        <div class="teacher">
+                    <div class="photo">
+                            <div class="photo1">
+                                <img src="images/teacher9.jpg" width="220" height="160">
+                                <span class="circle" style="position:absolute; display:inline-block; background:url(images/teacher10.jpg) no-repeat center center; width: 71px; height: 71px; left: 183px; top: -14px; border:2px solid #fff;"></span>
+                      </div>
+                            <div class="photo_b"><em><a href="#"><img src="images/media.gif" width="25" height="25"></a></em><span>林俊荣</span></div>
+          </div>
+                    <div class="photo_l">
+                        <div class="teacher_t">
+                            <span><a href="#">八级英语特效班</a></span>
+                            <em><font class="redfont">￥免费</font>/小时</em>
+                        </div>
+                        <div class="detail">
+                            雅思(IELTS)考试雅思(International English Language Testing System)于1989年由英国文化协会、剑桥大学考试委员会和澳大利亚国际教育开发署三方共同合作开发、管理，针对到英国或澳大利亚...
+                        </div>
+                        <a href="teacher.html" target="_blank"  class="detail_btn"><input type="image" src="images/detail.gif"></a>
+                        <div class="clear"></div>
+                        <div class="pf1">分数</div>
+                        <div class="pf2" style="background-position:left top;"></div>
+                        <div class="pf3">3.8</div>
+                        <div class="pf_r">发布时间 : 2013-12-31 21:23</div>
+                  </div>
+                    <div class="clear"></div>
+        </div>
+        <div class="teacher">
+                    <div class="photo">
+                            <div class="photo1">
+                                <img src="images/teacher11.jpg" width="220" height="160">
+                                <span class="circle" style="position:absolute; display:inline-block; background:url(images/teacher12.jpg) no-repeat center center; width: 71px; height: 71px; left: 183px; top: -14px; border:2px solid #fff;"></span>
+                      </div>
+                            <div class="photo_b"><em><a href="#"><img src="images/media2.gif" width="25" height="25"></a></em><span>Anna</span></div>
+          </div>
+                    <div class="photo_l">
+                        <div class="teacher_t">
+                            <span><a href="#">德语学习班</a></span>
+                            <em><font class="redfont">￥280</font>/小时</em>
+                        </div>
+                        <div class="detail">
+                            雅思(IELTS)考试雅思(International English Language Testing System)于1989年由英国文化协会、剑桥大学考试委员会和澳大利亚国际教育开发署三方共同合作开发、管理，针对到英国或澳大利亚...
+                        </div>
+                        <a href="teacher.html" target="_blank"  class="detail_btn"><input type="image" src="images/detail.gif"></a>
+                        <div class="clear"></div>
+                        <div class="pf1">分数</div>
+                        <div class="pf2" style="background-position:-52px top;"></div>
+                        <div class="pf3">3.8</div>
+                        <div class="pf_r">发布时间 : 2013-12-31 21:23</div>
+                  </div>
+                    <div class="clear"></div>
+        </div>
+        <div class="teacher">
+                    <div class="photo">
+                            <div class="photo1">
+                                <img src="images/teacher13.jpg" width="220" height="160">
+                                <span class="circle" style="position:absolute; display:inline-block; background:url(images/teacher14.jpg) no-repeat center center; width: 71px; height: 71px; left: 183px; top: -14px; border:2px solid #fff;"></span>
+                      </div>
+                            <div class="photo_b"><em><a href="#"><img src="images/media.gif" width="25" height="25"></a></em><span>林俊荣</span></div>
+          </div>
+                    <div class="photo_l">
+                        <div class="teacher_t">
+                            <span><a href="#">剑桥英语培训班</a></span>
+                            <em><font class="redfont">￥109</font>/小时</em>
+                        </div>
+                        <div class="detail">
+                            雅思(IELTS)考试雅思(International English Language Testing System)于1989年由英国文化协会、剑桥大学考试委员会和澳大利亚国际教育开发署三方共同合作开发、管理，针对到英国或澳大利亚...
+                        </div>
+                        <a href="teacher.html" target="_blank"  class="detail_btn"><input type="image" src="images/detail.gif"></a>
+                        <div class="clear"></div>
+                        <div class="pf1">分数</div>
+                        <div class="pf2" style="background-position:left top;"></div>
+                        <div class="pf3">3.8</div>
+                        <div class="pf_r">发布时间 : 2013-12-31 21:23</div>
+                  </div>
+                    <div class="clear"></div>
+        </div>
+        <div class="teacher">
+                    <div class="photo">
+                            <div class="photo1">
+                                <img src="images/teacher15.jpg" width="220" height="160">
+                                <span class="circle" style="position:absolute; display:inline-block; background:url(images/teacher16.jpg) no-repeat center center; width: 71px; height: 71px; left: 183px; top: -14px; border:2px solid #fff;"></span>
+                      </div>
+                            <div class="photo_b"><em><a href="#"><img src="images/media2.gif" width="25" height="25"></a></em><span>Anna</span></div>
+          </div>
+                    <div class="photo_l">
+                        <div class="teacher_t">
+                            <span><a href="#">日语口语训练</a></span>
+                            <em><font class="redfont">￥152</font>/小时</em>
+                        </div>
+                        <div class="detail">
+                            雅思(IELTS)考试雅思(International English Language Testing System)于1989年由英国文化协会、剑桥大学考试委员会和澳大利亚国际教育开发署三方共同合作开发、管理，针对到英国或澳大利亚...
+                        </div>
+                        <a href="teacher.html" target="_blank"  class="detail_btn"><input type="image" src="images/detail.gif"></a>
+                        <div class="clear"></div>
+                        <div class="pf1">分数</div>
+                        <div class="pf2" style="background-position:-52px top;"></div>
+                        <div class="pf3">3.8</div>
+                        <div class="pf_r">发布时间 : 2013-12-31 21:23</div>
+                  </div>
+                    <div class="clear"></div>
+        </div>
+
+        <!--页码-->
+        <div class="page">
+        	<a href="#" style="background:url(images/page_l.gif) center center no-repeat"></a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+          	<a href="#">7</a>
+            <a href="#">8</a>
+            <a href="#" style="background:url(images/page_r.gif) center center no-repeat"></a>
+      </div>
+      
+      	<!--产看更多-->
+        <div class="see_more" style="display:none"></div>
+  </div>
+</div>
+
+<!-- InstanceEndEditable --> 
+<!--版权-->
+<div class="footer">
+  <div class="list"> <a href="about%20us.html">关于好老师</a>　　<font color="#bdbdbd">|</font>　　<a href="#">用户协议</a>　　<font color="#bdbdbd">|</font>　　<a href="#">招聘信息</a>　　<font color="#bdbdbd">|</font>　　<a href="#">会员条款</a>　　<font color="#bdbdbd">|</font>　　<a href="#">联系我们</a><br />
+  </div>
+  <div class="copyright"> <img src="images/logo_small.png" width="12" height="12"> Teacher © 2013 Kaopuu.com Coppyright Hu ICP 13039619-1 </div>
+</div>
+<!-- 登录-->
+<div id="login" class="loginCont"> <a href="javascript:void(0);" class="close alertClose"></a>
+  <iframe class="login_pannel_frame" name="" src="user/login.html" width="578" height="433" scrolling="no" frameborder="0"></iframe>
+  <div class="login_footer">
+    <p><a id="loginToReg" href="javascripts:;" onClick="$('#login,#overlay').fadeOut(200);return false;" target="_blank">还没账号? 赶紧注册吧!</a></p>
+  </div>
+</div>
+
+<!-- 注册-->
+<div id="reg" class="regCont"> <a href="javascript:void(0);" class="close alertClose"></a>
+  <iframe class="reg_pannel_frame" name="" src="user/reg.html" width="578" height="546" scrolling="no" frameborder="0"></iframe>
+</div>
+<!-- InstanceBeginEditable name="EditRegion4" --><!-- InstanceEndEditable -->
+</body>
+<!-- InstanceEnd --></html>
