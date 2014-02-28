@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-size:14px;
+	color:#6a6a6a;
+	font-family:"微软雅黑";
+	background-color:#f6f2f2;
+/* 	line-height:1em; */
+}
+
+dl,dt,dd,table,tr,td,th,h1,h2,h3,h4,h5,h6,p,li,ul,dl,dt{
+	margin:0;padding:0;border:0px;font-weight:normal;line-height:1em;
+}
+
+img{
+	border:none;
+}
+
+ul{
+	list-style-type:none;
+}
+
+ul,li{
+  margin:0;padding:0;
+}
+
+.clear{
+	clear:both;
+}
+.layout {
+	margin: 0 auto;
+}
+.layout:after {
+	clear: both;
+	content: '\20';
+	height: 0;
+	display: block;
+}
+
+a:link {color: #6a6a6a;text-decoration: none;}
+a:visited {color: #6a6a6a;text-decoration: none;}
+a:hover {color: #13ad87;text-decoration: none;}
+a:active {color: #6a6a6a;text-decoration: none;}
+
+* html,* html body /* 修正IE6振动bug */{
+background-image:url(about:blank);background-attachment:fixed;
+}
+
+.inputText{
+	width: 200px;height: 25px;
+}
