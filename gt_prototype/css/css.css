@@ -14,6 +14,15 @@
 	color:#d44a30;
 	font-style:normal;
 }
+/*IE浏览器圆角兼容*/
+.circle {
+	-webkit-border-radius: 50em;
+	-moz-border-radius: 50em;
+	border-radius: 50em;
+	position:relative;
+	behavior: url(ie-css3.htc);
+	z-index:99999; 
+}
 /*头部*/
 .top{width:100%; height:60px; margin:0 auto;background-color:#FFF;}
 .top_in{width:1002px; height:70px; margin:0 auto;}
