@@ -177,6 +177,8 @@ public class TeacherInfoAction extends ActionSupport {
 				Map<String, String> map = glist.get(i);
 				String dt = map.get("teachTime");
 				map.put("teachTime", setTeachTime(dt));
+				dt = map.get("unit");
+				map.put("unit", setPriceUnit(dt));
 			}
 		}
 		this.dataList = glist;
@@ -184,8 +186,8 @@ public class TeacherInfoAction extends ActionSupport {
 			this.college = "暂无填写";
 		if (StringUtils.isEmpty(this.description))
 			this.description = "暂无填写";
-		//else
-		//	this.description = this.description.replace("\n", "<br/>");
+		// else
+		// this.description = this.description.replace("\n", "<br/>");
 		return SUCCESS;
 	}
 
@@ -275,6 +277,15 @@ public class TeacherInfoAction extends ActionSupport {
 			sb.append("><span>").append(getWeekDay(ch)).append("</span></li>");
 		}
 		return sb.toString();
+	}
+
+	static String setPriceUnit(String t) {
+		if ("0".equals(t))
+			return "小时";
+		else if ("1".equals(t))
+			return "课";
+		else
+			return "总价";
 	}
 
 	static String getWeekDay(char c) {

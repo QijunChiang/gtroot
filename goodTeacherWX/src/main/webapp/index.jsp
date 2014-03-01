@@ -28,7 +28,7 @@
 <input type="hidden" id="userId" value="<s:property value='userId'/>" />
 		<div class="row">
 		  <%if(request.getAttribute("video")!=null && !"".equals(request.getAttribute("video"))){%>
-			<video class="wap_video col-xs-12" src="http://www.kaopuu.com/gtapi/<s:property value='video'/>" type="video/mp4" controls="controls" poster="<s:property value='photo'/>">
+			<video class="wap_video col-xs-12" src="http://www.kaopuu.com/gtapi/<s:property value='video'/>" type="video/mp4" controls="controls" poster="<s:property value='photo'/>" style="height:250px;">
 				您的设备不支持播放该视频。
 			</video>
 		  <%}else{%>
@@ -38,17 +38,19 @@
 		<div class="info">
 			<div class="wap_rows row">
 				<div class="avatar col-xs-2">
-					<img class="img-responsive" src="<s:property value='teacherLogo'/>" alt="<s:property value='name'/>"/>
+					<img class="img-responsive" src="<s:property value='teacherLogo'/>" alt="<s:property value='name'/>" style="height:50px;"/>
 				</div>
 				<div class="intro ffms row col-xs-10">
 					<div class="name row">
 						<label><s:property value='name'/></label>
-						<small><s:property value='distance'/>km</small>
 					</div>
-					<div class="school row">
+					<!-- <div class="row" style="margin-top:5px;">
+						<small>&nbsp;距离:<s:property value='distance'/>km</small>
+					</div>
+					 <div class="school row">
 						<label style="padding-left:5px;margin-right:5px;">学校：</label>
 						<label class="fwnm cont"><s:property value='college'/></label>
-					</div>
+					</div> -->
 				</div>
 			</div>
 		    <div class="wap_rows row">
@@ -72,7 +74,7 @@
 						<span><s:property value="name"/></span>
 					</div>
 					<div class="col-xs-5 class-price">
-						&yen;<s:property value="price"/><small>/小时</small>
+						&yen;<s:property value="price"/><small>/<s:property value="unit"/></small>
 					</div>
 				</div>
 				<ul class="week">
@@ -98,11 +100,11 @@
 					    <div class="remark" style="width:30px;float:left;">
 						  <label class="tag" style="height:35px;">&nbsp;</label>
 					    </div>
-						<div class="fwnm" style="margin-top:3px;padding-left:30px;"><s:property value="remark"/></div>
+						<div class="fwnm" style="margin-top:3px;padding-left:30px;"><s:property value="remark" escape="false"/></div>
 					</div>
 				</div>
 				<a class="submit btn btn-lg btn-danger btn-block" cnm="<s:property value="name"/>" cid="<s:property value="courseId"/>">
-				   <span class="glyphicon glyphicon-star"></span>免费试听
+				   <span class="glyphicon glyphicon-star"></span>免费预约试听课
 				</a>
 			</div>
 			</s:iterator> 

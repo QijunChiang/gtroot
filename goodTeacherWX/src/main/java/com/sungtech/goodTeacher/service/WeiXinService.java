@@ -38,7 +38,7 @@ public class WeiXinService {
 	final static Logger log = LoggerFactory.getLogger(WeiXinService.class);
 	private static Map<String, PopularCategory> hotMap = new LinkedHashMap<String, PopularCategory>();
 	private static Map<String, String> hotPicMap = new ConcurrentHashMap<String, String>();
-	private static String DEFAULT_REPLY = "亲，请拍下需要解答的题目，好老师将尽快给您解答。021-61126552，恭候您来电咨询!";
+	private static String DEFAULT_REPLY = "亲，请用相机拍下要解答的英语题目，我们将尽快给您解答。";
 
 	private static int pageSize = 7;
 

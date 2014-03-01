@@ -1,12 +1,15 @@
 package com.sungtech.goodTeacher.util.user;
 
 public class UserHolder {
+	public static final String DEFULAT_LOCTION = "上海市静安区昌平路700号";
+	public static final double LOCTION_X = 31.230415;
+	public static final double LOCTION_Y = 121.473701;
 	private static final long LEASE_TIME_MILLIS = 20 * 60 * 1000;
 	private String fromUsername;
 	private String courseId;
 	private String chooseKey;
-	private double locationX;
-	private double locationY;
+	private double locationX = LOCTION_X;
+	private double locationY = LOCTION_Y;
 	private volatile long timeToLive = LEASE_TIME_MILLIS;
 
 	public UserHolder(String fromUser) {
