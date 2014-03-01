@@ -79,7 +79,7 @@ class UpdateTeachCourse extends SessionFilterAction {
 		$userId = $this->userSession->userId;
 		TeachCourse::model()->updateTeachCourse(
 			$courseId,$userId,$name,$address,$remark,$price,
-			$unit,$teachTime,$usuallyLocationX,$usuallyLocationY,$remark,
+			$unit,$teachTime,$usuallyLocationX,$usuallyLocationY,$address,
 			$signUpStartDate,$signUpEndDate,$teachStartDate,$teachEndDate,$teachStartTime,$teachEndTime
 		);
 

@@ -101,7 +101,7 @@ class PhoneCode extends CActiveRecord
 		/** 将清理验证码的代码加入到 定时计划脚本 模块 和清理session等方法一起调用***/
 		//删除之前无效过期的验证码
 		$command = Yii::app()->db->createCommand();
-		$command->delete(PhoneCode::model()->tableName(),"TIMESTAMPDIFF(MINUTE,createTime,NOW()) >= :second",array('second'=>Contents::PHONE_CODE_OVER));
+		$command->delete(PhoneCode::model()->tableName(),"TIMESTAMPDIFF(SECOND,createTime,NOW()) >= :second",array('second'=>Contents::PHONE_CODE_OVER));
 		return PhoneCode::model()->find('phone = :phone and TIMESTAMPDIFF(SECOND,createTime,NOW()) < :second'
 				,$params);
 	}

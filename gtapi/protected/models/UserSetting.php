@@ -104,16 +104,17 @@ class UserSetting extends CActiveRecord
 		));
 	}
 
-	/**
-	 * 添加用户默认设置
-	 * @param string $userId
-	 * @throws CHttpException
-	 * @return UserSetting
-	 */
-	public function addUserSetting($userId){
+    /**
+     * 添加用户默认设置
+     * @param string $userId
+     * @param int $phone
+     * @throws CHttpException
+     * @return UserSetting
+     */
+	public function addUserSetting($userId,$phone = Contents::T){
 		$userSetting = new UserSetting();
 		$userSetting->id = $userId;
-		$userSetting->phone = Contents::T;
+		$userSetting->phone = $phone;
 		$userSetting->sinawebo = Contents::F;
 		$userSetting->qqweibo = Contents::F;
 		//增加机构附近列表可见
@@ -131,6 +132,17 @@ class UserSetting extends CActiveRecord
 			throw new CHttpException(1002,Contents::getErrorByCode(1002));
 		}
 	}
+
+    /**
+     * 添加老师的默认设置
+     * @param $userId
+     */
+    public function addTeacherSetting($userId){
+        /**
+         * 默认不显示拨打电话
+         */
+        $this->addUserSetting($userId, Contents::F);
+    }
 
 	/**
 	 * 修改设置
