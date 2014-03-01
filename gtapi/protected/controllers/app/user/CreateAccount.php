@@ -125,8 +125,13 @@ class CreateAccount extends BaseAction {
 		//创建账号信息
 		$user = User::model()->createAccount($phone,$password,$roleId);
 		$userId = $user->id;
-		//创建用户设置信息
-		$userSetting = UserSetting::model()->addUserSetting($userId);
+        //如果是老师，创建的账号为老师时
+        if($roleId == Contents::ROLE_TEACHER){
+            $userSetting = UserSetting::model()->addTeacherSetting($userId);
+        }else{
+            //创建用户设置信息
+            $userSetting = UserSetting::model()->addUserSetting($userId);
+        }
 
 		//创建消息通知的初始数据
 		NoticeOption::model()->initNoticeOption($userId);

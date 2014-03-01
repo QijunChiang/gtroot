@@ -87,7 +87,7 @@ class AddTeacherAction extends SessionFilterAction {
 		$user = User::model()->createAccount($phone,$password,Contents::ROLE_TEACHER);
 		$userId = $user->id;
 		//创建用户设置信息
-		$userSetting = UserSetting::model()->addUserSetting($userId);
+		$userSetting = UserSetting::model()->addTeacherSetting($userId);
 
 		//创建消息通知的初始数据
 		NoticeOption::model()->initNoticeOption($userId);

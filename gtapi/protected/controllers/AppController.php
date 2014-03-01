@@ -142,6 +142,8 @@ class AppController extends BaseController{
 			'addTeachCourseSignUp'=>'application.controllers.app.teach.AddTeachCourseSignUp',
 			//index.php/app/disable_teach_course 逻辑删除课程  DisableTeachCourse
 			'disableTeachCourse'=>'application.controllers.app.teach.DisableTeachCourse',
+			//index.php/app/get_course_info 获取课程详细信息 GetCourseInfo
+			'getCourseInfo'=>'application.controllers.app.teach.GetCourseInfo',
 			/**
 			 * 课程相关 结束
 			 */
@@ -244,6 +246,22 @@ class AppController extends BaseController{
 
 			/**
 			 * 城市 结束
+			 */
+			/**
+			 * 用户订单 开始
+			 */
+
+			//index.php/app/sumbit_user_order 提交订单 SubmitUserOrder
+			'submitUserOrder'=>'application.controllers.app.user.order.SubmitUserOrder',
+			//index.php/app/update_user_order_pay_succ 更新订单为已支付 UpdateUserOrderPaySucc
+			'updateUserOrderPaySucc'=>'application.controllers.app.user.order.UpdateUserOrderPaySucc',
+			//index.php/app/get_user_order_list 获取用户订单列表 GetUserOrderList
+			'getUserOrderList'=>'application.controllers.app.user.order.GetUserOrderList',
+			//index.php/app/get_user_order_detail 获取订单详细 GetUserOrderDetail
+			'getUserOrderDetail'=>'application.controllers.app.user.order.GetUserOrderDetail',
+
+			/**
+			 * 用户订单 结束
 			 */
 
 		);
