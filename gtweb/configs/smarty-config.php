@@ -4,7 +4,7 @@
  * Example Application
  * @package Example-application
  */
-define('__SITE_ROOT', 'D:/xampp2/htdocs/gtweb'); // 最后没有斜线D:/xampp2/htdocs/gtweb,d:/Wnmp/html/goodteacher/gtweb
+define('__SITE_ROOT', 'd:/Wnmp/html/gtroot/gtweb'); // 最后没有斜线D:/xampp2/htdocs/gtweb,d:/Wnmp/html/goodteacher/gtweb
 define('__SITE_PATH', '/gtweb');
 define('__SITE_DOMAIN', 'http://'.$_SERVER['HTTP_HOST']);//'http://www.kaopuu.com'
 define('__UPLOAD_PATH', __SITE_ROOT.'/upload/'); // 上传文件路径
@@ -23,7 +23,7 @@ define('__IS_YES', 'YES');
 define('__IS_NO', 'NO');
 define('__USER_CART', '__USER_CART');
 
-define('__DEFAULT_CITY_ID', '527df9f77318d');
+define('__DEFAULT_CITY_ID', '527dfbd92e343');
 define('__DEFAULT_CATEGORY_ID', '');
 define('__DEFAULT_CATEGORY_NAME', '所有分类');
 
