@@ -57,7 +57,7 @@
 	                	<img src="<{$smarty.const.__SITE_PATH}>/images/teacher.jpg" width="200" height="150">
 	                <{/if}>
 	                </a>
-	                <span class="circle" style="position:absolute; display:inline-block; background:url(<{if $teacher->photo == ''}>images/teacher.jpg<{else}><{$__GTAPI_BASE_URL|cat:$teacher->photo}><{/if}>) no-repeat center center; width: 71px; height: 71px; left: 183px; top: -14px; border:2px solid #fff;"></span>
+	                <span class="circle" style="position:absolute; display:inline-block; background:url(<{if $teacher->photo == ''}>images/teacher.jpg<{else}><{$__GTAPI_BASE_URL|cat:$teacher->photo}><{/if}>) no-repeat center center;background-size:80px 80px; width: 71px; height: 71px; left: 183px; top: -14px; border:2px solid #fff;"></span>
           		</div>
             	<div class="photo_b">
 					<em>
