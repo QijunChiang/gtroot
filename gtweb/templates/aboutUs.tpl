@@ -4,8 +4,8 @@
 <div class="center" style="background:url(images/center_about.gif) center top repeat-y;">
 	<div class="list_center">
     	<div class="about_us_01">
-        	<div class="about_us_01_in">　<font color="#f45e3d" ><img src="images/dot7.gif" width="12" height="12">小尚科技</font>是一家致力于教育领域的移动互联网的科技公司.公司成立于2013年,目前成功开发了一款"好老师"应用软件,是中国领先的移动家教平台该平台录入了各行业优秀的教师资源,解决了用户找家教的难题。目前公司已经获得了天使投资。<br/><br/>
-　　小尚秉承“诚信、服务、创新”的企业价值观：以诚信运营带动行业发展，以优质服务完善消费体验，以创新精神提升企业效能，积极履行企业责任和社会责任，与众多合作伙伴共享商业</div>
+        	<div class="about_us_01_in">　<font color="#f45e3d" ><img src="images/dot7.gif" width="12" height="12">小尚科技</font>是一家致力于教育领域的移动互联网的科技公司.公司成立于2013年,目前成功开发了一款"好老师"应用软件,是中国领先的移动家教平台该平台录入了各行业优秀的教师资源,解决了用户找家教的难题。目前公司已经获得了天使投资。<br/>
+　　小尚秉承“诚信、服务、创新”的企业价值观：以诚信运营带动行业发展，以优质服务完善消费体验，以创新精神提升企业效能，积极履行企业责任和社会责任，与众多合作伙伴共享商业价值。</div>
     	</div>
         <div class="about_us_02">
        	  <div class="about_us_02_in">
