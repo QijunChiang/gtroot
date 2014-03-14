@@ -2679,10 +2679,12 @@ var coursespage={
                     var info=o.location.info;
                     o.address='<p>'+info+'</p>'+'<p>('+x+','+y+')'+'</p>';
                     var unit=o.unit;
-                    if(unit==1){
-                        o.unit="/课"
+                    if(unit==0){
+                        o.unit="/时"
+                    }else if(unit==1){
+                        o.unit="/课";
                     }else{
-                        o.unit="/时";
+                        o.unit="/总价";
                     }
                     var cates=o.teachTime;
                     var tl="";

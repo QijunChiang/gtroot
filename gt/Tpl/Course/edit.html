@@ -133,15 +133,16 @@
                                     <select name="fm-unit">
                                         <if condition="$course['data']['unit'] eq 0">
                                             <option value="0" selected="selected">小时</option>
-                                             <option value="1">课</option>
-											 <option value="2">总价</option>
-											<elseif condition="$course['data']['unit'] eq 1" />
-											<option value="0">小时</option>
-                                             <option value="1" selected="selected">课</option>
-											 <option value="2">总价</option>
-                                            <else /><option value="0">小时</option>
-                                             <option value="1">课</option>
-											 <option value="2" selected="selected">总价</option>
+                                            <option value="1">课</option>
+                                            <option value="2">总价</option>
+                                        <elseif condition="$course['data']['unit'] eq 1"/>
+                                            <option value="0">小时</option>
+                                            <option value="1" selected="selected">课</option>
+                                            <option value="2">总价</option>
+                                        <else />
+                                            <option value="0">小时</option>
+                                            <option value="1">课</option>
+                                            <option value="2" selected="selected">总价</option>
                                         </if>
                                     </select>
                             </td>
