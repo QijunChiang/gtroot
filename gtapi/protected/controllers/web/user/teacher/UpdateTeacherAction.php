@@ -122,10 +122,19 @@ class UpdateTeacherAction extends SessionFilterAction {
 		}
 		//修改账号信息
 		User::model()->updateAccount($userId, $phone, $password, null,$order);
-		//修改共有信息
-		$profile = Profile::model()->updateProfile($userId, $photo, $name, $name, $sex, $birthday, $college);
-		//修改老师资料
-		Teach::model()->updateTeach($userId,$skill,$price,$usuallyLocationX,$usuallyLocationY,$usuallyLocationInfo);
+
+        /**
+         * 修复修改排序导致其他数据（学校）更改的问题
+         */
+        if(Tools::isEmpty($order) || $order == '-1'){
+            //修改共有信息
+            $profile = Profile::model()->updateProfile($userId, $photo, $name, $name, $sex, $birthday, $college);
+        }
+        /**
+         * 结束修改
+         */
+        //修改老师资料
+        Teach::model()->updateTeach($userId,$skill,$price,$usuallyLocationX,$usuallyLocationY,$usuallyLocationInfo);
 		if(!empty($categoryIds)){
 			//修改老师的专长。
 			TeachCategory::model()->addTeachCategory($userId,$categoryIds);
