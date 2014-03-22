@@ -47,43 +47,37 @@ public class WeiXinService {
 		pc1.setCategoryIndex("22");
 		pc1.setChooseIndex("1");
 		pc1.setCategoryName("钢琴");
-		pc1
-				.setCategoryPicUrl("http://223.202.120.149/goodTeacherWX/image/gangqin.jpg");
+		pc1.setCategoryPicUrl(Util.WX_URL + "/image/gangqin.jpg");
 
 		PopularCategory pc2 = new PopularCategory();
 		pc2.setCategoryIndex("23");
 		pc2.setChooseIndex("2");
 		pc2.setCategoryName("弦乐");
-		pc2
-				.setCategoryPicUrl("http://223.202.120.149/goodTeacherWX/image/shuxue.jpg");
+		pc2.setCategoryPicUrl(Util.WX_URL + "/image/shuxue.jpg");
 
 		PopularCategory pc3 = new PopularCategory();
 		pc3.setCategoryIndex("25");
 		pc3.setChooseIndex("3");
 		pc3.setCategoryName("管乐");
-		pc3
-				.setCategoryPicUrl("http://223.202.120.149/goodTeacherWX/image/shuxue.jpg");
+		pc3.setCategoryPicUrl(Util.WX_URL + "/image/shuxue.jpg");
 
 		PopularCategory pc4 = new PopularCategory();
 		pc4.setCategoryIndex("61");
 		pc4.setChooseIndex("4");
 		pc4.setCategoryName("器械健身");
-		pc4
-				.setCategoryPicUrl("http://223.202.120.149/goodTeacherWX/image/jianshen.jpg");
+		pc4.setCategoryPicUrl(Util.WX_URL + "/image/jianshen.jpg");
 
 		PopularCategory pc5 = new PopularCategory();
 		pc5.setCategoryIndex("67");
 		pc5.setChooseIndex("5");
 		pc5.setCategoryName("瑜伽");
-		pc5
-				.setCategoryPicUrl("http://223.202.120.149/goodTeacherWX/image/jianshen.jpg");
+		pc5.setCategoryPicUrl(Util.WX_URL + "/image/jianshen.jpg");
 
 		PopularCategory pc6 = new PopularCategory();
 		pc6.setCategoryIndex("53");
 		pc6.setChooseIndex("6");
 		pc6.setCategoryName("厨师");
-		pc6
-				.setCategoryPicUrl("http://223.202.120.149/goodTeacherWX/image/chushi.jpg");
+		pc6.setCategoryPicUrl(Util.WX_URL + "/image/chushi.jpg");
 
 		hotMap.put(pc1.getChooseIndex(), pc1);
 		hotMap.put(pc2.getChooseIndex(), pc2);
@@ -205,7 +199,7 @@ public class WeiXinService {
 			url = hotPicMap.get(holder.getCourseId());
 			if (StringUtils.isEmpty(url))
 				url = "shuxue.jpg";
-			url = "http://223.202.120.149/goodTeacherWX/image/" + url;
+			url = Util.WX_URL + "/image/" + url;
 		} else {
 			Iterator<String> it = hotMap.keySet().iterator();
 			while (it.hasNext()) {
@@ -221,7 +215,7 @@ public class WeiXinService {
 		if (url != null) {
 			picUrlElement.setText(url);
 		}
-
+		String nurl;
 		for (int i = 0; i < teacherList.size(); i++) {
 			teacherMap = teacherList.get(i);
 			itemElement = articlesElement.addElement("item");
@@ -245,11 +239,9 @@ public class WeiXinService {
 					+ teacherMap.get("photo"));
 
 			picUrlElement = itemElement.addElement("Url");
-			picUrlElement
-					.addCDATA("http://223.202.120.149/goodTeacherWX/teacherInfo?openId="
-							+ msg.getFromUserName()
-							+ "&userId="
-							+ teacherMap.get("userId"));
+			nurl = Util.WX_URL + "/teacherInfo?openId=" + msg.getFromUserName()
+					+ "&userId=" + teacherMap.get("userId");
+			picUrlElement.addCDATA(nurl);
 		}
 		return xmlElement.getDocument().asXML();
 	}
@@ -260,8 +252,8 @@ public class WeiXinService {
 		while (it.hasNext()) {
 			String key = it.next();
 			PopularCategory pc = hotMap.get(key);
-			reply.append(pc.getChooseIndex()).append(":").append(
-					pc.getCategoryName()).append("\n");
+			reply.append(pc.getChooseIndex()).append(":")
+					.append(pc.getCategoryName()).append("\n");
 		}
 		return reply.toString();
 	}
@@ -283,8 +275,8 @@ public class WeiXinService {
 		while (it.hasNext()) {
 			String key = it.next();
 			PopularCategory pc = hotMap.get(key);
-			reply.append(pc.getChooseIndex()).append(":").append(
-					pc.getCategoryName()).append("\n");
+			reply.append(pc.getChooseIndex()).append(":")
+					.append(pc.getCategoryName()).append("\n");
 		}
 		return this.createResponseMsg(msg, reply.toString());
 	}
@@ -301,8 +293,8 @@ public class WeiXinService {
 			int secondIndex = Integer.parseInt(value.getCategoryIndex()
 					.substring(1, 2));
 			// if(categoryList.size()<topIndex) 分类有问题
-			String id = categoryList.get(topIndex - 1).getChildList().get(
-					secondIndex - 1).getId();
+			String id = categoryList.get(topIndex - 1).getChildList()
+					.get(secondIndex - 1).getId();
 			UserUtil.putOpenId(fromUserName, id, ek);
 		}
 		return true;
@@ -356,8 +348,8 @@ public class WeiXinService {
 					if (!UserUtil.hasUserHolder(locationMsg.getFromUserName()))
 						xmlText = this.createNormalReply(locationMsg);
 					UserUtil.putLocation(locationMsg.getFromUserName(),
-							locationMsg.getLatitude(), locationMsg
-									.getLongitude());
+							locationMsg.getLatitude(),
+							locationMsg.getLongitude());
 					// return xmlText;
 				} else if ("unsubscribe".equalsIgnoreCase(evt)) {
 					if (log.isDebugEnabled())
@@ -386,8 +378,8 @@ public class WeiXinService {
 				LocationMessage locationMessage = message
 						.getMessageData(userMessage);
 				UserUtil.putLocation(locationMessage.getFromUserName(),
-						locationMessage.getLocation_X(), locationMessage
-								.getLocation_Y());
+						locationMessage.getLocation_X(),
+						locationMessage.getLocation_Y());
 				return this.getCourseList(locationMessage);
 			}
 			// 从新开始计算用户信息失效时间，默认10分钟

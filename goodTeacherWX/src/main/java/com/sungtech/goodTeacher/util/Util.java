@@ -15,6 +15,7 @@ import java.util.regex.Pattern;
 import org.apache.commons.lang3.StringUtils;
 
 public class Util {
+	public static final String WX_URL ="http://218.244.145.126/goodTeacherWX";
 	public static final Map<String, Map<String, Object>> resultMap = new ConcurrentHashMap<String, Map<String, Object>>();
 
 	public static String encrypt(String strSrc) {

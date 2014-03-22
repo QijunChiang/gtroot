@@ -56,12 +56,12 @@ public class CourseSignupAction extends ActionSupport implements
 		// new Object[] { teacherId, courseId, userName, phoneNo,
 		// wxOpenId });
 		// resp
-		// .sendRedirect("http://223.202.120.149/goodTeacherWX/teacherInfo?openId="
+		// .sendRedirect(Util.WX_URL+"/teacherInfo?openId="
 		// + wxOpenId + "&userId=" + teacherId);
 		// resp.getOutputStream().close();
 		this.msg = "参加报名成功";
-		this.request.set(null);
-		this.response.set(null);
+		request.set(null);
+		response.set(null);
 		return SUCCESS;
 	}
 

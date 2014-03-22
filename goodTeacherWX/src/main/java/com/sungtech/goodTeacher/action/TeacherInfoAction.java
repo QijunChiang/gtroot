@@ -154,8 +154,8 @@ public class TeacherInfoAction extends ActionSupport {
 					.get("userList");
 			for (int i = 0; i < teacherList.size(); i++) {
 				temp = teacherList.get(i);
-				if (StringUtils.equals(temp.get("userId").toString(), userId
-						.trim()))
+				if (StringUtils.equals(temp.get("userId").toString(),
+						userId.trim()))
 					teacherMap = temp;
 			}
 		}
@@ -194,7 +194,7 @@ public class TeacherInfoAction extends ActionSupport {
 	void setTeacherInfo(Map<String, Object> teacherMap) {
 		String tmp = (String) teacherMap.get("introduction_image");
 		if (StringUtils.isBlank(tmp))
-			photo = "http://223.202.120.149/goodTeacherWX/image/default_pic.png";
+			photo = Util.WX_URL + "/image/default_pic.png";
 		else
 			photo = "http://www.kaopuu.com/gtapi/" + tmp;
 		video = (String) teacherMap.get("introduction_video");
@@ -205,7 +205,7 @@ public class TeacherInfoAction extends ActionSupport {
 				.get("info");
 		tmp = (String) teacherMap.get("photo");
 		if (StringUtils.isBlank(tmp))
-			teacherLogo = "http://223.202.120.149/goodTeacherWX/image/default_logo.png";
+			teacherLogo = Util.WX_URL + "/image/default_logo.png";
 		else
 			teacherLogo = "http://www.kaopuu.com/gtapi/" + tmp;
 	}
@@ -222,7 +222,7 @@ public class TeacherInfoAction extends ActionSupport {
 		this.name = (String) infoMap.get("name");
 		String tmp = (String) infoMap.get("photo");
 		if (StringUtils.isBlank(tmp))
-			this.teacherLogo = "http://223.202.120.149/goodTeacherWX/image/default_logo.png";
+			this.teacherLogo = Util.WX_URL + "/image/default_logo.png";
 		else
 			this.teacherLogo = "http://www.kaopuu.com/gtapi/" + tmp;
 
@@ -237,7 +237,7 @@ public class TeacherInfoAction extends ActionSupport {
 		if (StringUtils.isBlank(tmp))
 			tmp = this.getImage(introMap);
 		if (StringUtils.isBlank(tmp))
-			this.photo = "http://223.202.120.149/goodTeacherWX/image/default_pic.png";
+			this.photo = Util.WX_URL + "/image/default_pic.png";
 		else
 			this.photo = "http://www.kaopuu.com/gtapi/" + tmp;
 		this.video = (String) videoMap.get("url");
@@ -246,8 +246,8 @@ public class TeacherInfoAction extends ActionSupport {
 		double yd = Double.parseDouble(y);
 		UserHolder uh = UserUtil.getUserHolder(this.openId);
 		if (uh != null) {
-			this.distance = Util.getInstance(Util.getDistance(yd, xd, uh
-					.getLocationY(), uh.getLocationX()));
+			this.distance = Util.getInstance(Util.getDistance(yd, xd,
+					uh.getLocationY(), uh.getLocationX()));
 		}
 		this.address = locationMap.get("info");
 		this.college = (String) infoMap.get("college");
