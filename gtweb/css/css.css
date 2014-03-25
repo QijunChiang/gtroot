@@ -60,14 +60,16 @@
 /*分类*/
 .nav{width:100%; height:40px; background:#f8f8f8; position:relative; z-index:10;box-shadow:0px 3px 3px 0px #e7e3e3;}
 .nav_in{width:1002px; height:40px; margin:0 auto;}
-.nav_list{width:149px;  background:url(../images/nav_list2.gif) left top no-repeat #13ad86;  float:left; position:relative; float:left;cursor:pointer}
+.nav_list{width:149px; float:left; position:relative; cursor:pointer}
+/*
+.nav_list ul li{height:40px; float:left; line-height:40px;  color:#888888; background:left center no-repeat; margin-left:76px;}
 .nav_list_in{width:100px; height:40px; color:#fff; line-height:40px; padding-left:49px; background:url(../images/list_ys.png); position:relative;}
 .nav_list_in a:link {color: #fff;text-decoration: none; width:100px; height:40px; display:block}
 .nav_list_in a:visited {color: #fff;text-decoration: none; width:100px; height:40px; display:block}
 .nav_list_in a:hover {color: #fff;text-decoration: none; width:100px; height:40px; display:block}
 .nav_list_in a:active {color: #fff;text-decoration: none; width:100px; height:40px; display:block}
-
-/*下拉*/
+*/
+/*下拉
 .nav_list_b{width:149px; position:absolute; top:40px; left:0; z-index:9999999;}
 .nav_list_b ul{ display:none; z-index:9999999;}
 .nav_list_b ul li{width:149px; height:49px; line-height:49px; background:#fff; position:relative;  float:left;}
@@ -84,17 +86,25 @@
 .nav_list_b ul li ul li a:visited {color: #333333;text-decoration: none; width:149px; height:49px; display:block; padding:0;z-index:9999999;}
 .nav_list_b ul li ul li a:hover {color: #333333;text-decoration: none; width:149px; height:49px; display:block; background:#e0e0e0; padding:0;z-index:9999999;}
 .nav_list_b ul li ul li a:active {color: #333333;text-decoration: none; width:149px; height:49px; display:block; padding:0;z-index:9999999;}
-
+*/
 /*首页，关于我们*/
 .nav_r{width:653px; height:40px; float:left;}
 .nav_r ul li{height:40px; float:left; line-height:40px;  color:#888888; background:left center no-repeat; margin-left:76px;}
-.nav_r ul li a:link {color: #888888;text-decoration: none;padding-left:23px; background:url(../images/list_all.png); }
-.nav_r ul li a:visited {color: #888888;text-decoration: none;padding-left:23px; background:url(../images/list_all.png); }
-.nav_r ul li a:hover {color: #006e52;text-decoration: none;padding-left:23px; background:url(../images/list_all.png); }
-.nav_r ul li a:active {color: #006e52;text-decoration: none;padding-left:23px; background:url(../images/list_all.png); }
+.nav_r ul li a:link {color: #888888;text-decoration: none;padding-left:23px; }
+.nav_r ul li a:visited {color: #888888;text-decoration: none;padding-left:23px;}
+.nav_r ul li a:hover {color: #006e52;text-decoration: none;padding-left:23px;}
+.nav_r ul li a:active {color: #006e52;text-decoration: none;padding-left:23px;}
+
+.nav_r ul li ul{position:absolute; width:149px; top:40px; left:149px; display:none;z-index:9999999;}
+.nav_r ul li ul li{width:149px; height:40px; background:#f5f5f5; text-align:center;z-index:9999999;}
+.nav_r ul li ul li a{z-index:9999999;}
+.nav_r ul li ul li a:link {color: #333333;text-decoration: none; width:149px; height:49px; display:block; padding:0;z-index:9999999;}
+.nav_r ul li ul li a:visited {color: #333333;text-decoration: none; width:149px; height:49px; display:block; padding:0;z-index:9999999;}
+.nav_r ul li ul li a:hover {color: #333333;text-decoration: none; width:149px; height:49px; display:block; background:#e0e0e0; padding:0;z-index:9999999;}
+.nav_r ul li ul li a:active {color: #333333;text-decoration: none; width:149px; height:49px; display:block; padding:0;z-index:9999999;}
 
 /*登录注册*/
-.lr{height:40px; width:160px; line-height:40px;text-align:right; float:right; margin-right:7px; color:#006349; margin:0;}
+.lr{height:40px; width:300px; line-height:40px;text-align:right; float:right; margin-right:7px; color:#006349; margin:0;}
 .lr span{margin:0 20px;color:#7dada1;}
 .lr a:link {color: #006349;text-decoration: none; background:none; padding:0;}
 .lr a:visited {color: #006349;text-decoration: none; background:none; padding:0;}

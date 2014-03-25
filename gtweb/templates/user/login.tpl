@@ -19,6 +19,7 @@
 			<ul id="body_content" class="body_content">
 				<li class="body member">
 					<div class="input_ui">
+						<input name="returnUrl" type="hidden" value="<{$returnUrl}>"/>
 						<input class="username text" name="loginMobile" type="text" tabindex="1" placeholder="手机号"/>
 					</div>
 					<div class="input_ui">

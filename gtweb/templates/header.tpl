@@ -20,53 +20,23 @@
 <script type="text/javascript" src="<{$smarty.const.__SITE_PATH}>/js/jquery-ui-1.10.4.custom.min.js"></script>
 <script type="text/javascript">
 $(function(){
-    $(".nav_list_b ul li").mouseover(function(){
-    	//$(this).css("background", "#f5f5f5"),function(){$(this).children().css("display", "none")}
-    });
-	$(".nav_list_b ul li").mouseover(function(){
-		$(this).children(".nav_list_b ul li ul").css("display", "block")
-	});
-	$(".nav_list_b ul li").mouseout(function(){
-		$(this).css("background", "#fff")
-	});
-	$(".nav_list_b ul li").mouseout(function(){
-		$(this).children(".nav_list_b ul li ul").css("display", "none");
-	});
-	
-	$("#study li ul li").mouseover(function(){
-		$(this).css("background", "#e0e0e0");
-	});
-	$("#study li ul li").mouseout(function(){
-		$(this).css("background", "#f5f5f5");
-	});
-	
-	$(".nav_list_in").toggle(function(){
-		$(this).parent().css("backgroundImage", "url(images/nav_list.gif)");
-		$("#study").fadeIn(200);
-		$(".city_in").fadeOut(200);
-	},function(){
-		$(this).parent().css("backgroundImage", "url(images/nav_list2.gif)");
-		$("#study").fadeOut(200);
-	});
-	$(".nav_list_in").bind('mouseover',function(){
-		$(this).parent().css("backgroundImage", "url(images/nav_list.gif)");
-		$("#study").fadeIn(200);
-		$(".city_in").fadeOut(200);
-	});
-	
 	$("#city").toggle(function(){
 		$(this).css("backgroundImage", "url(images/dot2.gif)");
 		$(".city_in").fadeIn(200);
-		$("#study").fadeOut(200);
+		$(".nav_cate_sec").fadeOut(200);
 	},function(){
 		$(this).css("backgroundImage", "url(images/dot1.gif)");
 		$(".city_in").fadeOut(200);
 	});
-		
+	$(".nav_r .nav_cate").bind("mouseover",function(){
+		$(".nav_cate_sec").fadeOut(200);
+		var sec = $(this).next();
+		sec.css("left",$(this).offset().left - 50)
+		sec.fadeIn(200);
+	});	
 	$('body').click(function(){
-		$(".nav_list").css("backgroundImage", "url(images/nav_list2.gif)");
+		$(".nav_cate_sec").fadeOut(200);
 		$("#city").css("backgroundImage", "url(images/dot1.gif)");
-		$("#study").fadeOut(200);
 		$(".city_in").fadeOut(200);
 		$("#shareList").fadeOut(200);	
 		$(".user_info_b").fadeOut(200);			
@@ -101,68 +71,6 @@ $(function(){
 	$('#loginToReg').click(function(){
 		showReg(this);
 	})
-	//搜索下拉框
-    $("#search_input").bind("keydown", keyDown).autocomplete($.extend(options, {
-        minLength: 1,
-        source: function(request, response) {
-            // delegate back to autocomplete, but extract the last term
-            response($.ui.autocomplete.filter(
-			    availableTags, extractLast(request.term)));
-        }
-    }));
-	
-	/* multi value autocomplete */
-    // 按逗号分隔多个值
-    function split(val) {
-        return val.split(/,\s*/);
-    }
-    // 提取输入的最后一个值
-    function extractLast(term) {
-        return split(term).pop();
-    }			
-    // 按Tab键时，取消为输入框设置value
-    function keyDown(event) {
-        if (event.keyCode === $.ui.keyCode.TAB &&
-				$(this).data("autocomplete").menu.active) {
-            event.preventDefault();
-        }
-    }
-    var options = {
-        // 获得焦点
-        focus: function() {
-            // prevent value inserted on focus
-            return false;
-        },
-        // 从autocomplete弹出菜单选择一个值时，加到输入框最后，并以逗号分隔
-        select: function(event, ui) {
-            var terms = split(this.value);
-            // remove the current input
-            terms.pop();
-            // add the selected item
-            terms.push(ui.item.value);
-            // add placeholder to get the comma-and-space at the end
-            terms.push("");
-            this.value = terms.join(", ");
-            return false;
-        }
-    };			
-    // 本地字符串数组
-    var availableTags = [
-	    "C#",
-	    "C++",
-	    "Java",
-	    "JavaScript",
-	    "ASP",
-        "ASP.NET",
-	    "JSP",
-	    "PHP",
-	    "Python",
-	    "Ruby",
-		"语文",
-		"数学",
-		"英语",
-		"物理"
-    ];	
     $('#search_submit').bind('click', function(){
     	var searchStr = $('#search_input').val();
     	if(searchStr != null && searchStr != ''){
@@ -230,34 +138,24 @@ $(function(){
 <!--导航-->
 <div class="nav" style="box-shadow:none;">
   <div class="nav_in">
-    <div class="nav_list">
-      <div class="nav_list_in"><a href="#"><{$smarty.session.__CURR_CATEGORY_NAME}></a></div>
-      <div class="nav_list_b">
-        <ul id="study">
-        	<li><a style="background:url(images/list_all.png)" href="<{$smarty.const.__SITE_PATH}>/teachers.php?categoryId=all">所有分类</a></li>
-		  	<{foreach from=$categorys item=category}>
-		  	<li>
-		  		<!--background:url(<{$__GTAPI_BASE_URL|cat:$category->icon}>)-->
-		  		<a style="" href="<{$smarty.const.__SITE_PATH}>/teachers.php?categoryId=<{$category->id}>&categoryName=<{$category->name}>"><{$category->name}></a>
-		  		<ul>
-		  			<{foreach from=$category->childList item=secCategory}>
-		  			<li><a href="<{$smarty.const.__SITE_PATH}>/teachers.php?categoryId=<{$secCategory->id}>&categoryName=<{$secCategory->name}>"><{$secCategory->name}></a></li>
-		  			<{/foreach}>
-		  	 	</ul>
-		  	</li>
-		  	<{/foreach}>
-        </ul>
-      </div>
-    </div>
     <div class="nav_r">
       <ul>
-        <li> <a  style="background:url(images/nav_home.png) left center no-repeat;" onMouseOver="this.style.background='url(images/nav_home2.png) left center no-repeat'"  onMouseOut="this.style.background='url(images/nav_home.png) left center no-repeat'" href="<{$smarty.const.__SITE_PATH}>/">首页</a> </li>
-        <li> <a  style="background:url(images/nav_about.png) left center no-repeat;" onMouseOver="this.style.background='url(images/nav_about2.png) left center no-repeat'"  onMouseOut="this.style.background='url(images/nav_about.png) left center no-repeat'" href="<{$smarty.const.__SITE_PATH}>/aboutUs.php">关于我们</a> </li>
-        
+		<{foreach from=$categorys item=category}>
+	  	<li>
+	  		<a class="nav_cate" href="<{$smarty.const.__SITE_PATH}>/teachers.php?categoryId=<{$category->id}>&categoryName=<{$category->name}>">&nbsp;<{$category->name}></a>
+	  		<ul class="nav_cate_sec">
+	  			<{foreach from=$category->childList item=secCategory}>
+	  			<li><a href="<{$smarty.const.__SITE_PATH}>/teachers.php?categoryId=<{$secCategory->id}>&categoryName=<{$secCategory->name}>"><{$secCategory->name}></a></li>
+	  			<{/foreach}>
+	  	 	</ul>
+	  	</li>
+		<{/foreach}>
       </ul>
     </div>
     <{if $smarty.session.__IS_SIGN_IN_ANONYMOUS == 'YES'}>
     <div class="lr"> 
+    	<a href="<{$smarty.const.__SITE_PATH}>/">首页</a><span>|</span>
+		<a href="<{$smarty.const.__SITE_PATH}>/aboutUs.php">关于我们</a><span>|</span>   	
     	<a id="login_btn" href="javascript:void(0);">登录</a><span>|</span>
     	<a id="reg_btn" href="javascript:void(0);">注册</a> 
     </div>

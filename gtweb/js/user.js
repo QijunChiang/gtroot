@@ -95,17 +95,22 @@ $.fn.user = {
     login : function() {
         var loginMobile = $("input[name='loginMobile']").val();
         var loginPwd = $("input[name='loginPwd']").val();
+        var returnUrl = $("input[name='returnUrl']").val();
         if(! $.fn.user.checkLogin(loginMobile,loginPwd)){
             return false;
         }
         $.ajax({
             url : $.fn.user.options.rootPath+"/user/login.php",
             type : 'POST',
-            data : 'loginMobile='+loginMobile+'&loginPwd='+loginPwd+'&t='+(new Date()).getTime(),
+            data : 'loginMobile='+loginMobile+'&loginPwd='+loginPwd+'&returnUrl='+returnUrl+'&t='+(new Date()).getTime(),
             dataType : 'json',
             success : function(result){
                 if(result.error_code==200){
-                	top.window.location = $.fn.user.options.loginedRedirectUrl;
+                	if(result.returnUrl){
+                		top.window.location = result.returnUrl;
+                	}else{
+                		top.window.location = $.fn.user.options.loginedRedirectUrl;
+                	}
                 }else{
                     alert(result.error);
                 }

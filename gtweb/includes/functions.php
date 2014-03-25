@@ -4,7 +4,10 @@
  */
 function userLoginCheckFilter(){
 	if(!isUserLogined()){
-		msgAlert('登录超时或未登录,请先登录', __SITE_DOMAIN.__SITE_PATH.'/user/login.php');
+		$referer = $_SERVER['HTTP_REFERER'];
+		$script = '<script>top.window.location="'.__SITE_DOMAIN.__SITE_PATH.'/user/login.php?returnUrl='.$referer.'";</script>';
+		echo $script;
+		//msgAlert('登录超时或未登录,请先登录', __SITE_DOMAIN.__SITE_PATH.'/user/login.php');
 	}	
 }
 function isUserLogined(){
