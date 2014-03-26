@@ -31,7 +31,7 @@ $(function(){
 	$(".nav_r .nav_cate").bind("mouseover",function(){
 		$(".nav_cate_sec").fadeOut(200);
 		var sec = $(this).next();
-		sec.css("left",$(this).offset().left - 50)
+		sec.css("left",$(this).offset().left - 95)
 		sec.fadeIn(200);
 	});	
 	$('body').click(function(){
@@ -44,7 +44,7 @@ $(function(){
 	//登录
 	$('#login_btn').click(function(){
 		if($('.login_pannel_frame').attr('src') == ''){
-			$('.login_pannel_frame').attr('src','user/login.php');	
+			$('.login_pannel_frame').attr('src','user/login.php?returnUrl='+window.location);	
 		}
 		$(this).showAlert({
 			alertWidth:578,

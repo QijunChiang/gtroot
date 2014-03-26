@@ -1,28 +1,6 @@
 ﻿<{include file="header.tpl"}>
 <script src="<{$smarty.const.__SITE_PATH}>/js/video-js/video.js" type="text/javascript"></script>
 <link href="<{$smarty.const.__SITE_PATH}>/js/video-js/video-js.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript">
-	function show_article(e){
-		var t=$(e)
-		t.parent().siblings('.article').slideToggle(200,function(){
-			if(t.text()=="展开"){
-			t.text('收起');}else{
-			t.text('展开');}
-		});
-		t.toggleClass('show_ctrl');
-	}
-	$(function(){
-		$('.article:eq(0)').css('display','block');
-		$('.ctrl:eq(0)').removeClass('show_ctrl').text('收起');
-		$(".share_list_in").toggle(function(){
-			$(this).parent().css("backgroundImage", "url(images/share_list2.gif)");
-			$("#shareList").fadeIn(200);
-		},function(){
-			$(this).parent().css("backgroundImage", "url(images/share_list.gif)");
-			$("#shareList").fadeOut(200);
-		});
-	});
-</script>
 <!-- InstanceBeginEditable name="EditRegion3" -->
 <div class="content">
   <div class="title">
@@ -265,11 +243,46 @@
 <{include file="footer.tpl"}>
 <script type="text/javascript" src="<{$smarty.const.__SITE_PATH}>/js/usercart.js"></script>
 <script type="text/javascript">
+	function show_article(e){
+		var t=$(e)
+		t.parent().siblings('.article').slideToggle(200,function(){
+			if(t.text()=="展开"){
+			t.text('收起');}else{
+			t.text('展开');}
+		});
+		t.toggleClass('show_ctrl');
+	}
+
  $(function(){
     $.fn.usercart.options.rootPath='<{$smarty.const.__SITE_PATH}>';
     videojs.options.flash.swf = "<{$smarty.const.__SITE_PATH}>/js/video-js/video-js.swf";
+    
+	$('.article:eq(0)').css('display','block');
+	$('.ctrl:eq(0)').removeClass('show_ctrl').text('收起');
+	$(".share_list_in").toggle(function(){
+		$(this).parent().css("backgroundImage", "url(images/share_list2.gif)");
+		$("#shareList").fadeIn(200);
+	},function(){
+		$(this).parent().css("backgroundImage", "url(images/share_list.gif)");
+		$("#shareList").fadeOut(200);
+	});
  });
  function addToCart(courseId,num){
- 	$.fn.usercart.addToCart(courseId,num);
+ 	//登录检查
+ 	$.ajax({
+        url : "<{$smarty.const.__SITE_PATH}>/user/login.php?action=isLoginedCheck",
+        type : 'GET',
+        //data : '',
+        //dataType : 'json',
+        async : false,
+        success : function(result){
+            if(result && result == 0){
+            	$.fn.usercart.addToCart(courseId,num);
+            }else{
+            	$('#login_btn').click();//打开登录窗口
+            }
+        },error:function(result){                
+        }
+    });
  }
 </script>

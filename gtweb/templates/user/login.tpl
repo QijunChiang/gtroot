@@ -24,7 +24,7 @@
 					</div>
 					<div class="input_ui">
 						<input class="password text" type="password" name="loginPwd" tabindex="2" placeholder="密码"/>
-						<p><a href="#" target="_target">忘记密码？</a></p>
+						<p><a href="<{$smarty.const.__SITE_PATH}>/user/resetpassword.php" target="_target">忘记密码？</a></p>
 					</div>
 					<!-- <div class="input_ui min_input_ui checkCont">
 						<input type="checkbox" class="check" checked="checked" name="" tabindex="3" />两周内免登录

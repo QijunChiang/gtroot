@@ -125,11 +125,11 @@ $.fn.user = {
         if ($.fn.user.isMobileNum(loginMobile)) {
             ret = true;
         } else {
-            msg = '请输入合法手机号';
+            msg = '非法手机号';
             ret = false;
         }
         if(loginPwd == null || $.trim(loginPwd) == ''){
-            msg += (msg ? "" : ",") + '密码不能为空';
+            msg += (!msg ? "" : ",") + '密码为空';
             ret = false;
         }
         if(!ret){
@@ -187,5 +187,65 @@ $.fn.user = {
         var myReg = /^[-_A-Za-z0-9]+@([_A-Za-z0-9]+\.)+[A-Za-z0-9]{2,3}$/; 
         if (myReg.test(str)) return true; 
         return false; 
-    } 
+    }, 
+    get_reset_phone_code : function() {
+        var loginMobile = $("input[name='loginMobile']").val();
+        if(! $.fn.user.isMobileNum(loginMobile)){
+        	alert('请输入合法手机号');
+            return false;
+        }
+        $.ajax({
+            url : $.fn.user.options.rootPath+"/user/resetPassword.php",
+            type : 'GET',
+            data : 'action=get_reset_phone_code&loginMobile='+loginMobile+'&t='+(new Date()).getTime(),
+            dataType : 'json',
+            success : function(result){
+            	if(result.result){
+            		overSecond = result.data.overSecond;
+            		iIntervalID = window.setInterval($.fn.user.showPhoneCodeWaitSecond, 1000)
+            		alert("验证码已发送到手机,请尽快使用");
+            	}else{
+            		alert(result.data.error);
+            	}
+            },
+            error:function(result){                
+            }
+        });
+    },
+    showPhoneCodeWaitSecond : function(){//验证码有效期
+    	if(overSecond<0){
+    		$("#sendphonecode").text("发送验证码");
+    		window.clearInterval(iIntervalID);
+    	}else{
+    		$("#sendphonecode").text("等待时间："+overSecond);
+    	}
+    	--overSecond;
+    }, 
+    reset_password : function() {
+        var loginMobile = $("input[name='loginMobile']").val();
+        var loginPwd = $("input[name='loginPwd']").val();
+        var phoneCode = $("input[name='phoneCode']").val();
+        if(!phoneCode || phoneCode == '手机验证码'){
+        	alert("请输入验证码");return false;
+        }
+        if(! $.fn.user.checkLogin(loginMobile,loginPwd)){
+            return false;
+        }
+        $.ajax({
+            url : $.fn.user.options.rootPath+"/user/resetPassword.php",
+            type : 'POST',
+            data : 'action=reset_password&loginMobile='+loginMobile+'&loginPwd='+loginPwd+'&phoneCode='+phoneCode+'&t='+(new Date()).getTime(),
+            dataType : 'json',
+            success : function(result){
+            	if(result.result){
+            		alert("重置密码成功,请重新登录");
+            		window.location = $.fn.user.options.rootPath+'/user/login.php';
+            	}else{
+            		alert(result.data.error);
+            	}
+            },
+            error:function(result){                
+            }
+        });
+    }
 };

@@ -10,6 +10,9 @@ function userLoginCheckFilter(){
 		//msgAlert('登录超时或未登录,请先登录', __SITE_DOMAIN.__SITE_PATH.'/user/login.php');
 	}	
 }
+/**
+ * 是否已经登录，true已登录，false未登录
+ */
 function isUserLogined(){
 	$currUser = $_SESSION[__CURR_USER_INFO];
 	$is_sign_in_anonymous = $_SESSION[__IS_SIGN_IN_ANONYMOUS];

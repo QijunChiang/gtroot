@@ -1,5 +1,29 @@
 <?php
 /**
+ * 重置密码时生成的验证码并返回
+ * {
+   "result": true,
+   "data": {
+       "code": "513527",//手机验证码
+       "createTime":"2013-07-03 21:53:00",//code 创建的时间
+       "overSecond":15//过期时间，秒数
+   }
+}
+ */
+function get_reset_phone_code($phone) {
+	$data='phone='.$phone;
+	$ret = curl_request(__GTAPI_BASE_URL.'app/get_reset_phone_code', $data,'GET');
+	return json_decode($ret);
+}
+/**
+ * 重置密码
+ */
+function reset_password($phone,$phoneCode,$password) {
+	$data='deviceId='.$phone.'&phone='.$phone.'&phoneCode='.$phoneCode.'&password='.$password;
+	$ret = curl_request(__GTAPI_BASE_URL.'app/reset_password', $data,'POST');
+	return json_decode($ret);
+}
+/**
  * 获取订单详细
  */
 function get_user_order_detail($sessionKey,$orderId) {
