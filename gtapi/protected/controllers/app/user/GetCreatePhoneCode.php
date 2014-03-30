@@ -61,7 +61,8 @@ class GetCreatePhoneCode extends BaseAction {
 
 		require_once("SMS/Zy28.php");
 		$zy28 = new Zy28();
-		$content = "欢迎注册好老师平台,验证码：{$phoneCode->code}";
+		//‘平台’为短信系统敏感词
+		$content = "欢迎注册好老师系统,验证码：{$phoneCode->code}";
 		$r = $zy28->batchSend(new SMS($content,$phone,""));
 		if(!$r){
 			throw new CHttpException(1041,Contents::getErrorByCode(1041));

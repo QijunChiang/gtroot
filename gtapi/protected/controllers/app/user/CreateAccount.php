@@ -89,10 +89,10 @@ class CreateAccount extends BaseAction {
 		$sex = $this->getRequest("sex");
 		$birthday = $this->getRequest("birthday");
 		$college = $this->getRequest("college");
+		$phoneCode = $this->getRequest("phoneCode",true);
 
 		//获取老师资料填写信息
 		if($roleId == Contents::ROLE_TEACHER){
-			//$phoneCode = $this->getRequest("phoneCode",true);
 			$skill = $this->getRequest("skill");
 			$price = $this->getRequest("price");
 			$usuallyLocationX = $this->getRequest("usuallyLocationX",true);
@@ -115,13 +115,14 @@ class CreateAccount extends BaseAction {
 		}
 
 		//老师需要手机验证码
-		/*if($roleId == Contents::ROLE_TEACHER){
-			//获得有效的验证码
-			$phoneCodeObj = PhoneCode::model()->getPhoneCode($phone);
-			if(!$phoneCodeObj || $phoneCodeObj->code != $phoneCode){
-				throw new CHttpException(1007,Contents::getErrorByCode(1007));
-			}
-		}*/
+		/**/
+		//if($roleId == Contents::ROLE_TEACHER){
+		//获得有效的验证码
+		$phoneCodeObj = PhoneCode::model()->getPhoneCode($phone);
+		if(!$phoneCodeObj || $phoneCodeObj->code != $phoneCode){
+			throw new CHttpException(1007,Contents::getErrorByCode(1007));
+		}
+		//}
 		//创建账号信息
 		$user = User::model()->createAccount($phone,$password,$roleId);
 		$userId = $user->id;

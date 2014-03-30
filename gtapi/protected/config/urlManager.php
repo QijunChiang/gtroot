@@ -174,6 +174,8 @@ return array(
 				array('app/addTeachCourseSignUp', 'pattern'=>'app/add_teach_course_sign_up', 'verb'=>'POST'),
 				//index.php/app/disable_teach_course 逻辑删除课程  DisableTeachCourse
 				array('app/disableTeachCourse', 'pattern'=>'app/disable_teach_course', 'verb'=>'POST'),
+			    //index.php/app/get_course_info 获取课程详细信息 GetCourseInfo
+			    array('app/getCourseInfo', 'pattern'=>'app/get_course_info', 'verb'=>'GET'),
 				/**
 				 * 课程相关 结束
 				 */
@@ -272,7 +274,20 @@ return array(
 				/**
 				 * 城市 结束
 				 */
-
+			    /**
+			     * 用户订单 开始
+			     */
+			    //index.php/app/sumbit_user_order 提交订单 SubmitUserOrder
+			    array('app/submitUserOrder', 'pattern'=>'app/sumbit_user_order', 'verb'=>'POST'),
+			    //index.php/app/update_order_pay_succ 提交订单 updateUserOrderPaySucc
+			    array('app/updateUserOrderPaySucc', 'pattern'=>'app/update_user_order_pay_succ', 'verb'=>'POST'),
+			    //index.php/app/get_user_order_list 获取用户订单列表getUserOrderList
+			    array('app/getUserOrderList', 'pattern'=>'app/get_user_order_list', 'verb'=>'GET'),
+			    //index.php/app/get_user_order_detail 获取订单详细 GetUserOrderDetail
+			    array('app/getUserOrderDetail', 'pattern'=>'app/get_user_order_detail', 'verb'=>'GET'),
+			    /**
+			     * 用户订单 结束
+			     */
 
 				/**
 				 * 网站接口

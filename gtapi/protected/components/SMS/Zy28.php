@@ -41,6 +41,7 @@ class Zy28{
 
 		$telphone = $sms->mobile;
 		$message = $sms->content;
+		$message = urlencode($message);
 		$sendTime = $sms->sendTime;
 		//action=send&userid=12&account=账号&password=密码&mobile=13800000000 &content=内容&sendTime=&extno=
 		$gateway = "http://sms.zy28.com:8888/sms.aspx?userid={$userid}&account={$account}&password={$password}&extno={$extno}&action={$action}"

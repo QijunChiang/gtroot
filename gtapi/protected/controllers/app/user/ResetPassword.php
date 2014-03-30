@@ -59,7 +59,7 @@ class ResetPassword extends BaseAction {
 	public function run() {
 		//获取信息
 		$phone = $this->getRequest("phone",true);
-		//$phoneCode = $this->getRequest("phoneCode",true);
+		$phoneCode = $this->getRequest("phoneCode",true);
 		$password = $this->getRequest("password",true);
 		$deviceId = $this->getRequest("deviceId",true);
 		$type = $this->getRequest('type');
@@ -74,11 +74,11 @@ class ResetPassword extends BaseAction {
 			//没有被注册
 			throw new CHttpException(1011,Contents::getErrorByCode(1011));
 		}
-		/*//获得有效的验证码
+		/**///获得有效的验证码
 		$phoneCodeObj = PhoneCode::model()->getPhoneCode($phone);
 		if(!$phoneCodeObj || $phoneCodeObj->code != $phoneCode){
 			throw new CHttpException(1007,Contents::getErrorByCode(1007));
-		}*/
+		}
 		//重置密码
 		$user = User::model()->resetPassword($user_o,$password);
 		//修改成功后，登录到系统。

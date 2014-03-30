@@ -70,7 +70,7 @@ class GetUserOrderList extends SessionFilterAction {
 		//获取参数信息
 		$userId = $this->userSession->userId;
 		$criteria = new CDbCriteria();
-		$criteria->addCondition("userId", $userId);
+		$criteria->addCondition("userId='".$userId."'");
 		$criteria->order = 'editTime desc';
 		$result = UserOrder::model()->findAll($criteria);
 		$data = array();

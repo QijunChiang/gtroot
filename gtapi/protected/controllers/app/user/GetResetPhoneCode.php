@@ -62,7 +62,8 @@ class GetResetPhoneCode extends BaseAction {
 		if(stripos($phone,'@') === false){
 			require_once("SMS/Zy28.php");
 			$zy28 = new Zy28();
-			$content = "您正在重置好老师平台的密码,验证码：{$phoneCode->code}";
+			//‘平台’为短信系统敏感词
+			$content = "您正在重置好老师系统的密码,验证码：{$phoneCode->code}";
 			$r = $zy28->batchSend(new SMS($content,$phone,""));
 			if(!$r){
 				throw new CHttpException(1041,Contents::getErrorByCode(1041));
@@ -86,8 +87,9 @@ class GetResetPhoneCode extends BaseAction {
 	 */
 	private function  sendEmail($email,$code){
 		$message = new YiiMailMessage;
-		$message->setBody("您正在重置好老师平台的密码,验证码：{$code}",'text/plain','utf-8');
-		$message->subject = '好老师平台：重置密码';
+		//‘平台’为短信系统敏感词
+		$message->setBody("您正在重置好老师系统的密码,验证码：{$code}",'text/plain','utf-8');
+		$message->subject = '好老师系统：重置密码';
 		$message->addTo($email);
 		$message->setFrom(Yii::app()->params['adminEmail'],Yii::app()->params['adminEmailName']);
 		return Yii::app()->mail->send($message);

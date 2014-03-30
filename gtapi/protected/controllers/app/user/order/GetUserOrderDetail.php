@@ -99,9 +99,6 @@ class GetUserOrderDetail extends SessionFilterAction {
 		$data['editTime'] = '';
 		$data['itemList'] = array();
 
-		$criteria = new CDbCriteria();
-		$criteria->addCondition("orderId", $orderId);
-		//$criteria->addCondition("userId", $userId);
 		$order = UserOrder::model()->findByPk($orderId);
 		$data['order'] = $order;
 		if($order != null){
