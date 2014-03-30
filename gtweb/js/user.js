@@ -71,10 +71,14 @@ $.fn.user = {
 		var phone = $("input[name='txtUser']").val();
 		var password = $("input[name='txtPwd']").val();
 		//var email = $("input[name='txtEmail']").val();
+		var phoneCode = $("input[name='phoneCode']").val();
+		if(phoneCode==null || phoneCode==''){
+			alert("请输入手机验证码");return;
+		}
         $.ajax({
             url : $.fn.user.options.rootPath+"/user/reg.php",
             type : 'POST',
-            data : 'action=create_account_student&phone='+phone+'&password='+password+'&t='+(new Date()).getTime(),
+            data : 'action=create_account_student&phone='+phone+'&password='+password+'&phoneCode='+phoneCode+'&t='+(new Date()).getTime(),
             dataType : 'json',
             success : function(result){
                 if(!result.result){
@@ -188,7 +192,7 @@ $.fn.user = {
         if (myReg.test(str)) return true; 
         return false; 
     }, 
-    get_reset_phone_code : function() {
+    get_reset_phone_code : function() {//获取重置密码手机验证码
         var loginMobile = $("input[name='loginMobile']").val();
         if(! $.fn.user.isMobileNum(loginMobile)){
         	alert('请输入合法手机号');
@@ -224,7 +228,6 @@ $.fn.user = {
     reset_password : function() {
         var loginMobile = $("input[name='loginMobile']").val();
         var loginPwd = $("input[name='loginPwd']").val();
-        var phoneCode = $("input[name='phoneCode']").val();
         if(!phoneCode || phoneCode == '手机验证码'){
         	alert("请输入验证码");return false;
         }
@@ -240,6 +243,31 @@ $.fn.user = {
             	if(result.result){
             		alert("重置密码成功,请重新登录");
             		window.location = $.fn.user.options.rootPath+'/user/login.php';
+            	}else{
+            		alert(result.data.error);
+            	}
+            },
+            error:function(result){                
+            }
+        });
+    },
+    get_create_phone_code : function() {//获取注册手机验证码
+        var loginMobile = $("input[name='txtUser']").val();
+        var phoneCode = $("input[name='phoneCode']").val();
+        if(! $.fn.user.isMobileNum(loginMobile)){
+        	alert('请输入合法手机号');
+            return false;
+        }
+        $.ajax({
+            url : $.fn.user.options.rootPath+"/user/reg.php",
+            type : 'GET',
+            data : 'action=get_create_phone_code&phone='+loginMobile+'&t='+(new Date()).getTime(),
+            dataType : 'json',
+            success : function(result){
+            	if(result.result){
+            		overSecond = result.data.overSecond;
+            		iIntervalID = window.setInterval($.fn.user.showPhoneCodeWaitSecond, 1000)
+            		alert("验证码已发送到手机,请尽快使用");
             	}else{
             		alert(result.data.error);
             	}

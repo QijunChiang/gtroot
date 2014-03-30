@@ -15,9 +15,9 @@ switch ( $action ) {
 		echo json_encode($ret);
 		break;
 	case 'reset_password'://ajax
-		//$ret = reset_password($loginMobile,$phoneCode,$loginPwd);
-		$ret["result"] = false;
-		$ret['data']['error']="暂不支持重置密码,系统即将开放此功能";
+		$ret = reset_password($loginMobile,$phoneCode,$loginPwd);
+		//$ret["result"] = false;
+		//$ret['data']['error']="暂不支持重置密码,系统即将开放此功能";
 		echo json_encode($ret);
 		break;
 	default:

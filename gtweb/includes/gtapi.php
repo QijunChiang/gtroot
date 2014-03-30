@@ -1,5 +1,22 @@
 <?php
 /**
+ * 注册时生成的验证码并返回
+ *	返回
+ *{
+ *    "result": true,
+ *    "data": {
+ *        "code": "513527",//手机验证码
+ *        "createTime":"2013-07-03 21:53:00",//code 创建的时间
+ *        "overSecond":15//过期时间，秒数
+ *    }
+ *} 
+ */
+function get_create_phone_code($phone) {
+	$data='phone='.$phone;
+	$ret = curl_request(__GTAPI_BASE_URL.'app/get_create_phone_code', $data,'GET');
+	return $ret;
+}
+/**
  * 重置密码时生成的验证码并返回
  * {
    "result": true,
@@ -325,8 +342,8 @@ function phone_is_exist($phone) {
 	   college：'某某学院' 可选
  * @return data
  */
-function create_account_student($phone, $password) {
-	$data='deviceId=web&roleId=2&phone='.$phone.'&password='.$password.'&name='.$phone;
+function create_account_student($phone, $password, $phoneCode) {
+	$data='deviceId='.$phone.'&roleId=2&phone='.$phone.'&password='.$password.'&name='.$phone.'&phoneCode='.$phoneCode;
 	$ret = curl_request(__GTAPI_BASE_URL.'app/create_account', $data,'POST');
 	return $ret;
 }

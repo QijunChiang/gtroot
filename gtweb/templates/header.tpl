@@ -107,7 +107,7 @@ $(function(){
 <body>
 <div class="top">
   <div class="top_in">
-    <div class="logo"><img src="<{$smarty.const.__SITE_PATH}>/images/logo.gif" width="150" height="39"  /></div>
+    <div class="logo"><a href="<{$smarty.const.__SITE_PATH}>/"><img src="<{$smarty.const.__SITE_PATH}>/images/logo.gif" width="150" height="39"  /></a></div>
     <div class="logo_r"></div>
     <div class="city"> <a id="city" href="#"><{$smarty.session.__CURR_CITY_NAME}></a>
       <div class="city_in">
@@ -124,6 +124,7 @@ $(function(){
         </div>
       </div>
     </div>
+    <img src="<{$smarty.const.__SITE_PATH}>/images/400.jpg" style="width:210px;"/>
     <div class="search">
       <div class="search_l">
         <input id="search_input" type="text" class="text" placeholder="输入老师姓名"/>

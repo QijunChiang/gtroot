@@ -49,7 +49,7 @@
 
 /*搜索*/
 .search{float:right; height:38px; margin-top:10px;}
-.search_l{width:440px; height:34px; float:left; border:2px solid #1abb92; background:#fff; padding-left:37px; background:url(../images/search_l.gif) left center no-repeat; overflow:hidden;}
+.search_l{width:400px; height:34px; float:left; border:2px solid #1abb92; background:#fff; padding-left:37px; background:url(../images/search_l.gif) left center no-repeat; overflow:hidden;}
 .search_l input{width:440px; height:14px; border:none; background:none; /* color:#bfbfbf; */outline: none;padding:10px 0;user-select:none}
 .search_l input.onfocus{color:#6A6A6A;}
 .search_r{width:87px; height:38px; float:left;}

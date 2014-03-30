@@ -35,6 +35,10 @@
 						<span style='color:red;'></span>
 					</div>	
 					-->				
+					<div class="input_ui">
+						<p><a id="sendphonecode" href="javascript:void(0);">发送验证码</a></p>
+						<input class="phoneCode text" name="phoneCode" id="phoneCode" type="text" tabindex="1" placeholder="手机验证码"/>
+					</div>
 					<div class="input_ui min_input_ui checkCont">
 						<input type="checkbox" class="check" name="chkLicence" tabindex="3" /><a href="#" target="_blank">我接受并同意《好老师用户服务条款》</a>
 					</div>
@@ -57,4 +61,5 @@
     $("input[name='txtUser']").bind('blur', $.fn.user.checkRegMoible);
     $("input[name='txtEmail']").bind('blur', $.fn.user.checkRegEmail);
     $("#registerSumbit").bind('click', $.fn.user.register);
+    $("#sendphonecode").bind('click', $.fn.user.get_create_phone_code);
 </script>
