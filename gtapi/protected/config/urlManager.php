@@ -176,6 +176,8 @@ return array(
 				array('app/disableTeachCourse', 'pattern'=>'app/disable_teach_course', 'verb'=>'POST'),
 			    //index.php/app/get_course_info 获取课程详细信息 GetCourseInfo
 			    array('app/getCourseInfo', 'pattern'=>'app/get_course_info', 'verb'=>'GET'),
+			    //index.php/app/get_course_list 获取课程列表 getCourseList
+			    array('app/getCourseList', 'pattern'=>'app/get_course_list', 'verb'=>'GET'),
 				/**
 				 * 课程相关 结束
 				 */

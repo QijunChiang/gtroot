@@ -144,6 +144,8 @@ class AppController extends BaseController{
 			'disableTeachCourse'=>'application.controllers.app.teach.DisableTeachCourse',
 			//index.php/app/get_course_info 获取课程详细信息 GetCourseInfo
 			'getCourseInfo'=>'application.controllers.app.teach.GetCourseInfo',
+			//index.php/app/get_course_list 获得课程列表  GetCourseList
+			'getCourseList'=>'application.controllers.app.teach.GetCourseList',
 			/**
 			 * 课程相关 结束
 			 */
