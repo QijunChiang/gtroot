@@ -228,6 +228,7 @@ $.fn.user = {
     reset_password : function() {
         var loginMobile = $("input[name='loginMobile']").val();
         var loginPwd = $("input[name='loginPwd']").val();
+		var phoneCode = $("input[name='phoneCode']").val();
         if(!phoneCode || phoneCode == '手机验证码'){
         	alert("请输入验证码");return false;
         }

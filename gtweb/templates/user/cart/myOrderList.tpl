@@ -5,7 +5,10 @@
 	<div class="list_center">
 		<{include file="../my-left.tpl"  menuId='myOrder'}>
         <div class="user_r">
-        	<{include file="../my-top.tpl" title='我的订单列表'}>
+        	<div class="user_title">
+            	<span>我的订单列表</span>
+                <em></em>
+                </div>
 	        <div class="table1">
 	          <table width="100%" border="0" cellspacing="0" cellpadding="0">
 	            <tr>

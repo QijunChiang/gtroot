@@ -15,7 +15,7 @@
             </tr>
           	<{foreach from=$userCart->cartItems item=cartItem}>
             <tr>
-              <td height="46" align="left" valign="middle" class="table1_g"><a href="#"><{$cartItem->courseInfo->name}><font color="#999999"></font></a></td>
+              <td height="46" align="left" valign="middle" class="table1_g"><a href="<{$smarty.const.__SITE_PATH}>/teacher.php?teacherId=<{$cartItem->courseInfo->user->id}>" target="_blank"><{$cartItem->courseInfo->name}><font color="#999999"></font></a></td>
               <td align="center" valign="middle"><{$cartItem->courseInfo->user->name}></td>
               <td width="106" align="left" valign="middle" class="quantity">
               <div style="float:left">

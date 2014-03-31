@@ -124,9 +124,10 @@ $(function(){
         </div>
       </div>
     </div>
-    <img src="<{$smarty.const.__SITE_PATH}>/images/400.jpg" style="width:210px;"/>
+    <div class="tel400"><img src="<{$smarty.const.__SITE_PATH}>/images/400.jpg" style="width: 180px;"/></div>
+
     <div class="search">
-      <div class="search_l">
+      <div class="search_l" style="width: 260px;">
         <input id="search_input" type="text" class="text" placeholder="可输入老师姓名、课程名称、地址"/>
       </div>
       <!-- 输入您想学的课程 -->
@@ -134,6 +135,23 @@ $(function(){
         <input type="button" id='search_submit' value="搜索" />
       </div>
     </div>
+
+    <{if $smarty.session.__IS_SIGN_IN_ANONYMOUS == 'YES'}>
+    <div class="lr"  style="margin-top: 10px;"> 
+    	<a id="login_btn" href="javascript:void(0);">登录</a><span>|</span>
+    	<a id="reg_btn" href="javascript:void(0);">注册</a> 
+    </div>
+	<{else}>
+    <div class="user_info"  style="margin-top: 20px;padding-right: 0px;margin-right: 0px;width: 160px;">
+    	<a id="logined_downList">欢迎您，<font color="#ea5717"><{$smarty.session.__CURR_USER_INFO->name}></font></a>
+        <div class="user_info_b" style="z-index:999999999;">
+        	<ul>
+            	<li><a onclick="window.location='<{$smarty.const.__SITE_DOMAIN}><{$smarty.const.__SITE_PATH}>/user/my.php';" href="">个人中心</a></li>
+                <li><a onclick="window.location='<{$smarty.const.__SITE_DOMAIN}><{$smarty.const.__SITE_PATH}>/user/logout.php';" href="">注销</a></li>
+            </ul>
+        </div>
+    </div>
+    <{/if}>
   </div>
 </div>
 <!--导航-->
@@ -153,24 +171,7 @@ $(function(){
 		<{/foreach}>
       </ul>
     </div>
-    <{if $smarty.session.__IS_SIGN_IN_ANONYMOUS == 'YES'}>
-    <div class="lr"> 
-    	<a href="<{$smarty.const.__SITE_PATH}>/">首页</a><span>|</span>
-		<a href="<{$smarty.const.__SITE_PATH}>/aboutUs.php">关于我们</a><span>|</span>   	
-    	<a id="login_btn" href="javascript:void(0);">登录</a><span>|</span>
-    	<a id="reg_btn" href="javascript:void(0);">注册</a> 
-    </div>
-	<{else}>
-    <div class="user_info">
-    	<a id="logined_downList">欢迎您，<font color="#ea5717"><{$smarty.session.__CURR_USER_INFO->name}></font></a>
-        <div class="user_info_b">
-        	<ul>
-            	<li><a onclick="window.location='<{$smarty.const.__SITE_DOMAIN}><{$smarty.const.__SITE_PATH}>/user/my.php';" href="">个人中心</a></li>
-                <li><a onclick="window.location='<{$smarty.const.__SITE_DOMAIN}><{$smarty.const.__SITE_PATH}>/user/logout.php';" href="">注销</a></li>
-            </ul>
-        </div>
-    </div>
-	<{/if}>
+   
   </div>
 </div>
 

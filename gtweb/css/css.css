@@ -47,10 +47,13 @@
 .city_r a:hover {color: #13ad87;text-decoration: none; width:70px;  height:28px; display:block; float:left; padding-left:10px; background:none;}
 .city_r a:active {color: #61636f;text-decoration: none; width:70px;  height:28px; display:block; float:left; padding-left:10px;  background:none;}
 
+/*400电话*/
+.tel400{float:left; height:38px; margin-top:8px;margin-left: 5px;}
+
 /*搜索*/
-.search{float:right; height:38px; margin-top:10px;}
-.search_l{width:400px; height:34px; float:left; border:2px solid #1abb92; background:#fff; padding-left:37px; background:url(../images/search_l.gif) left center no-repeat; overflow:hidden;}
-.search_l input{width:440px; height:14px; border:none; background:none; /* color:#bfbfbf; */outline: none;padding:10px 0;user-select:none}
+.search{float:left; height:38px; margin-top:10px;}
+.search_l{width:200px; height:34px; float:left; border:2px solid #1abb92; background:#fff; padding-left:37px; background:url(../images/search_l.gif) left center no-repeat; overflow:hidden;}
+.search_l input{width:240px; height:14px; border:none; background:none; /* color:#bfbfbf; */outline: none;padding:10px 0;user-select:none}
 .search_l input.onfocus{color:#6A6A6A;}
 .search_r{width:87px; height:38px; float:left;}
 .search_r input{width:87px; height:38px; border:none; background:none; color:#fff; line-height:38px;outline: none; text-align:center; background:#1abb92; font-size:16px; font-family:"微软雅黑"; cursor:pointer;}
@@ -104,7 +107,7 @@
 .nav_r ul li ul li a:active {color: #333333;text-decoration: none; width:120px; height:49px; display:block; padding:0;z-index:9999999;}
 
 /*登录注册*/
-.lr{height:40px; width:300px; line-height:40px;text-align:right; float:right; margin-right:7px; color:#006349; margin:0;}
+.lr{height:40px; width:120px; line-height:40px;text-align:right; float:right;margin-top: 10px; margin-right:7px; color:#006349; margin:0;}
 .lr span{margin:0 20px;color:#7dada1;}
 .lr a:link {color: #006349;text-decoration: none; background:none; padding:0;}
 .lr a:visited {color: #006349;text-decoration: none; background:none; padding:0;}
