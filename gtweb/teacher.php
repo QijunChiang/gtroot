@@ -10,19 +10,15 @@ if($userInfoDetail==null){
 	$teachCourseList = get_teach_course_list($teacherId, '', 20, 1);
 	//获取对老师的评论列表
 	$teachCommentsList = get_comments_list($teacherId, '', 20, 1);
-	
 	$mod = $userInfoDetail->star % 1;
 	$num = (int)($userInfoDetail->star/1);
 	if($mod != 0){
 		$num += 0.5;
 	}
 	$userInfoDetail->star = $num;
-
 	$smarty->assign("teacher", $userInfoDetail, true);
 	$smarty->assign("teachCourseList", $teachCourseList, true);
 	$smarty->assign("teachCommentsList", $teachCommentsList, true);
-	
-	
 	$smarty->display('teacher.tpl');	
 }
 ?>

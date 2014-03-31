@@ -445,17 +445,14 @@ function app_sign_in($loginMobile, $password) {
 	return $ret;
 }
 /**
- * 根据经纬度获得附近机构或老师列表信息
- * @return data
+ * 获得课程列表
+ * @return 
  */
-function get_course_list($sessionKey, $cityId) {
-	$data="sessionKey=".$sessionKey."&id=".$cityId;
-	$ret = curl_request(__GTAPI_BASE_URL.'web/get_course_list', $data,'GET');
+function get_course_list($searchKey='',$count='10',$page='1') {
+	$data="searchKey=".$searchKey.'&count='.$count.'&page='.$page;
+	$ret = curl_request(__GTAPI_BASE_URL.'app/get_course_list', $data,'GET');
 	$ret = json_decode($ret);
-	if($ret->result){
-		return $ret->data;
-	}
-	return null;
+	return $ret;
 }
 /**
  * 获得热点城市列表 

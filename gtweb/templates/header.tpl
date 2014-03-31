@@ -74,7 +74,7 @@ $(function(){
     $('#search_submit').bind('click', function(){
     	var searchStr = $('#search_input').val();
     	if(searchStr != null && searchStr != ''){
-    		window.location = '<{$smarty.const.__SITE_PATH}>/teachers.php?name='+searchStr;
+    		window.location = '<{$smarty.const.__SITE_PATH}>/courseSearchList.php?searchKey='+searchStr;
     	}
     });
     
@@ -127,7 +127,7 @@ $(function(){
     <img src="<{$smarty.const.__SITE_PATH}>/images/400.jpg" style="width:210px;"/>
     <div class="search">
       <div class="search_l">
-        <input id="search_input" type="text" class="text" placeholder="输入老师姓名"/>
+        <input id="search_input" type="text" class="text" placeholder="可输入老师姓名、课程名称、地址"/>
       </div>
       <!-- 输入您想学的课程 -->
       <div class="search_r">
