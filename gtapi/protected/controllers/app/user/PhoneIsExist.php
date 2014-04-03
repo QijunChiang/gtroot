@@ -53,7 +53,11 @@ class PhoneIsExist extends BaseAction {
 			}
 		}
 		$this->addResponse(Contents::RESULT,true);
-		$this->addResponse(Contents::DATA,array('isSendMsg'=>0));
+        $isSendMsg = 0;
+        if(Yii::app()->params['config']['isSendMsg']){
+            $isSendMsg = 1;
+        }
+		$this->addResponse(Contents::DATA,array('isSendMsg'=>$isSendMsg));
 		$this->sendResponse();
 	}
 }

@@ -77,6 +77,11 @@ return array(
 	// using Yii::app()->params['paramName']
 	'params'=>array(
 		// this is used in contact page
-		'adminEmail'=>'webmaster@example.com',
+		'adminEmail'=>'kaopuu68@126.com',
+	    'adminEmailName'=>'好老师',
+		'config'=>array(
+        //是否发送邮件或短信
+        'isSendMsg'=>true,
+        )
 	),
 );
